@@ -1,0 +1,73 @@
+You are an expert product researcher analyzing user feedback about SIP (Systematic Investment Plan) and mutual fund investing on Indian platforms (INDmoney, Groww, Zerodha).
+
+Analyze the following user text and extract structured insights.
+
+USER TEXT:
+"""
+{text}
+"""
+
+SOURCE: {source}
+RATING: {rating}
+DATE: {date}
+
+Extract the following as a JSON object:
+
+{
+  "discovery_questions": [
+    // List which of these 9 questions this text provides evidence for:
+    // Q1: Why do people start a SIP, and what do they expect?
+    // Q2: What changes in behavior in months after starting?
+    // Q3: What leads investors to pause, reduce, or stop a SIP?
+    // Q4: What do investors check, and how often?
+    // Q5: What confuses or worries them inside the app?
+    // Q6: What do they do outside the app when unsure?
+    // Q7: What separates continuers from drop-offs?
+    // Q8: How do patterns differ across segments?
+    // Q9: What unmet needs emerge consistently?
+    // Return array of question numbers, e.g. ["Q3", "Q5", "Q9"]
+  ],
+  
+  "emotion": {
+    "primary": "anxious|confused|frustrated|disappointed|indifferent|reassured|confident|regretful|hopeful|angry",
+    "intensity": "low|medium|high",
+    "trigger": "brief description of what caused this emotion"
+  },
+  
+  "user_segment": {
+    "experience_level": "first_timer|beginner|intermediate|experienced|unknown",
+    "age_hint": "student|early_career|mid_career|senior|unknown",
+    "income_hint": "low|moderate|high|unknown",
+    "influence_source": "peer|family|social_media|financial_advisor|self_research|unknown",
+    "segment_evidence": "the exact phrase(s) that suggest this segment"
+  },
+  
+  "behavioral_action": {
+    "action_taken": "continued|paused|cancelled|reduced|increased|switched|uninstalled|contacted_support|searched_online|asked_someone|considering_stopping|none_mentioned",
+    "action_reason": "brief reason for the action"
+  },
+  
+  "friction_point": {
+    "product_area": "portfolio_view|returns_display|sip_setup|mandate_payment|customer_support|notifications|educational_content|fund_selection|app_performance|none",
+    "specific_issue": "brief description of the exact friction",
+    "severity": "minor|moderate|critical"
+  },
+  
+  "temporal_signal": {
+    "sip_tenure": "pre_start|month_1|months_1_3|months_3_6|months_6_12|beyond_12|unknown",
+    "market_context": "bull|bear|correction|volatile|stable|unknown"
+  },
+  
+  "unmet_need": "description of what the user wishes existed, or null",
+  
+  "key_quote": "the most insightful verbatim phrase from the text (max 30 words)",
+  
+  "analysis_confidence": 0.0-1.0
+}
+
+RULES:
+- If a dimension cannot be determined, use "unknown" or null
+- key_quote must be EXACT text from the user, not paraphrased
+- Do NOT infer investment advice preferences
+- Focus on behavioral and emotional signals, not technical bugs
+- If the text addresses multiple discovery questions, list ALL

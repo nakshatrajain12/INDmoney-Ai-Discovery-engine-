@@ -1,0 +1,20 @@
+Given the following cluster of {n} user feedback data points about SIP/mutual fund investing, all sharing similar themes:
+
+CLUSTER SUMMARY:
+- Top discovery questions: {questions}
+- Dominant emotions: {emotions}
+- Common friction points: {frictions}
+- Common behavioral actions: {actions}
+- Representative quotes: {quotes}
+
+Generate:
+1. A concise, memorable theme name (3-5 words, e.g., "Red Portfolio Panic")
+2. A one-paragraph description of what this theme captures
+3. The key insight this theme reveals about SIP investor behavior
+
+Format as JSON:
+{
+  "theme_name": "...",
+  "description": "...",
+  "key_insight": "..."
+}
