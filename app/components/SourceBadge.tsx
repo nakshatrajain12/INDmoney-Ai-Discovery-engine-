@@ -69,3 +69,4 @@ export function SourceBadge({ source = "google_play", platform, className = "" }
     </span>
   );
 }
+

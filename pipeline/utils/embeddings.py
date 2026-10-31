@@ -1,18 +1,22 @@
 """
 Embeddings and Vector Database Manager for AI Discovery Engine.
 Integrates with ChromaDB and supports:
-- OpenAI text-embedding-3-small (when OPENAI_API_KEY available)
-- Sentence-Transformers / ChromaDB default local embeddings (offline fallback)
+- Embedding of extracted corpus into ChromaDB
+- Local onnx / default Chroma embeddings or OpenAI embeddings
 """
 
 import os
 import sys
+import json
+import argparse
 from typing import List, Dict, Optional, Any
 from dotenv import load_dotenv
 
 if sys.platform == "win32":
-    import io
-    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
 
 load_dotenv()
 
@@ -38,14 +42,20 @@ class EmbeddingManager:
         documents: List[str],
         metadatas: Optional[List[Dict[str, Any]]] = None
     ):
-        """Adds or updates documents in the ChromaDB collection."""
+        """Adds or updates documents in the ChromaDB collection in chunks."""
         if not ids or not documents:
             return
-        self.collection.upsert(
-            ids=ids,
-            documents=documents,
-            metadatas=metadatas
-        )
+        
+        chunk_size = 200
+        for i in range(0, len(ids), chunk_size):
+            chunk_ids = ids[i:i + chunk_size]
+            chunk_docs = documents[i:i + chunk_size]
+            chunk_metas = metadatas[i:i + chunk_size] if metadatas else None
+            self.collection.upsert(
+                ids=chunk_ids,
+                documents=chunk_docs,
+                metadatas=chunk_metas
+            )
 
     def query(
         self,
@@ -66,14 +76,64 @@ class EmbeddingManager:
         return self.collection.count()
 
 
-if __name__ == "__main__":
-    print("[*] Testing Embedding Manager...")
-    mgr = EmbeddingManager(collection_name="test_collection")
-    test_id = "test_001"
-    test_doc = "I stopped my monthly SIP on INDmoney because of unclear returns."
-    test_meta = {"source": "test", "action": "stopped"}
-    
-    mgr.add_documents(ids=[test_id], documents=[test_doc], metadatas=[test_meta])
-    results = mgr.query("Why did the user cancel their investment?", n_results=1)
-    print(f"[OK] Test Query Result: {results['documents'][0]}")
+def index_extracted_insights(input_path: str, persist_dir: Optional[str] = None):
+    print(f"[*] Pre-embedding extracted corpus into ChromaDB from: {input_path}")
+    if not os.path.exists(input_path):
+        print(f"[!] Input file {input_path} not found.")
+        return
 
+    mgr = EmbeddingManager(collection_name="sip_discovery_corpus", persist_dir=persist_dir)
+    
+    ids = []
+    docs = []
+    metas = []
+
+    with open(input_path, "r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                rec = json.loads(line)
+                rec_id = rec.get("id")
+                text = rec.get("text", "")
+                quote = rec.get("key_quote", "")
+                
+                # Document representation combines quote and text
+                doc_text = f"{quote}\n{text}" if quote else text
+                if not rec_id or not doc_text:
+                    continue
+
+                ids.append(rec_id)
+                docs.append(doc_text[:500])
+                
+                # Chroma metadata only accepts str, int, float, bool
+                meta = {
+                    "source": str(rec.get("source", "")),
+                    "platform_app": str(rec.get("platform_app", "INDmoney")),
+                    "rating": int(rec.get("rating") or 0),
+                    "emotion": str(rec.get("emotion", {}).get("primary", "unknown")),
+                    "action": str(rec.get("behavioral_action", {}).get("action_taken", "none")),
+                    "friction": str(rec.get("friction_point", {}).get("product_area", "none"))
+                }
+                metas.append(meta)
+            except Exception:
+                continue
+
+    print(f"[*] Upserting {len(ids):,} documents into ChromaDB...")
+    mgr.add_documents(ids=ids, documents=docs, metadatas=metas)
+    print(f"[OK] ChromaDB Indexing Complete! Total Indexed Count: {mgr.count():,}")
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="ChromaDB Corpus Embeddings Manager")
+    parser.add_argument("--input", type=str, default=None, help="Path to extracted_insights.jsonl")
+    parser.add_argument("--output", type=str, default=None, help="Path to Chroma persist directory")
+    args = parser.parse_args()
+
+    default_input = os.path.join(
+        os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
+        "data", "extracted", "extracted_insights.jsonl"
+    )
+    in_file = args.input or default_input
+    index_extracted_insights(in_file, persist_dir=args.output)

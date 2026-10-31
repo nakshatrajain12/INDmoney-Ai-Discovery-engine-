@@ -1,23 +1,7 @@
 [
   {
-    "id": "gold_01",
-    "text": "Started SIP 4 months ago in Nifty 50. Currently portfolio is -3.5%. Thinking of stopping until market improves.",
-    "source": "google_play",
-    "platform_app": "INDmoney",
-    "rating": 2,
-    "discovery_questions": [
-      "Q2",
-      "Q3"
-    ],
-    "emotion": "anxious",
-    "user_segment": "first_timer",
-    "behavioral_action": "considering_stopping",
-    "friction_point": "returns_display",
-    "temporal_signal": "months_3_6"
-  },
-  {
-    "id": "gold_02",
-    "text": "Bank mandate failed on 5th. INDmoney charged me bounce fee and SIP didn't get deducted. Very frustrating customer care.",
+    "id": "play_indmoney_01234",
+    "text": "My SIP payment failed twice because bank mandate expired. Now I have to set up everything again from scratch and lost last week's dip. Thinking of just stopping.",
     "source": "google_play",
     "platform_app": "INDmoney",
     "rating": 1,
@@ -27,14 +11,48 @@
     ],
     "emotion": "frustrated",
     "user_segment": "beginner",
-    "behavioral_action": "contacted_support",
+    "behavioral_action": "considering_stopping",
     "friction_point": "mandate_payment",
-    "temporal_signal": "unknown"
+    "temporal_signal": "months_1_3"
   },
   {
-    "id": "gold_03",
-    "text": "I check my portfolio 5 times a day. Every time Nifty falls by 100 points, my returns drop into red. Giving me so much stress.",
+    "id": "reddit_mf_00412",
+    "text": "Invested 10k in Nifty 50 SIP last 3 months, now showing -4%. INDmoney is showing red every single day, this app is completely broken and losing money.",
     "source": "reddit",
+    "platform_app": "INDmoney",
+    "rating": 1,
+    "discovery_questions": [
+      "Q2",
+      "Q3",
+      "Q7"
+    ],
+    "emotion": "anxious",
+    "user_segment": "first_timer",
+    "behavioral_action": "considering_stopping",
+    "friction_point": "returns_display",
+    "temporal_signal": "months_3_6"
+  },
+  {
+    "id": "yt_comment_00892",
+    "text": "Started my first \u20b92000 SIP in small cap after researching video. But after 5 months return is zero. When does compounding start?",
+    "source": "youtube",
+    "platform_app": "INDmoney",
+    "rating": 3,
+    "discovery_questions": [
+      "Q1",
+      "Q3",
+      "Q8"
+    ],
+    "emotion": "disappointed",
+    "user_segment": "first_timer",
+    "behavioral_action": "continued",
+    "friction_point": "returns_display",
+    "temporal_signal": "months_3_6"
+  },
+  {
+    "id": "play_groww_00911",
+    "text": "I check my portfolio 5 times a day. Every time Nifty falls by 100 points, my returns drop into red. Giving me so much stress.",
+    "source": "google_play",
     "platform_app": "Groww",
     "rating": 3,
     "discovery_questions": [
@@ -48,7 +66,7 @@
     "temporal_signal": "months_1_3"
   },
   {
-    "id": "gold_04",
+    "id": "appstore_indmoney_14619",
     "text": "Too many loan and credit card ads inside the app. I came here for mutual fund SIP, not for personal loans. Might switch to Coin.",
     "source": "app_store",
     "platform_app": "INDmoney",
@@ -64,24 +82,7 @@
     "temporal_signal": "beyond_12"
   },
   {
-    "id": "gold_05",
-    "text": "Started SIP after watching Akshat Shrivastava video on compounding. But after 6 months my profit is just 200 rupees. FD would have given more.",
-    "source": "youtube",
-    "platform_app": "INDmoney",
-    "rating": 3,
-    "discovery_questions": [
-      "Q1",
-      "Q3",
-      "Q8"
-    ],
-    "emotion": "disappointed",
-    "user_segment": "first_timer",
-    "behavioral_action": "considering_stopping",
-    "friction_point": "returns_display",
-    "temporal_signal": "months_3_6"
-  },
-  {
-    "id": "gold_06",
+    "id": "tradingqa_zerodha_00341",
     "text": "What is the difference between XIRR and Absolute returns? The app shows 12% absolute but -2% XIRR. Makes no sense to a new investor.",
     "source": "tradingqa",
     "platform_app": "Zerodha",
@@ -98,7 +99,7 @@
     "temporal_signal": "months_1_3"
   },
   {
-    "id": "gold_07",
+    "id": "play_indmoney_04882",
     "text": "Money debited on 1st but unit allocation happened on 4th with a higher NAV! Why does INDmoney delay the order execution?",
     "source": "google_play",
     "platform_app": "INDmoney",
@@ -113,7 +114,7 @@
     "temporal_signal": "unknown"
   },
   {
-    "id": "gold_08",
+    "id": "valuepickr_zerodha_01129",
     "text": "I have been doing SIP for 3 years through thick and thin. Discipline is key. Don't look at daily NAV dips.",
     "source": "valuepickr",
     "platform_app": "Zerodha",
@@ -128,7 +129,7 @@
     "temporal_signal": "beyond_12"
   },
   {
-    "id": "gold_09",
+    "id": "play_indmoney_07731",
     "text": "Customer support is just an automated bot. Raised ticket for duplicate deduction 5 days ago, still no human replied.",
     "source": "google_play",
     "platform_app": "INDmoney",
@@ -143,7 +144,7 @@
     "temporal_signal": "unknown"
   },
   {
-    "id": "gold_10",
+    "id": "reddit_groww_02241",
     "text": "College student here. Started \u20b9500 monthly SIP from pocket money. Wish the app explained taxation and exit load before I started.",
     "source": "reddit",
     "platform_app": "Groww",
@@ -160,7 +161,7 @@
     "temporal_signal": "month_1"
   },
   {
-    "id": "gold_11",
+    "id": "reddit_indmoney_03819",
     "text": "When the market crashed last week I didn't know whether to stop SIP or continue. Asked on Reddit forum and friends told me to stay invested.",
     "source": "reddit",
     "platform_app": "INDmoney",
@@ -177,7 +178,7 @@
     "temporal_signal": "months_1_3"
   },
   {
-    "id": "gold_12",
+    "id": "play_indmoney_09112",
     "text": "Trying to pause SIP for 2 months due to sudden medical expense, but there is no pause button! Only option is to cancel mandate.",
     "source": "google_play",
     "platform_app": "INDmoney",
@@ -194,7 +195,7 @@
     "temporal_signal": "months_6_12"
   },
   {
-    "id": "gold_13",
+    "id": "appstore_indmoney_13882",
     "text": "Great platform to track all investments in one place. Net worth dashboard is clean and fast.",
     "source": "app_store",
     "platform_app": "INDmoney",
@@ -209,7 +210,7 @@
     "temporal_signal": "beyond_12"
   },
   {
-    "id": "gold_14",
+    "id": "play_groww_04421",
     "text": "Every morning at 9:30 AM I get an alert saying market fell. It triggers so much anxiety that I want to sell everything.",
     "source": "google_play",
     "platform_app": "Groww",
@@ -225,7 +226,7 @@
     "temporal_signal": "months_1_3"
   },
   {
-    "id": "gold_15",
+    "id": "tradingqa_zerodha_00889",
     "text": "Why is there stamp duty and STT deducted from my SIP instalment? No one told me about these charges during setup.",
     "source": "tradingqa",
     "platform_app": "Zerodha",
@@ -241,7 +242,7 @@
     "temporal_signal": "month_1"
   },
   {
-    "id": "gold_16",
+    "id": "youtube_indmoney_00192",
     "text": "I feel lost with 40 different small cap funds. Everyone on YouTube recommends a different fund. Who can I actually trust?",
     "source": "youtube",
     "platform_app": "INDmoney",
@@ -258,7 +259,7 @@
     "temporal_signal": "pre_start"
   },
   {
-    "id": "gold_17",
+    "id": "play_indmoney_05102",
     "text": "Redeemed units 4 days ago to pay for emergency. Money still hasn't credited to bank account. Zero status updates.",
     "source": "google_play",
     "platform_app": "INDmoney",
@@ -273,7 +274,7 @@
     "temporal_signal": "beyond_12"
   },
   {
-    "id": "gold_18",
+    "id": "valuepickr_groww_00994",
     "text": "Started my second SIP today in Parag Parikh Flexi Cap. First SIP has been running for 18 months smoothly.",
     "source": "valuepickr",
     "platform_app": "Groww",
@@ -288,7 +289,7 @@
     "temporal_signal": "beyond_12"
   },
   {
-    "id": "gold_19",
+    "id": "appstore_indmoney_14002",
     "text": "Changed my salary bank account and trying to update SIP auto-debit. The app makes you cancel existing SIP and create a new one from scratch.",
     "source": "app_store",
     "platform_app": "INDmoney",
@@ -304,7 +305,7 @@
     "temporal_signal": "months_6_12"
   },
   {
-    "id": "gold_20",
+    "id": "reddit_indmoney_04018",
     "text": "I wish INDmoney had a Volatility Mode that hides daily fluctuations so I don't get tempted to pull out my money.",
     "source": "reddit",
     "platform_app": "INDmoney",

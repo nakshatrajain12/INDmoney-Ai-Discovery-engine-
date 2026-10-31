@@ -1,10 +1,10 @@
 {
   "total_benchmarked": 20,
-  "accuracy_discovery_questions": 100.0,
-  "accuracy_emotions": 100.0,
-  "accuracy_segments": 100.0,
+  "accuracy_discovery_questions": 92.5,
+  "accuracy_emotions": 95.0,
+  "accuracy_segments": 95.0,
   "accuracy_actions": 100.0,
-  "accuracy_friction_points": 100.0,
+  "accuracy_friction_points": 90.0,
   "accuracy_temporal": 100.0,
-  "accuracy_overall": 100.0
+  "accuracy_overall": 95.4
 }

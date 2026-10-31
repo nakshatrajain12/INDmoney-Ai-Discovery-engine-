@@ -128,3 +128,4 @@ export function ThemeCard({ theme, className = "" }: ThemeCardProps) {
     </div>
   );
 }
+

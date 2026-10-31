@@ -109,3 +109,4 @@ export function QuoteCard({ quote, className = "" }: QuoteCardProps) {
     </div>
   );
 }
+
