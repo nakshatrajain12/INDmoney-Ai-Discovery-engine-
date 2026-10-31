@@ -362,71 +362,108 @@ For each theme, compute breakdowns by:
 ## ✅ Phase 4 — Interactive UI (Stage 4)
 
 **Duration:** Days 5–6 (10–12 hours)  
-**Goal:** Build all 7 UI pages with live data, RAG query interface, and segment filtering.
+**Goal:** Build all 7 UI pages with live data, RAG query interface, and segment filtering, adhering strictly to the **INDmoney Design System & UI Specification**.
 
-### 4.1 Tech Stack & INDmoney Design System
+### 4.1 Tech Stack & INDmoney Design System Specification
 
-The frontend is styled strictly according to **INDmoney’s signature Fintech SuperApp design language** (see full specification in [`docs/design_system.md`](file:///c:/Users/naksh/Downloads/Telegram%20Desktop/Nakshatra_unified_project/Graduation%20Project%20Nextleap/docs/design_system.md)):
-- **Palette:** Dark Mode Obsidian Canvas (`#080B11`), Surface Cards (`#0F1622`), and signature **INDmoney Mint Green** (`#00D09C`).
-- **Typography:** Inter / Plus Jakarta Sans with tabular numerals (`tnum`) for all scores, counts, and financial returns.
-- **Visuals:** 1px subtle glassmorphic borders (`border-white/[0.08]`), rounded-2xl cards, and mint glow highlights (`shadow-indGlow`).
+The frontend is styled strictly according to **INDmoney’s signature Fintech SuperApp design language** (see full technical specification in [`docs/design_system.md`](file:///c:/Users/naksh/Downloads/Telegram%20Desktop/Nakshatra_unified_project/Graduation%20Project%20Nextleap/docs/design_system.md) and `INDmoney Design System & UI Specification.docx`):
+
+#### 1. Core Color System & Design Tokens
+- **Primary Brand Blue (`--ind-primary-blue`):** `#1A6BFF` (hover: `#0052CC`, soft: `#EBF3FF`) — Primary CTA buttons, active tab indicators, interactive links.
+- **Brand Emerald (`--ind-brand-emerald`):** `#00B386` (soft: `#E6F8F3`, dark subtle: `rgba(0, 179, 134, 0.15)`) — Positive delta indicator, high retention opportunity, verified corpus badges.
+- **Semantic Coral Red (`--ind-semantic-bear`):** `#EB5B3C` (soft: `#FDEDEA`, dark subtle: `rgba(235, 91, 60, 0.15)`) — Negative returns, drop-off friction, high severity pain points.
+- **Semantic Warn Amber (`--ind-semantic-warn`):** `#F59E0B` (soft: `#FEF3C7`, dark subtle: `rgba(245, 158, 11, 0.15)`) — Moderate friction, Month 3–6 critical churn window.
+- **Brand Navy (`--ind-brand-navy`):** `#0F172A` (light navy: `#1E293B`) — Signature Net Worth Hero banner surface.
+- **Canvas & Surface Architecture:**
+  - Canvas: `#0B0E14` (Deep obsidian dark canvas)
+  - Surface-1: `#151A23` (Default card surface, list containers)
+  - Surface-2: `#1E2532` (Nested cards, inputs, table headers)
+  - Elevated: `#252D3D` (Modals, bottom sheets, floating tooltips)
+  - Hairline Border: `#262F40` (1px solid border on all surfaces)
+  - Border Focus: `#3B82F6` (Active input rings)
+
+#### 2. Dual-Surface Layout Pattern
+- **Dark Hero Header:** Signature Net Worth Hero banner with deep navy gradient (`linear-gradient(135deg, #0F172A 0%, #1E293B 100%)`) holding top-level aggregates.
+- **Modular High-Contrast Cards:** Transitioning into clean `#151A23` surface cards with 1px hairline borders (`#262F40`).
+
+#### 3. Strict Financial Numerical Rules (`tabular-nums`)
+- **Mandatory CSS Rule:** All counts, scores, percentages, and metrics must apply `font-variant-numeric: tabular-nums` (Tailwind `tabular-nums`) to ensure numbers align vertically to the pixel and do not jitter on updates.
+- **Font Stack:** Inter / Plus Jakarta Sans for UI text; JetBrains Mono for order/ticker data.
+
+#### 4. Spatial Scale & Grid Layout
+- **Max Container Width:** `1280px` (`max-w-[1280px]` or `max-w-7xl`) centered with `24px–32px` horizontal padding.
+- **Asymmetric 2-Column Desktop Split:** 
+  - Left / Main Column (`65%` or 8 cols in 12-col grid): Net Worth Hero Card, Top Opportunity Themes, Analytics.
+  - Right Sticky Rail (`35%` or 4 cols): RAG Ask The Engine Copilot, Source Breakdown Donut, Quick Segment Filters.
+- **Border Radii:** `rounded-ind-xs` (6px) micro-tags, `rounded-ind-sm` (8px) inputs, `rounded-ind-md` (12px) CTAs, `rounded-ind-lg` (16px) theme cards, `rounded-ind-xl` (24px) hero cards, `rounded-full` filter chips.
 
 | Layer | Technology |
 |-------|-----------|
 | **Framework** | Next.js 14 (App Router) |
-| **Styling** | Tailwind CSS (INDmoney design tokens) + Lucide Icons |
-| **Charts** | Recharts (custom themed to INDmoney Mint, Cyan, and Crimson) |
-| **Vector Store** | ChromaDB (in-process, `data/` persistence) |
-| **Backend** | Next.js API Routes (serverless, no separate server) |
-| **Embeddings** | OpenAI `text-embedding-3-small` |
+| **Styling** | Tailwind CSS (INDmoney design tokens from `tailwind.config.ts`) + Lucide Icons |
+| **Charts** | Recharts (themed to INDmoney Emerald `#00B386`, Blue `#1A6BFF`, Coral `#EB5B3C`, Cyan `#00C9E8`) |
+| **Vector Store** | ChromaDB (in-process, `data/chromadb` persistence) |
+| **Backend** | Next.js API Routes (`app/api/query`, `app/api/themes`, `app/api/segments`) |
+| **Embeddings** | OpenAI `text-embedding-3-small` / sentence-transformers |
 | **Deployment** | Vercel (free tier, one-click from GitHub) |
 
-> [!TIP] If you're time-constrained, build with **Streamlit** instead (1–2 days vs. 2–3 for Next.js). Streamlit Community Cloud is free and deploys from GitHub. The UI won't be as polished but the data and analysis will be identical.
+---
 
-### 4.2 Page-by-Page Spec
+### 4.2 Page-by-Page Specifications with INDmoney Blueprints
 
 #### Page 1 — Home / Overview Dashboard (`app/page.tsx`)
-- **Stats bar:** Total items analyzed | Sources covered | Themes found | Date range
-- **Top 5 themes** as cards: Opportunity Score + frequency + representative quote
-- **Source distribution** pie chart
-- **Emotion heatmap** across all data points
+- **Net Worth Hero Card Blueprint:**
+  - Category label: `TOTAL SIGNALS ANALYZED` (`11px` uppercase `#94A3B8`, letter-spacing 0.06em)
+  - Tabular primary value: `6,247` in `36px` bold tabular numerals
+  - Delta badge: `+100% verified` in Emerald pill (`bg-ind-emerald-subtle text-ind-emerald`)
+  - Bottom strip: Critical Drop-off Window (`Months 3–6`), Primary Emotion Trigger (`Red Portfolio Panic`), Opportunity Benchmark (`0.87`)
+- **Asymmetric 2-Column Split:**
+  - Left (65%): Top 5 Opportunity Theme Cards with 4-factor formula breakdown bar and verbatim quote callouts
+  - Right (35%): Source Distribution breakdown and Ask Discovery Copilot quick query widget
 
 #### Page 2 — Theme Explorer (`app/themes/page.tsx`)
-- Sortable table: Theme Name, Opportunity Score, Frequency, Severity, Top Segment
-- Filter by discovery question (Q1–Q9 toggle buttons)
-- Row click → navigates to Theme Drill-Down
+- **Segmented Filter Chips:** Full-rounded pill toggles (`rounded-full`) for Discovery Questions Q1–Q9 with active state in Royal Blue `#1A6BFF` or Emerald `#00B386`.
+- **Sortable Opportunity Matrix Table:**
+  - Columns: Rank, Theme Name, Opportunity Score (tabular), Frequency (%), Severity (1–3), Top Affected Segment.
+  - Row click navigates seamlessly to Theme Drill-Down view.
 
 #### Page 3 — Theme Drill-Down (`app/themes/[id]/page.tsx`)
-- **Summary card:** Description + score breakdown (freq / severity / actionability / recency bars)
-- **Evidence panel:** 10–20 raw user quotes, each tagged with Source badge, Date, Emotion, Segment, and a clickable link to original
-- **Segment breakdown:** Bar chart (theme prevalence by experience level)
-- **Temporal breakdown:** Line chart (when theme peaks in SIP lifecycle)
-- **Emotion breakdown:** Donut chart (emotions within this theme)
+- **Theme Hero Card:** Detailed theme description, key behavioral insight, and Opportunity Score breakdown bars (Freq 30%, Sev 30%, Act 25%, Rec 15%).
+- **Evidence Panel with QuoteCards:** 10–20 verbatim user quotes, each tagged with:
+  - Source badge (`SourceBadge.tsx`) with platform brand colors
+  - Date and Star Rating
+  - Emotion tag (`Anxious`, `Frustrated`, `Confused`)
+  - User Segment tag (`First-timer`, `Student`, `Experienced`)
+  - Direct clickable external link to the live source
+- **Segment & Temporal Analytics:**
+  - Segment prevalence bar chart (by experience level)
+  - Temporal peak line chart (SIP lifecycle months 1, 3, 6, 12+)
+  - Emotion donut chart
 
-#### Page 4 — Ask the Engine (`app/ask/page.tsx`)
-- Text input: "Ask a question about SIP investor behavior"
-- Pre-loaded example queries:
-  - "Why do first-time investors pause SIPs in months 3–6?"
-  - "What do users check when their portfolio is red?"
-  - "How do social-media-influenced investors differ from self-researchers?"
-  - "What unmet needs do first-time SIP investors express?"
-- RAG pipeline returns cited answer with `[Source N]` inline citations (clickable to original quote)
+#### Page 4 — Ask the Engine / AI Copilot (`app/ask/page.tsx`)
+- **INDmoney AI Copilot Search Bar:**
+  - Rounded-2xl container with `#151A23` background and active focus ring `#3B82F6`
+  - AI sparkle glyph prefix with Royal Blue / Emerald gradient
+  - Pre-loaded prompt chips: `[Red Portfolio Panic]`, `[Mandate Expiry vs Returns Drops]`, `[Month 3-6 Churn]`, `[First-timer Unmet Needs]`
+- **RAG Citation Results:**
+  - Grounded answer (200–400 words) with inline `[Source N]` clickable citation badges
+  - Retrieved supporting evidence rendered in INDmoney QuoteCard accordion
 
 #### Page 5 — Segment View (`app/segments/page.tsx`)
-- Dropdown filters: Experience Level, Age Hint, Influence Source, SIP Tenure
-- On filter apply → themes re-scored and re-ranked for that segment
-- Side-by-side comparison mode: "First-timers vs. Experienced"
+- **Segment Toggles:** Dropdown & pill filters for Experience Level, Age Cohort, Influence Source, and SIP Tenure.
+- **Dynamic Re-Ranking:** Themes re-scored and re-ranked for the selected segment cohort.
+- **Side-by-Side Comparison:** Direct comparison mode (e.g. "First-timers vs. Experienced Investors").
 
 #### Page 6 — How It Works (`app/how-it-works/page.tsx`)
-- Architecture diagram (mermaid flowchart from architecture.md §2)
-- Step-by-step Stage 0→4 explanation
-- Data funnel visualization: raw → filtered → extracted → themes (volumes at each step)
-- Tooling list (models used, libraries used)
+- Architecture diagram and interactive data funnel visualization (raw → filtered → extracted → themes).
+- Stage-by-stage methodology and AI prompt transparency.
 
 #### Page 7 — Evidence Log (`app/evidence/page.tsx`)
-- Golden set of 20 items: human label vs. engine label side-by-side
-- Agreement metrics table (per-dimension accuracy vs. targets)
-- 2–3 documented corrections with explanation
+- Golden Set 20-item side-by-side verification table (Human Label vs. Engine Label).
+- Per-dimension accuracy benchmark cards vs. targets.
+- Documented AI corrections with root-cause explanations.
+
+---
 
 ### 4.3 RAG Pipeline (`app/api/query/route.ts`)
 
@@ -435,41 +472,52 @@ User Query
   → Embed query (text-embedding-3-small)
   → Vector search ChromaDB (top 15 similar extracted insights)
   → Build context from retrieved items (quotes + metadata)
-  → LLM Synthesis (Claude Sonnet) with RAG Synthesis prompt
+  → LLM Synthesis (Claude Sonnet / Groq) with RAG Synthesis prompt
   → Format answer with inline [Source N] citations
-  → Stream response to UI
+  → Return JSON response to UI
 ```
 
-**Pre-build step:** Embed all `extracted_insights.jsonl` entries and load into ChromaDB before deploying. Store in `data/chroma_db/` directory.
+**Pre-build step:** Embed all `extracted_insights.jsonl` entries into ChromaDB collection before deploying. Persisted in `data/chromadb/`.
+
+---
 
 ### 4.4 API Routes
 
 | Route | Purpose |
 |-------|---------|
-| `POST /api/query` | RAG query endpoint |
-| `GET /api/themes` | Return all themes (with optional filter params) |
-| `GET /api/themes/[id]` | Return single theme + supporting data points |
-| `GET /api/segments` | Return themes filtered/re-ranked by segment params |
+| `POST /api/query` | RAG semantic retrieval & synthesis endpoint |
+| `GET /api/themes` | Return all themes (with optional question/segment filter params) |
+| `GET /api/themes/[id]` | Return single theme + verbatim supporting evidence |
+| `GET /api/segments` | Return themes filtered and re-ranked by segment parameters |
 
-### 4.5 Key Components to Build
+---
 
-| Component | Used On |
-|-----------|---------|
-| `ThemeCard.tsx` | Home, Theme Explorer |
-| `QuoteCard.tsx` | Theme Drill-Down, Ask the Engine answers |
-| `OpportunityMatrix.tsx` | Theme Explorer |
-| `SegmentChart.tsx` | Segment View, Theme Drill-Down |
-| `EmotionHeatmap.tsx` | Home |
-| `SourceBadge.tsx` | All evidence panels |
+### 4.5 Component Blueprint Library
+
+| Component | INDmoney Blueprint & Role |
+|-----------|---------------------------|
+| `NetWorthHero.tsx` | Signature dark gradient Net Worth hero banner with tabular aggregate counter and delta pill |
+| `ThemeCard.tsx` | 16px radius surface card with Opportunity Score dial, 4-factor formula breakdown bar, and quote callout |
+| `QuoteCard.tsx` | Verbatim quote card with platform provenance badge, emotion pill, segment tag, and external link |
+| `SourceBadge.tsx` | Platform provenance badge (Play Store emerald, App Store blue, Reddit coral, YouTube red, TradingQ&A indigo) |
+| `FilterChips.tsx` | Full-rounded pill toggles with Royal Blue `#1A6BFF` active state |
+| `AskTheEngine.tsx` | INDmoney AI Copilot search input with active focus ring and pre-loaded prompt chips |
+| `OpportunityScoreBar.tsx` | Multi-segment formula breakdown progress bar (Frequency 30%, Severity 30%, Actionability 25%, Recency 15%) |
+| `EmotionHeatmap.tsx` | Heatmap visualization of investor emotional triggers |
+
+---
 
 ### 4.6 Phase 4 Exit Criteria
 
+- [ ] UI strictly complies with INDmoney Design Tokens (`#1A6BFF` Blue, `#00B386` Emerald, `#EB5B3C` Coral, `#0B0E14` Canvas, `#151A23` Surface, `#262F40` Border)
+- [ ] Mandatory `tabular-nums` applied to all numerical figures, counts, scores, and percentages
+- [ ] Dual-surface layout active (Net Worth Dark Hero banner + 16px modular cards)
+- [ ] Responsive grid matching 1280px max-width and mobile safe-area padding
 - [ ] All 7 pages render without errors
-- [ ] Theme data loads from real `themes.json` (not mocked)
-- [ ] RAG query returns cited answers with ≥3 source quotes
-- [ ] Segment filter changes theme rankings
-- [ ] Source links in QuoteCard open original source URL
-- [ ] Mobile-responsive layout (test on 375px viewport)
+- [ ] Theme data loads dynamically from real `themes.json`
+- [ ] RAG query returns cited answers with ≥3 verbatim source quotes
+- [ ] Segment filter dynamically re-scores and re-ranks themes
+- [ ] Source links in QuoteCard open verified original source URLs
 
 ---
 
