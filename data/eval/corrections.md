@@ -27,3 +27,4 @@
   - Correct Friction Point: `returns_display` / `educational_content`
   - Emotion: `anxious`
 - **Prompt Adjustment:** Clarified in prompt that portfolio drawdown complaints should map to returns expectation gap (`returns_display`) rather than software bugs (`app_performance`).
+

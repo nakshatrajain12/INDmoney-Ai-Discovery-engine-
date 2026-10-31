@@ -18,3 +18,4 @@ Format as JSON:
   "description": "...",
   "key_insight": "..."
 }
+

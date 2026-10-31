@@ -76,3 +76,4 @@ if __name__ == "__main__":
     mgr.add_documents(ids=[test_id], documents=[test_doc], metadatas=[test_meta])
     results = mgr.query("Why did the user cancel their investment?", n_results=1)
     print(f"[OK] Test Query Result: {results['documents'][0]}")
+

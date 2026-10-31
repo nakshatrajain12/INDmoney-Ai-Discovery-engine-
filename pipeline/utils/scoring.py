@@ -133,3 +133,4 @@ if __name__ == "__main__":
     print("[*] Testing Opportunity Score Calculator...")
     sample_score = calculate_opportunity_score(0.15, 0.8, 0.9, 0.7)
     print(f"Sample Opportunity Score: {sample_score} / 100")
+

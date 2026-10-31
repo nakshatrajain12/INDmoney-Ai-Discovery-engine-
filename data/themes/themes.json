@@ -1,1 +1,2509 @@
-[]
+[
+  {
+    "id": "T1",
+    "name": "Red Portfolio Panic",
+    "discovery_questions": [
+      "Q2",
+      "Q3",
+      "Q7"
+    ],
+    "description": "First-time investors panic when seeing minor negative returns (-2% to -5%) within the first 1-3 months. Lacking drawdown context or market cycle education, they pause or cancel active SIPs prematurely.",
+    "key_insight": "New investors equate paper losses with permanent capital loss because returns displays highlight red numbers without showing historical recovery timelines.",
+    "opportunity_score": 0.828,
+    "opportunity_score_100": 82.8,
+    "score_breakdown": {
+      "frequency": 1.0,
+      "frequency_corpus_pct": 0.2704,
+      "severity": 0.6667,
+      "actionability": 0.92,
+      "recency": 0.65,
+      "multiplicative_score": 0.3987,
+      "weights": {
+        "frequency": 0.3,
+        "severity": 0.3,
+        "actionability": 0.25,
+        "recency": 0.15
+      }
+    },
+    "volume_count": 647,
+    "volume_percentage": 27.04,
+    "top_emotion": "frustrated",
+    "emotion_distribution": {
+      "frustrated": 61.2,
+      "confident": 1.1,
+      "disappointed": 0.2,
+      "hopeful": 24.3,
+      "angry": 0.9,
+      "confused": 11.9,
+      "reassured": 0.3,
+      "anxious": 0.2
+    },
+    "action_distribution": {
+      "considering_stopping": 61.5,
+      "none_mentioned": 1.1,
+      "continued": 37.1,
+      "cancelled": 0.3
+    },
+    "segment_breakdown": {
+      "experience_level": {
+        "beginner": 631,
+        "unknown": 5,
+        "intermediate": 5,
+        "experienced": 6
+      },
+      "sip_tenure": {
+        "unknown": 644,
+        "beyond_12": 1,
+        "months_1_3": 1,
+        "months_3_6": 1
+      },
+      "influence_source": {
+        "unknown": 632,
+        "self_research": 13,
+        "peer": 1,
+        "social_media": 1
+      }
+    },
+    "suggested_interventions": [
+      "Drawdown Contextualizer: Show historical 1-yr and 3-yr recovery curves when portfolio is red.",
+      "Volatility Shield Mode: Hide daily rupee fluctuations for SIPs under 6 months old.",
+      "Proactive In-App Reassurance: Trigger encouraging educational nudges when market falls >2%."
+    ],
+    "representative_quotes": [
+      {
+        "id": "play_indmoney_25fdd235-e29f-4172-947b-8db40081e75b",
+        "quote": "error in the FO section due to which it was showing profit for my account due to which I exited the positions immediately",
+        "full_text": "Pathetic app, there was an error in the FO section due to which it was showing profit for my account due to which I exited the positions immediately and afterwards when it was rectified my account showed a loss of 80K and taxes are separate on this, the INDmoney team is now trying to play smart by providing the reimbursement for the average of the previous day and present day, whereas the whole thing has been caused by them due to being incompetent with their services.",
+        "source": "google_play",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-02-12",
+        "url": "https://play.google.com/store/apps/details?id=in.indwealth&reviewId=25fdd235-e29f-4172-947b-8db40081e75b",
+        "emotion": "angry",
+        "user_segment": "intermediate"
+      },
+      {
+        "id": "tradingqa_139335",
+        "quote": "Don’t panic. Hope you invested for long time. Everyone who started investing during last one year in mf",
+        "full_text": "Don’t panic. Hope you invested for long time. Everyone who started investing during last one year in mf whether SIP or lump sum is in loss due to the current fall in the market. Keep your calm, everything will be alright within year or one and half. If you have surplus amount you can add in insta...",
+        "source": "tradingqa",
+        "platform_app": "Zerodha/General SIP",
+        "rating": null,
+        "date": "2018-10-07",
+        "url": "https://tradingqna.com/t/47992",
+        "emotion": "reassured",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_14712323404",
+        "quote": "After buying stocks market goes down and after selling stock with the big loss again market goes high",
+        "full_text": "F/o. After buying stocks market goes down and after selling stock with the big loss again market goes high",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-10-25",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_14168847641",
+        "quote": "after recent updates, this tab has been removed. Now I don’t see a reason to continue using Ind Money",
+        "full_text": "Degraded App Features. Earlier I could access my entire portfolio of stocks, including external portfolio under All Brokers tab, after recent updates, this tab has been removed. Now I don’t see a reason to continue using Ind Money as other features are same as any other Brokers app.",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 5,
+        "date": "2026-06-10",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "disappointed",
+        "user_segment": "experienced"
+      },
+      {
+        "id": "appstore_indmoney_14619259436",
+        "quote": "Buggy App. The app initially was fantastic but now it is becoming a headache bugs everywhere:\n- erro",
+        "full_text": "Buggy App. The app initially was fantastic but now it is becoming a headache bugs everywhere:\n- error while paying bills\n- exceptions while making credit cards payments\nWorst is their customer care who is just interested in closing tickets, i have removed all the bills and credit cards, next would be garage which already started giving errors.\nI feel they are shutting shop soon.",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-10-02",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_14478722083",
+        "quote": "Incorrect mutual fund tracking. I have sold my MF holding a year ago, but still it’s added in my net",
+        "full_text": "Incorrect mutual fund tracking. I have sold my MF holding a year ago, but still it’s added in my networth and being tracked as my asset in this app. There no option to stop and disconnect the tracking either",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 2,
+        "date": "2026-08-27",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_14466309062",
+        "quote": "Disappointed with the UPI device restriction. I was genuinely surprised to see that INDmoney has dis",
+        "full_text": "Disappointed with the UPI device restriction. I was genuinely surprised to see that INDmoney has discontinued UPI functionality on iPhone 12 and below and requires an iPhone 13 or newer.\n\nMy iPhone 11 is still running a supported/current iOS version and works perfectly well with other UPI and financial apps. If this is a security decision, the requirement should ideally be based on the supported iOS/security version rather than an arbitrary iPhone model.\n\nOther platforms such as Groww continue to support UPI on iPhone 11. Because of this restriction, I am now considering moving my IPO and investment activities to another platform.\n\nUnfortunately, with this decision, INDmoney may have lost two customers — mine and my wife’s.\n\nI hope INDmoney reconsiders this policy and provides support for iPhone 11 rather than forcing customers to change their devices or platforms.",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-08-24",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_14574783880",
+        "quote": "Error\nKyc is not available for non individual users, We will update you once we are live. Your app i",
+        "full_text": "Error\nKyc is not available for non individual users, We will update you once we are live. Your app is saying this error when going for kyc verification ,and you are doing marketing…first solve the issue..not able to do KYC only, others thongs are so far…",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-09-20",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_14574494098",
+        "quote": "Portfolio Analytics Need Major Improvement. INDmoney’s investment tracking needs significant improve",
+        "full_text": "Portfolio Analytics Need Major Improvement. INDmoney’s investment tracking needs significant improvement. It does not display XIRR for investments held for less than one year, making it difficult to accurately evaluate short-term investment performance.\n\nMore importantly, there is no consolidated portfolio-level view showing metrics such as XIRR and total Gain/Loss across the entire portfolio, including both Stocks and Mutual Funds. Users should not have to analyze each investment category separately to understand their overall performance.\n\nA comprehensive portfolio dashboard with consolidated XIRR, absolute returns, total invested amount, current value, and overall Gain/Loss would make the app far more useful for tracking investments.",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-09-20",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_14559784933",
+        "quote": "App predictions inaccurate 100%. The predictions on app that claim momentum profits are extremely in",
+        "full_text": "App predictions inaccurate 100%. The predictions on app that claim momentum profits are extremely inaccurate. Just faced 100% loss on the same.",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-09-17",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_14540606358",
+        "quote": "Unable to add fund into IND Money App by using my IDFC FIRST Bank Savings Account.. Unable to add fu",
+        "full_text": "Unable to add fund into IND Money App by using my IDFC FIRST Bank Savings Account.. Unable to add fund into IND Money App by using my IDFC FIRST Bank Savings Account.\nSecond issue is After closing Digital Account with Federal Bank Powered by IND MONEY App still my Federal Bank Customer ID or CIF ID showing enable,\nPlease send email to Federal Bank and ask them to Disable my CIF id, I will Thankful to you.",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 2,
+        "date": "2026-09-12",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_14186399516",
+        "quote": "Money’s gone. I added money on 9th june and now its 15th and these guys stopped pocking up the call.",
+        "full_text": "Money’s gone. I added money on 9th june and now its 15th and these guys stopped pocking up the call. \nUse Vested instead",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-06-15",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_14308851701",
+        "quote": "Unacceptable Customer Service – Request for Immediate Human Intervention. I am writing to express my",
+        "full_text": "Unacceptable Customer Service – Request for Immediate Human Intervention. I am writing to express my deep dissatisfaction and anger regarding the current state of INDmoney’s customer support. Dealing with your platform has become a financial nightmare.You have completely replaced real customer service with useless, looping AI agents and automated bots that are entirely incapable of resolving actual user issues. It is completely unacceptable that a platform handling people's hard-earned money and investments makes it virtually impossible to speak with a human being.This total lack of support feels incredibly untrustworthy and borders on unethical business behavior. If a live support agent does not contact me immediately to resolve my account issues, I will be forced to liquidate my portfolio, close my account, and escalate this matter directly to SEBI SCORES.",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-07-15",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_14018662168",
+        "quote": "Regarding us dividends. The dividends are not being credited to my wallet . If I raise this issue to",
+        "full_text": "Regarding us dividends. The dividends are not being credited to my wallet . If I raise this issue to the customer care there is no proper response or solution being provided instead they are sending me a excel sheet of transactions and telling me that the dividend is credited but the dividend never got credited into my walllet",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-05-01",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_13985709028",
+        "quote": "Random UX changes making trading efficiency difficult. Its important for you app and UX teams to thi",
+        "full_text": "Random UX changes making trading efficiency difficult. Its important for you app and UX teams to think through changes , \n\n1- the ability to click on logo to get to charts taken away too many clicks and friction and time waste\n2- Instant exit for india stocks needs to to be a lot more faster from click to nse bse systems, not once i got anything close to what it showed\n3- cluttered india stocks experience , do a click analysis to see how you csn reduce clicks , more clicks is not more engagement, just more friction! \n\nbottom line its not s retail ecommerce app, stop making changes every now and then and do phased launches see the pulse before you disrupt everyone! \n\nits a decent app make it worse, just simplify it",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 4,
+        "date": "2026-04-22",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      }
+    ],
+    "rank": 1
+  },
+  {
+    "id": "T2",
+    "name": "Expectation vs. Reality Gap",
+    "discovery_questions": [
+      "Q1",
+      "Q3",
+      "Q9"
+    ],
+    "description": "Investors start SIPs expecting linear 15-20% annualized growth from Month 1, misled by compounding calculators. When returns stagnate after 3-6 months, disillusionment sets in.",
+    "key_insight": "The gap between compounding promises and early-tenure reality is the single largest mental drop-off driver in Months 3 to 6.",
+    "opportunity_score": 0.516,
+    "opportunity_score_100": 51.6,
+    "score_breakdown": {
+      "frequency": 0.0788,
+      "frequency_corpus_pct": 0.0213,
+      "severity": 0.5817,
+      "actionability": 0.88,
+      "recency": 0.65,
+      "multiplicative_score": 0.0262,
+      "weights": {
+        "frequency": 0.3,
+        "severity": 0.3,
+        "actionability": 0.25,
+        "recency": 0.15
+      }
+    },
+    "volume_count": 51,
+    "volume_percentage": 2.13,
+    "top_emotion": "confused",
+    "emotion_distribution": {
+      "confident": 17.6,
+      "frustrated": 9.8,
+      "hopeful": 19.6,
+      "disappointed": 9.8,
+      "confused": 35.3,
+      "reassured": 5.9,
+      "angry": 2.0
+    },
+    "action_distribution": {
+      "continued": 68.6,
+      "none_mentioned": 17.6,
+      "considering_stopping": 13.7
+    },
+    "segment_breakdown": {
+      "experience_level": {
+        "unknown": 7,
+        "beginner": 32,
+        "first_timer": 1,
+        "experienced": 7,
+        "intermediate": 4
+      },
+      "sip_tenure": {
+        "unknown": 45,
+        "months_1_3": 1,
+        "beyond_12": 2,
+        "pre_start": 2,
+        "months_3_6": 1
+      },
+      "influence_source": {
+        "self_research": 19,
+        "unknown": 29,
+        "peer": 2,
+        "social_media": 1
+      }
+    },
+    "suggested_interventions": [
+      "Realistic Timeline Simulator: Calibrate upfront return expectations with realistic probability bands.",
+      "Early Milestone Badges: Celebrate discipline (e.g., '3rd SIP installed!') rather than market return.",
+      "SIP vs FD Realistic Comparison: Show visual proof that SIP benefits appear post year 3."
+    ],
+    "representative_quotes": [
+      {
+        "id": "appstore_indmoney_14289453440",
+        "quote": "INDmoney. It is a fantabulous Demat Mobile  application. Very Easy to operate. Very efficacious and prompt in responses.",
+        "full_text": "INDmoney. It is a fantabulous Demat Mobile  application. Very Easy to operate. Very efficacious and prompt in responses.",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 5,
+        "date": "2026-07-11",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "confident",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_14322262242",
+        "quote": "One of the bests App for Trading. Service is top notch, user interface is of best quality and super comfortable",
+        "full_text": "One of the bests App for Trading. This is one of the best apps I found so far. Service is top notch, user interface is of best quality and super comfortable, I would highly recommend this applicaation and service prvider",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 5,
+        "date": "2026-07-19",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "confident",
+        "user_segment": "unknown"
+      },
+      {
+        "id": "appstore_indmoney_14442967206",
+        "quote": "Best for USA market from Ind. It’s best app from India to buy USA stocks and good for long term holdings",
+        "full_text": "Best for USA market from Ind. It’s best app from India to buy USA stocks and good for long term holdings",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 5,
+        "date": "2026-08-18",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "confident",
+        "user_segment": "unknown"
+      },
+      {
+        "id": "appstore_indmoney_14405637228",
+        "quote": "Extremely Poor NRI KYC experience. Latest Update: Its been 6 months to complete NRI KYC, even when a",
+        "full_text": "Extremely Poor NRI KYC experience. Latest Update: Its been 6 months to complete NRI KYC, even when all documents are provided, NO DIRECT mutual funds for NRI\n\nUpdate -August 2026\nMy NRI friends, beware you are not allowed to invest into DIRECT mutual funds from this platform\n\n———\n\nThe app may look polished, but the onboarding experience for NRIs is shockingly bad.\nI have been stuck for over a month dealing with support tickets because their KYC team seems to have little to no understanding of the NRI KYC process. My Indian passport was renewed at an Indian Embassy abroad and clearly carries my foreign address, which is completely valid and standard for NRIs. Despite this, the document was repeatedly rejected without any proper explanation.\nInstead of helping resolve the issue, support staff kept giving random excuses just to close tickets, with no real guidance or escalation. There was no sense of ownership or competence — interactions felt more like dealing with an outdated government office than a modern digital platform.",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-08-09",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_14317476867",
+        "quote": "Superstar App for Finance. I have been avid user of INDMoney investing in MFs,FDs and US trading and",
+        "full_text": "Superstar App for Finance. I have been avid user of INDMoney investing in MFs,FDs and US trading and already app was 5 star for me but this year they even had the option to file ITR completely free this is insane and surely would like to give even more than 5 stars now to the app.",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 5,
+        "date": "2026-07-18",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "hopeful",
+        "user_segment": "experienced"
+      },
+      {
+        "id": "play_indmoney_cc893a47-aef5-4657-8dca-b5e19805ba53",
+        "quote": "Expected at a glance information of MF investment. invested amount, current value, 1day change and r",
+        "full_text": "Expected at a glance information of MF investment. invested amount, current value, 1day change and returns. please update for above information for better decision making.",
+        "source": "google_play",
+        "platform_app": "INDmoney",
+        "rating": 3,
+        "date": "2026-09-30",
+        "url": "https://play.google.com/store/apps/details?id=in.indwealth&reviewId=cc893a47-aef5-4657-8dca-b5e19805ba53",
+        "emotion": "confused",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "play_indmoney_dec90cd3-278d-47d9-951b-6d7845e2cef3",
+        "quote": "I love🌿 the app, especially after this improvement! Before, the app was soo much slower, and syncing",
+        "full_text": "I love🌿 the app, especially after this improvement! Before, the app was soo much slower, and syncing happened pretty much every time you opened it, started, stopped, or edited an entry. It was a real pain because the app literally stopped responding until syncing was done. Stopping an entry could also take several seconds, and those extra seconds were added too. But now download faster and more stable. The app is soo⚡ much faster download, and the difference is easy to notice in everyday use.",
+        "source": "google_play",
+        "platform_app": "INDmoney",
+        "rating": 4,
+        "date": "2026-08-19",
+        "url": "https://play.google.com/store/apps/details?id=in.indwealth&reviewId=dec90cd3-278d-47d9-951b-6d7845e2cef3",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "play_indmoney_dc2c61a6-e2e5-4a0b-88fe-19921839221b",
+        "quote": "using the app last 6 months , the app performance is overall average, like other normal apps because",
+        "full_text": "using the app last 6 months , the app performance is overall average, like other normal apps because ind money app looks not really serious for their users 🤬, because the app has no any advanced tool like zerodha and dhan have. app havs totally basic tools like other normal apps , 🙏🙏They should to understand that the main reason why their app will grow, is lesser brokrage for F&O than other platforms 👇👇. as a serious trader they should to add in f&o section \"stocks future & oi buildup\"",
+        "source": "google_play",
+        "platform_app": "INDmoney",
+        "rating": 3,
+        "date": "2026-04-15",
+        "url": "https://play.google.com/store/apps/details?id=in.indwealth&reviewId=dc2c61a6-e2e5-4a0b-88fe-19921839221b",
+        "emotion": "confused",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "play_indmoney_6a6bcd92-7620-4929-bbae-fb17b77e4d16",
+        "quote": "App watchlist is not syncing with website watchlist as I have only 4 watchlist in app but in website",
+        "full_text": "App watchlist is not syncing with website watchlist as I have only 4 watchlist in app but in website it is showing 6 watchlist. And try to add some features in watchlist like position changing from 3rd position I want a particular watchlist in 1st position. Developers please fix the issue. And also please give option to cancel or delete a particular SIP if a investor is not interest to invest in that particular stocks or ETFs. As I cannot delete US SIP ETFs.",
+        "source": "google_play",
+        "platform_app": "INDmoney",
+        "rating": 4,
+        "date": "2026-02-15",
+        "url": "https://play.google.com/store/apps/details?id=in.indwealth&reviewId=6a6bcd92-7620-4929-bbae-fb17b77e4d16",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "play_indmoney_00f1be6c-9ec5-4467-b427-0a283aefefc2",
+        "quote": "worst app and is difficult to acess and slow process, in share market will need micro seconds acess,",
+        "full_text": "worst app and is difficult to acess and slow process, in share market will need micro seconds acess, but this app wats minutes, 0* rating indmoney 5* rating GROWW",
+        "source": "google_play",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-02-01",
+        "url": "https://play.google.com/store/apps/details?id=in.indwealth&reviewId=00f1be6c-9ec5-4467-b427-0a283aefefc2",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "play_indmoney_90385859-6eed-4d79-8f8d-196754ca0028",
+        "quote": "Excellent app. But one problem. I wanted to start Nifty 50 in Mutual Funds but I bought Nifty 50 Etf",
+        "full_text": "Excellent app. But one problem. I wanted to start Nifty 50 in Mutual Funds but I bought Nifty 50 Etf by mistake. I want to stop it but there is only pause option.",
+        "source": "google_play",
+        "platform_app": "INDmoney",
+        "rating": 5,
+        "date": "2026-01-23",
+        "url": "https://play.google.com/store/apps/details?id=in.indwealth&reviewId=90385859-6eed-4d79-8f8d-196754ca0028",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "play_zerodha coin_9238b858-7a18-4b43-be82-a7af97368e13",
+        "quote": "Everything works as expected but I would love to give it 5 starts if there was option to identify mu",
+        "full_text": "Everything works as expected but I would love to give it 5 starts if there was option to identify mutual funds ready to tax harvest like other apps offer",
+        "source": "google_play",
+        "platform_app": "Zerodha Coin",
+        "rating": 3,
+        "date": "2025-06-21",
+        "url": "https://play.google.com/store/apps/details?id=com.zerodha.coin&reviewId=9238b858-7a18-4b43-be82-a7af97368e13",
+        "emotion": "confused",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "play_zerodha coin_09410db1-bf72-496a-81ec-f69254000c3f",
+        "quote": "In the coin app, unit allotment is super super slow, even after getting confirmation from AMC it sti",
+        "full_text": "In the coin app, unit allotment is super super slow, even after getting confirmation from AMC it still takes more than multiple days to show that on the app. Ui is good but lacks many major features, such as details about the fund or peer to peer comparison and many more. Other brokerage apps provide more useful features than zerodha kite and coin. Very Very bad experience.",
+        "source": "google_play",
+        "platform_app": "Zerodha Coin",
+        "rating": 1,
+        "date": "2025-06-15",
+        "url": "https://play.google.com/store/apps/details?id=com.zerodha.coin&reviewId=09410db1-bf72-496a-81ec-f69254000c3f",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "tradingqa_527576",
+        "quote": "Many younger investors today seem to prefer flexibility over long-term fixed commitments. Traditiona",
+        "full_text": "Many younger investors today seem to prefer flexibility over long-term fixed commitments. Traditional SIPs are still popular, but newer investors often look for options where they can pause, increase, decrease, or switch investments based on changing income, goals, or market conditions. For salar...",
+        "source": "tradingqa",
+        "platform_app": "Zerodha/General SIP",
+        "rating": null,
+        "date": "2026-05-08",
+        "url": "https://tradingqna.com/t/193870",
+        "emotion": "confused",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "tradingqa_319174",
+        "quote": "Just curious about the investor sentiment Full invested Fully in cash Some cash, some stocks/MFs Pau",
+        "full_text": "Just curious about the investor sentiment Full invested Fully in cash Some cash, some stocks/MFs Paused SIPs Continuing my SIPs 0 voters",
+        "source": "tradingqa",
+        "platform_app": "Zerodha/General SIP",
+        "rating": null,
+        "date": "2021-08-06",
+        "url": "https://tradingqna.com/t/116199",
+        "emotion": "confused",
+        "user_segment": "beginner"
+      }
+    ],
+    "rank": 10
+  },
+  {
+    "id": "T3",
+    "name": "Information Desert",
+    "discovery_questions": [
+      "Q4",
+      "Q5",
+      "Q6",
+      "Q9"
+    ],
+    "description": "Platforms display raw financial metrics (XIRR, CAGR, NAV, Folio) without actionable interpretation. Users struggle to understand whether their fund is actually performing well.",
+    "key_insight": "Data without interpretation breeds insecurity: showing a bare -4.2% XIRR without peer benchmark leaves investors stranded in confusion.",
+    "opportunity_score": 0.767,
+    "opportunity_score_100": 76.7,
+    "score_breakdown": {
+      "frequency": 0.7774,
+      "frequency_corpus_pct": 0.2102,
+      "severity": 0.6627,
+      "actionability": 0.95,
+      "recency": 0.65,
+      "multiplicative_score": 0.3181,
+      "weights": {
+        "frequency": 0.3,
+        "severity": 0.3,
+        "actionability": 0.25,
+        "recency": 0.15
+      }
+    },
+    "volume_count": 503,
+    "volume_percentage": 21.02,
+    "top_emotion": "hopeful",
+    "emotion_distribution": {
+      "hopeful": 44.1,
+      "frustrated": 20.1,
+      "disappointed": 0.2,
+      "confused": 33.0,
+      "confident": 1.2,
+      "reassured": 0.4,
+      "angry": 0.2,
+      "indifferent": 0.8
+    },
+    "action_distribution": {
+      "continued": 74.6,
+      "none_mentioned": 5.8,
+      "considering_stopping": 18.7,
+      "searched_online": 0.4,
+      "contacted_support": 0.4,
+      "switched": 0.2
+    },
+    "segment_breakdown": {
+      "experience_level": {
+        "beginner": 473,
+        "intermediate": 22,
+        "unknown": 2,
+        "experienced": 6
+      },
+      "sip_tenure": {
+        "unknown": 496,
+        "beyond_12": 7
+      },
+      "influence_source": {
+        "unknown": 468,
+        "self_research": 34,
+        "peer": 1
+      }
+    },
+    "suggested_interventions": [
+      "Plain-English Performance Summary: Translate complex XIRR into clear 'Beat Inflation by 2%' status.",
+      "Interactive Return Tooltips: 1-tap explanations of how XIRR differs from absolute return.",
+      "Category Benchmark Comparison: Compare fund return against Nifty 50 and category median."
+    ],
+    "representative_quotes": [
+      {
+        "id": "play_indmoney_c93566ed-c383-4a91-bea7-0deb4f4e10d8",
+        "quote": "missing is consolidated Mutual Funds transactions to get an easy & quick view of all SIPs, lump sum done so far in one window",
+        "full_text": "Best App I came across. UI is good and easy to navigate logically. The only thing missing is consolidated Mutual Funds transactions to get an easy & quick view of all SIPs, lump sum done so far in one window.",
+        "source": "google_play",
+        "platform_app": "INDmoney",
+        "rating": 5,
+        "date": "2026-10-07",
+        "url": "https://play.google.com/store/apps/details?id=in.indwealth&reviewId=c93566ed-c383-4a91-bea7-0deb4f4e10d8",
+        "emotion": "reassured",
+        "user_segment": "intermediate"
+      },
+      {
+        "id": "play_indmoney_fd018fbb-f1d6-4d13-9d0b-f51d68c29b9e",
+        "quote": "Can't see XIRR against individual US STOCKS, it only shows the XIRR against total stock value but not against each US STOCK.",
+        "full_text": "Smooth and fast UI. 2 suggestions: 1. Can't see XIRR against individual US STOCKS, it only shows the XIRR against total stock value but not against each US STOCK. Kindly add the xirr details against INDIVIDUAL US STOCKS too. 2. Provide an 'Add to cart' option for mutual funds purchase, users can add the mutual funds to cart and can make a purchase as a whole.",
+        "source": "google_play",
+        "platform_app": "INDmoney",
+        "rating": 2,
+        "date": "2026-10-02",
+        "url": "https://play.google.com/store/apps/details?id=in.indwealth&reviewId=fd018fbb-f1d6-4d13-9d0b-f51d68c29b9e",
+        "emotion": "confident",
+        "user_segment": "experienced"
+      },
+      {
+        "id": "play_zerodha coin_0c13453b-10d0-479c-8f75-e6c86c6e12d2",
+        "quote": "add goal creation feature as well, it's literally only grouping schemes and naming them under a certain investment goal",
+        "full_text": "could you please add goal creation feature as well, it's literally only grouping schemes and naming them under a certain investment goal (child education for example) and then showing the overall performance of the schemes under this goal. all of this data is already available, just should be rollable under a goal, it's really just a UI enhancement. Tag feature doesn't work for mutual fund holdings, it's working only for direct stock holdings feature should be in the coin app, not console",
+        "source": "google_play",
+        "platform_app": "Zerodha Coin",
+        "rating": 2,
+        "date": "2025-11-26",
+        "url": "https://play.google.com/store/apps/details?id=com.zerodha.coin&reviewId=0c13453b-10d0-479c-8f75-e6c86c6e12d2",
+        "emotion": "hopeful",
+        "user_segment": "intermediate"
+      },
+      {
+        "id": "appstore_indmoney_13481211789",
+        "quote": "market cap allocation calculation is wrong and totally different from Market cap allocation in Mutal fund section",
+        "full_text": "Wrong Market cap Allocation Data. In networth section market cap allocation calculation is wrong and totally different from Market cap allocation in Mutal fund section.\nNote:-I only invested in equity mutual fund.",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2025-12-06",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "confused",
+        "user_segment": "intermediate"
+      },
+      {
+        "id": "play_indmoney_93b1dfbd-083d-4d64-a149-16871a64e867",
+        "quote": "percentage of allocation and total amount of the selected funds are missing. it was a very helpful tool earlier.",
+        "full_text": "got the worst recent update. after applying a filter on the mutual funds section, percentage of allocation and total amount of the selected funds are missing. it was a very helpful tool earlier.",
+        "source": "google_play",
+        "platform_app": "INDmoney",
+        "rating": 3,
+        "date": "2026-10-02",
+        "url": "https://play.google.com/store/apps/details?id=in.indwealth&reviewId=93b1dfbd-083d-4d64-a149-16871a64e867",
+        "emotion": "frustrated",
+        "user_segment": "intermediate"
+      },
+      {
+        "id": "play_zerodha coin_e6414fa7-4adb-4624-a777-714c930cee7e",
+        "quote": "NFO orders are not available under MY orders until they are fulfilled. That causes confusion and discrepancy.",
+        "full_text": "NFO orders are not available under MY orders until they are fulfilled. That causes confusion and discrepancy. Had to check each email from Coin to identify the missing orders.",
+        "source": "google_play",
+        "platform_app": "Zerodha Coin",
+        "rating": 2,
+        "date": "2024-06-01",
+        "url": "https://play.google.com/store/apps/details?id=com.zerodha.coin&reviewId=e6414fa7-4adb-4624-a777-714c930cee7e",
+        "emotion": "confused",
+        "user_segment": "intermediate"
+      },
+      {
+        "id": "play_indmoney_fc391f5e-7899-4477-a97a-58cf147ccbcf",
+        "quote": "All investment in one place and also UPI Payments option also available along with the tracking facilities.",
+        "full_text": "Good Experience for using this app All investment in one place and also UPI Payments option also available along with the tracking facilities. Absolutely Good work Indmoney Team",
+        "source": "google_play",
+        "platform_app": "INDmoney",
+        "rating": 5,
+        "date": "2025-08-26",
+        "url": "https://play.google.com/store/apps/details?id=in.indwealth&reviewId=fc391f5e-7899-4477-a97a-58cf147ccbcf",
+        "emotion": "reassured",
+        "user_segment": "unknown"
+      },
+      {
+        "id": "play_indmoney_3f7bd9e9-680a-47e8-b6ea-6a41dc29a918",
+        "quote": "Requesting you to bring Indicators like Jenson's Alpha, Sortino Ratio etc. to evaluate the portfolio.",
+        "full_text": "One day changes not showing. Requesting you to bring Indicators like Jenson's Alpha, Sortino Ratio etc. to evaluate the portfolio.",
+        "source": "google_play",
+        "platform_app": "INDmoney",
+        "rating": 4,
+        "date": "2026-05-06",
+        "url": "https://play.google.com/store/apps/details?id=in.indwealth&reviewId=3f7bd9e9-680a-47e8-b6ea-6a41dc29a918",
+        "emotion": "confused",
+        "user_segment": "experienced"
+      },
+      {
+        "id": "appstore_indmoney_14606446875",
+        "quote": "My Funds page UI is messed up. Earlier it was showing total return on bottom right and 1D return bes",
+        "full_text": "My Funds page UI is messed up. Earlier it was showing total return on bottom right and 1D return beside fund name. Which was good but I don’t know from where you got the idea of this new UI where at bottom right shows 1D return. First it looks bad design wise as it is wrapping the text second it is confusing. Knowing total return upfront seems good along with 1D return besides fund name. Please change back.\nAlso if possible add a persistent filter. So if we want we can set the filter as per our need.",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 4,
+        "date": "2026-09-29",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_14530856724",
+        "quote": "The recent decision to restrict the 1D Change feature to shares held through INDmoney is a bad move.",
+        "full_text": "Disappointing change to 1D Change. The recent decision to restrict the 1D Change feature to shares held through INDmoney is a bad move.\n\nOne of the key advantages of INDmoney was being able to track your overall portfolio across different brokers. If I have investments with multiple brokers, I should still be able to use INDmoney to see the combined 1D movement of my holdings.\n\nRestricting this feature to INDmoney holdings makes the app considerably less useful as a portfolio tracking tool and feels more like an attempt to encourage users to move their investments onto the platform.\n\nSome users may have chosen INDmoney specifically because it worked across brokers. Changes like this can fundamentally change how those users use the app.\n\nPlease reconsider and bring back cross-broker 1D Change tracking.",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 2,
+        "date": "2026-09-09",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "disappointed",
+        "user_segment": "intermediate"
+      },
+      {
+        "id": "appstore_indmoney_14459663380",
+        "quote": "Tracking networth linked to other Pan number of same family. Overall good but unable to track mutual",
+        "full_text": "Tracking networth linked to other Pan number of same family. Overall good but unable to track mutual funds or shares liked to my number and registered on my mother’s pan card. Need to have that feature too",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 4,
+        "date": "2026-08-22",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_14580132577",
+        "quote": "Dedicated dashboard for SIP and Stock each!. I’ve been loving this app so far, but I really miss hav",
+        "full_text": "Dedicated dashboard for SIP and Stock each!. I’ve been loving this app so far, but I really miss having a dedicated SIP dashboard. I don't recall the exact layout before, but I was expecting this area to improve rather than become so hard to find. Right now, checking basic details like my total SIP amount, individual investments, and P&L requires navigating deep into each separate SIP page, which is frustrating. Having a central dashboard to see all SIP investments and totals at a glance is such a fundamental feature, could you please implement this as soon as possible?",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 3,
+        "date": "2026-09-22",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "confused",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_14533178339",
+        "quote": "1 day change feature. The 1 day change feature should include stock price changes from other brokers",
+        "full_text": "1 day change feature. The 1 day change feature should include stock price changes from other brokers as well, this was there earlier but now it only shows stocks from indmoney",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 4,
+        "date": "2026-09-10",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_14373214919",
+        "quote": "The best app!!!!!. I’ve had a great experience using the INDmoney app. It’s incredibly convenient an",
+        "full_text": "The best app!!!!!. I’ve had a great experience using the INDmoney app. It’s incredibly convenient and user-friendly, with everything I need available right at my fingertips. The interface is intuitive, making it easy to manage my investments and finances seamlessly.\n\nWhat stands out the most is their customer support. The team is quick to respond, professional, and genuinely helpful. Every issue I’ve had has been resolved promptly and efficiently, making the overall experience even better.\n\nOverall, I highly recommend INDmoney to anyone looking for a reliable, well-designed financial app with excellent customer service.",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 5,
+        "date": "2026-07-31",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_14366526292",
+        "quote": "US Stocks Portfolio. ⭐⭐⭐⭐⭐ Great platform for investing in US stocks. The app is easy to use, offers",
+        "full_text": "US Stocks Portfolio. ⭐⭐⭐⭐⭐ Great platform for investing in US stocks. The app is easy to use, offers smooth transactions, and provides excellent portfolio tracking. It makes global investing simple and convenient while helping diversify beyond Indian markets. A reliable choice for long-term investors. Looking forward to even more advanced research and portfolio analytics.",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 5,
+        "date": "2026-07-30",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      }
+    ],
+    "rank": 2
+  },
+  {
+    "id": "T4",
+    "name": "Mandate & Payment Friction",
+    "discovery_questions": [
+      "Q3",
+      "Q5"
+    ],
+    "description": "Technical failures during auto-debit, bank mandate authorization delays, bounced SIP charges, and lag between bank debit and mutual fund unit allocation erode trust.",
+    "key_insight": "Payment failures create acute anxiety because investors fear both bank bounce penalties and missing lower NAV purchase windows.",
+    "opportunity_score": 0.613,
+    "opportunity_score_100": 61.3,
+    "score_breakdown": {
+      "frequency": 0.2442,
+      "frequency_corpus_pct": 0.066,
+      "severity": 0.7236,
+      "actionability": 0.9,
+      "recency": 0.65,
+      "multiplicative_score": 0.1034,
+      "weights": {
+        "frequency": 0.3,
+        "severity": 0.3,
+        "actionability": 0.25,
+        "recency": 0.15
+      }
+    },
+    "volume_count": 158,
+    "volume_percentage": 6.6,
+    "top_emotion": "frustrated",
+    "emotion_distribution": {
+      "frustrated": 62.7,
+      "confident": 2.5,
+      "angry": 7.6,
+      "disappointed": 3.2,
+      "confused": 10.8,
+      "hopeful": 7.6,
+      "reassured": 3.8,
+      "anxious": 1.9
+    },
+    "action_distribution": {
+      "cancelled": 1.9,
+      "continued": 16.5,
+      "considering_stopping": 53.8,
+      "paused": 1.3,
+      "switched": 1.3,
+      "none_mentioned": 19.6,
+      "contacted_support": 4.4,
+      "searched_online": 1.3
+    },
+    "segment_breakdown": {
+      "experience_level": {
+        "experienced": 7,
+        "intermediate": 16,
+        "beginner": 118,
+        "unknown": 15,
+        "first_timer": 2
+      },
+      "sip_tenure": {
+        "unknown": 146,
+        "pre_start": 5,
+        "beyond_12": 4,
+        "month_1": 3
+      },
+      "influence_source": {
+        "unknown": 113,
+        "self_research": 40,
+        "family": 1,
+        "peer": 3,
+        "social_media": 1
+      }
+    },
+    "suggested_interventions": [
+      "Pre-Debit WhatsApp Alert: 24h advance alert with balance checker before auto-debit triggers.",
+      "Smart Mandate Health Check: Continuous monitoring of bank e-mandate validity with 1-click renewal.",
+      "Instant UPI Autopay Fallback: Seamless secondary payment fallback when primary net banking delays."
+    ],
+    "representative_quotes": [
+      {
+        "id": "appstore_indmoney_14211621982",
+        "quote": "Brokerage charges. You trade just to pay the brokerage and whole profit they just take it as brokerage be careful while choosing the broker",
+        "full_text": "Brokerage charges. You trade just to pay the brokerage and whole profit they just take it as brokerage be careful while choosing the broker",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-06-21",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "frustrated",
+        "user_segment": "intermediate"
+      },
+      {
+        "id": "play_zerodha coin_52cf5617-d3c8-4bd4-82d4-e8791c04d4bd",
+        "quote": "Add an option like Kite's funds to pay SIPs or buy direct from Coin wallet (avoid mandatory bank mandates, which are risky and slow)",
+        "full_text": "Coin is excellent for mutual fund investments—no ads, no glitches, fully reliable. Two simple suggestions: 1) Wallet/Funds Integration for SIPs: Add an option like Kite's funds to pay SIPs or buy direct from Coin wallet (avoid mandatory bank mandates, which are risky and slow). Users could top up wallet anytime for seamless execution on SIP dates. 2) Genuine Fund Ratings & Analysis: Provide reliable, independent ratings/reports—we trust Zerodha's judgment completely. [USER].",
+        "source": "google_play",
+        "platform_app": "Zerodha Coin",
+        "rating": 5,
+        "date": "2025-12-02",
+        "url": "https://play.google.com/store/apps/details?id=com.zerodha.coin&reviewId=52cf5617-d3c8-4bd4-82d4-e8791c04d4bd",
+        "emotion": "confident",
+        "user_segment": "intermediate"
+      },
+      {
+        "id": "play_indmoney_f7a8a58b-c350-48f7-949b-2077c89e266e",
+        "quote": "the app stopped working suddenly showing device is rooted. while all my banking and other financial apps are working fine",
+        "full_text": "the app stopped working suddenly showing device is rooted. while all my banking and other financial apps are working fine. seems it's a problem with indmoney alone",
+        "source": "google_play",
+        "platform_app": "INDmoney",
+        "rating": 3,
+        "date": "2025-07-28",
+        "url": "https://play.google.com/store/apps/details?id=in.indwealth&reviewId=f7a8a58b-c350-48f7-949b-2077c89e266e",
+        "emotion": "frustrated",
+        "user_segment": "unknown"
+      },
+      {
+        "id": "tradingqa_302034",
+        "quote": "Is it not possible to give an option for equity SIP to don’t execute on holiday as well as on Saturday and Monday",
+        "full_text": "Hi Nithinji, Is it not possible to give an option for equity SIP to don’t execute on holiday as well as on Saturday and Monday instead of keep going to deactivate the SIPs ?? Presently what’s happening that minimum 3 SIPs are executing on same day and same time for example for Saturday, Sunday an...",
+        "source": "tradingqa",
+        "platform_app": "Zerodha/General SIP",
+        "rating": null,
+        "date": "2021-05-18",
+        "url": "https://tradingqna.com/t/109320",
+        "emotion": "frustrated",
+        "user_segment": "intermediate"
+      },
+      {
+        "id": "play_indmoney_4c8d8c92-a9e6-4af3-abe5-efefb3291387",
+        "quote": "What I did was I unistalled and reinstalled the app and after reinstalling, I cleared cache and data as well.",
+        "full_text": "UPDATE: Working fine now. What I did was I unistalled and reinstalled the app and after reinstalling, I cleared cache and data as well. Thereafter it is working fine.",
+        "source": "google_play",
+        "platform_app": "INDmoney",
+        "rating": 5,
+        "date": "2025-07-28",
+        "url": "https://play.google.com/store/apps/details?id=in.indwealth&reviewId=4c8d8c92-a9e6-4af3-abe5-efefb3291387",
+        "emotion": "reassured",
+        "user_segment": "unknown"
+      },
+      {
+        "id": "play_indmoney_8fd80752-e880-48c1-b352-86b0ffc19ec3",
+        "quote": "syncing could interrupt almost every action, from opening the app to starting, stopping, or editing an entry",
+        "full_text": "The latest update feels like a breath of fresh air🪻! I love the app, and the app is soo🛴 much faster download. Before, syncing could interrupt almost every action, from opening the app to starting, stopping, or editing an entry. It was a real pain because the app literally stopped responding until syncing finished. Even stopping an entry could take several seconds, and those extra seconds are added too the entry. But now download faster and more stable, so everything feels much smoother.",
+        "source": "google_play",
+        "platform_app": "INDmoney",
+        "rating": 5,
+        "date": "2026-08-27",
+        "url": "https://play.google.com/store/apps/details?id=in.indwealth&reviewId=8fd80752-e880-48c1-b352-86b0ffc19ec3",
+        "emotion": "reassured",
+        "user_segment": "intermediate"
+      },
+      {
+        "id": "appstore_indmoney_14284598439",
+        "quote": "Please don’t refer anyone. I wasn’t informed before they stop the Mini save pots which was really helpful",
+        "full_text": "Please don’t refer anyone. I wasn’t informed before they stop the Mini save pots which was really helpful \n\nIn this case, I would prefer to move another platform",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-07-09",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "play_zerodha coin_b4363bad-eced-406a-b12a-681df117eacb",
+        "quote": "For every mutual fund order placed before 2pm via UPI, still the NAV of next day gets alloted everytime.",
+        "full_text": "Worst app ever. For every mutual fund order placed before 2pm via UPI, still the NAV of next day gets alloted everytime. What is the point of investing via this stupid app. Switching to something stable.",
+        "source": "google_play",
+        "platform_app": "Zerodha Coin",
+        "rating": 1,
+        "date": "2024-06-06",
+        "url": "https://play.google.com/store/apps/details?id=com.zerodha.coin&reviewId=b4363bad-eced-406a-b12a-681df117eacb",
+        "emotion": "angry",
+        "user_segment": "intermediate"
+      },
+      {
+        "id": "play_indmoney_230035c6-c4b2-43c5-875a-6c25f51b636c",
+        "quote": "Provide investment services through debit cards, RBI listed wallets, prepaid cards, credit cards etc.",
+        "full_text": "KINDLY read carefully - Feedback .......... Sir, please bring your short UPI ID, + implement next generation technology and AI tools. Employ world-class professionals.🙏Provide investment services through debit cards, RBI listed wallets, prepaid cards, credit cards etc.",
+        "source": "google_play",
+        "platform_app": "INDmoney",
+        "rating": 2,
+        "date": "2025-10-13",
+        "url": "https://play.google.com/store/apps/details?id=in.indwealth&reviewId=230035c6-c4b2-43c5-875a-6c25f51b636c",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_14696026677",
+        "quote": "Please don’t use this app for trading.. Worst withdrawal experience! Money stuck for months.\n\"I requ",
+        "full_text": "Please don’t use this app for trading.. Worst withdrawal experience! Money stuck for months.\n\"I requested a withdrawal from my US Stocks account to my Indian bank account via INDmoney, and it has been months with no credit. Customer support is completely unresponsive, providing only standard template replies without resolving the core issue. Such a pathetic service for cross-border remittances. Strongly advising users to think twice before investing in US stocks through INDmoney if you value liquidity.\"",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-10-21",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "frustrated",
+        "user_segment": "experienced"
+      },
+      {
+        "id": "appstore_indmoney_14403148906",
+        "quote": "Money Lost while transferring to US - Very Disappointing. I am extremely disappointed with the inter",
+        "full_text": "Money Lost while transferring to US - Very Disappointing. I am extremely disappointed with the international money transfer service. I transferred money from my HDFC account in India to US bank through INDMoney. The amount was debited from my India account, but it was never credited to US account. \n\nI raised a ticket in INDMoney support, but no resolution. Very Disappointed, don’t know where is my Money.\n\nBe careful while using this app.",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-08-08",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_14385660985",
+        "quote": "EMI Auto debit issue. I already have the total EMI amount in my IDFC bank it’s mention auto debit bu",
+        "full_text": "EMI Auto debit issue. I already have the total EMI amount in my IDFC bank it’s mention auto debit but it was not debited at the EMI date then the bounce charge was added and foreclosure also blocked if you have a at least 1 day over dude I think this app is suspicious to use so in my experience please don’t get the loan in this app. Overdue was happened but not my fault it’s a app fault. If I close my loans I will not use this app anymore. I got the loan from credit saison india.",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-08-03",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_14177402568",
+        "quote": "Risky to use for US investments. I have tried to add money into us stocks wallet and the money got d",
+        "full_text": "Risky to use for US investments. I have tried to add money into us stocks wallet and the money got debited from bank but it is not getting deposited in INDmoney wallet.",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-06-13",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_14163154680",
+        "quote": "Very poor on SBM bank service. Indmoney opened bank accounts with SBM bank but now Indmoney have sto",
+        "full_text": "Very poor on SBM bank service. Indmoney opened bank accounts with SBM bank but now Indmoney have stopped all operations with them. SBM is not supporting us well to close our accounts after repeated follow ups and our money got stuck. Indmoney is just washed their hands and left, very poor service and support, never trust SBM Bank.",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-06-09",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "angry",
+        "user_segment": "unknown"
+      },
+      {
+        "id": "appstore_indmoney_13902464092",
+        "quote": "New update sucks. i have money in bank account but it wont show in INDmoney app and hence it wont ad",
+        "full_text": "New update sucks. i have money in bank account but it wont show in INDmoney app and hence it wont add. Which was better before because you could add any amount and if you didn’t have that much in bank account then it will fail.",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-03-29",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      }
+    ],
+    "rank": 5
+  },
+  {
+    "id": "T5",
+    "name": "External Validation Seeking",
+    "discovery_questions": [
+      "Q6",
+      "Q8"
+    ],
+    "description": "During market corrections or when choosing funds, investors leave the app to seek reassurance on YouTube channels, Reddit forums, or from friends because the platform feels cold.",
+    "key_insight": "When platforms fail to provide emotional reassurance during volatile periods, users outsource their investment decisions to social media influencers.",
+    "opportunity_score": 0.53,
+    "opportunity_score_100": 53.0,
+    "score_breakdown": {
+      "frequency": 0.0788,
+      "frequency_corpus_pct": 0.0213,
+      "severity": 0.6536,
+      "actionability": 0.85,
+      "recency": 0.65,
+      "multiplicative_score": 0.0285,
+      "weights": {
+        "frequency": 0.3,
+        "severity": 0.3,
+        "actionability": 0.25,
+        "recency": 0.15
+      }
+    },
+    "volume_count": 51,
+    "volume_percentage": 2.13,
+    "top_emotion": "hopeful",
+    "emotion_distribution": {
+      "hopeful": 78.4,
+      "frustrated": 3.9,
+      "confident": 5.9,
+      "reassured": 2.0,
+      "confused": 7.8,
+      "indifferent": 2.0
+    },
+    "action_distribution": {
+      "continued": 86.3,
+      "searched_online": 5.9,
+      "none_mentioned": 3.9,
+      "switched": 2.0,
+      "asked_someone": 2.0
+    },
+    "segment_breakdown": {
+      "experience_level": {
+        "beginner": 44,
+        "intermediate": 3,
+        "experienced": 2,
+        "first_timer": 1,
+        "unknown": 1
+      },
+      "sip_tenure": {
+        "unknown": 50,
+        "pre_start": 1
+      },
+      "influence_source": {
+        "unknown": 42,
+        "self_research": 6,
+        "peer": 2,
+        "social_media": 1
+      }
+    },
+    "suggested_interventions": [
+      "Verified In-App Expert Insights: Contextual short videos from SEBI-registered advisors during market drops.",
+      "Community Market Sentiment Digest: Aggregated sentiment showing % of peers continuing their SIPs.",
+      "Ask AI Portfolio Assistant: Instant answers to common doubts (e.g. 'Should I stop my mid-cap SIP now?')."
+    ],
+    "representative_quotes": [
+      {
+        "id": "play_zerodha coin_a7176a82-130d-42d4-b119-77106f8aac6b",
+        "quote": "the information provided on the app is very basic. I use to go to other apps like ET money to explore more about any specific mutual fund.",
+        "full_text": "I am a mutual fund investor, and when I search for funds on coin, the information provided on the app is very basic. I use to go to other apps like ET money to explore more about any specific mutual fund.",
+        "source": "google_play",
+        "platform_app": "Zerodha Coin",
+        "rating": 3,
+        "date": "2024-08-26",
+        "url": "https://play.google.com/store/apps/details?id=com.zerodha.coin&reviewId=a7176a82-130d-42d4-b119-77106f8aac6b",
+        "emotion": "confused",
+        "user_segment": "intermediate"
+      },
+      {
+        "id": "play_indmoney_7f6cad07-0add-42ef-8ada-cbde03885a84",
+        "quote": "Many fellow friends had boycotted IndMoney platform due to unavailability of standard tools. But now they have returned.",
+        "full_text": "Many fellow friends had boycotted IndMoney platform due to unavailability of standard tools. But now they have returned. I hope they (Team IndMoney) will continue to keep a standard tools of trading view.",
+        "source": "google_play",
+        "platform_app": "INDmoney",
+        "rating": 5,
+        "date": "2025-10-14",
+        "url": "https://play.google.com/store/apps/details?id=in.indwealth&reviewId=7f6cad07-0add-42ef-8ada-cbde03885a84",
+        "emotion": "reassured",
+        "user_segment": "intermediate"
+      },
+      {
+        "id": "play_groww_ad2d3594-2a5a-431a-8848-62b303df11da",
+        "quote": "The user experience reminds me of Google Pixel’s Android OS—super clean, highly customized, and completely bloat-free.",
+        "full_text": "Smooth, Clean, and Smart! I’ve had a great experience with the Groww app so far. The user experience reminds me of Google Pixel’s Android OS—super clean, highly customized, and completely bloat-free. Plus, the new AI features make market research and investing seamless. Absolutely awesome work by the team! 🚀",
+        "source": "google_play",
+        "platform_app": "Groww",
+        "rating": 5,
+        "date": "2026-10-19",
+        "url": "https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=ad2d3594-2a5a-431a-8848-62b303df11da",
+        "emotion": "confident",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_14500441553",
+        "quote": "Best application for stocks. One of the best app for trading across the market you can learn about s",
+        "full_text": "Best application for stocks. One of the best app for trading across the market you can learn about stocks mutual fund ipo F&O also it's interface is user friendly",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 5,
+        "date": "2026-09-01",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_groww_14708297683",
+        "quote": "Excellent Investment App. Groww is a user-friendly platform for investing in stocks, mutual funds, a",
+        "full_text": "Excellent Investment App. Groww is a user-friendly platform for investing in stocks, mutual funds, and IPOs. The interface is simple, and managing investments is easy and convenient. Overall, a great app for beginners as well as experienced investors. Highly recommended!",
+        "source": "app_store",
+        "platform_app": "Groww",
+        "rating": 5,
+        "date": "2026-10-24",
+        "url": "https://apps.apple.com/in/app/id1404871703",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_groww_14588715447",
+        "quote": "Friendly and Easy to use. Groww is a very user-friendly and easy-to-use stock market app. The interf",
+        "full_text": "Friendly and Easy to use. Groww is a very user-friendly and easy-to-use stock market app. The interface is simple, transactions are smooth, and portfolio tracking is convenient. Overall, a great platform for investors and traders. ⭐⭐⭐⭐⭐",
+        "source": "app_store",
+        "platform_app": "Groww",
+        "rating": 5,
+        "date": "2026-09-24",
+        "url": "https://apps.apple.com/in/app/id1404871703",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_groww_14527456562",
+        "quote": "User Friendly. Using Groww application is fun and easy. The app breaks complex data into charts whic",
+        "full_text": "User Friendly. Using Groww application is fun and easy. The app breaks complex data into charts which enhances user. Highly recommend this app to all specially new age investors.",
+        "source": "app_store",
+        "platform_app": "Groww",
+        "rating": 4,
+        "date": "2026-09-08",
+        "url": "https://apps.apple.com/in/app/id1404871703",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_groww_14526121424",
+        "quote": "Wonderful trading app!. Groww is a very user friendly trading app for beginners and professionals, b",
+        "full_text": "Wonderful trading app!. Groww is a very user friendly trading app for beginners and professionals, both. Works in real time with immediate settlements. Recommended.",
+        "source": "app_store",
+        "platform_app": "Groww",
+        "rating": 5,
+        "date": "2026-09-08",
+        "url": "https://apps.apple.com/in/app/id1404871703",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_groww_14513262983",
+        "quote": "Best application for trading. I am using Groww since last 4 years. This is user friendly application",
+        "full_text": "Best application for trading. I am using Groww since last 4 years. This is user friendly application to See financial information of the company. It is easy to buy and sell securities on application.",
+        "source": "app_store",
+        "platform_app": "Groww",
+        "rating": 5,
+        "date": "2026-09-05",
+        "url": "https://apps.apple.com/in/app/id1404871703",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_groww_14508891509",
+        "quote": "Grow is the best. I love Groww for it’s world class customer friendly software, transparency, busine",
+        "full_text": "Grow is the best. I love Groww for it’s world class customer friendly software, transparency, business ethics, prompt services, and so on",
+        "source": "app_store",
+        "platform_app": "Groww",
+        "rating": 5,
+        "date": "2026-09-04",
+        "url": "https://apps.apple.com/in/app/id1404871703",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_groww_14508218359",
+        "quote": "Extremely user friendly!. My experience with Groww has been superb! Particularly with stocks and the",
+        "full_text": "Extremely user friendly!. My experience with Groww has been superb! Particularly with stocks and the support team is always helpful!",
+        "source": "app_store",
+        "platform_app": "Groww",
+        "rating": 5,
+        "date": "2026-09-03",
+        "url": "https://apps.apple.com/in/app/id1404871703",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "play_groww_92f8e5b3-97a3-4ec4-a617-7f33945581ff",
+        "quote": "Using Groww for almost 3 months. Smooth experience, easy to use and beginner-friendly. Overall, very",
+        "full_text": "Using Groww for almost 3 months. Smooth experience, easy to use and beginner-friendly. Overall, very good app! 👍",
+        "source": "google_play",
+        "platform_app": "Groww",
+        "rating": 4,
+        "date": "2026-10-30",
+        "url": "https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=92f8e5b3-97a3-4ec4-a617-7f33945581ff",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "play_groww_4deb067b-82b0-4a6b-9039-6d1bda13906b",
+        "quote": "Groww is a user-friendly app with a smooth interface for investing in stocks, mutual funds, and IPOs",
+        "full_text": "Groww is a user-friendly app with a smooth interface for investing in stocks, mutual funds, and IPOs. The platform is convenient and beginner-friendly. However, app performance and customer support could be improved. Overall, a great investment app!",
+        "source": "google_play",
+        "platform_app": "Groww",
+        "rating": 4,
+        "date": "2026-10-30",
+        "url": "https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=4deb067b-82b0-4a6b-9039-6d1bda13906b",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "play_groww_24254262-cad4-4ad6-9812-d1fd4c6fbb72",
+        "quote": "Groww has a simple, user-friendly interface that makes investing easy and convenient. Best app for b",
+        "full_text": "Groww has a simple, user-friendly interface that makes investing easy and convenient. Best app for beginners and investors.",
+        "source": "google_play",
+        "platform_app": "Groww",
+        "rating": 5,
+        "date": "2026-10-25",
+        "url": "https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=24254262-cad4-4ad6-9812-d1fd4c6fbb72",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "play_groww_7476b882-1b23-4902-84f4-f997bca50d88",
+        "quote": "Years ago I opened a DMAT account and recently I additionally switched to groww and ....for me a sen",
+        "full_text": "Years ago I opened a DMAT account and recently I additionally switched to groww and ....for me a senior citizen, it was never so easy ..before..user friendly to work with..... for last a couple of month...perhaps I applied FOR more than forty+ IPO, which is never done by me in past many years.... thankyou groww I am still exploring,,,this app....",
+        "source": "google_play",
+        "platform_app": "Groww",
+        "rating": 4,
+        "date": "2026-10-16",
+        "url": "https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=7476b882-1b23-4902-84f4-f997bca50d88",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      }
+    ],
+    "rank": 9
+  },
+  {
+    "id": "T6",
+    "name": "Over-Monitoring Anxiety",
+    "discovery_questions": [
+      "Q2",
+      "Q4"
+    ],
+    "description": "Investors check their portfolios daily or multiple times a day, converting passive compounding into active daily stress. Every micro-fluctuation triggers emotional turbulence.",
+    "key_insight": "Checking portfolio daily increases perceived volatility by 10x, accelerating SIP drop-off rates.",
+    "opportunity_score": 0.541,
+    "opportunity_score_100": 54.1,
+    "score_breakdown": {
+      "frequency": 0.1267,
+      "frequency_corpus_pct": 0.0343,
+      "severity": 0.6667,
+      "actionability": 0.82,
+      "recency": 0.65,
+      "multiplicative_score": 0.045,
+      "weights": {
+        "frequency": 0.3,
+        "severity": 0.3,
+        "actionability": 0.25,
+        "recency": 0.15
+      }
+    },
+    "volume_count": 82,
+    "volume_percentage": 3.43,
+    "top_emotion": "frustrated",
+    "emotion_distribution": {
+      "frustrated": 73.2,
+      "confused": 11.0,
+      "hopeful": 15.9
+    },
+    "action_distribution": {
+      "considering_stopping": 73.2,
+      "continued": 26.8
+    },
+    "segment_breakdown": {
+      "experience_level": {
+        "beginner": 82
+      },
+      "sip_tenure": {
+        "unknown": 82
+      },
+      "influence_source": {
+        "unknown": 82
+      }
+    },
+    "suggested_interventions": [
+      "Zen Investing Mode: Option to hide dashboard balances and receive monthly digests instead.",
+      "Smart Notification Throttling: Suppress daily portfolio fluctuation push notifications.",
+      "Focus On Consistency Tracker: Highlight consecutive months of disciplined investing over daily NAV."
+    ],
+    "representative_quotes": [
+      {
+        "id": "appstore_indmoney_13931397817",
+        "quote": "Sold my data. I tracked my portfolio on this app and I started getting calls after every 5 minutes t",
+        "full_text": "Sold my data. I tracked my portfolio on this app and I started getting calls after every 5 minutes to take loan and other stuff. Guys stick with google pay + zerodha",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-04-07",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_13771999008",
+        "quote": "App hang issues. After the recent updates, the INDmoney app hangs and freezes constantly. It gets st",
+        "full_text": "App hang issues. After the recent updates, the INDmoney app hangs and freezes constantly. It gets stuck almost anywhere — opening portfolio, scrolling holdings, checking prices, funding wallet (screen doesn’t move after), placing orders, or just navigating. Used to run smoothly before, but now it’s laggy and unreliable for daily use. Features are okay, but this constant hanging makes it frustrating. Please fix the performance issues soon!",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-02-20",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_13754713488",
+        "quote": "Not so intuitive. The app was better before and has deteriorated in terms of accuracy in the last fe",
+        "full_text": "Not so intuitive. The app was better before and has deteriorated in terms of accuracy in the last few weeks. The sync between the App and other platforms has been erratic which denies the investor to use it as an all-in-one dashboard. Also, the US portfolio UI / User experience in getting to see the dashboard, daily changes are suboptimal or absent.",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 3,
+        "date": "2026-02-16",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "confused",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_groww_14673041308",
+        "quote": "Wrost app ever I seen. Very wrost app don’t invest it in otherwise you will not get return money bac",
+        "full_text": "Wrost app ever I seen. Very wrost app don’t invest it in otherwise you will not get return money back",
+        "source": "app_store",
+        "platform_app": "Groww",
+        "rating": 1,
+        "date": "2026-10-16",
+        "url": "https://apps.apple.com/in/app/id1404871703",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "play_groww_0806e9b6-b083-48dd-936b-1df5f3ad2cc0",
+        "quote": "Very Unprofessional and Serious Data Security Concern I am extremely disappointed with the unprofess",
+        "full_text": "Very Unprofessional and Serious Data Security Concern I am extremely disappointed with the unprofessional service of the Groww platform. While checking my joining form, I discovered that the Aadhaar card attached to my application belongs to another person whom I do not know. How can such a serious mistake happen on a financial platform? This raises major concerns about document verification, data security, and the handling of customers' personal information. Attaching another person's",
+        "source": "google_play",
+        "platform_app": "Groww",
+        "rating": 1,
+        "date": "2026-10-25",
+        "url": "https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=0806e9b6-b083-48dd-936b-1df5f3ad2cc0",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "play_groww_e6fe411c-8829-43c4-b3eb-a365e695c694",
+        "quote": "yahan bahut galat cheeze hoti hai platform mein apko apne funds ko proper track karna padega because",
+        "full_text": "yahan bahut galat cheeze hoti hai platform mein apko apne funds ko proper track karna padega because groww app mein mismanagement bahut hai, groww app mein apke funds ka hisaab zaroor rakhiye, mera balance apne ap kam ho gaya kal tak 15k tha aaj 7k ho gaya hai aur iske koi jawaab bhi nhi hai groww ke pass.",
+        "source": "google_play",
+        "platform_app": "Groww",
+        "rating": 1,
+        "date": "2026-10-20",
+        "url": "https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=e6fe411c-8829-43c4-b3eb-a365e695c694",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "play_groww_4a16d02f-f219-4e8d-866b-762eed990af4",
+        "quote": "User interface is excellent, but App takes more Time in Showing Daily Gain/Loss of Mutual Funds. I h",
+        "full_text": "User interface is excellent, but App takes more Time in Showing Daily Gain/Loss of Mutual Funds. I have to keep another App just to track my Daily Gains/Losses of MFs.",
+        "source": "google_play",
+        "platform_app": "Groww",
+        "rating": 3,
+        "date": "2026-10-14",
+        "url": "https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=4a16d02f-f219-4e8d-866b-762eed990af4",
+        "emotion": "confused",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "play_groww_28f3e826-c337-4592-b288-baabef3bcc35",
+        "quote": "Excellent experience over the past year! Groww offers an intuitive, clutter-free interface where you",
+        "full_text": "Excellent experience over the past year! Groww offers an intuitive, clutter-free interface where you can track all market updates at a glance. It makes investing simple and stress-free. Having used it for a year, I frequently recommend it to my near and dear ones. 5/5 stars!",
+        "source": "google_play",
+        "platform_app": "Groww",
+        "rating": 5,
+        "date": "2026-10-13",
+        "url": "https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=28f3e826-c337-4592-b288-baabef3bcc35",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "play_groww_f7c081f6-a50f-4274-bf3a-85aa977ab6e8",
+        "quote": "I'm using various platforms app, but in groww it's a worst customer support, uneducated customer sup",
+        "full_text": "I'm using various platforms app, but in groww it's a worst customer support, uneducated customer support staff with very low efficiency, 95% they not able to solve customer's problem, other 5% they take 1 month to solve problems ( if your remind them daily -then only)",
+        "source": "google_play",
+        "platform_app": "Groww",
+        "rating": 1,
+        "date": "2026-10-06",
+        "url": "https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=f7c081f6-a50f-4274-bf3a-85aa977ab6e8",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "play_indmoney_a27da7e0-2de6-4dfc-904d-15cdfe8f7a50",
+        "quote": "\"I am investing fresh money into a fund clearly labeled 'Direct Growth' inside your app. Despite thi",
+        "full_text": "\"I am investing fresh money into a fund clearly labeled 'Direct Growth' inside your app. Despite this, your checkout page forces a popup stating all new investments will be made in a 'Regular Plan'. I have only ever used your platform. This is highly misleading, violates your advertised zero-commission policy, and misroutes my funds without my consent. All of a sudden there is a popup saying investment will be in regular plans. Went through help Centre and they say the settings is disable.",
+        "source": "google_play",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-10-01",
+        "url": "https://play.google.com/store/apps/details?id=in.indwealth&reviewId=a27da7e0-2de6-4dfc-904d-15cdfe8f7a50",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "play_indmoney_46a9a719-59f6-4c4f-9463-fc69a0514139",
+        "quote": "INDmoney has solid tracking features, but exploring anything (like checking insurance) triggers non-",
+        "full_text": "INDmoney has solid tracking features, but exploring anything (like checking insurance) triggers non-stop marketing calls the next day. I dread opening the app now because browsing shouldn’t result in telemarketing harassment. A financial platform should respect boundaries. Tone down the calls so users can actually enjoy the product",
+        "source": "google_play",
+        "platform_app": "INDmoney",
+        "rating": 2,
+        "date": "2026-09-30",
+        "url": "https://play.google.com/store/apps/details?id=in.indwealth&reviewId=46a9a719-59f6-4c4f-9463-fc69a0514139",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "play_indmoney_004eb6f5-5d77-472b-aae2-48172a3e82fd",
+        "quote": "This is a dummy app. Showing Mutual Fund Portfolio which was I sold Few years back.... There is no E",
+        "full_text": "This is a dummy app. Showing Mutual Fund Portfolio which was I sold Few years back.... There is no Exact Tracking info. of Stocks Holdings , Bank Balance, Expenses and any other Diversified Portfolio.....",
+        "source": "google_play",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-09-13",
+        "url": "https://play.google.com/store/apps/details?id=in.indwealth&reviewId=004eb6f5-5d77-472b-aae2-48172a3e82fd",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "play_indmoney_ae4640db-3a33-45f1-bc3f-3c7e2eca22de",
+        "quote": "just checked today the trade timing for Fno is very much wronglybupdated here the trade was under th",
+        "full_text": "just checked today the trade timing for Fno is very much wronglybupdated here the trade was under the live trade section until 2.30pm and then they suddenly changed it to that the trade was closed in profit at 10.23am this is so wrong and misleading.",
+        "source": "google_play",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-09-11",
+        "url": "https://play.google.com/store/apps/details?id=in.indwealth&reviewId=ae4640db-3a33-45f1-bc3f-3c7e2eca22de",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "play_indmoney_b663d06b-44c3-4021-8853-71fdfa5b3a2c",
+        "quote": "Honestly didn’t expect this level of improvement! The app is soo✨ much faster now and feels way more",
+        "full_text": "Honestly didn’t expect this level of improvement! The app is soo✨ much faster now and feels way more stable and consistent. I actually enjoy using it again 🎯 Before, syncing would constantly interrupt and lock the app, making simple actions feel slow and annoying. It was frustrating how stopping an entry would add extra seconds. Now it responds instantly, flows naturally, and feels far more refined, making daily use smooth and stress-free 👍",
+        "source": "google_play",
+        "platform_app": "INDmoney",
+        "rating": 5,
+        "date": "2026-08-04",
+        "url": "https://play.google.com/store/apps/details?id=in.indwealth&reviewId=b663d06b-44c3-4021-8853-71fdfa5b3a2c",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "play_indmoney_53e17fd3-3aa2-4fd1-8a24-226783727fb0",
+        "quote": "They keep changing the UI and break my habits, the user experience team should not make more changes",
+        "full_text": "They keep changing the UI and break my habits, the user experience team should not make more changes to UI as you should assume your users are comfortable using the existing UI",
+        "source": "google_play",
+        "platform_app": "INDmoney",
+        "rating": 4,
+        "date": "2026-05-18",
+        "url": "https://play.google.com/store/apps/details?id=in.indwealth&reviewId=53e17fd3-3aa2-4fd1-8a24-226783727fb0",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      }
+    ],
+    "rank": 8
+  },
+  {
+    "id": "T7",
+    "name": "Peer Influence Dependency",
+    "discovery_questions": [
+      "Q1",
+      "Q8"
+    ],
+    "description": "New investors enter the market driven by FOMO, viral reels, or peer recommendations without understanding their personal risk tolerance or financial goals.",
+    "key_insight": "Investors who enter without independent conviction are 3x more likely to abandon their SIP at the first sign of market correction.",
+    "opportunity_score": 0.661,
+    "opportunity_score_100": 66.1,
+    "score_breakdown": {
+      "frequency": 0.5487,
+      "frequency_corpus_pct": 0.1483,
+      "severity": 0.6629,
+      "actionability": 0.8,
+      "recency": 0.65,
+      "multiplicative_score": 0.1891,
+      "weights": {
+        "frequency": 0.3,
+        "severity": 0.3,
+        "actionability": 0.25,
+        "recency": 0.15
+      }
+    },
+    "volume_count": 355,
+    "volume_percentage": 14.83,
+    "top_emotion": "hopeful",
+    "emotion_distribution": {
+      "hopeful": 99.4,
+      "confident": 0.3,
+      "confused": 0.3
+    },
+    "action_distribution": {
+      "continued": 100.0
+    },
+    "segment_breakdown": {
+      "experience_level": {
+        "beginner": 351,
+        "first_timer": 1,
+        "unknown": 2,
+        "intermediate": 1
+      },
+      "sip_tenure": {
+        "unknown": 355
+      },
+      "influence_source": {
+        "unknown": 351,
+        "self_research": 4
+      }
+    },
+    "suggested_interventions": [
+      "Goal-Linked Onboarding: Map every SIP directly to a tangible milestone (emergency fund, child, house).",
+      "Personalized Risk Alignment Quiz: Ensure volatile small-cap funds aren't recommended to conservative beginners.",
+      "Investor Conviction Builder: 30-second primer on why this specific fund matches their timeline."
+    ],
+    "representative_quotes": [
+      {
+        "id": "appstore_indmoney_14158992549",
+        "quote": "Ease of Investing. This is the best app to invest in US equities from India. It has best in class ex",
+        "full_text": "Ease of Investing. This is the best app to invest in US equities from India. It has best in class exchange rate , ease of doing transactions with minimal brokerage… I was wasting time on PASA but Indmoney is awesome..",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 5,
+        "date": "2026-06-08",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_14131135887",
+        "quote": "Best Interface and Lag free. The interface is one of the best in this portfolio. Transactions proces",
+        "full_text": "Best Interface and Lag free. The interface is one of the best in this portfolio. Transactions process is simple and with instructions which is a competitive edge to this application.",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 4,
+        "date": "2026-06-01",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_groww_14709766264",
+        "quote": "Facing issue while doing skip sip. Groww team, there is a critical bug while trying to skip sip on i",
+        "full_text": "Facing issue while doing skip sip. Groww team, there is a critical bug while trying to skip sip on iPhone device. I have been taken to login screen whenever I am trying to skip sip. Please fix it asap.",
+        "source": "app_store",
+        "platform_app": "Groww",
+        "rating": 4,
+        "date": "2026-10-25",
+        "url": "https://apps.apple.com/in/app/id1404871703",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_groww_14664691724",
+        "quote": "Ease of transactions. I am a new user , first time tried to invest in MF and found it so easier . It",
+        "full_text": "Ease of transactions. I am a new user , first time tried to invest in MF and found it so easier . It also provides a good analytics",
+        "source": "app_store",
+        "platform_app": "Groww",
+        "rating": 5,
+        "date": "2026-10-14",
+        "url": "https://apps.apple.com/in/app/id1404871703",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_groww_14533103419",
+        "quote": "Very efficient platform. Groww is a very good and efficient platform with good analytical data avail",
+        "full_text": "Very efficient platform. Groww is a very good and efficient platform with good analytical data available.",
+        "source": "app_store",
+        "platform_app": "Groww",
+        "rating": 5,
+        "date": "2026-09-10",
+        "url": "https://apps.apple.com/in/app/id1404871703",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_groww_14532775791",
+        "quote": "Best app for Mutual funds. I really like Groww app for Mutual fund. Their UI and quick analysis is g",
+        "full_text": "Best app for Mutual funds. I really like Groww app for Mutual fund. Their UI and quick analysis is good. Also ticket resolution is very prompt. Love the experience",
+        "source": "app_store",
+        "platform_app": "Groww",
+        "rating": 5,
+        "date": "2026-09-10",
+        "url": "https://apps.apple.com/in/app/id1404871703",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_groww_14531906402",
+        "quote": "Great app for beginners. Excellent app for trading middle class and savings , trust me 1 day I wealt",
+        "full_text": "Great app for beginners. Excellent app for trading middle class and savings , trust me 1 day I wealth will kick you by groww",
+        "source": "app_store",
+        "platform_app": "Groww",
+        "rating": 5,
+        "date": "2026-09-09",
+        "url": "https://apps.apple.com/in/app/id1404871703",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_groww_14528616976",
+        "quote": "Very good interface. Very convenient in setup and use. Interface is great..i am using mutual funds a",
+        "full_text": "Very good interface. Very convenient in setup and use. Interface is great..i am using mutual funds as if now. Thanks",
+        "source": "app_store",
+        "platform_app": "Groww",
+        "rating": 5,
+        "date": "2026-09-09",
+        "url": "https://apps.apple.com/in/app/id1404871703",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_groww_14514984389",
+        "quote": "Mr Subriyaz. Very detailed explanation of every terminology as well as about the stocks and mutual f",
+        "full_text": "Mr Subriyaz. Very detailed explanation of every terminology as well as about the stocks and mutual funds",
+        "source": "app_store",
+        "platform_app": "Groww",
+        "rating": 5,
+        "date": "2026-09-05",
+        "url": "https://apps.apple.com/in/app/id1404871703",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_groww_14510784608",
+        "quote": "Good. Very easy to use, UI standards are pretty good and easy to understand. Keeping going team grow",
+        "full_text": "Good. Very easy to use, UI standards are pretty good and easy to understand. Keeping going team groww🙏🏽❤️!",
+        "source": "app_store",
+        "platform_app": "Groww",
+        "rating": 5,
+        "date": "2026-09-04",
+        "url": "https://apps.apple.com/in/app/id1404871703",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_groww_14509152632",
+        "quote": "Very easy to use. I have been using grow for 3 years , very easy to use and withdrawals are too quic",
+        "full_text": "Very easy to use. I have been using grow for 3 years , very easy to use and withdrawals are too quick beat app for stock market",
+        "source": "app_store",
+        "platform_app": "Groww",
+        "rating": 5,
+        "date": "2026-09-04",
+        "url": "https://apps.apple.com/in/app/id1404871703",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_groww_14504934637",
+        "quote": "App. Very good app for investment beginners & active investors as well. The emails are also useful f",
+        "full_text": "App. Very good app for investment beginners & active investors as well. The emails are also useful for understanding market insights and dynamics 👍😊",
+        "source": "app_store",
+        "platform_app": "Groww",
+        "rating": 5,
+        "date": "2026-09-03",
+        "url": "https://apps.apple.com/in/app/id1404871703",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_groww_14504204110",
+        "quote": "Excellent. Very interactive and easy to use interface. Overall, it’s an excellent application for al",
+        "full_text": "Excellent. Very interactive and easy to use interface. Overall, it’s an excellent application for all trading, and mutual fund requirement.",
+        "source": "app_store",
+        "platform_app": "Groww",
+        "rating": 5,
+        "date": "2026-09-02",
+        "url": "https://apps.apple.com/in/app/id1404871703",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "play_groww_67605c27-fcad-485f-aeff-7c4ea0b54610",
+        "quote": "One of the best Broker Application for beginners and students have used many apps but groww have mos",
+        "full_text": "One of the best Broker Application for beginners and students have used many apps but groww have most cleanest and easy to understand UI Groww upi is one of the fastest upi i prefer grow upi mostly than my upi apps",
+        "source": "google_play",
+        "platform_app": "Groww",
+        "rating": 5,
+        "date": "2026-10-29",
+        "url": "https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=67605c27-fcad-485f-aeff-7c4ea0b54610",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "play_groww_87b38789-f4b9-4f4e-b3a1-08c24470b826",
+        "quote": "i love this application as its simple and easy to invest in mutual fund and stock.. i have been usin",
+        "full_text": "i love this application as its simple and easy to invest in mutual fund and stock.. i have been using since 3 years and quite satisfied",
+        "source": "google_play",
+        "platform_app": "Groww",
+        "rating": 5,
+        "date": "2026-10-28",
+        "url": "https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=87b38789-f4b9-4f4e-b3a1-08c24470b826",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      }
+    ],
+    "rank": 4
+  },
+  {
+    "id": "T8",
+    "name": "Cross-Selling Fatigue",
+    "discovery_questions": [
+      "Q5",
+      "Q9"
+    ],
+    "description": "Aggressive promotional banners for personal loans, credit cards, US stocks, and high-risk derivatives clutter the mutual fund interface, diluting focus and eroding trust.",
+    "key_insight": "Aggressive credit cross-selling makes serious long-term wealth builders question whether the app prioritizes their financial health or commissions.",
+    "opportunity_score": 0.698,
+    "opportunity_score_100": 69.8,
+    "score_breakdown": {
+      "frequency": 0.544,
+      "frequency_corpus_pct": 0.1471,
+      "severity": 0.6676,
+      "actionability": 0.95,
+      "recency": 0.65,
+      "multiplicative_score": 0.2243,
+      "weights": {
+        "frequency": 0.3,
+        "severity": 0.3,
+        "actionability": 0.25,
+        "recency": 0.15
+      }
+    },
+    "volume_count": 352,
+    "volume_percentage": 14.71,
+    "top_emotion": "frustrated",
+    "emotion_distribution": {
+      "frustrated": 75.3,
+      "hopeful": 19.3,
+      "disappointed": 2.0,
+      "confident": 0.3,
+      "angry": 1.1,
+      "confused": 1.1,
+      "reassured": 0.6,
+      "indifferent": 0.3
+    },
+    "action_distribution": {
+      "considering_stopping": 72.4,
+      "continued": 19.3,
+      "switched": 0.6,
+      "none_mentioned": 5.7,
+      "contacted_support": 1.4,
+      "uninstalled": 0.3,
+      "searched_online": 0.3
+    },
+    "segment_breakdown": {
+      "experience_level": {
+        "beginner": 327,
+        "experienced": 6,
+        "intermediate": 13,
+        "unknown": 5,
+        "first_timer": 1
+      },
+      "sip_tenure": {
+        "unknown": 345,
+        "beyond_12": 3,
+        "pre_start": 3,
+        "month_1": 1
+      },
+      "influence_source": {
+        "unknown": 328,
+        "self_research": 17,
+        "social_media": 1,
+        "peer": 6
+      }
+    },
+    "suggested_interventions": [
+      "Distraction-Free Wealth Mode: Clean mutual fund dashboard with zero credit card or loan banners.",
+      "User Preference Center: Granular opt-out controls for non-investment promotional messages.",
+      "Dedicated SIP Management Space: Isolate long-term wealth from trading and lending products."
+    ],
+    "representative_quotes": [
+      {
+        "id": "appstore_indmoney_14031402539",
+        "quote": "Very disappointed with INDmoney for US stocks. To load money and actually buy US stocks, you’re forced to open an account with specific banks like ICICI, HDFC, Axis, or Kotak",
+        "full_text": "Please read this before opening Demat with INDmoney to buy US stocks. Very disappointed with INDmoney for US stocks. To load money and actually buy US stocks, you’re forced to open an account with specific banks like ICICI, HDFC, Axis, or Kotak (or their preferred ones like Federal). I already have a bank account and don’t want to open new ones just for this. It adds unnecessary hassle, paperwork, and friction especially charges and minimum balance. The app promotes easy investing but hides this requirement. Not user-friendly for everyone. Poor experience",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-05-05",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "frustrated",
+        "user_segment": "experienced"
+      },
+      {
+        "id": "play_zerodha coin_591c7324-f6da-425e-93cd-340c4af1fb5f",
+        "quote": "You should give upi payment facility in coin app for external bill payment, scan pay facility and other upi related facilities like Groww app.",
+        "full_text": "Dear Developer, You should give upi payment facility in coin app for external bill payment, scan pay facility and other upi related facilities like Groww app.",
+        "source": "google_play",
+        "platform_app": "Zerodha Coin",
+        "rating": 4,
+        "date": "2024-08-30",
+        "url": "https://play.google.com/store/apps/details?id=com.zerodha.coin&reviewId=591c7324-f6da-425e-93cd-340c4af1fb5f",
+        "emotion": "disappointed",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "play_indmoney_3ea5517d-3394-4eb5-bc2d-bb9f76004d1f",
+        "quote": "first shown that if u will pay your post paid bill app reward 25/ after 10 payment of postpaid bill he assured you will get 500/ extra",
+        "full_text": "very poor app, misguide about his reward money back ,first shown that if u will pay your post paid bill app reward 25/ after 10 payment of postpaid bill he assured you will get 500/ extra ,but sorry to see that all payments credited in US reward amount ,when you will purchase us equity then u can get how reward amount ,also all money back transferd in us reward points ,this shows misleading to consumer ,very poor app about bill payment and UPI payment",
+        "source": "google_play",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-10-02",
+        "url": "https://play.google.com/store/apps/details?id=in.indwealth&reviewId=3ea5517d-3394-4eb5-bc2d-bb9f76004d1f",
+        "emotion": "angry",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_14228762783",
+        "quote": "Excellent app. I’m using this app for US stock investing and for my credit cards bill, upi payment and getting good cashback as well",
+        "full_text": "Excellent app. I’m using this app for US stock investing and for my credit cards bill, upi payment  and getting good cashback as well😄",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 5,
+        "date": "2026-06-26",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_14337314241",
+        "quote": "UI Bad. Home screen filled with bunch of stock recommendations ,instead of direct nifty index or sensex bunch of other rigid details",
+        "full_text": "UI Bad. Home screen filled with bunch of stock recommendations ,instead of direct nifty index or sensex bunch of other rigid details unorganised details make me open Groww app for stock checking instead of Ind money",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-07-22",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "tradingqa_544346",
+        "quote": "My understanding was that all SIPs (AMC or through brokers) would be honoured and only the fresh investment would be stopped",
+        "full_text": "Hello, I received an email yesterday that my SIP in SBI Gold Fund was being paused with immediate effect. My understanding was that all SIPs (AMC or through brokers) would be honoured and only the fresh investment would be stopped. Does the restriction apply to SIPs set up through brokers as well...",
+        "source": "tradingqa",
+        "platform_app": "Zerodha/General SIP",
+        "rating": null,
+        "date": "2026-10-25",
+        "url": "https://tradingqna.com/t/199065",
+        "emotion": "confused",
+        "user_segment": "intermediate"
+      },
+      {
+        "id": "play_indmoney_8e17292c-0193-4a6f-a129-9947948d34c3",
+        "quote": "after one month of use App suddenly shows compromised & rooted device & stopped working , I didn't find any solution",
+        "full_text": "after one month of use App suddenly shows compromised & rooted device & stopped working , I didn't find any solution",
+        "source": "google_play",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2025-07-28",
+        "url": "https://play.google.com/store/apps/details?id=in.indwealth&reviewId=8e17292c-0193-4a6f-a129-9947948d34c3",
+        "emotion": "disappointed",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "play_indmoney_a804efe6-0149-40e6-88b5-60a4c0cafa2b",
+        "quote": "I would prefer having more options for each transaction in credit card and bank transactions like kiwi of cred app.",
+        "full_text": "amazing app to aggregate all the assets and have high level view. I would prefer having more options for each transaction in credit card and bank transactions like kiwi of cred app. then that will make this complete app.",
+        "source": "google_play",
+        "platform_app": "INDmoney",
+        "rating": 5,
+        "date": "2025-08-22",
+        "url": "https://play.google.com/store/apps/details?id=in.indwealth&reviewId=a804efe6-0149-40e6-88b5-60a4c0cafa2b",
+        "emotion": "reassured",
+        "user_segment": "intermediate"
+      },
+      {
+        "id": "appstore_indmoney_14027468247",
+        "quote": "This one doesn’t have sort capabilities. Doesn’t show pre and post market or current US market performance either",
+        "full_text": "Roll back to previous version. Please roll back your latest updates. The previous one was much better. This one doesn’t have sort capabilities. Doesn’t show pre and post market or current US market performance either",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 2,
+        "date": "2026-05-04",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "frustrated",
+        "user_segment": "intermediate"
+      },
+      {
+        "id": "appstore_indmoney_14278791650",
+        "quote": "Great app on iPhone, but it is not optimized for iPad. It just runs as a scaled-up, low-resolution iPhone window.",
+        "full_text": "Great App, Just Needs iPad Compatibility. Great app on iPhone, but it is not optimized for iPad. It just runs as a scaled-up, low-resolution iPhone window. As an investor, I need a native iPadOS layout to analyze charts and track my portfolio on the larger screen. Please optimize the app for iPad screens in upcoming update(s).\n\nOverAll, I love this platform for trading.",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 3,
+        "date": "2026-07-08",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "frustrated",
+        "user_segment": "experienced"
+      },
+      {
+        "id": "tradingqa_529592",
+        "quote": "buy average has got updated wrongly and it's showing avg buy price as if I bought all units on transfer date",
+        "full_text": "Hi, I recently closed one of my zerodha accounts using closure cum transfer. I moved some of my elss and other funds to INDMoney. For some reason after transferring the buy average has got updated wrongly and it's showing avg buy price as if I bought all units on transfer date. I raised multiple ...",
+        "source": "tradingqa",
+        "platform_app": "Zerodha/General SIP",
+        "rating": null,
+        "date": "2026-05-30",
+        "url": "https://tradingqna.com/t/194548",
+        "emotion": "frustrated",
+        "user_segment": "intermediate"
+      },
+      {
+        "id": "play_zerodha coin_cb5b2231-bff5-481f-ae1b-d5b9fb631443",
+        "quote": "No need of this app kindly merge this on zerodha AAP. All investment should be provided in one platform",
+        "full_text": "No need of this app kindly merge this on zerodha AAP. All investment should be provided in one platform",
+        "source": "google_play",
+        "platform_app": "Zerodha Coin",
+        "rating": 1,
+        "date": "2025-12-04",
+        "url": "https://play.google.com/store/apps/details?id=com.zerodha.coin&reviewId=cb5b2231-bff5-481f-ae1b-d5b9fb631443",
+        "emotion": "frustrated",
+        "user_segment": "intermediate"
+      },
+      {
+        "id": "appstore_indmoney_14612585671",
+        "quote": "Credit card payments are not happening. I don’t know who is the dev whether they are reading logs or",
+        "full_text": "Credit card payments are not happening. I don’t know who is the dev whether they are reading logs or not but it’s not happening from months looks like engineers are sleeping.",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-09-30",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_14194297377",
+        "quote": "Family control for buying and selling us stocks. Hello team,\nI have been user of indmoney since 5 ye",
+        "full_text": "Family control for buying and selling us stocks. Hello team,\nI have been user of indmoney since 5 years now. I absolutely love the one view of all the assests\nI wanted to request for a feature which allow management of family holdings . I manage my father’s us account for stocks and for managing that either i have to access their account via website or another phone",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 5,
+        "date": "2026-06-17",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_14245613380",
+        "quote": "VERY USEFUL. I am using it from 2021 and till date its the best app for MF / US stocks etc. It’s saf",
+        "full_text": "VERY USEFUL. I am using it from 2021 and till date its the best app for MF / US stocks etc. It’s safe coz it’s connected to NSDL.",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 5,
+        "date": "2026-06-30",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      }
+    ],
+    "rank": 3
+  },
+  {
+    "id": "T9",
+    "name": "Support Resolution Gap",
+    "discovery_questions": [
+      "Q5"
+    ],
+    "description": "Automated bot-first support structures trap investors in repetitive loops when dealing with urgent financial discrepancies like missing SIP units or delayed redemptions.",
+    "key_insight": "When money is in transit, unresponsive automated support turns a minor technical delay into permanent platform churn.",
+    "opportunity_score": 0.564,
+    "opportunity_score_100": 56.4,
+    "score_breakdown": {
+      "frequency": 0.1066,
+      "frequency_corpus_pct": 0.0288,
+      "severity": 0.7391,
+      "actionability": 0.85,
+      "recency": 0.65,
+      "multiplicative_score": 0.0436,
+      "weights": {
+        "frequency": 0.3,
+        "severity": 0.3,
+        "actionability": 0.25,
+        "recency": 0.15
+      }
+    },
+    "volume_count": 69,
+    "volume_percentage": 2.88,
+    "top_emotion": "frustrated",
+    "emotion_distribution": {
+      "frustrated": 71.0,
+      "hopeful": 7.2,
+      "angry": 11.6,
+      "disappointed": 4.3,
+      "confident": 1.4,
+      "reassured": 1.4,
+      "confused": 1.4,
+      "anxious": 1.4
+    },
+    "action_distribution": {
+      "contacted_support": 20.3,
+      "continued": 8.7,
+      "considering_stopping": 58.0,
+      "none_mentioned": 7.2,
+      "uninstalled": 1.4,
+      "cancelled": 1.4,
+      "switched": 2.9
+    },
+    "segment_breakdown": {
+      "experience_level": {
+        "beginner": 49,
+        "intermediate": 11,
+        "experienced": 1,
+        "unknown": 8
+      },
+      "sip_tenure": {
+        "unknown": 69
+      },
+      "influence_source": {
+        "family": 1,
+        "self_research": 13,
+        "unknown": 52,
+        "peer": 3
+      }
+    },
+    "suggested_interventions": [
+      "Priority Human Escalation: 1-tap connection to human specialist for all money-in-transit issues.",
+      "Real-Time Issue Tracker: Domino-style visual timeline tracking transaction status from bank to AMC.",
+      "Proactive SLA Guarantee: Immediate resolution compensation if SIP verification exceeds 48 hours."
+    ],
+    "representative_quotes": [
+      {
+        "id": "appstore_indmoney_14325644456",
+        "quote": "Convenient & reliable. INDmoney has made investing much easier & simpler. We can easily invest in both US & INDIAN market from one app.",
+        "full_text": "Convenient & reliable. INDmoney has made investing much easier & simpler. We can easily invest in both US & INDIAN market from one app. Less headache and more ease. I quit investing with Groww since INDmoney has became All-in-one platform. \n\nGreat work…",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 5,
+        "date": "2026-07-20",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "hopeful",
+        "user_segment": "intermediate"
+      },
+      {
+        "id": "appstore_indmoney_14173192726",
+        "quote": "Non-responsive support. I have initiated RSU share transfer request more than a week ago... they have not even acknowledged the ticket.",
+        "full_text": "Non-responsive support. I have initiated RSU share transfer request more than a week ago. The shares have been debited from the RSU account and I have been following up with INDMoney team via a support ticket. So far they have not even acknowledged the ticket. Very disappointing service. \n\nEven creating ticket was a headache. They put an AI bot which will keep answering same mugged up content and would not create a ticket for me. I had to drop an email to create a ticket.",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-06-12",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "angry",
+        "user_segment": "experienced"
+      },
+      {
+        "id": "play_zerodha coin_3f00ea38-56e4-4eed-9902-d30fb2d7493d",
+        "quote": "Currently it's reading automatically that OTP. I'm not able to use UPI payment for coin app that I'm using in my secondary phone.",
+        "full_text": "Now in latest update, you guy's provided UPI payment directly in app instead RazarPay, that is good.but now with this new feature pls allow user to enter the OTP manually to verify its number. Currently it's reading automatically that OTP. I'm not able to use UPI payment for coin app that I'm using in my secondary phone. Even I'm using credit card for Amazon for payment that also reading sms auto, & if fails then they are giving options to enter pin manually if auto sms read not working.",
+        "source": "google_play",
+        "platform_app": "Zerodha Coin",
+        "rating": 1,
+        "date": "2024-09-02",
+        "url": "https://play.google.com/store/apps/details?id=com.zerodha.coin&reviewId=3f00ea38-56e4-4eed-9902-d30fb2d7493d",
+        "emotion": "frustrated",
+        "user_segment": "intermediate"
+      },
+      {
+        "id": "play_indmoney_457364ae-1d7c-4209-aecd-ecee7f8a6cc4",
+        "quote": "Instead of properly investigating the issue, the support team attributed it to my monthly statement and closed the ticket.",
+        "full_text": "Extremely disappointing customer support experience with INDmoney. Two recent tickets clearly demonstrate the problem: 1. NPS balance not updating correctly – Instead of properly investigating the issue, the support team attributed it to my monthly statement and closed the ticket. 2. UPI not working – Again, rather than investigating the underlying issue, the response focused on blaming my keyboard and providing standard troubleshooting steps such as clearing cache and reinstalling the app.",
+        "source": "google_play",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-10-02",
+        "url": "https://play.google.com/store/apps/details?id=in.indwealth&reviewId=457364ae-1d7c-4209-aecd-ecee7f8a6cc4",
+        "emotion": "disappointed",
+        "user_segment": "intermediate"
+      },
+      {
+        "id": "appstore_indmoney_14044963958",
+        "quote": "No dedicated customer call center.. Need to update their customer calling center if you want wealthy clients to stay",
+        "full_text": "Can’t trust INDmoney with my money, still so many open tickets.No dedicated customer call center.. Need to update their customer calling center if you want wealthy clients to stay",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-05-09",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "frustrated",
+        "user_segment": "unknown"
+      },
+      {
+        "id": "play_groww_c67c774d-a9d0-4633-a65d-2a626ca75b45",
+        "quote": "the Groww app is not working well. After opening the app, it automatically slows down, glitches, and gets stuck.",
+        "full_text": "I recently purchased a Google Pixel 11, but on the Pixel 11, the Groww app is not working well. After opening the app, it automatically slows down, glitches, and gets stuck.",
+        "source": "google_play",
+        "platform_app": "Groww",
+        "rating": 1,
+        "date": "2026-10-19",
+        "url": "https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=c67c774d-a9d0-4633-a65d-2a626ca75b45",
+        "emotion": "frustrated",
+        "user_segment": "unknown"
+      },
+      {
+        "id": "play_zerodha coin_7379d479-4947-40de-b493-a2e788a63052",
+        "quote": "Zerodha customer care blamed Razorpay for the delay, even though I received payment confirmation within seconds.",
+        "full_text": "I made a payment during a market dip due to elections, ensuring it was before the cutoff for NAV allocation on the purchase date. Despite this, I was allotted NAV for T+1, missing out on a 5-6% market gain and losing about ₹5000. Zerodha customer care blamed Razorpay for the delay, even though I received payment confirmation within seconds. Zerodha refused responsibility. Don’t waste money here; free apps offer better service. Zerodha support is non-existent. So my rating is less than 1 star",
+        "source": "google_play",
+        "platform_app": "Zerodha Coin",
+        "rating": 1,
+        "date": "2024-06-06",
+        "url": "https://play.google.com/store/apps/details?id=com.zerodha.coin&reviewId=7379d479-4947-40de-b493-a2e788a63052",
+        "emotion": "frustrated",
+        "user_segment": "intermediate"
+      },
+      {
+        "id": "play_zerodha coin_7feb7645-9d70-49eb-8486-7bd30bd2755e",
+        "quote": "I'm seeing something went wrong error. unable to purchase MF. update: For creating tickets, please hire QA",
+        "full_text": "I'm seeing something went wrong error. unable to purchase MF. update: For creating tickets, please hire QA",
+        "source": "google_play",
+        "platform_app": "Zerodha Coin",
+        "rating": 1,
+        "date": "2025-11-25",
+        "url": "https://play.google.com/store/apps/details?id=com.zerodha.coin&reviewId=7feb7645-9d70-49eb-8486-7bd30bd2755e",
+        "emotion": "frustrated",
+        "user_segment": "unknown"
+      },
+      {
+        "id": "appstore_indmoney_14196220040",
+        "quote": "Tracking not working. Mutual fund tracking, not working for my son’s account and the support team is",
+        "full_text": "Tracking not working. Mutual fund tracking, not working for my son’s account and the support team is unable to help.",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-06-17",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_13913112922",
+        "quote": "Very poor support. I’m very disappointed with the support. I had raised a ticket week back for a fai",
+        "full_text": "Very poor support. I’m very disappointed with the support. I had raised a ticket week back for a failed US stocks account deposit which actually succeeded at my bank but failed with INDMoney.\nMy money of ₹20000 / $211 is still not refunded despite providing the swift copy and my bank statement.\n\nIs INDMoney negligent about supporting customers or has very poor support team or low on resources or not even focusing on support aspect, not sure.\n\nThis is to express my disappointment for choosing INDMoney even when there are a quite a few competitor apps in this domain.\nKindly resolve my issue and don’t let me down. I think there may be some challenges which need to be addressed.\nHope the support improves.\nThanks.",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 4,
+        "date": "2026-04-01",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_13716382871",
+        "quote": "Nothing beats INDMoney. I tried almost all MutualFund and trading apps out there. For MF this is the",
+        "full_text": "Nothing beats INDMoney. I tried almost all MutualFund and trading apps out there. For MF this is the best app not only because it lets you set weekly, monthly, quarterly SIP but it keeps you informed about smallest changes in funds. Shows very clearly where you are losing, and gaining. Each thing works with a click. UPI mandates and NAV allocation is spot on. Support replies with A CALL not email to help you out in 24 hours. Don’t change anything and this would be my final app.",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 5,
+        "date": "2026-02-05",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_13629192267",
+        "quote": "Customer support issue. I have been going through 2 major issue. I want to invest in US sotcks but m",
+        "full_text": "Customer support issue. I have been going through 2 major issue. I want to invest in US sotcks but my primary account is only not getting linked, i raised the ticket byt they closed before resolving my issue and the turn around they are giving is temporary. Asking to attach another account and remove old and add. And  that is also not seamless. So i created a federal bank account affiliated with INDmoney and that account also they froze after a single deposit(400$) due to some KYC issue. No doubt but at least call me back for Re-KYC. I raised a ticket for that as well but still no reply. My 400$ are stuck in the US broker, now how can I withdraw.",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-01-13",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_groww_14643386614",
+        "quote": "Worst app. I havent got my money from the mutual funds i sold 3 months ago and have emailed them man",
+        "full_text": "Worst app. I havent got my money from the mutual funds i sold 3 months ago and have emailed them many times but still the same response",
+        "source": "app_store",
+        "platform_app": "Groww",
+        "rating": 1,
+        "date": "2026-10-08",
+        "url": "https://apps.apple.com/in/app/id1404871703",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_groww_14562906366",
+        "quote": "Support issue. Customer care guys not supporting properly don’t use this app anymore\nWorst experienc",
+        "full_text": "Support issue. Customer care guys not supporting properly don’t use this app anymore\nWorst experience from groww",
+        "source": "app_store",
+        "platform_app": "Groww",
+        "rating": 1,
+        "date": "2026-09-17",
+        "url": "https://apps.apple.com/in/app/id1404871703",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_groww_14562903966",
+        "quote": "Improve your customer support, no one is there to support a transaction issues.. Even single reply t",
+        "full_text": "Improve your customer support, no one is there to support a transaction issues.. Even single reply to take time 20-30 min without proper knowledge.they don’t understand the issue. Worst customer support. groww Application also skips my one-day transaction history they didn’t add my profit and also my capital amount is also blocked even not shown in transaction history.",
+        "source": "app_store",
+        "platform_app": "Groww",
+        "rating": 1,
+        "date": "2026-09-17",
+        "url": "https://apps.apple.com/in/app/id1404871703",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      }
+    ],
+    "rank": 7
+  },
+  {
+    "id": "T10",
+    "name": "Hidden Charges & Tax Complexity",
+    "discovery_questions": [
+      "Q5",
+      "Q9"
+    ],
+    "description": "Unexpected deductions for expense ratios, exit loads, stamp duty, STT, and confusion surrounding LTCG/STCG tax calculations upon redemption trigger feelings of deception.",
+    "key_insight": "Investors feel blindsided when post-tax, post-fee returns differ from the gross returns displayed on the main portfolio card.",
+    "opportunity_score": 0.581,
+    "opportunity_score_100": 58.1,
+    "score_breakdown": {
+      "frequency": 0.1932,
+      "frequency_corpus_pct": 0.0522,
+      "severity": 0.6693,
+      "actionability": 0.9,
+      "recency": 0.65,
+      "multiplicative_score": 0.0756,
+      "weights": {
+        "frequency": 0.3,
+        "severity": 0.3,
+        "actionability": 0.25,
+        "recency": 0.15
+      }
+    },
+    "volume_count": 125,
+    "volume_percentage": 5.22,
+    "top_emotion": "frustrated",
+    "emotion_distribution": {
+      "frustrated": 52.0,
+      "disappointed": 1.6,
+      "reassured": 1.6,
+      "hopeful": 28.8,
+      "confident": 0.8,
+      "confused": 13.6,
+      "angry": 1.6
+    },
+    "action_distribution": {
+      "none_mentioned": 5.6,
+      "continued": 43.2,
+      "considering_stopping": 51.2
+    },
+    "segment_breakdown": {
+      "experience_level": {
+        "intermediate": 2,
+        "beginner": 120,
+        "experienced": 1,
+        "unknown": 2
+      },
+      "sip_tenure": {
+        "unknown": 123,
+        "beyond_12": 1,
+        "pre_start": 1
+      },
+      "influence_source": {
+        "self_research": 7,
+        "unknown": 116,
+        "peer": 2
+      }
+    },
+    "suggested_interventions": [
+      "Transparent Pre-Redemption Simulator: Exact breakdown of exit load, taxes, and net in-bank payout.",
+      "Clear Expense Ratio Display: Translate bps into annualized rupee cost on monthly statements.",
+      "Tax-Harvesting Opportunity Alerts: Intelligent prompts to utilize the ₹1.25L annual LTCG exemption."
+    ],
+    "representative_quotes": [
+      {
+        "id": "play_zerodha coin_33383e60-fdd0-4dde-a8f9-dcdc583f72d1",
+        "quote": "App should have more details about funds like it's asset allocation equity, debt, large, mid, small and it's taxation also",
+        "full_text": "It's look like a basic app for kids. mutual funds, App should have more details about funds like it's asset allocation equity, debt, large, mid, small and it's taxation also.. As others app like et money and groww.. Before investing one should know about funds.",
+        "source": "google_play",
+        "platform_app": "Zerodha Coin",
+        "rating": 1,
+        "date": "2025-07-06",
+        "url": "https://play.google.com/store/apps/details?id=com.zerodha.coin&reviewId=33383e60-fdd0-4dde-a8f9-dcdc583f72d1",
+        "emotion": "disappointed",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "play_indmoney_70d9b996-d177-4343-ba7d-5cf2dff2ad9a",
+        "quote": "Before, frequent syncing interruptions made everything feel slow, clunky, and sometimes even frustrating to deal with.",
+        "full_text": "This update really changed the entire experience! The app is soo🔥 much more responsive, and you can feel the improved speed in every interaction, from opening it to completing tasks. Before, frequent syncing interruptions made everything feel slow, clunky, and sometimes even frustrating to deal with. It would constantly break your rhythm and reduce productivity. Now, the app runs in a much smoother and uninterrupted way, allowing everything to flow naturally without delays.",
+        "source": "google_play",
+        "platform_app": "INDmoney",
+        "rating": 4,
+        "date": "2026-08-07",
+        "url": "https://play.google.com/store/apps/details?id=in.indwealth&reviewId=70d9b996-d177-4343-ba7d-5cf2dff2ad9a",
+        "emotion": "reassured",
+        "user_segment": "unknown"
+      },
+      {
+        "id": "appstore_indmoney_14508590007",
+        "quote": "I am disappointed with the way USD deposits are being processed ... exchange rate of ₹96.25/USD, while the prevailing",
+        "full_text": "Discrepancy in adding money to the wallet. I have a serious Concern regarding USD/INR exchange rate and transparency of charges\n\nI am disappointed with the way USD deposits are being processed through INDmoney/Federal Bank. I recently tried to deposit ₹50,000 into my US wallet, and the app showed an exchange rate of ₹96.25/USD, while the prevailing USD/INR rate at the time was around ₹94.26/USD.\n\nThis represents a difference of approximately ₹1.99 per USD, or 2.1%, which is significant for a currency conversion. For a ₹50,000 transaction, this exchange-rate difference alone can materially reduce the USD amount received.\n\nThe app also displayed ₹74.89 GST and ₹8,321 indicative TCS. I understand that TCS is refundable and therefore should not necessarily be considered a permanent cost. However, the exchange-rate spread is a separate issue and needs much greater transparency.\n\nMy concern is not simply about paying a fee — it is about fair and transparent valuation of the money being converted. If Federal Bank/INDmoney is applying a currency-conversion markup, customers should clearly be shown the reference USD/INR rate, the markup/spread being applied, and the exact amount being charged because of that spread.\n\nThe statement “You’re saving ₹1,796 on transfer charges and forex rates” also creates the impression that the conversion is highly competitive, while the displayed exchange rate appears materially higher than the prevailing market rate.\n\nI request INDmoney to clearly disclose how this exchange rate is determined and what portion of the difference represents the bank’s forex spread. Customers should be able to see a transparent calculation before approving the transaction.\n\nPlease improve the transparency of USD/INR conversion rates and ensure customers receive a fair and properly evaluated exchange rate.",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 5,
+        "date": "2026-09-04",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "frustrated",
+        "user_segment": "intermediate"
+      },
+      {
+        "id": "play_indmoney_1861113c-49bf-4054-b423-4d5bfba513b1",
+        "quote": "I feel the UI for the chart is not good as groww. need to improve chart UI taking last day Price as center line.",
+        "full_text": "I feel the UI for the chart is not good as groww. need to improve chart UI taking last day Price as center line. without it confusing",
+        "source": "google_play",
+        "platform_app": "INDmoney",
+        "rating": 3,
+        "date": "2026-05-05",
+        "url": "https://play.google.com/store/apps/details?id=in.indwealth&reviewId=1861113c-49bf-4054-b423-4d5bfba513b1",
+        "emotion": "frustrated",
+        "user_segment": "intermediate"
+      },
+      {
+        "id": "play_zerodha coin_d44a5572-9c1c-46f7-9dbc-fdcefe73e645",
+        "quote": "you will get to see different fees and charges which were not clearly mentioned. and Exit loads on Sip too",
+        "full_text": "Not at all Transparent. once you start an SIP and the After 1 year when you redeem the units you will get to see different fees and charges which were not clearly mentioned. and Exit loads on Sip too. very complex and Hidden things. sad part is that you will only get to know about all these dark pattern of hidden charges and fees once, when you have completed one year of sip and you redeem units. Not good application. Not recommended. Don't Risk Your Hard Earn money with this.",
+        "source": "google_play",
+        "platform_app": "Zerodha Coin",
+        "rating": 1,
+        "date": "2025-12-03",
+        "url": "https://play.google.com/store/apps/details?id=com.zerodha.coin&reviewId=d44a5572-9c1c-46f7-9dbc-fdcefe73e645",
+        "emotion": "angry",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_14544682882",
+        "quote": "Deceptive practices and terrible support. Avoid this app.. Zero transparency. They hiked MTF interes",
+        "full_text": "Deceptive practices and terrible support. Avoid this app.. Zero transparency. They hiked MTF interest rates and brokerage fees. Customer support was rude and falsely claimed these were \"promotional offers\" that were never disclosed anywhere. This lack of transparency and unprofessional support makes them completely untrustworthy for serious investors. I have initiated a full transfer of my portfolio to another broker. Do not trust them with your money.\n\nUPDATE: EMAILED THEIR ESCALATION DESK AS INSTRUCTED IN THE REPLY. NO GENUINE ATTEMPT TO FIX THE PROBLEM, JUST DEFENDING THEIR UNANNOUNCED CHARGES AND RUDE SUPPORT. THEIR PUBLIC REPLIES ARE PURE PR. SERIOUS INVESTORS SAVE YOUR TIME AND  CAPITAL, LOOK ELSEWHERE.",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-09-13",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_13991596579",
+        "quote": "Do not use for US dollar investments. I had a very poor experience with INDmoney while funding my US",
+        "full_text": "Do not use for US dollar investments. I had a very poor experience with INDmoney while funding my US stocks account. I paid ₹4955 for $50, but after a month-long back-and-forth on compliance issues between my bank and their US broker, the transaction was reversed.\n\nI was refunded only ₹4500, with the difference attributed to “exchange rate fluctuations” and “bank charges.” There was no clear upfront communication about these risks, and support responses lacked transparency and accountability.\n\nThis feels unfair and poorly handled. Users deserve better clarity, faster resolution, and more responsible handling of their money.",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-04-24",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_13849800879",
+        "quote": "One of the worst User Interface. I love the app features but I hate how the things or organised. I k",
+        "full_text": "One of the worst User Interface. I love the app features but I hate how the things or organised. I know it's not easy but it is necessary to completely redesign the UI. Instead of spending effort in putting new features in. Concentrate on app interface. There are lot of blank space between each option, poor placement of features, etc. look other investment app like paytm money, they have decent UI. I feel I spend lot of time scrolling in IndMoney where it doesn't need scrolling in other apps. Please improve the UI at the earliest.",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-03-14",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_13959097338",
+        "quote": "Amazing, but one feedback. Hey, the most recent UI is horrible! Especially iOS layout! Previous vers",
+        "full_text": "Amazing, but one feedback. Hey, the most recent UI is horrible! Especially iOS layout! Previous version was intuitive and informative, splitting it across multiple pages and folds makes the interface much harder to navigate, considering the nature of the time sensitive actions to be taken! Kindly review and revert/ modify as soon as possible!!",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 1,
+        "date": "2026-04-14",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_13665708573",
+        "quote": "Best trading app for beginners!. I’m a beginner and all other apps except this made me feel lost sin",
+        "full_text": "Best trading app for beginners!. I’m a beginner and all other apps except this made me feel lost since I didn’t have much understanding of how these platforms function and how to invest. This app literally took care of my journey from a learner to an investor. Started with the the INDlearn feature to learn the process, used mIND to evaluate stocks and eventually now an investor. Great stuff, INDmoney!",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 5,
+        "date": "2026-01-23",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_indmoney_13643445858",
+        "quote": "Customer care number. INDmoney can be number 1 in India only after starting customer care number and",
+        "full_text": "Customer care number. INDmoney can be number 1 in India only after starting customer care number and reducing charges",
+        "source": "app_store",
+        "platform_app": "INDmoney",
+        "rating": 2,
+        "date": "2026-01-17",
+        "url": "https://apps.apple.com/in/app/id1450178837",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "appstore_groww_14640907941",
+        "quote": "One of the most pathetic experiences I have ever had with a financial platform.. Groww looks impress",
+        "full_text": "One of the most pathetic experiences I have ever had with a financial platform.. Groww looks impressive until you actually need help. The moment there is a serious issue involving your money, the so-called “customer support” becomes an endless cycle of useless automated replies, copy-pasted messages and absolutely zero accountability.\n\nIt is honestly frustrating to see a financial platform put so much effort into making the app look smooth while seemingly putting so little effort into actually helping customers when something goes wrong.\n\nYou don’t feel like a customer—you feel like a ticket number being passed around by a system that doesn’t care whether your problem gets resolved or not.\n\nWhen money is involved, “please wait” and generic replies are NOT customer service.\n\nThe entire experience has been unbelievably frustrating, time-consuming and disappointing. If you expect quick resolution, proper communication and someone to actually take ownership of your issue, don’t expect much from Groww.\n\nI seriously regret choosing this platform. A financial service should give customers confidence and peace of mind—not make them constantly worry about whether their issue will ever be resolved.\n\nGroww needs a reality check. A good-looking app cannot compensate for terrible support and a frustrating customer experience.\n\nI would not recommend Groww based on my experience. There are better alternatives where customers deserve to be treated like customers.",
+        "source": "app_store",
+        "platform_app": "Groww",
+        "rating": 1,
+        "date": "2026-10-07",
+        "url": "https://apps.apple.com/in/app/id1404871703",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "play_groww_cc086c9d-699c-4c44-a338-d5f54b621eb5",
+        "quote": "new updates app syntax is too small it very harmful for eyes so please update previous version it wa",
+        "full_text": "new updates app syntax is too small it very harmful for eyes so please update previous version it was very useful and easy to operate 🙏🏻",
+        "source": "google_play",
+        "platform_app": "Groww",
+        "rating": 5,
+        "date": "2026-10-29",
+        "url": "https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=cc086c9d-699c-4c44-a338-d5f54b621eb5",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "play_groww_a9c813f7-ea5c-486d-9a6c-8f2864abddc0",
+        "quote": "overall the experience was good but brokerage charges were high compared to zeoroda.(existing custom",
+        "full_text": "overall the experience was good but brokerage charges were high compared to zeoroda.(existing customer ) .... 0.3%or 20 ₹per transaction but in another they only take yearly charges fixed.groww should go for annually maintenance",
+        "source": "google_play",
+        "platform_app": "Groww",
+        "rating": 5,
+        "date": "2026-10-20",
+        "url": "https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=a9c813f7-ea5c-486d-9a6c-8f2864abddc0",
+        "emotion": "hopeful",
+        "user_segment": "beginner"
+      },
+      {
+        "id": "play_groww_ebc51828-079b-4d2c-8420-1eaaab9ba25f",
+        "quote": "Used to be good but now the charges are just significant, brokerage and DP charges both are signific",
+        "full_text": "Used to be good but now the charges are just significant, brokerage and DP charges both are significant for a company this size, zerodha is better when you look at yearly charges you have paid to groww, excluding govt charges.",
+        "source": "google_play",
+        "platform_app": "Groww",
+        "rating": 2,
+        "date": "2026-10-20",
+        "url": "https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=ebc51828-079b-4d2c-8420-1eaaab9ba25f",
+        "emotion": "frustrated",
+        "user_segment": "beginner"
+      }
+    ],
+    "rank": 6
+  }
+]

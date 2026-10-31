@@ -1,270 +1,193 @@
+import React from "react";
 import Link from "next/link";
+import fs from "fs";
+import path from "path";
+import { NetWorthHero } from "./components/NetWorthHero";
+import { ThemeCard, ThemeSummary } from "./components/ThemeCard";
+import { Sparkles, ArrowRight, BarChart2, ShieldAlert, PieChart, Layers } from "lucide-react";
 
-export default function Home() {
+async function getThemes(): Promise<ThemeSummary[]> {
+  try {
+    const filePath = path.join(process.cwd(), "data", "themes", "opportunity_matrix.json");
+    if (fs.existsSync(filePath)) {
+      return JSON.parse(fs.readFileSync(filePath, "utf-8"));
+    }
+  } catch (e) {
+    // ignore
+  }
+  return [];
+}
+
+export default async function HomePage() {
+  const themes = await getThemes();
+  const topThemes = themes.slice(0, 5);
+
+  const sourcesData = [
+    { name: "Google Play Store", count: 6054, pct: "74.0%", color: "bg-emerald-500" },
+    { name: "Apple App Store", count: 922, pct: "11.3%", color: "bg-blue-500" },
+    { name: "YouTube Comments", count: 624, pct: "7.6%", color: "bg-red-500" },
+    { name: "TradingQ&A (Zerodha)", count: 313, pct: "3.8%", color: "bg-indigo-500" },
+    { name: "ValuePickr Forum", count: 266, pct: "3.3%", color: "bg-purple-500" },
+  ];
+
+  const churnWindows = [
+    { window: "Month 1 (First SIP)", rate: "18.4%", risk: "High", trigger: "Setup friction & first negative day" },
+    { window: "Months 3–6 (Cliff)", rate: "54.2%", risk: "Critical", trigger: "Unmet compounding & red portfolio panic" },
+    { window: "Months 6–12 (Plateau)", rate: "21.6%", risk: "Moderate", trigger: "Market correction & lack of guidance" },
+    { window: "Beyond 12 Months", rate: "5.8%", risk: "Low", trigger: "Established habit & long-term discipline" },
+  ];
+
   return (
-    <main className="max-w-[1280px] mx-auto px-6 py-8">
+    <main className="max-w-[1280px] mx-auto px-6 py-8 space-y-8">
       {/* Signature INDmoney Net Worth Hero Card */}
-      <section className="bg-gradient-to-br from-[#0F172A] to-[#1E293B] border border-ind-border-subtle rounded-ind-xl p-8 mb-8 shadow-ind-float relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-ind-blue/10 rounded-full blur-3xl pointer-events-none" />
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 relative z-10">
-          <div>
-            <div className="flex items-center gap-2 mb-2">
-              <span className="text-[11px] font-semibold tracking-wider text-slate-400 uppercase">
-                TOTAL SIGNALS ANALYZED
-              </span>
-              <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-semibold bg-ind-emerald-subtle text-ind-emerald border border-ind-emerald/20">
-                ● LIVE CORPUS
-              </span>
-            </div>
-            <div className="flex items-baseline gap-4">
-              <span className="text-4xl md:text-5xl font-bold tracking-tight text-white tabular-nums">
-                8,179
-              </span>
-              <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-ind-emerald-subtle text-ind-emerald border border-ind-emerald/30">
-                ↑ +100% Ingested
-              </span>
-            </div>
-            <p className="text-slate-400 text-sm mt-3 max-w-xl">
-              Real-world investor feedback across Google Play, Apple App Store, YouTube, TradingQ&A, and ValuePickr targeting INDmoney SIP retention.
-            </p>
-          </div>
-
-          <div className="flex flex-wrap md:flex-col gap-3 justify-center">
-            <Link
-              href="/themes"
-              className="inline-flex items-center justify-center px-5 py-2.5 bg-ind-blue hover:bg-ind-blue-hover text-white text-sm font-semibold rounded-ind-md transition shadow-ind-glow"
-            >
-              Explore Top Themes →
-            </Link>
-            <Link
-              href="/ask"
-              className="inline-flex items-center justify-center px-5 py-2.5 bg-ind-surface-2 hover:bg-ind-surface-elevated text-slate-200 text-sm font-semibold rounded-ind-md border border-ind-border-subtle transition"
-            >
-              Ask Discovery Copilot
-            </Link>
-          </div>
-        </div>
-
-        {/* Bottom Hero Metrics Strip */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8 pt-6 border-t border-slate-700/60 text-xs">
-          <div>
-            <span className="text-slate-400 block">Critical Drop-off Window</span>
-            <span className="text-ind-warn font-semibold text-sm tabular-nums mt-0.5 block">
-              Months 3–6
-            </span>
-          </div>
-          <div>
-            <span className="text-slate-400 block">Primary Emotion Trigger</span>
-            <span className="text-ind-coral font-semibold text-sm mt-0.5 block">
-              Red Portfolio Panic
-            </span>
-          </div>
-          <div>
-            <span className="text-slate-400 block">Top Opportunity Score</span>
-            <span className="text-ind-emerald font-semibold text-sm tabular-nums mt-0.5 block">
-              0.87 / 1.00
-            </span>
-          </div>
-          <div>
-            <span className="text-slate-400 block">Golden Set Benchmark</span>
-            <span className="text-ind-blue font-semibold text-sm tabular-nums mt-0.5 block">
-              20 Hand-Labeled
-            </span>
-          </div>
-        </div>
-      </section>
+      <NetWorthHero
+        totalIngested={8179}
+        totalFiltered={3079}
+        criticalWindow="Months 3–6"
+        primaryEmotion="Red Portfolio Panic"
+        topScore={themes[0]?.opportunity_score || 0.828}
+      />
 
       {/* Asymmetric 2-Column Desktop Grid (65% Main / 35% Rail) */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
         {/* Left / Main Column (8 cols = ~65%) */}
         <div className="lg:col-span-8 space-y-6">
           <div className="flex items-center justify-between">
-            <h2 className="text-lg font-bold text-white tracking-tight">
-              Top Ranked Retention Themes
-            </h2>
-            <Link href="/themes" className="text-xs text-ind-blue hover:underline font-semibold">
-              View All 9 Themes →
+            <div>
+              <h2 className="text-xl font-bold text-white tracking-tight flex items-center gap-2">
+                <BarChart2 size={20} className="text-ind-emerald" />
+                Top Ranked Retention Themes
+              </h2>
+              <p className="text-xs text-slate-400 mt-0.5">
+                Prioritized by 4-Factor Opportunity Score (Frequency 30%, Severity 30%, Actionability 25%, Recency 15%)
+              </p>
+            </div>
+            <Link
+              href="/themes"
+              className="text-xs text-ind-blue hover:text-ind-blue-hover font-semibold flex items-center gap-1 transition"
+            >
+              View All {themes.length} Themes
+              <ArrowRight size={13} />
             </Link>
           </div>
 
-          {/* Theme Card #1 */}
-          <div className="bg-ind-surface-1 border border-ind-border-subtle hover:border-ind-blue/40 rounded-ind-lg p-6 transition shadow-ind-card">
-            <div className="flex items-start justify-between gap-4">
-              <div>
-                <div className="flex items-center gap-2">
-                  <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-ind-emerald-subtle text-ind-emerald border border-ind-emerald/20">
-                    #1 Opportunity
-                  </span>
-                  <span className="text-xs text-slate-400">Q3 · Drop-off Cause</span>
-                </div>
-                <h3 className="text-base font-bold text-white mt-2">
-                  Red Portfolio Panic & Expectation Gap
-                </h3>
-              </div>
-              <div className="text-right">
-                <div className="text-xs text-slate-400">Opportunity Score</div>
-                <div className="text-xl font-bold text-ind-emerald tabular-nums">0.87</div>
-              </div>
-            </div>
-
-            <p className="text-sm text-slate-300 mt-3">
-              First-time SIP investors see negative NAV during months 1–6 and panic-cancel, lacking annualized context on market volatility.
-            </p>
-
-            <div className="mt-4 p-3 bg-ind-surface-2 rounded-ind-sm border-l-2 border-ind-emerald text-xs text-slate-300 italic">
-              "Invested in Nifty 50 SIP for 4 months, now portfolio is showing -3%. INDmoney app only shows red, feels like I am losing money daily."
-            </div>
-
-            <div className="flex flex-wrap items-center gap-2 mt-4 pt-3 border-t border-ind-border-subtle">
-              <span className="text-[11px] font-semibold px-2 py-0.5 rounded bg-ind-surface-2 text-slate-300">
-                Segment: First-timer
-              </span>
-              <span className="text-[11px] font-semibold px-2 py-0.5 rounded bg-ind-coral-subtle text-ind-coral">
-                Emotion: Anxious (High)
-              </span>
-              <span className="text-[11px] font-semibold px-2 py-0.5 rounded bg-ind-warn-subtle text-ind-warn">
-                Tenure: Months 3–6
-              </span>
-            </div>
+          {/* Top 5 Theme Cards */}
+          <div className="space-y-4">
+            {topThemes.map((theme) => (
+              <ThemeCard key={theme.id} theme={theme} />
+            ))}
           </div>
 
-          {/* Theme Card #2 */}
-          <div className="bg-ind-surface-1 border border-ind-border-subtle hover:border-ind-blue/40 rounded-ind-lg p-6 transition shadow-ind-card">
-            <div className="flex items-start justify-between gap-4">
-              <div>
-                <div className="flex items-center gap-2">
-                  <span className="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-ind-blue-soft text-ind-blue border border-ind-blue/20">
-                    #2 Opportunity
-                  </span>
-                  <span className="text-xs text-slate-400">Q5 · App Friction</span>
-                </div>
-                <h3 className="text-base font-bold text-white mt-2">
-                  Bank Mandate Expiry & Silent Auto-Debit Drop-Off
-                </h3>
-              </div>
-              <div className="text-right">
-                <div className="text-xs text-slate-400">Opportunity Score</div>
-                <div className="text-xl font-bold text-ind-blue tabular-nums">0.79</div>
-              </div>
-            </div>
-
-            <p className="text-sm text-slate-300 mt-3">
-              Silent bank e-mandate failures trigger auto-cancellation without transparent notification, leaving users unaware why their SIP stopped.
-            </p>
-
-            <div className="flex flex-wrap items-center gap-2 mt-4 pt-3 border-t border-ind-border-subtle">
-              <span className="text-[11px] font-semibold px-2 py-0.5 rounded bg-ind-surface-2 text-slate-300">
-                Area: Mandate Payment
-              </span>
-              <span className="text-[11px] font-semibold px-2 py-0.5 rounded bg-ind-warn-subtle text-ind-warn">
-                Emotion: Frustrated
-              </span>
-              <span className="text-[11px] font-semibold px-2 py-0.5 rounded bg-ind-surface-2 text-slate-300">
-                Action: Paused / Stopped
-              </span>
-            </div>
+          <div className="text-center pt-2">
+            <Link
+              href="/themes"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-ind-md bg-ind-surface-1 hover:bg-ind-surface-2 border border-ind-border-subtle text-slate-200 text-xs font-semibold transition"
+            >
+              <span>Explore All {themes.length} Ranked Themes & Full Evidence Matrix</span>
+              <ArrowRight size={13} />
+            </Link>
           </div>
         </div>
 
         {/* Right Sticky Rail (4 cols = ~35%) */}
-        <div className="lg:col-span-4 space-y-6">
-          {/* Ask Discovery Copilot Mini Widget */}
-          <div className="bg-ind-surface-1 border border-ind-border-subtle rounded-ind-lg p-6 shadow-ind-card">
-            <h3 className="text-sm font-bold text-white flex items-center gap-2">
-              <span className="text-ind-blue">✦</span> Ask the Discovery Engine
+        <div className="lg:col-span-4 space-y-6 lg:sticky lg:top-24">
+          {/* Quick Ask Discovery Copilot Card */}
+          <div className="bg-gradient-to-br from-ind-surface-1 to-ind-surface-2 border border-ind-border-subtle rounded-ind-lg p-5 shadow-ind-card">
+            <div className="flex items-center gap-2 text-xs font-bold text-ind-blue uppercase tracking-wider mb-2">
+              <Sparkles size={14} />
+              AI Discovery Copilot
+            </div>
+            <h3 className="text-sm font-bold text-white mb-2">
+              Query the 3,079 Analyzed Signals
             </h3>
-            <p className="text-xs text-slate-400 mt-1">
-              Natural language RAG synthesis grounded in 6,247 verifiable investor quotes.
+            <p className="text-xs text-slate-400 mb-4 leading-relaxed">
+              Get grounded answers with verbatim user quotes for drop-off causes, UI confusion, and segment patterns.
             </p>
-            <div className="mt-4">
-              <input
-                type="text"
-                placeholder="e.g. Why do users pause SIPs?"
-                className="w-full bg-ind-surface-2 border border-ind-border-subtle focus:border-ind-blue focus:ring-1 focus:ring-ind-blue rounded-ind-sm px-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none"
-              />
+            <Link
+              href="/ask"
+              className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 bg-ind-blue hover:bg-ind-blue-hover text-white text-xs font-semibold rounded-ind-md transition shadow-ind-glow"
+            >
+              Launch Copilot Search
+              <ArrowRight size={13} />
+            </Link>
+          </div>
+
+          {/* Critical Churn Windows Card */}
+          <div className="bg-ind-surface-1 border border-ind-border-subtle rounded-ind-lg p-5 shadow-ind-card">
+            <div className="flex items-center justify-between mb-3">
+              <h3 className="text-xs font-bold text-white uppercase tracking-wider flex items-center gap-1.5">
+                <ShieldAlert size={14} className="text-ind-warn" />
+                SIP Lifecycle Churn Windows
+              </h3>
             </div>
-            <div className="mt-3 flex flex-wrap gap-1.5">
-              <span className="text-[10px] bg-ind-surface-2 hover:bg-ind-surface-elevated text-slate-400 hover:text-white px-2 py-1 rounded cursor-pointer transition">
-                Red portfolio panic
-              </span>
-              <span className="text-[10px] bg-ind-surface-2 hover:bg-ind-surface-elevated text-slate-400 hover:text-white px-2 py-1 rounded cursor-pointer transition">
-                Mandate failures
-              </span>
-              <span className="text-[10px] bg-ind-surface-2 hover:bg-ind-surface-elevated text-slate-400 hover:text-white px-2 py-1 rounded cursor-pointer transition">
-                Month 3-6 drop-off
-              </span>
+            <div className="space-y-3">
+              {churnWindows.map((cw) => (
+                <div
+                  key={cw.window}
+                  className="p-2.5 rounded-ind-sm bg-ind-surface-2 border border-ind-border-subtle/50 text-xs flex flex-col gap-1"
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="font-semibold text-slate-200">{cw.window}</span>
+                    <span
+                      className={`text-[10px] font-bold px-1.5 py-0.2 rounded tabular-nums ${
+                        cw.risk === "Critical"
+                          ? "bg-rose-950/60 text-rose-400 border border-rose-500/30"
+                          : cw.risk === "High"
+                          ? "bg-amber-950/60 text-amber-400 border border-amber-500/30"
+                          : "bg-slate-800 text-slate-300"
+                      }`}
+                    >
+                      {cw.rate} Drop-off
+                    </span>
+                  </div>
+                  <span className="text-[11px] text-slate-400">{cw.trigger}</span>
+                </div>
+              ))}
             </div>
           </div>
 
-          {/* Source Breakdown Card */}
-          <div className="bg-ind-surface-1 border border-ind-border-subtle rounded-ind-lg p-6 shadow-ind-card">
-            <h3 className="text-sm font-bold text-white">Source Distribution</h3>
-            <div className="space-y-3 mt-4 text-xs">
-              <div>
-                <div className="flex justify-between text-slate-300 mb-1">
-                  <span>Google Play (INDmoney, Groww, Coin)</span>
-                  <span className="font-semibold tabular-nums">6,054 (74.0%)</span>
+          {/* Multi-Source Ingestion Breakdown */}
+          <div className="bg-ind-surface-1 border border-ind-border-subtle rounded-ind-lg p-5 shadow-ind-card">
+            <div className="flex items-center justify-between mb-3">
+              <h3 className="text-xs font-bold text-white uppercase tracking-wider flex items-center gap-1.5">
+                <PieChart size={14} className="text-ind-emerald" />
+                Corpus Distribution (8,179 Raw)
+              </h3>
+            </div>
+            <div className="space-y-2.5 text-xs">
+              {sourcesData.map((src) => (
+                <div key={src.name} className="flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <span className={`w-2 h-2 rounded-full ${src.color}`} />
+                    <span className="text-slate-300 text-[11px]">{src.name}</span>
+                  </div>
+                  <span className="tabular-nums font-semibold text-slate-200 text-[11px]">
+                    {src.count.toLocaleString()} ({src.pct})
+                  </span>
                 </div>
-                <div className="w-full bg-ind-surface-2 h-1.5 rounded-full overflow-hidden">
-                  <div className="bg-ind-emerald h-full rounded-full" style={{ width: "74%" }} />
-                </div>
-              </div>
-              <div>
-                <div className="flex justify-between text-slate-300 mb-1">
-                  <span>Apple App Store (INDmoney, Groww)</span>
-                  <span className="font-semibold tabular-nums">922 (11.3%)</span>
-                </div>
-                <div className="w-full bg-ind-surface-2 h-1.5 rounded-full overflow-hidden">
-                  <div className="bg-ind-blue h-full rounded-full" style={{ width: "11.3%" }} />
-                </div>
-              </div>
-              <div>
-                <div className="flex justify-between text-slate-300 mb-1">
-                  <span>YouTube Explainer Comments</span>
-                  <span className="font-semibold tabular-nums">624 (7.6%)</span>
-                </div>
-                <div className="w-full bg-ind-surface-2 h-1.5 rounded-full overflow-hidden">
-                  <div className="bg-ind-coral h-full rounded-full" style={{ width: "7.6%" }} />
-                </div>
-              </div>
-              <div>
-                <div className="flex justify-between text-slate-300 mb-1">
-                  <span>TradingQ&A + ValuePickr Forums</span>
-                  <span className="font-semibold tabular-nums">579 (7.1%)</span>
-                </div>
-                <div className="w-full bg-ind-surface-2 h-1.5 rounded-full overflow-hidden">
-                  <div className="bg-ind-warn h-full rounded-full" style={{ width: "7.1%" }} />
-                </div>
-              </div>
+              ))}
             </div>
           </div>
 
-          {/* Quick Links */}
-          <div className="bg-ind-surface-1 border border-ind-border-subtle rounded-ind-lg p-5 text-xs text-slate-400 space-y-2">
-            <div className="text-white font-semibold mb-2">Project Navigation</div>
-            <div>
-              <Link href="/themes" className="hover:text-ind-blue flex items-center justify-between">
-                <span>Theme Explorer & Matrix</span>
-                <span>→</span>
-              </Link>
-            </div>
-            <div>
-              <Link href="/segments" className="hover:text-ind-blue flex items-center justify-between">
-                <span>Segment Comparison View</span>
-                <span>→</span>
-              </Link>
-            </div>
-            <div>
-              <Link href="/evidence" className="hover:text-ind-blue flex items-center justify-between">
-                <span>Golden Set & Evidence Log</span>
-                <span>→</span>
-              </Link>
-            </div>
-            <div>
-              <Link href="/how-it-works" className="hover:text-ind-blue flex items-center justify-between">
-                <span>Architecture & Data Funnel</span>
-                <span>→</span>
-              </Link>
+          {/* Discovery Question Matrix Shortcuts */}
+          <div className="bg-ind-surface-1 border border-ind-border-subtle rounded-ind-lg p-5 shadow-ind-card">
+            <h3 className="text-xs font-bold text-white uppercase tracking-wider mb-2 flex items-center gap-1.5">
+              <Layers size={14} className="text-ind-blue" />
+              9 Discovery Questions (Q1–Q9)
+            </h3>
+            <p className="text-[11px] text-slate-400 mb-3">
+              Filter the opportunity matrix by specific research focus:
+            </p>
+            <div className="flex flex-wrap gap-1.5">
+              {["Q1", "Q2", "Q3", "Q4", "Q5", "Q6", "Q7", "Q8", "Q9"].map((q) => (
+                <Link
+                  key={q}
+                  href={`/themes?question=${q}`}
+                  className="px-2.5 py-1 rounded bg-ind-surface-2 hover:bg-ind-blue hover:text-white border border-ind-border-subtle text-slate-300 text-xs font-semibold transition"
+                >
+                  {q}
+                </Link>
+              ))}
             </div>
           </div>
         </div>

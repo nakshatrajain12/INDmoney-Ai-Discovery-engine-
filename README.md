@@ -124,3 +124,4 @@ python scrapers/run_all_scrapers.py
 - [x] `.env.example` committed, `.env` in `.gitignore`
 - [x] ChromaDB embedding and Opportunity Score utilities operational
 - [x] Next.js 14 App Router skeleton configured
+

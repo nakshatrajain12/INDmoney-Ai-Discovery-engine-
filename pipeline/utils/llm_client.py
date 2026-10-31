@@ -19,8 +19,10 @@ from datetime import datetime, timezone
 from dotenv import load_dotenv
 
 if sys.platform == "win32":
-    import io
-    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
+    try:
+        sys.stdout.reconfigure(encoding="utf-8", errors="replace")
+    except Exception:
+        pass
 
 load_dotenv()
 
@@ -100,11 +102,16 @@ class LLMClient:
             self.default_model = "gpt-4o-mini"
             self.fallback_model = "gpt-4o"
 
-    def _rotate_groq_key(self):
+    def rotate_groq_key(self):
+        """Public method to rotate Groq keys proactively across requests."""
         if len(self.groq_clients) > 1:
             prev = self.groq_idx
             self.groq_idx = (self.groq_idx + 1) % len(self.groq_clients)
-            print(f"[*] Rotated Groq API key: {prev+1} -> {self.groq_idx+1}")
+
+    def _rotate_groq_key(self):
+        self.rotate_groq_key()
+        if len(self.groq_clients) > 1:
+            print(f"[*] Rotated Groq API key: -> {self.groq_idx+1}")
 
     def _enforce_rate_limit(self):
         elapsed = time.time() - self.last_call_time

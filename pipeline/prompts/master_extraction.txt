@@ -71,3 +71,4 @@ RULES:
 - Do NOT infer investment advice preferences
 - Focus on behavioral and emotional signals, not technical bugs
 - If the text addresses multiple discovery questions, list ALL
+

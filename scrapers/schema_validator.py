@@ -86,3 +86,4 @@ if __name__ == "__main__":
     success, valid, invalid = validate_file()
     if not success:
         sys.exit(1)
+
