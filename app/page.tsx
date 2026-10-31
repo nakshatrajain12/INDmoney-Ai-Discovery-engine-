@@ -18,14 +18,14 @@ export default function Home() {
             </div>
             <div className="flex items-baseline gap-4">
               <span className="text-4xl md:text-5xl font-bold tracking-tight text-white tabular-nums">
-                6,247
+                8,179
               </span>
               <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-xs font-semibold bg-ind-emerald-subtle text-ind-emerald border border-ind-emerald/30">
                 ↑ +100% Ingested
               </span>
             </div>
             <p className="text-slate-400 text-sm mt-3 max-w-xl">
-              Real-world investor feedback across Google Play, Reddit, Apple App Store, YouTube, and TradingQ&A targeting INDmoney SIP retention.
+              Real-world investor feedback across Google Play, Apple App Store, YouTube, TradingQ&A, and ValuePickr targeting INDmoney SIP retention.
             </p>
           </div>
 
@@ -203,14 +203,38 @@ export default function Home() {
               <div>
                 <div className="flex justify-between text-slate-300 mb-1">
                   <span>Google Play (INDmoney, Groww, Coin)</span>
-                  <span className="font-semibold tabular-nums">6,247 (100%)</span>
+                  <span className="font-semibold tabular-nums">6,054 (74.0%)</span>
                 </div>
                 <div className="w-full bg-ind-surface-2 h-1.5 rounded-full overflow-hidden">
-                  <div className="bg-ind-emerald h-full rounded-full w-full" />
+                  <div className="bg-ind-emerald h-full rounded-full" style={{ width: "74%" }} />
                 </div>
               </div>
-              <div className="pt-2 text-slate-400 text-[11px]">
-                App Store, Reddit, YouTube, and TradingQ&A ingestion pipelines configured and staged.
+              <div>
+                <div className="flex justify-between text-slate-300 mb-1">
+                  <span>Apple App Store (INDmoney, Groww)</span>
+                  <span className="font-semibold tabular-nums">922 (11.3%)</span>
+                </div>
+                <div className="w-full bg-ind-surface-2 h-1.5 rounded-full overflow-hidden">
+                  <div className="bg-ind-blue h-full rounded-full" style={{ width: "11.3%" }} />
+                </div>
+              </div>
+              <div>
+                <div className="flex justify-between text-slate-300 mb-1">
+                  <span>YouTube Explainer Comments</span>
+                  <span className="font-semibold tabular-nums">624 (7.6%)</span>
+                </div>
+                <div className="w-full bg-ind-surface-2 h-1.5 rounded-full overflow-hidden">
+                  <div className="bg-ind-coral h-full rounded-full" style={{ width: "7.6%" }} />
+                </div>
+              </div>
+              <div>
+                <div className="flex justify-between text-slate-300 mb-1">
+                  <span>TradingQ&A + ValuePickr Forums</span>
+                  <span className="font-semibold tabular-nums">579 (7.1%)</span>
+                </div>
+                <div className="w-full bg-ind-surface-2 h-1.5 rounded-full overflow-hidden">
+                  <div className="bg-ind-warn h-full rounded-full" style={{ width: "7.1%" }} />
+                </div>
               </div>
             </div>
           </div>

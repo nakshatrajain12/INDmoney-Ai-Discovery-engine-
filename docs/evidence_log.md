@@ -52,11 +52,20 @@ Demonstrating human-in-the-loop oversight and prompt refinements based on real e
 
 ---
 
-## 3. Data Pipeline & Ingestion Verification
-- **Total Corpus Target:** 5,000–8,000 data points across ≥5 sources
-- **Sources Tracked:**
-  1. Google Play Store (INDmoney, Groww, Zerodha)
-  2. Apple App Store (INDmoney)
-  3. Reddit (`r/IndiaInvestments`, `r/mutualfunds`, `r/INDmoney`)
-  4. YouTube Comment Sections (Top SIP educational videos)
-  5. TradingQ&A Zerodha Community Threads
+## 3. Data Pipeline & Ingestion Verification (Phase 1 Status: PASSED)
+
+- **Total Corpus Ingested & Verified:** **8,179 rows** in `data/raw/raw_data.jsonl` (Target: 5,000–8,000)
+- **Distinct Sources Represented:** **5 sources** (Target: ≥5)
+- **INDmoney-Specific Focus:** **3,937 items (48.1%)** (Target: ≥40%)
+- **Schema Validation Rate:** **100.00%** across 8,179 records (0 errors)
+
+### Volume Breakdown by Source:
+| Source | Raw File | Valid Records | Percentage | Platforms Represented |
+|---|---|---|---|---|
+| **Google Play** | `data/raw/play_store_*.jsonl` | 6,054 | 74.0% | INDmoney (3,439), Groww (1,481), Zerodha (1,134) |
+| **Apple App Store** | `data/raw/app_store_indmoney.jsonl` | 922 | 11.3% | INDmoney (498), Groww (424) |
+| **YouTube** | `data/raw/youtube_comments.jsonl` | 624 | 7.6% | Akshat Shrivastava, Ankur Warikoo, CA Rachana Ranade |
+| **TradingQ&A** | `data/raw/tradingqa_threads.jsonl` | 313 | 3.8% | Zerodha Community (SIP pause, mandate failures) |
+| **ValuePickr** | `data/raw/valuepickr_threads.jsonl` | 266 | 3.3% | Retail Long-term Investor Community |
+| **Total Merged** | `data/raw/raw_data.jsonl` | **8,179** | **100.0%** | **48.1% INDmoney Primary Focus** |
+
