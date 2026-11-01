@@ -178,3 +178,4 @@ $text-mono: "JetBrains Mono", Consolas, monospace (tabular-nums);
 - [x] **Colorblind Safety:** Color-coded metrics paired with icons, numeric values, and shape outlines
 - [x] **Live Engine Link:** Clickable, publicly accessible URL specified
 - [x] **Pipeline & Data Volume Stated:** 4 stages, 5 sources, 8,179 signals, 3,079 insights, 10 themes, Opportunity Score formula detailed
+

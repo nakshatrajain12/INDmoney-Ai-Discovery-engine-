@@ -79,29 +79,29 @@ export default function SegmentsPage() {
   return (
     <main className="max-w-[1280px] mx-auto px-6 py-8 space-y-8">
       {/* Header Banner */}
-      <section className="bg-gradient-to-r from-ind-surface-1 to-ind-surface-2 border border-ind-border-subtle rounded-ind-xl p-8 shadow-ind-float">
+      <section className="bg-white dark:bg-gradient-to-r dark:from-ind-surface-1 dark:to-ind-surface-2 border border-slate-200 dark:border-ind-border-subtle rounded-ind-xl p-8 shadow-ind-float">
         <div className="flex items-center gap-2 mb-2">
           <span className="w-2.5 h-2.5 rounded-full bg-ind-emerald animate-pulse" />
           <span className="text-[11px] font-bold text-ind-blue uppercase tracking-wider">
             COHORT INTELLIGENCE ENGINE
           </span>
-          <span className="text-[11px] px-2 py-0.5 rounded-full bg-ind-emerald-subtle text-ind-emerald font-semibold border border-ind-emerald/20">
+          <span className="text-[11px] px-2 py-0.5 rounded-full bg-emerald-50 dark:bg-ind-emerald-subtle text-emerald-700 dark:text-ind-emerald font-semibold border border-emerald-200 dark:border-ind-emerald/20">
             DYNAMIC RE-RANKING
           </span>
         </div>
 
-        <h1 className="text-3xl font-bold text-white tracking-tight">
+        <h1 className="text-3xl font-bold text-slate-900 dark:text-white tracking-tight">
           Investor Segment & Lifecycle Matrix
         </h1>
-        <p className="text-sm text-slate-300 mt-2 max-w-2xl leading-relaxed">
+        <p className="text-sm text-slate-600 dark:text-slate-300 mt-2 max-w-2xl leading-relaxed">
           Drop-off dynamics differ drastically across investor cohorts. First-timers panic over small market dips in Months 1–3, whereas experienced investors churn over app performance and execution lag. Select a cohort below to re-rank the opportunity matrix dynamically.
         </p>
       </section>
 
       {/* Cohort Filter Controls */}
-      <div className="bg-ind-surface-1 border border-ind-border-subtle rounded-ind-xl p-6 shadow-ind-card space-y-6">
+      <div className="bg-white dark:bg-ind-surface-1 border border-slate-200 dark:border-ind-border-subtle rounded-ind-xl p-6 shadow-ind-card space-y-6">
         <div>
-          <div className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-3 flex items-center gap-1.5">
+          <div className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wide mb-3 flex items-center gap-1.5">
             <Users size={14} className="text-ind-blue" />
             Filter by Investor Experience Level:
           </div>
@@ -113,8 +113,8 @@ export default function SegmentsPage() {
           />
         </div>
 
-        <div className="pt-4 border-t border-ind-border-subtle">
-          <div className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-3 flex items-center gap-1.5">
+        <div className="pt-4 border-t border-slate-200 dark:border-ind-border-subtle">
+          <div className="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wide mb-3 flex items-center gap-1.5">
             <Clock size={14} className="text-ind-warn" />
             Filter by SIP Tenure Stage:
           </div>
@@ -129,39 +129,39 @@ export default function SegmentsPage() {
 
       {/* Side-by-Side Cohort Behavioral Comparison */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="bg-ind-surface-1 border border-ind-border-subtle rounded-ind-lg p-5 shadow-ind-card">
+        <div className="bg-white dark:bg-ind-surface-1 border border-slate-200 dark:border-ind-border-subtle rounded-ind-lg p-5 shadow-ind-card">
           <div className="flex items-center justify-between mb-3">
-            <h3 className="text-sm font-bold text-white flex items-center gap-2">
+            <h3 className="text-sm font-bold text-slate-900 dark:text-white flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-ind-coral" />
               First-Timers / Beginners (Month 1–3)
             </h3>
             <span className="text-xs text-ind-coral font-semibold">High Drop-off Propensity</span>
           </div>
-          <p className="text-xs text-slate-300 leading-relaxed mb-3">
+          <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed mb-3">
             Equate paper losses with permanent erosion. Drop-off occurs within 90 days if negative returns appear. Require proactive emotional reassurance and drawdown recovery context.
           </p>
-          <div className="text-xs text-slate-400 space-y-1">
-            <div>• Top Pain Point: <strong>Red Portfolio Panic (T1)</strong></div>
-            <div>• Primary Friction: <strong>Unclear XIRR calculation (T3)</strong></div>
-            <div>• Dominant Emotion: <strong>Anxious (High Intensity)</strong></div>
+          <div className="text-xs text-slate-500 dark:text-slate-400 space-y-1">
+            <div>• Top Pain Point: <strong className="text-slate-800 dark:text-slate-200">Red Portfolio Panic (T1)</strong></div>
+            <div>• Primary Friction: <strong className="text-slate-800 dark:text-slate-200">Unclear XIRR calculation (T3)</strong></div>
+            <div>• Dominant Emotion: <strong className="text-slate-800 dark:text-slate-200">Anxious (High Intensity)</strong></div>
           </div>
         </div>
 
-        <div className="bg-ind-surface-1 border border-ind-border-subtle rounded-ind-lg p-5 shadow-ind-card">
+        <div className="bg-white dark:bg-ind-surface-1 border border-slate-200 dark:border-ind-border-subtle rounded-ind-lg p-5 shadow-ind-card">
           <div className="flex items-center justify-between mb-3">
-            <h3 className="text-sm font-bold text-white flex items-center gap-2">
+            <h3 className="text-sm font-bold text-slate-900 dark:text-white flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-ind-blue" />
               Experienced Investors (6–12+ Months)
             </h3>
             <span className="text-xs text-ind-blue font-semibold">Discipline-Driven</span>
           </div>
-          <p className="text-xs text-slate-300 leading-relaxed mb-3">
+          <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed mb-3">
             Understand compounding and market cycles, but churn aggressively if auto-debit fails, unit allocation lags, or customer care is locked behind automated unhelpful bots.
           </p>
-          <div className="text-xs text-slate-400 space-y-1">
-            <div>• Top Pain Point: <strong>Mandate & Auto-Debit Friction (T4)</strong></div>
-            <div>• Primary Friction: <strong>Customer Support Bot Loops (T9)</strong></div>
-            <div>• Dominant Emotion: <strong>Frustrated / Angry</strong></div>
+          <div className="text-xs text-slate-500 dark:text-slate-400 space-y-1">
+            <div>• Top Pain Point: <strong className="text-slate-800 dark:text-slate-200">Mandate & Auto-Debit Friction (T4)</strong></div>
+            <div>• Primary Friction: <strong className="text-slate-800 dark:text-slate-200">Customer Support Bot Loops (T9)</strong></div>
+            <div>• Dominant Emotion: <strong className="text-slate-800 dark:text-slate-200">Frustrated / Angry</strong></div>
           </div>
         </div>
       </div>
@@ -169,12 +169,12 @@ export default function SegmentsPage() {
       {/* Dynamic Re-ranked Opportunity Cards */}
       <div className="space-y-4">
         <div className="flex items-center justify-between">
-          <h2 className="text-lg font-bold text-white tracking-tight flex items-center gap-2">
+          <h2 className="text-lg font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
             <BarChart2 size={18} className="text-ind-emerald" />
             Cohort-Adjusted Opportunity Rankings
           </h2>
-          <span className="text-xs text-slate-400 tabular-nums">
-            Active Filter: <strong className="text-white capitalize">{selectedExp.replace("_", " ")}</strong> · <strong className="text-white capitalize">{selectedTenure.replace("_", " ")}</strong>
+          <span className="text-xs text-slate-500 dark:text-slate-400 tabular-nums">
+            Active Filter: <strong className="text-slate-900 dark:text-white capitalize">{selectedExp.replace("_", " ")}</strong> · <strong className="text-slate-900 dark:text-white capitalize">{selectedTenure.replace("_", " ")}</strong>
           </span>
         </div>
 
@@ -182,24 +182,24 @@ export default function SegmentsPage() {
           {reRankedThemes.map((t, idx) => (
             <div
               key={t.id}
-              className="bg-ind-surface-1 border border-ind-border-subtle hover:border-ind-blue/40 rounded-ind-lg p-5 transition shadow-ind-card flex flex-col justify-between"
+              className="bg-white dark:bg-ind-surface-1 border border-slate-200 dark:border-ind-border-subtle hover:border-ind-blue/40 rounded-ind-lg p-5 transition shadow-ind-card flex flex-col justify-between"
             >
               <div>
                 <div className="flex items-center justify-between gap-2 mb-2">
-                  <span className="text-xs font-bold px-2 py-0.5 rounded bg-ind-surface-2 text-slate-300 border border-ind-border-subtle tabular-nums">
+                  <span className="text-xs font-bold px-2 py-0.5 rounded bg-slate-100 dark:bg-ind-surface-2 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-ind-border-subtle tabular-nums">
                     Cohort Rank #{idx + 1}
                   </span>
                   <span className="text-xs font-bold text-ind-emerald tabular-nums">
                     Score: {(t.segment_adjusted_score || t.opportunity_score).toFixed(3)}
                   </span>
                 </div>
-                <h3 className="text-base font-bold text-white mb-1.5">{t.name}</h3>
-                <p className="text-xs text-slate-300 line-clamp-2 mb-3">{t.description}</p>
+                <h3 className="text-base font-bold text-slate-900 dark:text-white mb-1.5">{t.name}</h3>
+                <p className="text-xs text-slate-600 dark:text-slate-300 line-clamp-2 mb-3">{t.description}</p>
               </div>
 
-              <div className="pt-3 border-t border-ind-border-subtle flex items-center justify-between text-xs">
-                <span className="text-slate-400">
-                  Corpus Share: <strong className="text-slate-200 tabular-nums">{t.volume_percentage}%</strong>
+              <div className="pt-3 border-t border-slate-200 dark:border-ind-border-subtle flex items-center justify-between text-xs">
+                <span className="text-slate-500 dark:text-slate-400">
+                  Corpus Share: <strong className="text-slate-800 dark:text-slate-200 tabular-nums">{t.volume_percentage}%</strong>
                 </span>
                 <Link
                   href={`/themes/${t.id}`}

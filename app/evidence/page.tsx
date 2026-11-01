@@ -104,21 +104,21 @@ export default async function EvidencePage() {
   return (
     <main className="max-w-[1280px] mx-auto px-6 py-8 space-y-8">
       {/* Header Banner */}
-      <section className="bg-gradient-to-r from-ind-surface-1 to-ind-surface-2 border border-ind-border-subtle rounded-ind-xl p-8 shadow-ind-float">
+      <section className="bg-white dark:bg-gradient-to-r dark:from-ind-surface-1 dark:to-ind-surface-2 border border-slate-200 dark:border-ind-border-subtle rounded-ind-xl p-8 shadow-ind-float">
         <div className="flex items-center gap-2 mb-2">
           <span className="w-2.5 h-2.5 rounded-full bg-ind-emerald animate-pulse" />
           <span className="text-[11px] font-bold text-ind-blue uppercase tracking-wider">
             BENCHMARK & VERIFICATION AUDIT
           </span>
-          <span className="text-[11px] px-2 py-0.5 rounded-full bg-ind-emerald-subtle text-ind-emerald font-semibold border border-ind-emerald/20">
+          <span className="text-[11px] px-2 py-0.5 rounded-full bg-emerald-50 dark:bg-ind-emerald-subtle text-emerald-700 dark:text-ind-emerald font-semibold border border-emerald-200 dark:border-ind-emerald/20">
             ● 20-ITEM GOLDEN SET
           </span>
         </div>
 
-        <h1 className="text-3xl font-bold text-white tracking-tight">
+        <h1 className="text-3xl font-bold text-slate-900 dark:text-white tracking-tight">
           Evidence Log & Ground Truth Evaluation
         </h1>
-        <p className="text-sm text-slate-300 mt-2 max-w-2xl leading-relaxed">
+        <p className="text-sm text-slate-600 dark:text-slate-300 mt-2 max-w-2xl leading-relaxed">
           Rigorous evaluation is essential for high-stakes fintech decisions. We benchmarked the AI Discovery Engine against a 20-item hand-labeled Golden Set covering all 9 discovery questions (Q1–Q9), measuring precision across all 7 extraction dimensions.
         </p>
       </section>
@@ -126,11 +126,11 @@ export default async function EvidencePage() {
       {/* Accuracy Benchmark Cards */}
       <section className="space-y-4">
         <div className="flex items-center justify-between">
-          <h2 className="text-sm font-bold text-white uppercase tracking-wider flex items-center gap-2">
+          <h2 className="text-sm font-bold text-slate-900 dark:text-white uppercase tracking-wider flex items-center gap-2">
             <ShieldCheck size={16} className="text-ind-emerald" />
             Extraction Dimension Accuracy Benchmarks
           </h2>
-          <span className="text-xs text-slate-400">
+          <span className="text-xs text-slate-500 dark:text-slate-400">
             Target Threshold: <strong className="text-ind-emerald">All Targets Passed (100%)</strong>
           </span>
         </div>
@@ -139,20 +139,20 @@ export default async function EvidencePage() {
           {dimensionCards.map((card) => (
             <div
               key={card.name}
-              className="bg-ind-surface-1 border border-ind-border-subtle rounded-ind-lg p-3.5 text-center flex flex-col justify-between shadow-ind-card"
+              className="bg-white dark:bg-ind-surface-1 border border-slate-200 dark:border-ind-border-subtle rounded-ind-lg p-3.5 text-center flex flex-col justify-between shadow-ind-card"
             >
-              <span className="text-[10px] font-semibold text-slate-400 leading-tight block mb-2">
+              <span className="text-[10px] font-semibold text-slate-600 dark:text-slate-400 leading-tight block mb-2">
                 {card.name}
               </span>
               <div>
                 <span className="text-xl font-bold text-ind-emerald tabular-nums block">
                   {card.score.toFixed(1)}%
                 </span>
-                <span className="text-[10px] text-slate-500 tabular-nums">
+                <span className="text-[10px] text-slate-400 dark:text-slate-500 tabular-nums">
                   Target: {card.target}
                 </span>
               </div>
-              <div className="mt-2 pt-2 border-t border-ind-border-subtle flex items-center justify-center gap-1 text-[10px] font-semibold text-ind-emerald">
+              <div className="mt-2 pt-2 border-t border-slate-200 dark:border-ind-border-subtle flex items-center justify-center gap-1 text-[10px] font-semibold text-ind-emerald">
                 <CheckCircle2 size={11} />
                 <span>PASS</span>
               </div>
@@ -165,24 +165,24 @@ export default async function EvidencePage() {
       <section className="space-y-4">
         <div className="flex items-center justify-between">
           <div>
-            <h2 className="text-lg font-bold text-white tracking-tight flex items-center gap-2">
+            <h2 className="text-lg font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
               <Database size={18} className="text-ind-blue" />
               Golden Set Verification: Human vs Engine Labels
             </h2>
-            <p className="text-xs text-slate-400 mt-0.5">
+            <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
               Side-by-side audit of 20 benchmarked items validating Q1–Q9 question mapping, emotions, and friction points.
             </p>
           </div>
-          <span className="text-xs text-slate-400 tabular-nums">
+          <span className="text-xs text-slate-500 dark:text-slate-400 tabular-nums">
             {humanItems.length} Hand-Labeled Examples
           </span>
         </div>
 
-        <div className="bg-ind-surface-1 border border-ind-border-subtle rounded-ind-xl overflow-hidden shadow-ind-card">
+        <div className="bg-white dark:bg-ind-surface-1 border border-slate-200 dark:border-ind-border-subtle rounded-ind-xl overflow-hidden shadow-ind-card">
           <div className="overflow-x-auto">
             <table className="w-full text-left border-collapse text-xs">
               <thead>
-                <tr className="bg-ind-surface-2/80 border-b border-ind-border-subtle text-[11px] font-semibold text-slate-400 uppercase tracking-wider">
+                <tr className="bg-slate-50 dark:bg-ind-surface-2/80 border-b border-slate-200 dark:border-ind-border-subtle text-[11px] font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
                   <th className="py-3 px-3 w-12 text-center">#</th>
                   <th className="py-3 px-3">Source & Rating</th>
                   <th className="py-3 px-4 max-w-xs">User Verbatim Text</th>
@@ -191,34 +191,34 @@ export default async function EvidencePage() {
                   <th className="py-3 px-3 text-center">Match</th>
                 </tr>
               </thead>
-              <tbody className="divide-y divide-ind-border-subtle/60">
+              <tbody className="divide-y divide-slate-200 dark:divide-ind-border-subtle/60">
                 {humanItems.map((hItem, idx) => {
                   const eItem = engineItems[idx] || hItem;
                   return (
-                    <tr key={hItem.id} className="hover:bg-ind-surface-2/40 transition">
-                      <td className="py-3 px-3 text-center font-bold text-slate-400 tabular-nums">
+                    <tr key={hItem.id} className="hover:bg-slate-50 dark:hover:bg-ind-surface-2/40 transition">
+                      <td className="py-3 px-3 text-center font-bold text-slate-500 dark:text-slate-400 tabular-nums">
                         {idx + 1}
                       </td>
 
                       <td className="py-3 px-3 whitespace-nowrap">
                         <SourceBadge source={hItem.source} platform={hItem.platform_app} />
                         {hItem.rating && (
-                          <div className="flex items-center text-amber-400 gap-0.5 mt-1">
+                          <div className="flex items-center text-amber-500 dark:text-amber-400 gap-0.5 mt-1">
                             {[...Array(hItem.rating)].map((_, i) => (
-                              <Star key={i} size={9} className="fill-amber-400" />
+                              <Star key={i} size={9} className="fill-amber-500 dark:fill-amber-400" />
                             ))}
                           </div>
                         )}
                       </td>
 
-                      <td className="py-3 px-4 text-slate-200 italic max-w-xs leading-relaxed">
+                      <td className="py-3 px-4 text-slate-800 dark:text-slate-200 italic max-w-xs leading-relaxed">
                         "{hItem.text}"
                       </td>
 
-                      <td className="py-3 px-3 text-slate-300 space-y-1">
+                      <td className="py-3 px-3 text-slate-700 dark:text-slate-300 space-y-1">
                         <div>
                           <span className="text-slate-500 text-[10px]">Qs: </span>
-                          <strong className="text-white">{hItem.discovery_questions.join(", ")}</strong>
+                          <strong className="text-slate-900 dark:text-white">{hItem.discovery_questions.join(", ")}</strong>
                         </div>
                         <div>
                           <span className="text-slate-500 text-[10px]">Emo: </span>
@@ -230,7 +230,7 @@ export default async function EvidencePage() {
                         </div>
                       </td>
 
-                      <td className="py-3 px-3 text-slate-300 space-y-1">
+                      <td className="py-3 px-3 text-slate-700 dark:text-slate-300 space-y-1">
                         <div>
                           <span className="text-slate-500 text-[10px]">Qs: </span>
                           <strong className="text-ind-emerald">{eItem.discovery_questions.join(", ")}</strong>
@@ -241,12 +241,12 @@ export default async function EvidencePage() {
                         </div>
                         <div>
                           <span className="text-slate-500 text-[10px]">Fric: </span>
-                          <span className="capitalize text-slate-200">{eItem.friction_point}</span>
+                          <span className="capitalize text-slate-800 dark:text-slate-200">{eItem.friction_point}</span>
                         </div>
                       </td>
 
                       <td className="py-3 px-3 text-center">
-                        <span className="inline-flex items-center gap-1 text-[11px] font-bold text-ind-emerald bg-ind-emerald-subtle px-2 py-0.5 rounded-full border border-ind-emerald/20">
+                        <span className="inline-flex items-center gap-1 text-[11px] font-bold text-ind-emerald bg-emerald-50 dark:bg-ind-emerald-subtle px-2 py-0.5 rounded-full border border-emerald-200 dark:border-ind-emerald/20">
                           <CheckCircle2 size={11} />
                           Exact
                         </span>
@@ -261,12 +261,12 @@ export default async function EvidencePage() {
       </section>
 
       {/* Documented AI Corrections Section */}
-      <section className="bg-ind-surface-1 border border-ind-border-subtle rounded-ind-xl p-6 shadow-ind-card space-y-4">
-        <h2 className="text-base font-bold text-white uppercase tracking-wide flex items-center gap-2">
+      <section className="bg-white dark:bg-ind-surface-1 border border-slate-200 dark:border-ind-border-subtle rounded-ind-xl p-6 shadow-ind-card space-y-4">
+        <h2 className="text-base font-bold text-slate-900 dark:text-white uppercase tracking-wide flex items-center gap-2">
           <AlertTriangle size={18} className="text-ind-warn" />
           Documented AI Corrections & Prompt Refinements
         </h2>
-        <p className="text-xs text-slate-400">
+        <p className="text-xs text-slate-500 dark:text-slate-400">
           Supervised learning feedback loop: how human review of failure modes improved the system prompts in production:
         </p>
 
@@ -274,22 +274,22 @@ export default async function EvidencePage() {
           {corrections.map((c) => (
             <div
               key={c.id}
-              className="bg-ind-surface-2 p-4 rounded-ind-md border border-ind-border-subtle flex flex-col justify-between"
+              className="bg-slate-50 dark:bg-ind-surface-2 p-4 rounded-ind-md border border-slate-200 dark:border-ind-border-subtle flex flex-col justify-between"
             >
               <div>
                 <span className="text-[10px] font-bold text-ind-warn uppercase tracking-wider">
                   {c.id}
                 </span>
-                <h4 className="text-xs font-bold text-white mt-1 mb-2">
+                <h4 className="text-xs font-bold text-slate-900 dark:text-white mt-1 mb-2">
                   {c.title}
                 </h4>
-                <div className="space-y-2 text-[11px] text-slate-300 leading-relaxed">
+                <div className="space-y-2 text-[11px] text-slate-600 dark:text-slate-300 leading-relaxed">
                   <p>
-                    <strong className="text-rose-400">Issue: </strong>
+                    <strong className="text-rose-500 dark:text-rose-400">Issue: </strong>
                     {c.problem}
                   </p>
                   <p>
-                    <strong className="text-amber-400">Cause: </strong>
+                    <strong className="text-amber-600 dark:text-amber-400">Cause: </strong>
                     {c.rootCause}
                   </p>
                   <p>

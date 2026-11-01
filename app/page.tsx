@@ -54,11 +54,11 @@ export default async function HomePage() {
         <div className="lg:col-span-8 space-y-6">
           <div className="flex items-center justify-between">
             <div>
-              <h2 className="text-xl font-bold text-white tracking-tight flex items-center gap-2">
+              <h2 className="text-xl font-bold text-slate-900 dark:text-white tracking-tight flex items-center gap-2">
                 <BarChart2 size={20} className="text-ind-emerald" />
                 Top Ranked Retention Themes
               </h2>
-              <p className="text-xs text-slate-400 mt-0.5">
+              <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
                 Prioritized by 4-Factor Opportunity Score (Frequency 30%, Severity 30%, Actionability 25%, Recency 15%)
               </p>
             </div>
@@ -81,7 +81,7 @@ export default async function HomePage() {
           <div className="text-center pt-2">
             <Link
               href="/themes"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-ind-md bg-ind-surface-1 hover:bg-ind-surface-2 border border-ind-border-subtle text-slate-200 text-xs font-semibold transition"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-ind-md bg-white dark:bg-ind-surface-1 hover:bg-slate-50 dark:hover:bg-ind-surface-2 border border-slate-200 dark:border-ind-border-subtle text-slate-700 dark:text-slate-200 text-xs font-semibold transition shadow-sm"
             >
               <span>Explore All {themes.length} Ranked Themes & Full Evidence Matrix</span>
               <ArrowRight size={13} />
@@ -92,15 +92,15 @@ export default async function HomePage() {
         {/* Right Sticky Rail (4 cols = ~35%) */}
         <div className="lg:col-span-4 space-y-6 lg:sticky lg:top-24">
           {/* Quick Ask Discovery Copilot Card */}
-          <div className="bg-gradient-to-br from-ind-surface-1 to-ind-surface-2 border border-ind-border-subtle rounded-ind-lg p-5 shadow-ind-card">
+          <div className="bg-white dark:bg-gradient-to-br dark:from-ind-surface-1 dark:to-ind-surface-2 border border-slate-200 dark:border-ind-border-subtle rounded-ind-lg p-5 shadow-ind-card">
             <div className="flex items-center gap-2 text-xs font-bold text-ind-blue uppercase tracking-wider mb-2">
               <Sparkles size={14} />
               AI Discovery Copilot
             </div>
-            <h3 className="text-sm font-bold text-white mb-2">
+            <h3 className="text-sm font-bold text-slate-900 dark:text-white mb-2">
               Query the 3,079 Analyzed Signals
             </h3>
-            <p className="text-xs text-slate-400 mb-4 leading-relaxed">
+            <p className="text-xs text-slate-500 dark:text-slate-400 mb-4 leading-relaxed">
               Get grounded answers with verbatim user quotes for drop-off causes, UI confusion, and segment patterns.
             </p>
             <Link
@@ -113,9 +113,9 @@ export default async function HomePage() {
           </div>
 
           {/* Critical Churn Windows Card */}
-          <div className="bg-ind-surface-1 border border-ind-border-subtle rounded-ind-lg p-5 shadow-ind-card">
+          <div className="bg-white dark:bg-ind-surface-1 border border-slate-200 dark:border-ind-border-subtle rounded-ind-lg p-5 shadow-ind-card">
             <div className="flex items-center justify-between mb-3">
-              <h3 className="text-xs font-bold text-white uppercase tracking-wider flex items-center gap-1.5">
+              <h3 className="text-xs font-bold text-slate-900 dark:text-white uppercase tracking-wider flex items-center gap-1.5">
                 <ShieldAlert size={14} className="text-ind-warn" />
                 SIP Lifecycle Churn Windows
               </h3>
@@ -124,32 +124,32 @@ export default async function HomePage() {
               {churnWindows.map((cw) => (
                 <div
                   key={cw.window}
-                  className="p-2.5 rounded-ind-sm bg-ind-surface-2 border border-ind-border-subtle/50 text-xs flex flex-col gap-1"
+                  className="p-2.5 rounded-ind-sm bg-slate-50 dark:bg-ind-surface-2 border border-slate-200 dark:border-ind-border-subtle/50 text-xs flex flex-col gap-1"
                 >
                   <div className="flex items-center justify-between">
-                    <span className="font-semibold text-slate-200">{cw.window}</span>
+                    <span className="font-semibold text-slate-800 dark:text-slate-200">{cw.window}</span>
                     <span
                       className={`text-[10px] font-bold px-1.5 py-0.2 rounded tabular-nums ${
                         cw.risk === "Critical"
-                          ? "bg-rose-950/60 text-rose-400 border border-rose-500/30"
+                          ? "bg-rose-50 dark:bg-rose-950/60 text-rose-700 dark:text-rose-400 border border-rose-200 dark:border-rose-500/30"
                           : cw.risk === "High"
-                          ? "bg-amber-950/60 text-amber-400 border border-amber-500/30"
-                          : "bg-slate-800 text-slate-300"
+                          ? "bg-amber-50 dark:bg-amber-950/60 text-amber-800 dark:text-amber-400 border border-amber-200 dark:border-amber-500/30"
+                          : "bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300"
                       }`}
                     >
                       {cw.rate} Drop-off
                     </span>
                   </div>
-                  <span className="text-[11px] text-slate-400">{cw.trigger}</span>
+                  <span className="text-[11px] text-slate-500 dark:text-slate-400">{cw.trigger}</span>
                 </div>
               ))}
             </div>
           </div>
 
           {/* Multi-Source Ingestion Breakdown */}
-          <div className="bg-ind-surface-1 border border-ind-border-subtle rounded-ind-lg p-5 shadow-ind-card">
+          <div className="bg-white dark:bg-ind-surface-1 border border-slate-200 dark:border-ind-border-subtle rounded-ind-lg p-5 shadow-ind-card">
             <div className="flex items-center justify-between mb-3">
-              <h3 className="text-xs font-bold text-white uppercase tracking-wider flex items-center gap-1.5">
+              <h3 className="text-xs font-bold text-slate-900 dark:text-white uppercase tracking-wider flex items-center gap-1.5">
                 <PieChart size={14} className="text-ind-emerald" />
                 Corpus Distribution (8,179 Raw)
               </h3>
@@ -159,9 +159,9 @@ export default async function HomePage() {
                 <div key={src.name} className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
                     <span className={`w-2 h-2 rounded-full ${src.color}`} />
-                    <span className="text-slate-300 text-[11px]">{src.name}</span>
+                    <span className="text-slate-600 dark:text-slate-300 text-[11px]">{src.name}</span>
                   </div>
-                  <span className="tabular-nums font-semibold text-slate-200 text-[11px]">
+                  <span className="tabular-nums font-semibold text-slate-800 dark:text-slate-200 text-[11px]">
                     {src.count.toLocaleString()} ({src.pct})
                   </span>
                 </div>
@@ -170,12 +170,12 @@ export default async function HomePage() {
           </div>
 
           {/* Discovery Question Matrix Shortcuts */}
-          <div className="bg-ind-surface-1 border border-ind-border-subtle rounded-ind-lg p-5 shadow-ind-card">
-            <h3 className="text-xs font-bold text-white uppercase tracking-wider mb-2 flex items-center gap-1.5">
+          <div className="bg-white dark:bg-ind-surface-1 border border-slate-200 dark:border-ind-border-subtle rounded-ind-lg p-5 shadow-ind-card">
+            <h3 className="text-xs font-bold text-slate-900 dark:text-white uppercase tracking-wider mb-2 flex items-center gap-1.5">
               <Layers size={14} className="text-ind-blue" />
               9 Discovery Questions (Q1–Q9)
             </h3>
-            <p className="text-[11px] text-slate-400 mb-3">
+            <p className="text-[11px] text-slate-500 dark:text-slate-400 mb-3">
               Filter the opportunity matrix by specific research focus:
             </p>
             <div className="flex flex-wrap gap-1.5">
@@ -183,7 +183,7 @@ export default async function HomePage() {
                 <Link
                   key={q}
                   href={`/themes?question=${q}`}
-                  className="px-2.5 py-1 rounded bg-ind-surface-2 hover:bg-ind-blue hover:text-white border border-ind-border-subtle text-slate-300 text-xs font-semibold transition"
+                  className="px-2.5 py-1 rounded bg-slate-100 dark:bg-ind-surface-2 hover:bg-ind-blue hover:text-white border border-slate-200 dark:border-ind-border-subtle text-slate-700 dark:text-slate-300 text-xs font-semibold transition"
                 >
                   {q}
                 </Link>

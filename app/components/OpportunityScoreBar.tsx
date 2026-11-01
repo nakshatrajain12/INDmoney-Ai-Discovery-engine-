@@ -37,7 +37,7 @@ export function OpportunityScoreBar({
   return (
     <div className={`space-y-1.5 ${className}`}>
       {/* Visual Multi-Segment Bar */}
-      <div className="h-2 w-full rounded-full bg-slate-800 overflow-hidden flex">
+      <div className="h-2 w-full rounded-full bg-slate-200 dark:bg-slate-800 overflow-hidden flex">
         <div
           style={{ width: `${pctFreq}%` }}
           className="bg-ind-blue transition-all"
@@ -61,7 +61,7 @@ export function OpportunityScoreBar({
       </div>
 
       {showLabels && (
-        <div className="flex items-center justify-between text-[11px] text-slate-400 tabular-nums">
+        <div className="flex items-center justify-between text-[11px] text-slate-500 dark:text-slate-400 tabular-nums">
           <div className="flex items-center gap-1">
             <span className="w-2 h-2 rounded-full bg-ind-blue" />
             <span>Freq {(frequency * 100).toFixed(0)}%</span>
@@ -83,4 +83,3 @@ export function OpportunityScoreBar({
     </div>
   );
 }
-

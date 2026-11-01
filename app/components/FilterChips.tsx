@@ -41,14 +41,14 @@ export function FilterChips({
             className={`px-3.5 py-1.5 rounded-full text-xs font-semibold transition flex items-center gap-1.5 ${
               isSelected
                 ? getActiveClass()
-                : "bg-ind-surface-2 hover:bg-ind-surface-elevated text-slate-300 hover:text-white border border-ind-border-subtle"
+                : "bg-slate-100 dark:bg-ind-surface-2 hover:bg-slate-200 dark:hover:bg-ind-surface-elevated text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white border border-slate-200 dark:border-ind-border-subtle"
             }`}
           >
             <span>{opt.label}</span>
             {typeof opt.count === "number" && (
               <span
                 className={`text-[10px] px-1.5 py-0.2 rounded-full tabular-nums ${
-                  isSelected ? "bg-white/20 text-white" : "bg-slate-800 text-slate-400"
+                  isSelected ? "bg-white/20 text-white" : "bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-400"
                 }`}
               >
                 {opt.count}
@@ -60,4 +60,3 @@ export function FilterChips({
     </div>
   );
 }
-
