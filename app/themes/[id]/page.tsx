@@ -144,7 +144,7 @@ export default async function ThemeDrillDownPage({ params }: ThemeDrillDownProps
             return (
               <div
                 key={i}
-                className="bg-slate-50 dark:bg-ind-surface-2 p-4 rounded-ind-md border border-slate-200 dark:border-ind-border-subtle flex flex-col justify-between"
+                className="bg-slate-100 dark:bg-ind-surface-2 p-4 rounded-ind-md border border-slate-200 dark:border-ind-border-subtle flex flex-col justify-between"
               >
                 <div>
                   <span className="text-[10px] font-bold text-ind-blue uppercase tracking-wider">

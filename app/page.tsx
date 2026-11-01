@@ -81,7 +81,7 @@ export default async function HomePage() {
           <div className="text-center pt-2">
             <Link
               href="/themes"
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-ind-md bg-white dark:bg-ind-surface-1 hover:bg-slate-50 dark:hover:bg-ind-surface-2 border border-slate-200 dark:border-ind-border-subtle text-slate-700 dark:text-slate-200 text-xs font-semibold transition shadow-sm"
+              className="inline-flex items-center gap-2 px-6 py-3 rounded-ind-md bg-white dark:bg-ind-surface-1 hover:bg-slate-100 dark:hover:bg-ind-surface-2 border border-slate-200 dark:border-ind-border-subtle text-slate-700 dark:text-slate-200 text-xs font-semibold transition shadow-sm"
             >
               <span>Explore All {themes.length} Ranked Themes & Full Evidence Matrix</span>
               <ArrowRight size={13} />
@@ -124,7 +124,7 @@ export default async function HomePage() {
               {churnWindows.map((cw) => (
                 <div
                   key={cw.window}
-                  className="p-2.5 rounded-ind-sm bg-slate-50 dark:bg-ind-surface-2 border border-slate-200 dark:border-ind-border-subtle/50 text-xs flex flex-col gap-1"
+                  className="p-2.5 rounded-ind-sm bg-slate-100 dark:bg-ind-surface-2 border border-slate-200 dark:border-ind-border-subtle/50 text-xs flex flex-col gap-1"
                 >
                   <div className="flex items-center justify-between">
                     <span className="font-semibold text-slate-800 dark:text-slate-200">{cw.window}</span>

@@ -231,7 +231,7 @@ export function AskTheEngine({ initialQuery = "", autoFocus = false }: AskTheEng
                     {c.full_text && c.full_text.length > c.quote.length + 30 && (
                       <details className="mt-2 text-[11px] text-slate-500 cursor-pointer">
                         <summary className="hover:text-slate-800 dark:hover:text-slate-300">View complete feedback</summary>
-                        <p className="mt-1 p-2 rounded bg-slate-50 dark:bg-ind-surface-2 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-ind-border-subtle text-[11px] leading-relaxed not-italic">
+                        <p className="mt-1 p-2 rounded bg-slate-100 dark:bg-ind-surface-2 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-ind-border-subtle text-[11px] leading-relaxed not-italic">
                           {c.full_text}
                         </p>
                       </details>

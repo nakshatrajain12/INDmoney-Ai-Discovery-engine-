@@ -171,7 +171,7 @@ function ThemeExplorerContent() {
         <div className="overflow-x-auto">
           <table className="w-full text-left border-collapse">
             <thead>
-              <tr className="bg-slate-50 dark:bg-ind-surface-2/80 border-b border-slate-200 dark:border-ind-border-subtle text-[11px] font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
+              <tr className="bg-slate-100 dark:bg-ind-surface-2 border-b border-slate-200 dark:border-ind-border-subtle text-[11px] font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
                 <th className="py-3 px-4 w-16 text-center">Rank</th>
                 <th className="py-3 px-4">Theme Name & Insight</th>
                 <th className="py-3 px-3 text-center">Questions</th>
@@ -202,7 +202,7 @@ function ThemeExplorerContent() {
                   return (
                     <tr
                       key={theme.id}
-                      className="hover:bg-slate-50 dark:hover:bg-ind-surface-2/50 transition cursor-pointer group"
+                      className="hover:bg-slate-100 dark:hover:bg-ind-surface-2 transition cursor-pointer group"
                     >
                       <td className="py-4 px-4 text-center font-bold tabular-nums">
                         <span

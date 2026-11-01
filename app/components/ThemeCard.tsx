@@ -76,7 +76,7 @@ export function ThemeCard({ theme, className = "" }: ThemeCardProps) {
             </Link>
           </div>
 
-          <div className="text-right flex-shrink-0 bg-slate-50 dark:bg-ind-surface-2/80 px-3 py-1.5 rounded-ind-md border border-slate-200 dark:border-ind-border-subtle">
+          <div className="text-right flex-shrink-0 bg-slate-100 dark:bg-ind-surface-2 px-3 py-1.5 rounded-ind-md border border-slate-200 dark:border-ind-border-subtle">
             <div className="text-[10px] uppercase font-semibold text-slate-500 dark:text-slate-400">Score</div>
             <div className="text-2xl font-bold text-ind-emerald tabular-nums">
               {theme.opportunity_score.toFixed(3)}
@@ -90,7 +90,7 @@ export function ThemeCard({ theme, className = "" }: ThemeCardProps) {
         </p>
 
         {/* 4-Factor Formula Breakdown Progress Bar */}
-        <div className="mb-4 bg-slate-50 dark:bg-ind-surface-2 p-3 rounded-ind-md border border-slate-200 dark:border-ind-border-subtle/60">
+        <div className="mb-4 bg-slate-100 dark:bg-ind-surface-2 p-3 rounded-ind-md border border-slate-200 dark:border-ind-border-subtle/60">
           <div className="text-[11px] font-semibold text-slate-500 dark:text-slate-400 mb-1.5 flex items-center justify-between">
             <span>Opportunity Breakdown</span>
             <span className="text-[10px] text-slate-400 dark:text-slate-500">Freq · Sev · Act · Rec</span>
@@ -104,7 +104,7 @@ export function ThemeCard({ theme, className = "" }: ThemeCardProps) {
         </div>
 
         {/* Verbatim Quote Snippet Callout */}
-        <div className="bg-slate-50 dark:bg-ind-surface-2/60 border-l-2 border-ind-blue p-3 rounded-r-ind-sm text-xs text-slate-700 dark:text-slate-300 italic flex items-start gap-2 mb-4">
+        <div className="bg-slate-100 dark:bg-ind-surface-2 border-l-2 border-ind-blue p-3 rounded-r-ind-sm text-xs text-slate-700 dark:text-slate-300 italic flex items-start gap-2 mb-4">
           <Quote size={13} className="text-ind-blue flex-shrink-0 mt-0.5" />
           <p className="line-clamp-2">"{topQuote}"</p>
         </div>

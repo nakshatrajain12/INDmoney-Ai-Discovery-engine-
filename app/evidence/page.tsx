@@ -182,7 +182,7 @@ export default async function EvidencePage() {
           <div className="overflow-x-auto">
             <table className="w-full text-left border-collapse text-xs">
               <thead>
-                <tr className="bg-slate-50 dark:bg-ind-surface-2/80 border-b border-slate-200 dark:border-ind-border-subtle text-[11px] font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
+                <tr className="bg-slate-100 dark:bg-ind-surface-2 border-b border-slate-200 dark:border-ind-border-subtle text-[11px] font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
                   <th className="py-3 px-3 w-12 text-center">#</th>
                   <th className="py-3 px-3">Source & Rating</th>
                   <th className="py-3 px-4 max-w-xs">User Verbatim Text</th>
@@ -195,7 +195,7 @@ export default async function EvidencePage() {
                 {humanItems.map((hItem, idx) => {
                   const eItem = engineItems[idx] || hItem;
                   return (
-                    <tr key={hItem.id} className="hover:bg-slate-50 dark:hover:bg-ind-surface-2/40 transition">
+                    <tr key={hItem.id} className="hover:bg-slate-100 dark:hover:bg-ind-surface-2 transition">
                       <td className="py-3 px-3 text-center font-bold text-slate-500 dark:text-slate-400 tabular-nums">
                         {idx + 1}
                       </td>
@@ -274,7 +274,7 @@ export default async function EvidencePage() {
           {corrections.map((c) => (
             <div
               key={c.id}
-              className="bg-slate-50 dark:bg-ind-surface-2 p-4 rounded-ind-md border border-slate-200 dark:border-ind-border-subtle flex flex-col justify-between"
+              className="bg-slate-100 dark:bg-ind-surface-2 p-4 rounded-ind-md border border-slate-200 dark:border-ind-border-subtle flex flex-col justify-between"
             >
               <div>
                 <span className="text-[10px] font-bold text-ind-warn uppercase tracking-wider">

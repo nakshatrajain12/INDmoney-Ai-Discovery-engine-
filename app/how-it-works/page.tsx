@@ -83,7 +83,7 @@ export default function HowItWorksPage() {
                     </span>
                   </div>
 
-                  <div className="w-10 h-10 rounded-ind-md bg-slate-50 dark:bg-ind-surface-2 flex items-center justify-center text-ind-emerald mb-3 border border-slate-200 dark:border-ind-border-subtle">
+                  <div className="w-10 h-10 rounded-ind-md bg-slate-100 dark:bg-ind-surface-2 flex items-center justify-center text-ind-emerald mb-3 border border-slate-200 dark:border-ind-border-subtle">
                     <Icon size={20} />
                   </div>
 
@@ -104,24 +104,24 @@ export default function HowItWorksPage() {
           The Mathematical Opportunity Scoring Formula
         </h2>
         
-        <div className="bg-slate-50 dark:bg-ind-surface-2 p-4 rounded-ind-md border border-slate-200 dark:border-ind-border-subtle font-mono text-xs text-ind-emerald tabular-nums overflow-x-auto font-semibold">
+        <div className="bg-slate-100 dark:bg-ind-surface-2 p-4 rounded-ind-md border border-slate-200 dark:border-ind-border-subtle font-mono text-xs text-ind-emerald tabular-nums overflow-x-auto font-semibold">
           Opportunity Score = (0.30 × Frequency) + (0.30 × Severity) + (0.25 × Actionability) + (0.15 × Recency)
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs pt-2">
-          <div className="p-3 bg-slate-50 dark:bg-ind-surface-2 rounded-ind-sm border border-slate-200 dark:border-ind-border-subtle/60">
+          <div className="p-3 bg-slate-100 dark:bg-ind-surface-2 rounded-ind-sm border border-slate-200 dark:border-ind-border-subtle/60">
             <span className="font-bold text-ind-blue block mb-1">Frequency (30%)</span>
             <span className="text-slate-600 dark:text-slate-300">Share of the corpus discussing this friction point, normalized against maximum theme frequency.</span>
           </div>
-          <div className="p-3 bg-slate-50 dark:bg-ind-surface-2 rounded-ind-sm border border-slate-200 dark:border-ind-border-subtle/60">
+          <div className="p-3 bg-slate-100 dark:bg-ind-surface-2 rounded-ind-sm border border-slate-200 dark:border-ind-border-subtle/60">
             <span className="font-bold text-ind-coral block mb-1">Severity (30%)</span>
             <span className="text-slate-600 dark:text-slate-300">Weighted average friction impact: Minor (0.33), Moderate (0.67), Critical churn trigger (1.00).</span>
           </div>
-          <div className="p-3 bg-slate-50 dark:bg-ind-surface-2 rounded-ind-sm border border-slate-200 dark:border-ind-border-subtle/60">
+          <div className="p-3 bg-slate-100 dark:bg-ind-surface-2 rounded-ind-sm border border-slate-200 dark:border-ind-border-subtle/60">
             <span className="font-bold text-ind-emerald block mb-1">Actionability (25%)</span>
             <span className="text-slate-600 dark:text-slate-300">Feasibility for INDmoney product and engineering teams to solve via UI, workflows, or educational nudges.</span>
           </div>
-          <div className="p-3 bg-slate-50 dark:bg-ind-surface-2 rounded-ind-sm border border-slate-200 dark:border-ind-border-subtle/60">
+          <div className="p-3 bg-slate-100 dark:bg-ind-surface-2 rounded-ind-sm border border-slate-200 dark:border-ind-border-subtle/60">
             <span className="font-bold text-ind-warn block mb-1">Recency (15%)</span>
             <span className="text-slate-600 dark:text-slate-300">Signal freshness: heavily weighted toward reviews within the past 12–24 months (2024–2026).</span>
           </div>
@@ -139,7 +139,7 @@ export default function HowItWorksPage() {
         </p>
 
         <div className="space-y-3">
-          <details className="bg-slate-50 dark:bg-ind-surface-2 p-3.5 rounded-ind-md border border-slate-200 dark:border-ind-border-subtle text-xs cursor-pointer">
+          <details className="bg-slate-100 dark:bg-ind-surface-2 p-3.5 rounded-ind-md border border-slate-200 dark:border-ind-border-subtle text-xs cursor-pointer">
             <summary className="font-bold text-slate-900 dark:text-white flex items-center justify-between">
               <span>1. Master 7-Dimensional Extraction Prompt (<code>pipeline/prompts/master_extraction.txt</code>)</span>
               <span className="text-ind-blue text-[11px]">View Prompt Spec</span>
@@ -156,7 +156,7 @@ export default function HowItWorksPage() {
             </pre>
           </details>
 
-          <details className="bg-slate-50 dark:bg-ind-surface-2 p-3.5 rounded-ind-md border border-slate-200 dark:border-ind-border-subtle text-xs cursor-pointer">
+          <details className="bg-slate-100 dark:bg-ind-surface-2 p-3.5 rounded-ind-md border border-slate-200 dark:border-ind-border-subtle text-xs cursor-pointer">
             <summary className="font-bold text-slate-900 dark:text-white flex items-center justify-between">
               <span>2. RAG Synthesis & Citation Prompt (<code>pipeline/prompts/rag_synthesis.txt</code>)</span>
               <span className="text-ind-blue text-[11px]">View Prompt Spec</span>

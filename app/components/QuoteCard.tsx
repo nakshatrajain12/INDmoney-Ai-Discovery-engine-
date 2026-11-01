@@ -70,7 +70,7 @@ export function QuoteCard({ quote, className = "" }: QuoteCardProps) {
         {quote.full_text && quote.full_text.length > quote.quote.length + 30 && (
           <details className="mt-2 text-xs text-slate-500 dark:text-slate-400 cursor-pointer">
             <summary className="hover:text-slate-800 dark:hover:text-slate-200 transition">View full review</summary>
-            <p className="mt-1.5 p-2.5 rounded bg-slate-50 dark:bg-ind-surface-2 text-slate-700 dark:text-slate-300 not-italic border border-slate-200 dark:border-ind-border-subtle text-[11px] leading-relaxed">
+            <p className="mt-1.5 p-2.5 rounded bg-slate-100 dark:bg-ind-surface-2 text-slate-700 dark:text-slate-300 not-italic border border-slate-200 dark:border-ind-border-subtle text-[11px] leading-relaxed">
               {quote.full_text}
             </p>
           </details>

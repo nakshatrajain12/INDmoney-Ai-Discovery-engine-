@@ -77,3 +77,13 @@ html:not(.dark) .theme-card-title,
 html:not(.dark) .page-title {
   color: #0F172A !important;
 }
+
+/* Dark Mode Safety Guards (Eliminates any unintentional white highlights in dark mode) */
+html.dark table thead tr {
+  background-color: #151A23 !important;
+  border-bottom-color: #262F40 !important;
+}
+
+html.dark table tbody tr:hover {
+  background-color: #1E2532 !important;
+}
