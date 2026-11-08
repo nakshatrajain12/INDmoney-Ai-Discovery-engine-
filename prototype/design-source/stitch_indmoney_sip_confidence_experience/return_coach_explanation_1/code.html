@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-elevated": "#252D3D", "surface-bright": "#343943", "surface-container-highest": "#30353f", "tertiary-container": "#6d758c", "secondary-container": "#01b386", "surface-dim": "#0e141c", "text-muted": "#64748B", "primary-fixed": "#dae1ff", "on-primary-container": "#fffeff", "background": "#0e141c", "on-primary-fixed-variant": "#003fa4", "tertiary-fixed-dim": "#bec6e0", "on-error": "#690005", "error": "#ffb4ab", "secondary": "#50ddad", "on-secondary-fixed-variant": "#00513b", "primary-container": "#1a6bff", "on-secondary-container": "#003d2c", "on-surface": "#dee2ef", "status-warn": "#F59E0B", "primary": "#b3c5ff", "text-secondary": "#94A3B8", "outline-variant": "#424655", "on-secondary": "#003828", "surface-container": "#1b2029", "surface-container-low": "#171c25", "tertiary-fixed": "#dae2fd", "surface-1": "#151A23", "surface-container-high": "#252a34", "on-surface-variant": "#c2c6d8", "secondary-fixed": "#71fac8", "secondary-fixed-dim": "#50ddad", "error-container": "#93000a", "on-secondary-fixed": "#002116", "surface-tint": "#b3c5ff", "on-primary-fixed": "#001849", "text-primary": "#F8FAFC", "on-tertiary-fixed": "#131b2e", "surface-variant": "#30353f", "on-error-container": "#ffdad6", "on-tertiary-fixed-variant": "#3f465c", "surface": "#0e141c", "primary-fixed-dim": "#b3c5ff", "on-tertiary-container": "#fffeff", "inverse-surface": "#dee2ef", "on-background": "#dee2ef", "tertiary": "#bec6e0", "surface-container-lowest": "#090e17", "on-primary": "#002b75", "canvas": "#0B0E14", "inverse-on-surface": "#2c313a", "status-error": "#EB5B3C", "outline": "#8c90a1", "inverse-primary": "#0055d5", "on-tertiary": "#283044", "border-subtle": "#262F40", "status-active": "#00B386", "surface-2": "#1E2532" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-lg": "1.5rem", "space-sm": "0.5rem", "space-md": "1rem", "space-xs": "0.25rem", "gutter": "1rem", "space-xl": "2rem", "margin": "1rem" }, fontFamily: { "display": ["Inter"], "headline-lg": ["Inter"], "label-micro": ["Inter"], "headline-sm": ["Inter"], "body-md": ["Inter"], "headline-md": ["Inter"], "body-sm": ["Inter"], "caption": ["Inter"] }, fontSize: { "display": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-lg": ["24px", { lineHeight: "32px", letterSpacing: "-0.015em", fontWeight: "700" }], "label-micro": ["11px", { lineHeight: "14px", letterSpacing: "0.05em", fontWeight: "600" }], "headline-sm": ["16px", { lineHeight: "22px", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "500" }], "headline-md": ["18px", { lineHeight: "24px", fontWeight: "600" }], "body-sm": ["14px", { lineHeight: "20px", fontWeight: "400" }], "caption": ["12px", { lineHeight: "16px", fontWeight: "500" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#0B0E14;color:#F8FAFC;-webkit-tap-highlight-color:transparent;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-canvas text-text-primary font-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-canvas/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="flex justify-between items-center px-margin pt-space-xs text-text-muted text-[12px] font-semibold tracking-tight"><span class="tabular-nums">9:41</span><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px]">signal_cellular_alt</span><span class="material-symbols-outlined text-[15px]">wifi</span><span class="material-symbols-outlined text-[17px]">battery_full</span></div></div><div class="h-14 px-margin flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Go Back" class="w-11 h-11 -ml-space-xs flex items-center justify-center rounded-full text-text-secondary hover:text-text-primary transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><img alt="INDmoney Brand Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDJ7oWgtnYUhX1zb3166R_5QrjBWb-gGl7H_MvgxutJfR1uDs8RvOKGHOXrQGo_mP51NlfmnGyJDzdpm3Zb9PZdRcYv7Qh1woiTkfJPqKqtfYTH5IAhkG00NCzeQ6cqieV_7xgPgQHHBxUnDlZx-RgNX70FW3vUltDQL68sg0TKxmAJZpP_3QXq3leFuycTKez4XmQGSGkUJlC_MY0SYPqTytOaxMEA760E_d0e5OOUeQ"/><h1 class="font-headline-md text-headline-md text-text-primary ml-space-xs leading-none">Return Coach Explanation</h1></div><div class="flex items-center gap-space-sm"><button aria-label="Privacy Mode" class="w-11 h-11 flex items-center justify-center rounded-full bg-surface-1 text-text-secondary hover:text-text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">visibility</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 pb-safe bg-canvas px-margin"><div class="flex flex-col w-full pb-10">
+<!-- Persistent Compliance Bar -->
+<div class="w-full bg-surface-2 px-space-md py-2.5 rounded-lg flex items-center justify-between mb-space-md shadow-sm">
+<div class="flex items-center gap-space-xs text-text-muted">
+<span class="material-symbols-outlined text-[16px] text-text-secondary">info</span>
+<span class="font-caption text-caption tracking-tight">Explains your SIP figures. Not investment advice.</span>
+</div>
+<span class="material-symbols-outlined text-text-muted text-[15px]">verified_user</span>
+</div>
+<!-- Hero Insight Overview / Coach Frame -->
+<div class="bg-surface-1 rounded-xl p-space-md mb-space-md shadow-md flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-full bg-primary-container/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary-container text-[26px]">psychology</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-1.5">
+<span class="font-label-micro text-label-micro text-secondary tracking-widest uppercase">SIP Perspective Coach</span>
+<span class="w-1.5 h-1.5 rounded-full bg-status-active"></span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-text-primary mt-0.5">Rupee-Cost Averaging in Progress</h2>
+<p class="font-body-sm text-body-sm text-text-secondary">Short-term dips let your fixed monthly SIP accumulate units cheaper.</p>
+</div>
+</div>
+<!-- BLOCK 1: Your Figures -->
+<section class="bg-surface-1 rounded-xl p-space-md mb-space-md shadow-sm">
+<div class="flex items-center justify-between pb-space-sm mb-space-sm">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+<span class="font-label-micro text-label-micro uppercase text-text-muted tracking-wider">Block 1</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary ml-1">Your figures</h3>
+</div>
+<span class="font-caption text-caption px-2 py-0.5 rounded-full bg-surface-2 text-text-secondary">5 of 60 Planned</span>
+</div>
+<!-- Fund Identity Card -->
+<div class="bg-surface-2 rounded-lg p-space-md mb-space-md">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-elevated flex items-center justify-center text-primary font-headline-sm text-headline-sm font-bold">
+            PP
+          </div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-text-primary leading-tight">Parag Parikh Flexi Cap Fund</h4>
+<span class="font-caption text-caption text-text-muted">Direct Plan · Growth · Monthly SIP ₹5,000</span>
+</div>
+</div>
+</div>
+<!-- Financial Metrics Ribbon -->
+<div class="grid grid-cols-3 gap-space-xs pt-space-xs">
+<div class="flex flex-col">
+<span class="font-caption text-caption text-text-muted">Invested</span>
+<span class="font-headline-sm text-headline-sm text-text-primary font-semibold tabular-nums mt-0.5">₹25,000</span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption text-caption text-text-muted">Current Value</span>
+<span class="font-headline-sm text-headline-sm text-text-primary font-semibold tabular-nums mt-0.5">₹24,450</span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption text-caption text-text-muted">Net Movement</span>
+<!-- Calm neutral styling as mandated, strictly avoid alarming red/coral -->
+<span class="font-headline-sm text-headline-sm text-text-secondary font-semibold tabular-nums mt-0.5">
+            -₹550 <span class="font-caption text-caption">(-2.20%)</span>
+</span>
+</div>
+</div>
+</div>
+<!-- Tappable Term Chips with Educational Popover Triggers -->
+<div class="flex flex-wrap gap-space-xs">
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-2 hover:bg-surface-elevated active:bg-surface-bright transition-colors flex items-center gap-1.5 text-left" onclick="toggleTerm('xirr')">
+<span class="font-caption text-caption text-text-secondary">XIRR</span>
+<span class="font-caption text-caption font-semibold text-text-muted tabular-nums">-5.10%</span>
+<span class="material-symbols-outlined text-[13px] text-text-muted">help_outline</span>
+</button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-2 hover:bg-surface-elevated active:bg-surface-bright transition-colors flex items-center gap-1.5 text-left" onclick="toggleTerm('abs')">
+<span class="font-caption text-caption text-text-secondary">Absolute</span>
+<span class="font-caption text-caption font-semibold text-text-muted tabular-nums">-2.20%</span>
+<span class="material-symbols-outlined text-[13px] text-text-muted">help_outline</span>
+</button>
+<button class="px-2.5 py-1.5 rounded-lg bg-surface-2 hover:bg-surface-elevated active:bg-surface-bright transition-colors flex items-center gap-1.5 text-left" onclick="toggleTerm('nav')">
+<span class="font-caption text-caption text-text-secondary">Avg NAV</span>
+<span class="font-caption text-caption font-semibold text-text-muted tabular-nums">₹66.80</span>
+<span class="material-symbols-outlined text-[13px] text-text-muted">help_outline</span>
+</button>
+</div>
+<!-- Micro Glossary Tooltip Panel (Interactive) -->
+<div class="mt-space-sm p-space-sm bg-surface-elevated rounded-lg hidden text-text-secondary font-body-sm text-body-sm" id="term-detail">
+<span id="term-text"></span>
+</div>
+</section>
+<!-- BLOCK 2: What this means at month 5 -->
+<section class="bg-surface-1 rounded-xl p-space-md mb-space-md shadow-sm">
+<div class="flex items-center gap-1.5 mb-space-md">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-micro text-label-micro uppercase text-text-muted tracking-wider">Block 2</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary ml-1">What this means at month 5</h3>
+</div>
+<!-- SIP Unit Accumulation Curve Visual -->
+<div class="bg-surface-2 rounded-xl p-space-md mb-space-md">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="font-caption text-caption text-text-secondary">5 Monthly Purchase Windows</span>
+<span class="font-label-micro text-label-micro text-status-active bg-secondary-container/15 px-2 py-0.5 rounded-full font-medium">+3.1 units cheaper in Nov</span>
+</div>
+<!-- Compact Infographic SVG -->
+<div class="w-full h-36 relative mt-space-sm">
+<svg class="w-full h-full overflow-visible" fill="none" viewbox="0 0 340 120" xmlns="http://www.w3.org/2000/svg">
+<!-- Background Horizontal Grids -->
+<line stroke="#252D3D" stroke-dasharray="3 3" x1="0" x2="340" y1="20" y2="20"></line>
+<line stroke="#252D3D" stroke-dasharray="3 3" x1="0" x2="340" y1="65" y2="65"></line>
+<line stroke="#252D3D" stroke-dasharray="3 3" x1="0" x2="340" y1="110" y2="110"></line>
+<!-- NAV Trend Path -->
+<path d="M 20 40 L 95 62 L 170 16 L 245 88 L 320 96" stroke="#1A6BFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path>
+<!-- Area fill -->
+<path d="M 20 40 L 95 62 L 170 16 L 245 88 L 320 96 L 320 120 L 20 120 Z" fill="url(#blue-gradient)" opacity="0.15"></path>
+<defs>
+<lineargradient gradientunits="userSpaceOnUse" id="blue-gradient" x1="0" x2="0" y1="0" y2="120">
+<stop stop-color="#1A6BFF"></stop>
+<stop offset="1" stop-color="#1A6BFF" stop-opacity="0"></stop>
+</lineargradient>
+</defs>
+<!-- Nodes & Unit Badges -->
+<!-- Month 1: Jul (₹68.20 -> 73.3 units) -->
+<circle cx="20" cy="40" fill="#1A6BFF" r="4.5" stroke="#0B0E14" stroke-width="2"></circle>
+<text fill="#94A3B8" font-family="Inter" font-size="9" text-anchor="middle" x="20" y="30">₹68.20</text>
+<!-- Month 2: Aug (₹67.10 -> 74.5 units) -->
+<circle cx="95" cy="62" fill="#1A6BFF" r="4.5" stroke="#0B0E14" stroke-width="2"></circle>
+<text fill="#94A3B8" font-family="Inter" font-size="9" text-anchor="middle" x="95" y="54">₹67.10</text>
+<!-- Month 3: Sep (₹69.40 -> 72.0 units) -->
+<circle cx="170" cy="16" fill="#1A6BFF" r="4.5" stroke="#0B0E14" stroke-width="2"></circle>
+<text fill="#94A3B8" font-family="Inter" font-size="9" text-anchor="middle" x="170" y="11">₹69.40</text>
+<!-- Month 4: Oct (₹65.80 -> 76.0 units) -->
+<circle cx="245" cy="88" fill="#1A6BFF" r="4.5" stroke="#0B0E14" stroke-width="2"></circle>
+<text fill="#94A3B8" font-family="Inter" font-size="9" text-anchor="middle" x="245" y="80">₹65.80</text>
+<!-- Month 5: Nov (₹65.40 -> 76.4 units) -->
+<circle cx="320" cy="96" fill="#00B386" r="6" stroke="#0B0E14" stroke-width="2"></circle>
+<text fill="#50DDAD" font-family="Inter" font-size="9.5" font-weight="600" text-anchor="middle" x="320" y="86">₹65.40</text>
+</svg>
+<!-- X-Axis Months -->
+<div class="flex justify-between items-center px-2 pt-1 font-caption text-[11px] text-text-muted">
+<span>Jul (73.3u)</span>
+<span>Aug (74.5u)</span>
+<span>Sep (72.0u)</span>
+<span>Oct (76.0u)</span>
+<span class="text-secondary font-medium">Nov (76.4u)</span>
+</div>
+</div>
+<!-- Core Explanation -->
+<div class="mt-space-md p-space-sm bg-surface-1 rounded-lg">
+<p class="font-body-md text-body-md text-text-primary leading-relaxed">
+          At month 5, your portfolio is in the early accumulation phase. When NAV dips, your fixed ₹5,000 buys <span class="text-secondary font-semibold">MORE units</span> (76.4 units in Nov vs 73.3 units in Jul). You now own <span class="text-text-primary font-semibold">366.1 total units</span> at a lower average cost.
+        </p>
+</div>
+</div>
+<!-- Editorial Callout Quote -->
+<div class="bg-surface-2 rounded-r-lg p-space-md relative overflow-hidden flex gap-space-sm">
+<div class="w-1 bg-primary-container rounded-full shrink-0"></div>
+<p class="font-body-sm text-body-sm text-on-surface-variant italic leading-normal">
+        "Across historical 5-year equity SIP cohorts, 38% of accounts showed flat or negative returns within the first 6 months before rupee-cost averaging compounds."
+      </p>
+</div>
+</section>
+<!-- BLOCK 3: What it does not mean -->
+<section class="bg-surface-1 rounded-xl p-space-md mb-space-md shadow-sm">
+<div class="flex items-center gap-1.5 mb-space-sm">
+<span class="w-2 h-2 rounded-full bg-status-warn"></span>
+<span class="font-label-micro text-label-micro uppercase text-text-muted tracking-wider">Block 3</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary ml-1">What it does not mean</h3>
+</div>
+<div class="space-y-space-sm">
+<div class="flex items-start gap-space-sm bg-surface-2 p-space-sm rounded-lg">
+<div class="w-5 h-5 rounded-full bg-surface-elevated flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[14px] text-text-secondary">close</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary leading-snug">
+          It does <strong class="text-text-primary font-semibold">NOT</strong> mean your fund has permanently lost money. Units remain intact in your account ready for subsequent NAV compounding.
+        </p>
+</div>
+<div class="flex items-start gap-space-sm bg-surface-2 p-space-sm rounded-lg">
+<div class="w-5 h-5 rounded-full bg-surface-elevated flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[14px] text-text-secondary">close</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary leading-snug">
+          It does <strong class="text-text-primary font-semibold">NOT</strong> indicate fund underperformance on a brief 5-month horizon. Flexi-cap equities operate on 5–7 year business cycles.
+        </p>
+</div>
+<div class="flex items-start gap-space-sm bg-surface-2 p-space-sm rounded-lg">
+<div class="w-5 h-5 rounded-full bg-surface-elevated flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[14px] text-text-secondary">close</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary leading-snug">
+          It does <strong class="text-text-primary font-semibold">NOT</strong> mean you should pause or exit without personal planning. Timing early SIP installments interrupts cost averaging.
+        </p>
+</div>
+</div>
+</section>
+<!-- Vetted Source & Confidence Meta -->
+<div class="bg-surface-1 rounded-xl p-space-md mb-space-md shadow-sm">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-secondary text-[16px]">verified</span>
+<span class="font-caption text-caption text-text-secondary font-medium">Data Source &amp; Validation</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-container/15 text-status-active font-label-micro text-label-micro uppercase tracking-wider font-semibold">
+        HIGH CONFIDENCE · VERIFIED DATA
+      </span>
+</div>
+<p class="font-caption text-caption text-text-muted leading-relaxed">
+      AMFI Mutual Fund Study &amp; Historical Index Data (2014–2024) · Verified 08 Nov 2026. Computations based on annualized cash flows across standard monthly dates.
+    </p>
+</div>
+<!-- Interactive Follow-up Question Area -->
+<section class="bg-surface-1 rounded-xl p-space-md mb-space-md shadow-sm">
+<h3 class="font-headline-sm text-headline-sm text-text-primary mb-1">Common Questions</h3>
+<p class="font-caption text-caption text-text-muted mb-space-sm">Tap any prompt to inspect mutual fund mechanics</p>
+<!-- Quick Question Pills -->
+<div class="flex flex-col gap-space-xs mb-space-md">
+<button class="w-full text-left p-space-sm bg-surface-2 hover:bg-surface-elevated active:bg-surface-bright rounded-lg transition-colors flex items-center justify-between" onclick="expandQuery('nav-drop')">
+<span class="font-body-sm text-body-sm text-text-primary">Why did NAV drop last month?</span>
+<span class="material-symbols-outlined text-text-muted text-[18px]">chevron_right</span>
+</button>
+<button class="w-full text-left p-space-sm bg-surface-2 hover:bg-surface-elevated active:bg-surface-bright rounded-lg transition-colors flex items-center justify-between" onclick="expandQuery('xirr-cagr')">
+<span class="font-body-sm text-body-sm text-text-primary">How does XIRR differ from CAGR?</span>
+<span class="material-symbols-outlined text-text-muted text-[18px]">chevron_right</span>
+</button>
+<button class="w-full text-left p-space-sm bg-surface-2 hover:bg-surface-elevated active:bg-surface-bright rounded-lg transition-colors flex items-center justify-between" onclick="expandQuery('three-years')">
+<span class="font-body-sm text-body-sm text-text-primary">What happens if I stay invested for 3 years?</span>
+<span class="material-symbols-outlined text-text-muted text-[18px]">chevron_right</span>
+</button>
+</div>
+<!-- Active Drawer for Dynamic Prompt Output -->
+<div class="hidden p-space-md bg-surface-elevated rounded-lg mb-space-md text-text-secondary font-body-sm text-body-sm leading-relaxed" id="query-drawer">
+<div class="flex justify-between items-center mb-1">
+<span class="font-headline-sm text-headline-sm text-text-primary font-semibold" id="query-title"></span>
+<button class="text-text-muted hover:text-text-primary" onclick="closeQuery()"><span class="material-symbols-outlined text-[16px]">close</span></button>
+</div>
+<p id="query-content"></p>
+</div>
+<!-- Feedback Rows -->
+<div class="space-y-space-md pt-space-xs">
+<!-- Feedback 1: Clarity -->
+<div class="bg-surface-2 p-space-sm rounded-lg flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-text-secondary">Was this clear?</span>
+<div class="flex gap-space-xs">
+<button class="px-3 py-1 rounded bg-surface-elevated hover:bg-surface-bright text-text-primary font-caption text-caption transition-colors" onclick="recordFeedback(this)">Yes</button>
+<button class="px-3 py-1 rounded bg-surface-elevated hover:bg-surface-bright text-text-primary font-caption text-caption transition-colors" onclick="recordFeedback(this)">Somewhat</button>
+</div>
+</div>
+<!-- Feedback 2: Impartiality / Non-Advice Check -->
+<div class="bg-surface-2 p-space-sm rounded-lg flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<span class="font-body-sm text-body-sm text-text-secondary">Did this feel like advice?</span>
+<div class="flex gap-space-xs">
+<button class="px-2.5 py-1 rounded bg-surface-elevated hover:bg-surface-bright text-text-primary font-caption text-caption transition-colors" onclick="recordFeedback(this)">No, purely factual</button>
+<button class="px-2.5 py-1 rounded bg-surface-elevated hover:bg-surface-bright text-text-primary font-caption text-caption transition-colors" onclick="recordFeedback(this)">Felt like advice</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Sticky Support CTA -->
+<div class="w-full flex items-center justify-between pt-space-xs">
+<button class="w-full py-3 bg-surface-2 hover:bg-surface-elevated text-text-primary rounded-lg font-headline-sm text-headline-sm font-semibold transition-colors flex items-center justify-center gap-1.5 shadow-sm" onclick="history.back()">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Got it, return to SIP</span>
+</button>
+</div>
+</div>
+<script>
+  function toggleTerm(type) {
+    const detailBox = document.getElementById('term-detail');
+    const textEl = document.getElementById('term-text');
+    detailBox.classList.remove('hidden');
+
+    if (type === 'xirr') {
+      textEl.innerHTML = '<strong class="text-text-primary">XIRR (Extended Internal Rate of Return):</strong> Annualized yield factoring in the exact calendar date of every individual ₹5,000 installment, rather than assuming a single lump sum.';
+    } else if (type === 'abs') {
+      textEl.innerHTML = '<strong class="text-text-primary">Absolute Return:</strong> Simple percentage difference between total invested cash (₹25,000) and current portfolio worth (₹24,450), regardless of duration.';
+    } else if (type === 'nav') {
+      textEl.innerHTML = '<strong class="text-text-primary">Average NAV:</strong> The volume-weighted unit purchase price across your 5 cycles (₹66.80). Because you bought at ₹65.40 this month, your average cost basis shifted lower.';
+    }
+  }
+
+  function expandQuery(id) {
+    const drawer = document.getElementById('query-drawer');
+    const title = document.getElementById('query-title');
+    const content = document.getElementById('query-content');
+    drawer.classList.remove('hidden');
+
+    if (id === 'nav-drop') {
+      title.innerText = 'Why did NAV drop last month?';
+      content.innerText = 'Flexi Cap funds invest in domestic and global equity markets. Market-wide corrections or sector rotations temporarily compress equity valuations, yielding lower Net Asset Values across all unitholders uniformly.';
+    } else if (id === 'xirr-cagr') {
+      title.innerText = 'How does XIRR differ from CAGR?';
+      content.innerText = 'CAGR assumes an investment begins and ends on a single point in time. XIRR is tailored for periodic SIPs because each ₹5,000 tranche has a completely different holding duration (Tranche 1 had 5 months, Tranche 5 had 1 month).';
+    } else if (id === 'three-years') {
+      title.innerText = 'What happens over 3+ years?';
+      content.innerText = 'Historical data reveals that equity market cycles smooth out short-term variance. Rupee-cost averaging ensures you acquire larger volumes during down cycles, which boosts compounding when market valuation multiples expand.';
+    }
+  }
+
+  function closeQuery() {
+    document.getElementById('query-drawer').classList.add('hidden');
+  }
+
+  function recordFeedback(btn) {
+    const parent = btn.parentElement;
+    Array.from(parent.children).forEach(el => {
+      el.classList.remove('bg-primary-container', 'text-on-primary-container');
+      el.classList.add('bg-surface-elevated', 'text-text-primary');
+    });
+    btn.classList.remove('bg-surface-elevated', 'text-text-primary');
+    btn.classList.add('bg-primary-container', 'text-on-primary-container');
+  }
+</script></main></body></html>

@@ -1,0 +1,28 @@
+{
+  "version": "bands.v1",
+  "reviewStatus": "PROPOSED_PENDING_OWNER_REVIEW",
+  "setBy": "Engineering (Claude), Phase 2, 2026-11-08. NOT yet reviewed by the owner.",
+  "why": "Starting values only. The return-band cut-offs reuse the demo values already used by the clickable prototype and the fixture sanity check. They are product-judgement parameters, NOT research findings and NOT financial advice. The owner must set or confirm every value before Phase 2 is signed off.",
+  "thresholds": {
+    "flatBandPct": { "value": 0.5, "status": "PROPOSED", "meaning": "A% strictly between -value and +value is FLAT" },
+    "negativeAtOrBelowPct": { "value": -5, "status": "PROPOSED", "meaning": "A% at or below this is NEGATIVE; between this and -flatBandPct is SMALL_NEGATIVE" },
+    "positiveAtOrAbovePct": { "value": 5, "status": "PROPOSED", "meaning": "A% at or above this is POSITIVE; between flatBandPct and this is SMALL_POSITIVE" },
+    "minInstalmentsForClassification": { "value": 2, "status": "PROPOSED", "meaning": "Fewer successful instalments than this gives INSUFFICIENT_DATA" },
+    "stageLowerBoundMonths": {
+      "M1_3": { "value": 1, "status": "PROPOSED" },
+      "M3_6": { "value": 3, "status": "PROPOSED" },
+      "M6_12": { "value": 6, "status": "PROPOSED" },
+      "OVER_12": { "value": 12, "status": "PROPOSED" }
+    },
+    "shortPeriodXirrBelowMonths": { "value": 12, "status": "PROPOSED", "meaning": "Tenure below this: XIRR is flagged as annualised from a short period" },
+    "providerXirrToleranceBps": { "value": 50, "status": "PROPOSED", "meaning": "|computed - provider| XIRR above this many basis points sets xirrMismatch" }
+  },
+  "xirrSolver": {
+    "dayCountBasis": 365,
+    "lowerRate": -0.9999,
+    "upperRate": 100,
+    "tolerance": "1e-9",
+    "maxIterations": 200,
+    "precisionDigits": 50
+  }
+}

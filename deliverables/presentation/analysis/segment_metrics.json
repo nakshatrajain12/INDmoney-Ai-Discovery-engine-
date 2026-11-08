@@ -1,0 +1,1162 @@
+{
+ "A_dissat": {
+  "n": 1074,
+  "share": 34.9,
+  "indmoney_n": 478,
+  "apps": [
+   [
+    "INDmoney",
+    478
+   ],
+   [
+    "Zerodha Coin",
+    396
+   ],
+   [
+    "Groww",
+    200
+   ]
+  ],
+  "sources": [
+   [
+    "google_play",
+    958
+   ],
+   [
+    "app_store",
+    116
+   ]
+  ],
+  "avg_rating": 1.17,
+  "rating_dist": [
+   [
+    1,
+    892
+   ],
+   [
+    2,
+    182
+   ]
+  ],
+  "sip_explicit": 365,
+  "sip_explicit_indmoney": 86,
+  "stop_kw": 141,
+  "stop_kw_sip": 24,
+  "stock_kw": 277,
+  "probs": {
+   "payment_mandate": 53,
+   "withdrawal_redemption": 68,
+   "charges_fees": 117,
+   "returns_loss": 202,
+   "app_technical": 207,
+   "support": 224,
+   "kyc_onboarding": 43,
+   "info_clarity": 106,
+   "fund_choice": 67
+  },
+  "probs_sip": {
+   "payment_mandate": 20,
+   "withdrawal_redemption": 23,
+   "charges_fees": 40,
+   "returns_loss": 50,
+   "app_technical": 67,
+   "support": 62,
+   "kyc_onboarding": 8,
+   "info_clarity": 29,
+   "fund_choice": 29
+  },
+  "probs_indm": {
+   "payment_mandate": 19,
+   "withdrawal_redemption": 31,
+   "charges_fees": 48,
+   "returns_loss": 88,
+   "app_technical": 76,
+   "support": 132,
+   "kyc_onboarding": 29,
+   "info_clarity": 54,
+   "fund_choice": 31
+  },
+  "ctrl_weighted": 0.8,
+  "no_problem_kw": 374,
+  "llm_n": 100,
+  "stored_sev": [
+   [
+    "moderate",
+    1000
+   ],
+   [
+    "critical",
+    66
+   ],
+   [
+    "minor",
+    8
+   ]
+  ],
+  "llm_sev": [
+   [
+    "critical",
+    66
+   ],
+   [
+    "moderate",
+    26
+   ],
+   [
+    "minor",
+    8
+   ]
+  ],
+  "llm_area": [
+   [
+    "app_performance",
+    20
+   ],
+   [
+    "mandate_payment",
+    17
+   ],
+   [
+    "customer_support",
+    14
+   ],
+   [
+    "returns_display",
+    11
+   ],
+   [
+    "fund_selection",
+    9
+   ],
+   [
+    "portfolio_view",
+    9
+   ]
+  ],
+  "llm_emo": [
+   [
+    "frustrated",
+    43
+   ],
+   [
+    "angry",
+    33
+   ],
+   [
+    "disappointed",
+    13
+   ],
+   [
+    "confused",
+    6
+   ],
+   [
+    "hopeful",
+    2
+   ]
+  ],
+  "llm_action": [
+   [
+    "none_mentioned",
+    41
+   ],
+   [
+    "considering_stopping",
+    22
+   ],
+   [
+    "contacted_support",
+    18
+   ],
+   [
+    "switched",
+    7
+   ],
+   [
+    "cancelled",
+    6
+   ],
+   [
+    "searched_online",
+    4
+   ]
+  ],
+  "llm_exp": [
+   [
+    "beginner",
+    33
+   ],
+   [
+    "intermediate",
+    30
+   ],
+   [
+    "unknown",
+    20
+   ],
+   [
+    "experienced",
+    15
+   ],
+   [
+    "first_timer",
+    2
+   ]
+  ],
+  "all_exp_unknown": 1.9,
+  "llm_age": [
+   [
+    "unknown",
+    91
+   ],
+   [
+    "mid_career",
+    5
+   ],
+   [
+    "early_career",
+    3
+   ],
+   [
+    "senior",
+    1
+   ]
+  ],
+  "all_age_unknown": 99.2,
+  "llm_inc": [
+   [
+    "unknown",
+    79
+   ],
+   [
+    "moderate",
+    11
+   ],
+   [
+    "high",
+    5
+   ],
+   [
+    "low",
+    5
+   ]
+  ],
+  "all_inc_unknown": 98.0,
+  "llm_infl": [
+   [
+    "self_research",
+    52
+   ],
+   [
+    "unknown",
+    32
+   ],
+   [
+    "peer",
+    12
+   ],
+   [
+    "family",
+    2
+   ],
+   [
+    "social_media",
+    2
+   ]
+  ],
+  "all_infl_unknown": 93.7,
+  "llm_ten": [
+   [
+    "unknown",
+    83
+   ],
+   [
+    "pre_start",
+    9
+   ],
+   [
+    "beyond_12",
+    7
+   ],
+   [
+    "month_1",
+    1
+   ]
+  ],
+  "all_ten_unknown": 98.4,
+  "llm_unmet": [
+   [
+    "responsive and effective customer support",
+    2
+   ],
+   [
+    "auto\u2011pause or guidance during sharp market downturns",
+    1
+   ],
+   [
+    "ability to view 1\u2011day change for holdings across all brokers",
+    1
+   ],
+   [
+    "retain 1\u2011day change visibility for external broker assets",
+    1
+   ],
+   [
+    "price protection or guaranteed execution at target price",
+    1
+   ],
+   [
+    "clear, low\u2011cost brokerage fee structure",
+    1
+   ],
+   [
+    "clean home screen with key indices",
+    1
+   ],
+   [
+    "responsive, human\u2011backed support for share transfer issues",
+    1
+   ],
+   [
+    "ability to fund us stock purchases using any existing bank account",
+    1
+   ],
+   [
+    "sort listings and view pre/post market data for us stocks",
+    1
+   ],
+   [
+    "advance notice or alternative saving options before feature removal",
+    1
+   ],
+   [
+    "explicit consent workflow for any auto\u2011sell action",
+    1
+   ]
+  ],
+  "llm_conf": 0.91,
+  "dur_texts": 68,
+  "dur_buckets": [
+   [
+    "<=1m",
+    22
+   ],
+   [
+    ">12m",
+    18
+   ],
+   [
+    "7-12m",
+    15
+   ],
+   [
+    "2-3m",
+    11
+   ],
+   [
+    "4-6m",
+    5
+   ]
+  ],
+  "dur_texts_sip": 30,
+  "dur_buckets_sip": [
+   [
+    ">12m",
+    11
+   ],
+   [
+    "7-12m",
+    7
+   ],
+   [
+    "2-3m",
+    7
+   ],
+   [
+    "<=1m",
+    6
+   ],
+   [
+    "4-6m",
+    1
+   ]
+  ],
+  "request_kw": 142
+ },
+ "B_sat": {
+  "n": 1169,
+  "share": 38.0,
+  "indmoney_n": 627,
+  "apps": [
+   [
+    "INDmoney",
+    627
+   ],
+   [
+    "Zerodha Coin",
+    288
+   ],
+   [
+    "Groww",
+    254
+   ]
+  ],
+  "sources": [
+   [
+    "google_play",
+    1008
+   ],
+   [
+    "app_store",
+    161
+   ]
+  ],
+  "avg_rating": 4.46,
+  "rating_dist": [
+   [
+    3,
+    182
+   ],
+   [
+    4,
+    271
+   ],
+   [
+    5,
+    716
+   ]
+  ],
+  "sip_explicit": 421,
+  "sip_explicit_indmoney": 180,
+  "stop_kw": 113,
+  "stop_kw_sip": 15,
+  "stock_kw": 422,
+  "probs": {
+   "payment_mandate": 16,
+   "withdrawal_redemption": 33,
+   "charges_fees": 62,
+   "returns_loss": 135,
+   "app_technical": 69,
+   "support": 65,
+   "kyc_onboarding": 14,
+   "info_clarity": 94,
+   "fund_choice": 90
+  },
+  "probs_sip": {
+   "payment_mandate": 8,
+   "withdrawal_redemption": 16,
+   "charges_fees": 20,
+   "returns_loss": 56,
+   "app_technical": 19,
+   "support": 23,
+   "kyc_onboarding": 5,
+   "info_clarity": 44,
+   "fund_choice": 43
+  },
+  "probs_indm": {
+   "payment_mandate": 6,
+   "withdrawal_redemption": 12,
+   "charges_fees": 36,
+   "returns_loss": 67,
+   "app_technical": 35,
+   "support": 45,
+   "kyc_onboarding": 9,
+   "info_clarity": 48,
+   "fund_choice": 42
+  },
+  "ctrl_weighted": 0.74,
+  "no_problem_kw": 720,
+  "llm_n": 107,
+  "stored_sev": [
+   [
+    "moderate",
+    1112
+   ],
+   [
+    "minor",
+    46
+   ],
+   [
+    "critical",
+    11
+   ]
+  ],
+  "llm_sev": [
+   [
+    "moderate",
+    50
+   ],
+   [
+    "minor",
+    46
+   ],
+   [
+    "critical",
+    11
+   ]
+  ],
+  "llm_area": [
+   [
+    "none",
+    37
+   ],
+   [
+    "app_performance",
+    21
+   ],
+   [
+    "portfolio_view",
+    17
+   ],
+   [
+    "fund_selection",
+    10
+   ],
+   [
+    "returns_display",
+    9
+   ],
+   [
+    "mandate_payment",
+    7
+   ]
+  ],
+  "llm_emo": [
+   [
+    "confident",
+    29
+   ],
+   [
+    "frustrated",
+    21
+   ],
+   [
+    "reassured",
+    17
+   ],
+   [
+    "confused",
+    15
+   ],
+   [
+    "hopeful",
+    13
+   ]
+  ],
+  "llm_action": [
+   [
+    "none_mentioned",
+    58
+   ],
+   [
+    "continued",
+    35
+   ],
+   [
+    "contacted_support",
+    8
+   ],
+   [
+    "considering_stopping",
+    2
+   ],
+   [
+    "paused",
+    1
+   ],
+   [
+    "uninstalled",
+    1
+   ]
+  ],
+  "llm_exp": [
+   [
+    "intermediate",
+    40
+   ],
+   [
+    "unknown",
+    25
+   ],
+   [
+    "beginner",
+    23
+   ],
+   [
+    "experienced",
+    17
+   ],
+   [
+    "first_timer",
+    2
+   ]
+  ],
+  "all_exp_unknown": 2.1,
+  "llm_age": [
+   [
+    "unknown",
+    96
+   ],
+   [
+    "early_career",
+    8
+   ],
+   [
+    "mid_career",
+    2
+   ],
+   [
+    "student",
+    1
+   ]
+  ],
+  "all_age_unknown": 99.1,
+  "llm_inc": [
+   [
+    "unknown",
+    87
+   ],
+   [
+    "moderate",
+    17
+   ],
+   [
+    "high",
+    2
+   ],
+   [
+    "low",
+    1
+   ]
+  ],
+  "all_inc_unknown": 98.3,
+  "llm_infl": [
+   [
+    "self_research",
+    83
+   ],
+   [
+    "unknown",
+    17
+   ],
+   [
+    "peer",
+    7
+   ]
+  ],
+  "all_infl_unknown": 92.3,
+  "llm_ten": [
+   [
+    "unknown",
+    97
+   ],
+   [
+    "beyond_12",
+    6
+   ],
+   [
+    "pre_start",
+    2
+   ],
+   [
+    "months_1_3",
+    1
+   ],
+   [
+    "month_1",
+    1
+   ]
+  ],
+  "all_ten_unknown": 99.1,
+  "llm_unmet": [
+   [
+    "real\u2011time transparent exchange rate and itemised fee disclosure for foreign\u2011currency deposits",
+    1
+   ],
+   [
+    "discounted or tiered brokerage fee structure",
+    1
+   ],
+   [
+    "ability to view both 1\u2011day and total returns simultaneously",
+    1
+   ],
+   [
+    "add support for standard chartered bank accounts",
+    1
+   ],
+   [
+    "restore or replace external portfolio aggregation view",
+    1
+   ],
+   [
+    "native ipados layout for chart analysis",
+    1
+   ],
+   [
+    "a complete, filterable list of all us stocks for easier exploration and selection",
+    1
+   ],
+   [
+    "safe and reliable transaction processing without long fund lockups",
+    1
+   ],
+   [
+    "clean interface with immediate access to profit and loss data",
+    1
+   ],
+   [
+    "apple widgets to track us and indian holdings directly from home screen",
+    1
+   ],
+   [
+    "feature to set stop loss and take profit orders at the same time",
+    1
+   ],
+   [
+    "ios widgets for quick access to f&o and share value data",
+    1
+   ]
+  ],
+  "llm_conf": 0.89,
+  "dur_texts": 49,
+  "dur_buckets": [
+   [
+    ">12m",
+    32
+   ],
+   [
+    "7-12m",
+    9
+   ],
+   [
+    "2-3m",
+    5
+   ],
+   [
+    "<=1m",
+    3
+   ],
+   [
+    "4-6m",
+    2
+   ]
+  ],
+  "dur_texts_sip": 22,
+  "dur_buckets_sip": [
+   [
+    ">12m",
+    16
+   ],
+   [
+    "7-12m",
+    5
+   ],
+   [
+    "2-3m",
+    2
+   ],
+   [
+    "<=1m",
+    1
+   ]
+  ],
+  "request_kw": 230
+ },
+ "C_community": {
+  "n": 836,
+  "share": 27.2,
+  "indmoney_n": 9,
+  "apps": [
+   [
+    "Mutual Funds / Equity SIP",
+    260
+   ],
+   [
+    "Mutual Funds / General SIP",
+    252
+   ],
+   [
+    "Zerodha/General SIP",
+    191
+   ],
+   [
+    "Zerodha Coin",
+    105
+   ],
+   [
+    "Groww",
+    19
+   ],
+   [
+    "INDmoney",
+    9
+   ]
+  ],
+  "sources": [
+   [
+    "tradingqa",
+    312
+   ],
+   [
+    "valuepickr",
+    265
+   ],
+   [
+    "youtube",
+    259
+   ]
+  ],
+  "avg_rating": null,
+  "rating_dist": [
+   [
+    null,
+    836
+   ]
+  ],
+  "sip_explicit": 499,
+  "sip_explicit_indmoney": 5,
+  "stop_kw": 113,
+  "stop_kw_sip": 91,
+  "stock_kw": 199,
+  "probs": {
+   "payment_mandate": 44,
+   "withdrawal_redemption": 28,
+   "charges_fees": 63,
+   "returns_loss": 192,
+   "app_technical": 47,
+   "support": 17,
+   "kyc_onboarding": 3,
+   "info_clarity": 116,
+   "fund_choice": 87
+  },
+  "probs_sip": {
+   "payment_mandate": 37,
+   "withdrawal_redemption": 23,
+   "charges_fees": 42,
+   "returns_loss": 109,
+   "app_technical": 26,
+   "support": 15,
+   "kyc_onboarding": 2,
+   "info_clarity": 79,
+   "fund_choice": 66
+  },
+  "probs_indm": {
+   "payment_mandate": 0,
+   "withdrawal_redemption": 0,
+   "charges_fees": 1,
+   "returns_loss": 0,
+   "app_technical": 1,
+   "support": 0,
+   "kyc_onboarding": 0,
+   "info_clarity": 4,
+   "fund_choice": 2
+  },
+  "ctrl_weighted": 0.71,
+  "no_problem_kw": 411,
+  "llm_n": 74,
+  "stored_sev": [
+   [
+    "moderate",
+    804
+   ],
+   [
+    "minor",
+    28
+   ],
+   [
+    "critical",
+    4
+   ]
+  ],
+  "llm_sev": [
+   [
+    "moderate",
+    42
+   ],
+   [
+    "minor",
+    28
+   ],
+   [
+    "critical",
+    4
+   ]
+  ],
+  "llm_area": [
+   [
+    "educational_content",
+    22
+   ],
+   [
+    "none",
+    16
+   ],
+   [
+    "fund_selection",
+    13
+   ],
+   [
+    "sip_setup",
+    8
+   ],
+   [
+    "returns_display",
+    4
+   ],
+   [
+    "mandate_payment",
+    3
+   ]
+  ],
+  "llm_emo": [
+   [
+    "confident",
+    19
+   ],
+   [
+    "confused",
+    15
+   ],
+   [
+    "reassured",
+    9
+   ],
+   [
+    "indifferent",
+    8
+   ],
+   [
+    "anxious",
+    7
+   ]
+  ],
+  "llm_action": [
+   [
+    "none_mentioned",
+    28
+   ],
+   [
+    "continued",
+    11
+   ],
+   [
+    "searched_online",
+    9
+   ],
+   [
+    "considering_stopping",
+    7
+   ],
+   [
+    "paused",
+    5
+   ],
+   [
+    "asked_someone",
+    4
+   ]
+  ],
+  "llm_exp": [
+   [
+    "intermediate",
+    24
+   ],
+   [
+    "beginner",
+    22
+   ],
+   [
+    "experienced",
+    19
+   ],
+   [
+    "unknown",
+    5
+   ],
+   [
+    "first_timer",
+    4
+   ]
+  ],
+  "all_exp_unknown": 0.6,
+  "llm_age": [
+   [
+    "unknown",
+    52
+   ],
+   [
+    "mid_career",
+    14
+   ],
+   [
+    "early_career",
+    7
+   ],
+   [
+    "senior",
+    1
+   ]
+  ],
+  "all_age_unknown": 97.4,
+  "llm_inc": [
+   [
+    "unknown",
+    55
+   ],
+   [
+    "moderate",
+    17
+   ],
+   [
+    "high",
+    2
+   ]
+  ],
+  "all_inc_unknown": 97.7,
+  "llm_infl": [
+   [
+    "self_research",
+    50
+   ],
+   [
+    "social_media",
+    10
+   ],
+   [
+    "peer",
+    8
+   ],
+   [
+    "unknown",
+    3
+   ],
+   [
+    "family",
+    3
+   ]
+  ],
+  "all_infl_unknown": 91.5,
+  "llm_ten": [
+   [
+    "unknown",
+    33
+   ],
+   [
+    "beyond_12",
+    22
+   ],
+   [
+    "pre_start",
+    7
+   ],
+   [
+    "months_3_6",
+    6
+   ],
+   [
+    "month_1",
+    3
+   ],
+   [
+    "months_1_3",
+    3
+   ]
+  ],
+  "all_ten_unknown": 95.1,
+  "llm_unmet": [
+   [
+    "clear and accessible option to cancel or pause sip immediately after setup",
+    1
+   ],
+   [
+    "smart scheduling to avoid sip execution on non-trading days",
+    1
+   ],
+   [
+    "educational content explaining the long-term compounding benefit of sips vs short-term volatility",
+    1
+   ],
+   [
+    "emotional support or guidance during market downturns to prevent panic selling",
+    1
+   ],
+   [
+    "contextualized performance metrics that account for market cycles to reduce panic",
+    1
+   ],
+   [
+    "a simple, risk-adjusted fund recommendation tool or filter for beginners",
+    1
+   ],
+   [
+    "clear educational content explaining the marginal benefit of daily sips over monthly sips",
+    1
+   ],
+   [
+    "accurate and transparent data migration handling during platform switches",
+    1
+   ],
+   [
+    "a more feature-rich, modern interface for mutual fund management within the zerodha ecosystem",
+    1
+   ],
+   [
+    "ability to pause or edit sips directly within the app without deleting the mandate",
+    1
+   ],
+   [
+    "clear, plain-english communication on how regulatory changes impact existing sip mandates",
+    1
+   ],
+   [
+    "seamless, digital-first mechanism to pause and resume sips without physical paperwork",
+    1
+   ]
+  ],
+  "llm_conf": 0.88,
+  "dur_texts": 141,
+  "dur_buckets": [
+   [
+    ">12m",
+    102
+   ],
+   [
+    "7-12m",
+    23
+   ],
+   [
+    "<=1m",
+    11
+   ],
+   [
+    "4-6m",
+    9
+   ],
+   [
+    "2-3m",
+    5
+   ]
+  ],
+  "dur_texts_sip": 83,
+  "dur_buckets_sip": [
+   [
+    ">12m",
+    63
+   ],
+   [
+    "7-12m",
+    13
+   ],
+   [
+    "<=1m",
+    7
+   ],
+   [
+    "4-6m",
+    5
+   ]
+  ],
+  "request_kw": 88
+ }
+}

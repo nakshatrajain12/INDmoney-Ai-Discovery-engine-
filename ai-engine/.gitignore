@@ -1,0 +1,31 @@
+# Environment & Secrets (NEVER COMMIT)
+.env
+.env*.local
+!.env.example
+
+# Python
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+*.spec
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+
+# Engine Run Failures & Temporary Artifacts
+data/failed_extractions.json
+data/chromadb/
+*.log
+
+# OS & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

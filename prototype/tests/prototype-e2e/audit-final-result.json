@@ -1,0 +1,138 @@
+{
+ "nav": [],
+ "dead": [
+  "dashboard:{} #12 [tab:sips] \"SIPs\": no visible change",
+  "coachEntry:{} #4 [selectSip:A] \"NF\nNorthstar Flexi Cap Fund\nFlexi Cap · \": no visible change",
+  "ledger:{} #4 [filter:all] \"All\": no visible change",
+  "statuses:{} #4 [sipFilter:all] \"All (6)\": no visible change",
+  "manage:{\"id\":\"A\"} #4 [opt:pause] \"Pause SIP\nSkip instalments for a period \": no visible change",
+  "reminder:{\"id\":\"C\"} #6 [remOpt:d3] \"3 days before restart\n12 Jan 2027\": no visible change",
+  "account:{} #3 [tab:account] \"Account\": no visible change",
+  "account:{} #11 [tab:account] \"Account\": no visible change",
+  "explore:{} #7 [tab:explore] \"Explore\": no visible change"
+ ],
+ "figures": [],
+ "xirr": [
+  {
+   "id": "A",
+   "app": -9.1433,
+   "indep": -9.1433,
+   "ok": true
+  },
+  {
+   "id": "B",
+   "app": -7.4853,
+   "indep": -7.4853,
+   "ok": true
+  },
+  {
+   "id": "C",
+   "app": 22.6811,
+   "indep": 22.6811,
+   "ok": true
+  },
+  {
+   "id": "D",
+   "app": 1.3908,
+   "indep": 1.3908,
+   "ok": true
+  },
+  {
+   "id": "E",
+   "app": 6.1207,
+   "indep": 6.1207,
+   "ok": true
+  },
+  {
+   "id": "F",
+   "app": -17.8022,
+   "indep": -17.8022,
+   "ok": true
+  }
+ ],
+ "terms": {
+  "instalment_uk": 54,
+  "installment_us": 0,
+  "failed": 20,
+  "unsuccessful": 0,
+  "missed": 0,
+  "didnt_go_through": 0,
+  "net_return": 0,
+  "net_movement": 0,
+  "absolute_return": 2,
+  "return_plain": 26,
+  "avg_nav": 0,
+  "mandate": 7,
+  "autopay": 1,
+  "pause": 44,
+  "skip": 16,
+  "resume": 15,
+  "restart": 14,
+  "cancel": 11,
+  "stop": 1
+ },
+ "advice": [],
+ "axe": [],
+ "small": [],
+ "focus": [
+  {
+   "afterNavigation_activeElement": "screen"
+  },
+  {
+   "afterSheetOpen_activeInsideSheet": true
+  },
+  {
+   "afterSheetClose_returnedToTrigger": true
+  },
+  {
+   "documentTitle": "Recent transactions · SIP Steady prototype"
+  },
+  {
+   "liveRegionForRouteChange": 1
+  }
+ ],
+ "texts": {
+  "dashboard:{}": "9:41\nDemo\nDEMO DATA · NO REAL ACCOUNTS OR TRANSACTIONS\nIND\nSIP STEADY\nSIP Dashboard\nYOUR SIP PORTFOLIO (DEMO)\n5 SIPS\nTOTAL INVESTED\n₹69,000\nCURRENT VALUE\n₹69,411\nReturn +₹411 (+0.60%)\nXIRR (annualised) +1.98%\nWhat does my Northstar return mean?\nYour 5-instalment SIP shows −₹550 (−2.20%). See what the figures mean at month 5.\nUnderstand my returns\nAn instalment failed\nHarbor Large Cap Fund · 5 Nov 2026 · ₹4,000\nSee why\nActive SIPs\n3\nManage SIPs\nNF\nNorthstar Flexi Cap Fund\nFlexi Cap · Direct Growth\nFolio ••9019 · ₹5,000/mo\nACTIVE\nINVESTED\n₹25,000\nCURRENT VALUE\n₹24,450\nReturn −₹550 (−2.20%)\nMonth 5 · 5 instalments\nHL\nHarbor Large Cap Fund\nLarge Cap · Direct Growth\nFolio ••2144 · ₹4,000/mo\nACTIVE · 1 FAILED INSTALMENT\nINVESTED\n₹16,000\nCURRENT VALUE\n₹15,731\nReturn −₹269 (−1.68%)\nMonth 5 · 4 instalments\nMI\nMeridian Index Fund\nIndex · Direct Growth\nFolio ••6620 · ₹1,000/mo\nACTIVE\nINVESTED\n₹1,000\nCURRENT VALUE\n₹998\nReturn −₹2 (−0.16%)\nMonth 1 · 1 instalment\nRecent instalments\nView ledger\nHarbor Large Cap Fund\n5 Nov 2026 · Demo Bank ••4012\n₹4,000\nFailed · tap to see why\n5 Nov 2026\nDemo Bank ••4012\n₹1,000\nProcessed\n20 Oct 2026\nDemo Bank ••4012\n₹3,000\nSkipped (paused)\n15 Oct 2026\nDemo Bank ••4012\n₹5,000\nProcessed\nExplains your SIP figures. Not investment advice.\nSIPs\nExplore\nCoach\nAccount",
+  "sipDetail:{\"id\":\"A\"}": "9:41\nDemo\nDEMO DATA · NO REAL ACCOUNTS OR TRANSACTIONS\nIND\nSIP DETAIL\nNorthstar Flexi Cap F…\nFLEXI CAP · DIRECT GROWTH\nNorthstar Flexi Cap Fund\nFolio ••9019 · ₹5,000 on the 15th of each month\nACTIVE\nINVESTED\n₹25,000\nCURRENT VALUE\n₹24,450\nReturn −₹550 (−2.20%)\nXIRR (annualised) −9.14%\nMonth 5 · 5 instalments\nActive. Next debit 15 Nov 2026\nUnderstand my returns\nManage SIP\nInstalments\n15 Oct 2026\nDemo Bank ••4012\n₹5,000\nProcessed\n15 Sep 2026\nDemo Bank ••4012\n₹5,000\nProcessed\n15 Aug 2026\nDemo Bank ••4012\n₹5,000\nProcessed\n15 Jul 2026\nDemo Bank ••4012\n₹5,000\nProcessed\n15 Jun 2026\nDemo Bank ••4012\n₹5,000\nProcessed\nSIPs\nExplore\nCoach\nAccount",
+  "sipDetail:{\"id\":\"B\"}": "9:41\nDemo\nDEMO DATA · NO REAL ACCOUNTS OR TRANSACTIONS\nIND\nSIP DETAIL\nHarbor Large Cap Fund\nLARGE CAP · DIRECT GROWTH\nHarbor Large Cap Fund\nFolio ••2144 · ₹4,000 on the 5th of each month\nACTIVE · 1 FAILED INSTALMENT\nINVESTED\n₹16,000\nCURRENT VALUE\n₹15,731\nReturn −₹269 (−1.68%)\nXIRR (annualised) −7.49%\nMonth 5 · 4 instalments\nActive · 1 failed instalment. Your SIP is active. The 5 Nov instalment failed.\nUnderstand my returns\nView failed instalment\nManage SIP\nInstalments\nHarbor Large Cap Fund\n5 Nov 2026 · Demo Bank ••4012\n₹4,000\nFailed · tap to see why\n5 Oct 2026\nDemo Bank ••4012\n₹4,000\nProcessed\n5 Sep 2026\nDemo Bank ••4012\n₹4,000\nProcessed\n5 Aug 2026\nDemo Bank ••4012\n₹4,000\nProcessed\n5 Jul 2026\nDemo Bank ••4012\n₹4,000\nProcessed\nSIPs\nExplore\nCoach\nAccount",
+  "sipDetail:{\"id\":\"C\"}": "9:41\nDemo\nDEMO DATA · NO REAL ACCOUNTS OR TRANSACTIONS\nIND\nSIP DETAIL\nSummit Small Cap Fund\nSMALL CAP · DIRECT GROWTH\nSummit Small Cap Fund\nFolio ••7312 · ₹2,500 on the 15th of each month\nPAUSED UNTIL 15 JAN 2027\nINVESTED\n₹15,000\nCURRENT VALUE\n₹16,147\nReturn +₹1,147 (+7.65%)\nXIRR (annualised) +22.68%\nMonth 7 · 6 instalments\nPaused until 15 Jan 2027. Paused by you. Resumes on 15 Jan 2027.\nUnderstand my returns\nManage SIP\nInstalments\n15 Oct 2026\nDemo Bank ••4012\n₹2,500\nSkipped (paused)\n15 Sep 2026\nDemo Bank ••4012\n₹2,500\nProcessed\n15 Aug 2026\nDemo Bank ••4012\n₹2,500\nProcessed\n15 Jul 2026\nDemo Bank ••4012\n₹2,500\nProcessed\n15 Jun 2026\nDemo Bank ••4012\n₹2,500\nProcessed\n15 May 2026\nDemo Bank ••4012\n₹2,500\nProcessed\n15 Apr 2026\nDemo Bank ••4012\n₹2,500\nProcessed\nSIPs\nExplore\nCoach\nAccount",
+  "sipDetail:{\"id\":\"E\"}": "9:41\nDemo\nDEMO DATA · NO REAL ACCOUNTS OR TRANSACTIONS\nIND\nSIP DETAIL\nBeacon Blue Chip Fund\nLARGE CAP · DIRECT GROWTH\nBeacon Blue Chip Fund\nFolio ••3309 · ₹3,000 on the 10th of each month\nCANCELLED\nINVESTED\n₹18,000\nCURRENT VALUE\n₹18,586\nReturn +₹586 (+3.26%)\nXIRR (annualised) +6.12%\nMonth 9 · 6 instalments\nCancelled. Cancelled on 10 Aug 2026. No debits will occur.\nManage SIP\nInstalments\n10 Jul 2026\nDemo Bank ••4012\n₹3,000\nProcessed\n10 Jun 2026\nDemo Bank ••4012\n₹3,000\nProcessed\n10 May 2026\nDemo Bank ••4012\n₹3,000\nProcessed\n10 Apr 2026\nDemo Bank ••4012\n₹3,000\nProcessed\n10 Mar 2026\nDemo Bank ••4012\n₹3,000\nProcessed\n10 Feb 2026\nDemo Bank ••4012\n₹3,000\nProcessed\nSIPs\nExplore\nCoach\nAccount",
+  "sipDetail:{\"id\":\"F\"}": "9:41\nDemo\nDEMO DATA · NO REAL ACCOUNTS OR TRANSACTIONS\nIND\nSIP DETAIL\nMeridian Index Fund\nINDEX · DIRECT GROWTH\nMeridian Index Fund\nFolio ••6620 · ₹1,000 on the 5th of each month\nACTIVE\nINVESTED\n₹1,000\nCURRENT VALUE\n₹998\nReturn −₹2 (−0.16%)\nXIRR (annualised) −17.80%\nMonth 1 · 1 instalments\nActive. Next debit 5 Dec 2026\nUnderstand my returns\nManage SIP\nInstalments\n5 Nov 2026\nDemo Bank ••4012\n₹1,000\nProcessed\nSIPs\nExplore\nCoach\nAccount",
+  "coachEntry:{}": "9:41\nDemo\nDEMO DATA · NO REAL ACCOUNTS OR TRANSACTIONS\nIND\nSELECT A SIP\nReturn Coach\nRETURN COACH\nSelect a SIP to understand\n\nSee what your own figures mean at your stage, in plain words. No advice.\n\nNF\nNorthstar Flexi Cap Fund\nFlexi Cap · Direct Growth · 5 instalments · started 15 Jun 2026\nINVESTED\n₹25,000\nCURRENT VALUE\n₹24,450\nRETURN\n−₹550 (−2.20%)\nXIRR (ANNUALISED)\n−9.14%\nHL\nHarbor Large Cap Fund\nLarge Cap · Direct Growth · 4 instalments · started 5 Jul 2026\nINVESTED\n₹16,000\nCURRENT VALUE\n₹15,731\nRETURN\n−₹269 (−1.68%)\nXIRR (ANNUALISED)\n−7.49%\nSS\nSummit Small Cap Fund\nSmall Cap · Direct Growth · 6 instalments · started 15 Apr 2026\nINVESTED\n₹15,000\nCURRENT VALUE\n₹16,147\nRETURN\n+₹1,147 (+7.65%)\nXIRR (ANNUALISED)\n+22.68%\nEL\nEvergreen Large & Mid Cap Fund\nLarge & Mid Cap · Direct Growth · 4 instalments · started 20 Mar 2026\nINVESTED\n₹12,000\nCURRENT VALUE\n₹12,085\nRETURN\n+₹85 (+0.71%)\nXIRR (ANNUALISED)\n+1.39%\nMI\nMeridian Index Fund\nIndex · Direct Growth · 1 instalment · started 5 Nov 2026\nINVESTED\n₹1,000\nCURRENT VALUE\n₹998\nRETURN\n−₹2 (−0.16%)\nXIRR (ANNUALISED)\n−17.80%\nWhat we’ll cover\nYour figures, exactly as in your demo account\nWhat the figures mean at your month, and what they don’t\nXIRR and other terms, with sources and a confidence label\nExplain my returns\nExplains your SIP figures. Not investment advice.\nSIPs\nExplore\nCoach\nAccount",
+  "coachExplain:{\"id\":\"A\"}": "9:41\nDemo\nDEMO DATA · NO REAL ACCOUNTS OR TRANSACTIONS\nIND\nEXPLANATION\nReturn Coach\nExplains your SIP figures. Not investment advice.\nIN SHORT\n\nNorthstar Flexi Cap Fund is 2.20% below what you have put in, in month 5. That figure is measured over a short period. It describes today, not where this SIP is heading.\n\nBLOCK 1\nYour figures\nNF\nNorthstar Flexi Cap Fund\nFlexi Cap · Direct Growth · 5 instalments · month 5\nINVESTED\n₹25,000\nCURRENT VALUE\n₹24,450\nRETURN\n−₹550 (−2.20%)\nAVG PRICE PER UNIT YOU PAID\n₹67.35\nXIRR (annualised) −9.14% \nReturn (absolute) −2.20% \nNAV ₹65.87 \nXIRR is annualised, and this SIP is under a year old, so it can look large. Tap it to see why.\nBLOCK 2\nWhat this means at month 5\n68.20\nJun\n67.10\nJul\n69.40\nAug\n66.80\nSep\n65.40\nOct\n65.87\nNow\nNAV at each of your instalments, and today\n\nYou are in month 5 of this SIP, with 5 instalments (the first on 15 Jun 2026). You have put in ₹25,000, and the units you hold are worth ₹24,450 at today’s NAV of ₹65.87. That is −₹550 (−2.20%).\n\nEach instalment buys units (small slices of the fund) at that month’s NAV, which is the price of one unit. The average price you paid per unit is ₹67.35, and the latest NAV is below that average. Your most recent instalment bought 76.5 units; your first bought 73.3.\n\nThis figure is measured over a short period and moves with the NAV, so it can sit above or below the amount you put in.\n\nDemo content · source placeholder\nBLOCK 3\nWhat it does not mean\nIt does not predict how this SIP will look later.\nIt does not say whether this fund is good or poor.\nIt is not a reason to act in either direction. This tool explains figures; it cannot advise.\nTERM\nHow XIRR is worked out\nSource and confidence\nMEDIUM CONFIDENCE\nHow SIP returns and XIRR work (placeholder)\nDemo content library · not yet verified\nPlaceholder. Replace with verified AMFI, SEBI or fund-house material before any real use.\nWhy medium: Figures complete (demo data); Situation matched a rule; Explanatory sources are demo placeholders, not yet verified.\nAsk a follow-up\nPick a question or type your own. Answers use your figures and approved text only.\nHow did the NAV change since my last instalment?\nHow does XIRR differ from absolute return?\nWhat will my SIP be worth in 3 years?\nWas this clear?\nYes\nSomewhat\nNo\nDid this feel like advice?\nNo, purely factual\nFelt like advice\nGot it, return to SIP dashboard\nSIPs\nExplore\nCoach\nAccount",
+  "coachExplain:{\"id\":\"F\"}": "9:41\nDemo\nDEMO DATA · NO REAL ACCOUNTS OR TRANSACTIONS\nIND\nEXPLANATION\nReturn Coach\nExplains your SIP figures. Not investment advice.\nI’m not sure how to explain this one yet\n\nMeridian Index Fund has 1 instalment so far. That isn’t enough history to explain a pattern, and I won’t guess.\n\nYOUR FIGURES SO FAR\n₹1,000 invested · ₹998 value\nCONFIDENCE: LOW\nWhat is absolute return?\nSee official sources\nGet help\nSIPs\nExplore\nCoach\nAccount",
+  "ledger:{}": "9:41\nDemo\nDEMO DATA · NO REAL ACCOUNTS OR TRANSACTIONS\nIND\nLEDGER\nRecent transactions\nAll\nProcessed\nFailed\nSkipped\nHarbor Large Cap Fund\n5 Nov 2026 · Demo Bank ••4012\n₹4,000\nFailed · tap to see why\n5 Nov 2026\nDemo Bank ••4012\n₹1,000\nProcessed\n20 Oct 2026\nDemo Bank ••4012\n₹3,000\nSkipped (paused)\n15 Oct 2026\nDemo Bank ••4012\n₹5,000\nProcessed\n15 Oct 2026\nDemo Bank ••4012\n₹2,500\nSkipped (paused)\n5 Oct 2026\nDemo Bank ••4012\n₹4,000\nProcessed\n20 Sep 2026\nDemo Bank ••4012\n₹3,000\nSkipped (paused)\n15 Sep 2026\nDemo Bank ••4012\n₹5,000\nProcessed\n15 Sep 2026\nDemo Bank ••4012\n₹2,500\nProcessed\n5 Sep 2026\nDemo Bank ••4012\n₹4,000\nProcessed\n20 Aug 2026\nDemo Bank ••4012\n₹3,000\nSkipped (paused)\n15 Aug 2026\nDemo Bank ••4012\n₹5,000\nProcessed\n15 Aug 2026\nDemo Bank ••4012\n₹2,500\nProcessed\n5 Aug 2026\nDemo Bank ••4012\n₹4,000\nProcessed\n20 Jul 2026\nDemo Bank ••4012\n₹3,000\nSkipped (paused)\n15 Jul 2026\nDemo Bank ••4012\n₹5,000\nProcessed\n15 Jul 2026\nDemo Bank ••4012\n₹2,500\nProcessed\n10 Jul 2026\nDemo Bank ••4012\n₹3,000\nProcessed\n5 Jul 2026\nDemo Bank ••4012\n₹4,000\nProcessed\n20 Jun 2026\nDemo Bank ••4012\n₹3,000\nProcessed\n15 Jun 2026\nDemo Bank ••4012\n₹5,000\nProcessed\n15 Jun 2026\nDemo Bank ••4012\n₹2,500\nProcessed\n10 Jun 2026\nDemo Bank ••4012\n₹3,000\nProcessed\n20 May 2026\nDemo Bank ••4012\n₹3,000\nProcessed\n15 May 2026\nDemo Bank ••4012\n₹2,500\nProcessed\n10 May 2026\nDemo Bank ••4012\n₹3,000\nProcessed\n20 Apr 2026\nDemo Bank ••4012\n₹3,000\nProcessed\n15 Apr 2026\nDemo Bank ••4012\n₹2,500\nProcessed\n10 Apr 2026\nDemo Bank ••4012\n₹3,000\nProcessed\n20 Mar 2026\nDemo Bank ••4012\n₹3,000\nProcessed\n10 Mar 2026\nDemo Bank ••4012\n₹3,000\nProcessed\n10 Feb 2026\nDemo Bank ••4012\n₹3,000\nProcessed\nSIPs\nExplore\nCoach\nAccount",
+  "debit:{\"id\":\"B\"}": "9:41\nDemo\nDEMO DATA · NO REAL ACCOUNTS OR TRANSACTIONS\nIND\nEXPLAINER\nFailed instalment\nINSTALMENT FAILED\n5 Nov 2026\nHarbor Large Cap Fund\n₹4,000 scheduled debit\nMessage from your bank (via the demo provider)\n“Insufficient funds in account ending 4012.”\nAutomatic retry\nNext automatic retry: 12 Nov 2026, 06:00 (from the provider)\nHaving enough balance in the account by then lets a retry go through.\nWHAT TO DO NEXT\n\nYou can pay this instalment now, or wait for the automatic retry shown above.\n\nPay ₹4,000 manually now\nDetailed breakdown\nWhy it failed\nACCOUNT BALANCE\n\nYour bank reported that the account balance was not enough for this debit.\n\nReason code (demo provider): INSUFFICIENT_BALANCE · rules demo-v1\nIs my SIP still active?\nACTIVE · 1 FAILED INSTALMENT\n\nYour SIP is still active. The 5 Nov 2026 instalment of ₹4,000 failed. The next scheduled instalment is on 5 Dec 2026.\n\nWill I be charged anything?\nManage bank mandate\nSee pause or reduce options\nInstalment track record\n5 Nov 2026\n₹4,000\nFailed\n5 Oct 2026\n₹4,000\nProcessed\n5 Sep 2026\n₹4,000\nProcessed\n5 Aug 2026\n₹4,000\nProcessed\n5 Jul 2026\n₹4,000\nProcessed\nNeed help?\nSupport is not connected in this demo.\nOpen\nExplains your SIP figures. Not investment advice.\nSIPs\nExplore\nCoach\nAccount",
+  "statuses:{}": "9:41\nDemo\nDEMO DATA · NO REAL ACCOUNTS OR TRANSACTIONS\nIND\nSTATUSES\nSIP management\nTotal monthly commitment (active SIPs)\n₹10,000 / month\n1 NEEDS ATTENTION\nAll (6)\nActive (2)\nNeeds attention (1)\nPaused (2)\nCancelled (1)\nNF\nNorthstar Flexi Cap Fund\nFolio ••9019 · Flexi Cap · Direct Growth\nACTIVE\nMONTHLY SIP\n₹5,000\nNEXT DEBIT\n15 Nov 2026\nNext debit 15 Nov 2026\nManage / Pause\nDetails\nHL\nHarbor Large Cap Fund\nFolio ••2144 · Large Cap · Direct Growth\nACTIVE · 1 FAILED INSTALMENT\nMONTHLY SIP\n₹4,000\nNEXT DEBIT\n5 Dec 2026\nYour SIP is active. The 5 Nov instalment failed.\nView explainer\nManage / Pause\nDetails\nSS\nSummit Small Cap Fund\nFolio ••7312 · Small Cap · Direct Growth\nPAUSED UNTIL 15 JAN 2027\nMONTHLY SIP\n₹2,500\nRESUMES\n15 Jan 2027\nPaused by you. Resumes on 15 Jan 2027. No reminder set.\nResume early\nSet reminder\nChange dates\nDetails\nEL\nEvergreen Large & Mid Cap Fund\nFolio ••5581 · Large & Mid Cap · Direct Growth\nPAUSED · RESUMES 20 NOV\nMONTHLY SIP\n₹3,000\nRESUMES\n20 Nov 2026\nPaused by you. Resumes on 20 Nov 2026. Reminder on 17 Nov 2026.\nResume early\nEdit reminder\nChange dates\nDetails\nBB\nBeacon Blue Chip Fund\nFolio ••3309 · Large Cap · Direct Growth\nCANCELLED\nVALUE (AS OF TODAY)\n₹18,586\nCANCELLED ON\n10 Aug 2026\nCancelled on 10 Aug 2026. No debits will occur.\nStart a new SIP\nDetails\nMI\nMeridian Index Fund\nFolio ••6620 · Index · Direct Growth\nACTIVE\nMONTHLY SIP\n₹1,000\nNEXT DEBIT\n5 Dec 2026\nNext debit 5 Dec 2026\nManage / Pause\nDetails\nWhat the labels mean\nACTIVE\nInstalments are being taken as scheduled.\nACTIVE · 1 FAILED INSTALMENT\nThe SIP is still active. One instalment did not go through.\nPAUSED\nYou paused it. Instalments are skipped until it resumes.\nCANCELLED\nNo further instalments will be taken.\nStatements about what pausing or cancelling does are demo rules, shown with an “unverified” tag, and must be checked against platform, bank and fund-house rules before real use.\nExplains your SIP figures. Not investment advice.\nSIPs\nExplore\nCoach\nAccount",
+  "manage:{\"id\":\"A\"}": "9:41\nDemo\nDEMO DATA · NO REAL ACCOUNTS OR TRANSACTIONS\nIND\nSIP MANAGEMENT\nManage SIP\nNF\nNorthstar Flexi Cap Fund\nFolio ••9019 · ₹5,000 on the 15th\nACTIVE\nChoose what you want to do\n\nAll three are equal options.\n\nPause SIP\nSkip instalments for a period you choose. Your SIP stays on your list and you decide when it restarts.\nReduce amount\nLower the monthly amount from the next instalment. You can change it again later.\nCancel SIP\nStop future instalments. A cancelled SIP can’t be resumed, but you can set up a new one.\nContinue\nDemo rule · unverified\nUnits you already hold are not sold, whichever option you choose.\nExplains your SIP figures. Not investment advice.\nSIPs\nExplore\nCoach\nAccount",
+  "pauseForm:{\"id\":\"A\"}": "9:41\nDemo\nDEMO DATA · NO REAL ACCOUNTS OR TRANSACTIONS\nIND\nSIP MANAGEMENT\nPause SIP\nNF\nNorthstar Flexi Cap Fund\nFolio ••9019 · ₹5,000 on the 15th\nACTIVE\nPause duration\n\nYou choose how long. Nothing is selected for you.\n\n1 month\nSkip next instalment\n2 months\nSkip next 2\n3 months\nSkip next 3\nCustom\nChoose dates\nUntil I resume\nNo end date\nReview\nPause window: 8 Nov 2026 to 14 Jan 2027\nInstalments skipped: 15 Nov 2026, 15 Dec 2026\nYour SIP restarts on 15 Jan 2027, as you chose.\nWhat happens during the pause\nNo debits are taken for the skipped dates.\nUnits you already hold are not sold.\nWhether your bank mandate stays registered, and any charges, depend on platform and bank rules. Not verified in this demo.\nDemo rule · unverified\nI understand no debits will be made for the skipped dates and my SIP restarts on 15 Jan 2027.\nConfirm pause\nGo back without pausing\nExplains your SIP figures. Not investment advice.\nSIPs\nExplore\nCoach\nAccount",
+  "reduce:{\"id\":\"A\"}": "9:41\nDemo\nDEMO DATA · NO REAL ACCOUNTS OR TRANSACTIONS\nIND\nSIP MANAGEMENT\nReduce amount\nNF\nNorthstar Flexi Cap Fund\nCurrent amount ₹5,000 on the 15th\nNew monthly amount (₹)\nDemo minimum ₹500. Changes apply from the next instalment (15 Nov 2026).\nDemo limits · unverified\nConfirm new amount\nGo back\nExplains your SIP figures. Not investment advice.\nSIPs\nExplore\nCoach\nAccount",
+  "reminder:{\"id\":\"C\"}": "9:41\nDemo\nDEMO DATA · NO REAL ACCOUNTS OR TRANSACTIONS\nIND\nSIP MANAGEMENT\nRestart reminder\nPAUSED UNTIL 15 JAN 2027\nNo reminder set\nSummit Small Cap Fund\nRestarts 15 Jan 2027\nRestart reminder\nOne message, at the time you choose. Off unless you turn it on.\nWHEN SHOULD WE REMIND YOU?\n1 day before restart\n14 Jan 2027\n3 days before restart\n12 Jan 2027\n7 days before restart\n8 Jan 2027\nPick a date\nChoose any future date\nHOW SHOULD WE SEND IT?\nIn-app inbox\nPush notification (demo)\nEmail (demo)\nPreview of your reminder\nSends 12 Jan 2027\n\nYour SIP for Summit Small Cap Fund is paused until 15 Jan 2027. You can resume, extend, or leave it paused.\n\nResume\nExtend\nLeave paused\n One message only. No countdowns, no follow-ups if you ignore it.\nSave reminder preference\nGo back\nExplains your SIP figures. Not investment advice.\nSIPs\nExplore\nCoach\nAccount",
+  "inbox:{}": "9:41\nDemo\nDEMO DATA · NO REAL ACCOUNTS OR TRANSACTIONS\nIND\nINBOX\nMessages\n1\nRESTART REMINDER\n17 Nov 2026\nEvergreen Large & Mid Cap Fund is paused\n\nYour SIP is paused until 20 Nov 2026. You can resume, extend, or leave it paused.\n\nResume\nExtend\nLeave paused\nSIPs\nExplore\nCoach\nAccount",
+  "account:{}": "9:41\nDemo\nDEMO DATA · NO REAL ACCOUNTS OR TRANSACTIONS\nIND\nDEMO\nAccount\nDemo investor\nNo real account is connected\nAppearance\nDark is the default. Your choice is remembered.\nLight mode\nHide amounts\nMasks ₹ figures on every screen\nAbout this prototype\nAll data is made up: fictional funds, a fictional bank, and invented figures.\nNo real accounts are connected, no money moves, and nothing leaves your browser.\nNo AI model is used. Every sentence is a template filled with figures calculated on this page.\nReset demo data\nBack to my SIPs\nSIPs\nExplore\nCoach\nAccount",
+  "explore:{}": "9:41\nDemo\nDEMO DATA · NO REAL ACCOUNTS OR TRANSACTIONS\nIND\nOUTSIDE THIS PROTOTYPE\nExplore\nExplore isn’t part of this prototype\n\nThis demo covers three things: understanding returns, understanding a failed debit, and pausing or restarting a SIP.\n\nBack to my SIPs\nOpen Return Coach\nSIPs\nExplore\nCoach\nAccount",
+  "mandate:{\"id\":\"B\"}": "9:41\nDemo\nDEMO DATA · NO REAL ACCOUNTS OR TRANSACTIONS\nIND\nMANAGE\nBank mandate\nAutopay mandate\nHarbor Large Cap Fund · Demo Bank ••4012\nNOT ACTIVE\nTYPE\nE-mandate (demo)\nDEBIT AMOUNT\n₹4,000\n\nThe mandate is not active in the demo. Renewing it lets future instalments be debited again.\n\nRenew mandate (demo)\nGo back\nExplains your SIP figures. Not investment advice.\nSIPs\nExplore\nCoach\nAccount",
+  "pauseDone:{\"id\":\"A\"}": "9:41\nDemo\nDEMO DATA · NO REAL ACCOUNTS OR TRANSACTIONS\nIND\nSUCCESS\nPause confirmed\nYour pause is set\n\nNorthstar Flexi Cap Fund is now paused until 15 jan 2027. It restarts on 15 Jan 2027, as you chose.\n\nPAUSED UNTIL 15 JAN 2027\nWant a reminder before it restarts?\n\nEntirely optional. If you say yes, we send one message at the time you pick. If not, we send nothing.\n\nSet a restart reminder\nNo reminder. View updated SIP status\nUndo this pause\nExplains your SIP figures. Not investment advice.\nSIPs\nExplore\nCoach\nAccount",
+  "reminderDone:{\"id\":\"C\"}": "9:41\nDemo\nDEMO DATA · NO REAL ACCOUNTS OR TRANSACTIONS\nIND\nSUCCESS\nReminder\nNo reminder will be sent\n\nYour SIP stays paused with no messages from us. You can set a reminder later.\n\nView updated SIP status\nReturn to dashboard\nExplains your SIP figures. Not investment advice.\nSIPs\nExplore\nCoach\nAccount"
+ },
+ "errors": [],
+ "hero": {
+  "totalValueRounded": 69411,
+  "sumOfRoundedValues": 69411
+ },
+ "maskLeaks": [
+  "reduce:{\"id\":\"A\"} -> ₹500"
+ ],
+ "readability": {
+  "fleschReadingEase": 89.7,
+  "paragraphs": 5,
+  "sample": [
+   "Northstar Flexi Cap Fund is 2.20% below what you have put in, in month 5. That figure is measured over a short period. It describes today, not where this SIP is heading.",
+   "You are in month 5 of this SIP, with 5 instalments (the first on 15 Jun 2026). You have put in ₹25,000, and the units you hold are worth ₹24,450 at today’s NAV of ₹65.87. That is −₹550 (−2.20%)."
+  ]
+ },
+ "browserBack": {
+  "stillInApp": true,
+  "title": "dashboard"
+ }
+}

@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design tokens: docs/design-system.md (light default values; dark overrides below). */
+@layer base {
+  :root {
+    --ind-canvas: #F4F6F9;
+    --ind-surface-1: #FFFFFF;
+    --ind-surface-2: #F8FAFC;
+    --ind-surface-elevated: #FFFFFF;
+    --ind-border: #E2E8F0;
+    --ind-border-subtle: #E2E8F0;
+    --ind-border-focus: #3B82F6;
+    --ind-text-primary: #0F172A;
+    --ind-text-secondary: #475569;
+    --ind-text-muted: #5A6A7F;
+    --canvas: #F4F6F9; --s1: #FFFFFF; --s2: #F8FAFC; --elev: #FFFFFF; --border: #E2E8F0; --focus: #3B82F6;
+    --t1: #0F172A; --t2: #475569; --t3: #5A6A7F;
+    --blue: #1A6BFF; --blue-hover: #0052CC; --blue-text: #0052CC; --blue-soft: #EBF3FF;
+    --emerald: #00B386; --emerald-text: #007A5C; --emerald-soft: #E6F8F3;
+    --coral: #EB5B3C; --coral-text: #C2410C; --coral-soft: #FDEDEA;
+    --amber: #F59E0B; --amber-text: #92400E; --amber-soft: #FEF3C7;
+    --info-text: #0052CC; --info-soft: #EBF3FF;
+    --hero: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+    --shadow: 0 1px 3px rgba(15,23,42,.06), 0 1px 2px rgba(15,23,42,.04);
+    --float: 0 10px 25px -5px rgba(15,23,42,.18), 0 8px 10px -6px rgba(15,23,42,.08);
+    --header-bg: rgba(255,255,255,.92); --overlay: rgba(15,23,42,.45);
+    color-scheme: light;
+  }
+  html.dark {
+    --ind-canvas: #0B0E14;
+    --ind-surface-1: #151A23;
+    --ind-surface-2: #1E2532;
+    --ind-surface-elevated: #252D3D;
+    --ind-border: #262F40;
+    --ind-border-subtle: #262F40;
+    --ind-border-focus: #3B82F6;
+    --ind-text-primary: #F8FAFC;
+    --ind-text-secondary: #94A3B8;
+    --ind-text-muted: #8896AB;
+    --canvas: #0B0E14; --s1: #151A23; --s2: #1E2532; --elev: #252D3D; --border: #262F40;
+    --t1: #F8FAFC; --t2: #94A3B8; --t3: #8896AB;
+    --blue-text: #60A5FA; --blue-soft: rgba(59,130,246,.15);
+    --emerald-text: #00B386; --emerald-soft: rgba(0,179,134,.15);
+    --coral-text: #F4806A; --coral-soft: rgba(235,91,60,.15);
+    --amber-text: #F59E0B; --amber-soft: rgba(245,158,11,.15);
+    --info-text: #60A5FA; --info-soft: rgba(59,130,246,.15);
+    --shadow: 0 1px 3px rgba(0,0,0,.35); --float: 0 10px 25px -5px rgba(0,0,0,.6);
+    --header-bg: rgba(11,14,20,.92); --overlay: rgba(0,0,0,.6);
+    color-scheme: dark;
+  }
+  body {
+    background-color: var(--canvas);
+    color: var(--t1);
+    font-family: Inter, 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    transition: background-color .2s ease, color .2s ease;
+    -webkit-font-smoothing: antialiased;
+  }
+  :focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+  .tabular-nums, [data-num] { font-variant-numeric: tabular-nums; }
+  @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+}

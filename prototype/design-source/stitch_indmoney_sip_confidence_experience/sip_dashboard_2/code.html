@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-elevated": "#FFFFFF", "surface-bright": "#FFFFFF", "surface-container-highest": "#E2E8F0", "tertiary-container": "#E2E8F0", "secondary-container": "#007A5C", "surface-dim": "#F1F5F9", "text-muted": "#64748B", "primary-fixed": "#EBF3FF", "on-primary-container": "#FFFFFF", "background": "#F4F6F9", "on-primary-fixed-variant": "#003fa4", "tertiary-fixed-dim": "#CBD5E1", "on-error": "#FFFFFF", "error": "#DC2626", "secondary": "#007A5C", "on-secondary-fixed-variant": "#00513b", "primary-container": "#0052CC", "on-secondary-container": "#007A5C", "on-surface": "#0F172A", "status-warn": "#92400E", "primary": "#0052CC", "text-secondary": "#475569", "outline-variant": "#E2E8F0", "on-secondary": "#FFFFFF", "surface-container": "#FFFFFF", "surface-container-low": "#F8FAFC", "tertiary-fixed": "#F1F5F9", "surface-1": "#FFFFFF", "surface-container-high": "#F1F5F9", "on-surface-variant": "#475569", "secondary-fixed": "#E6F8F3", "secondary-fixed-dim": "#A7F3D0", "error-container": "#FDEDEA", "on-secondary-fixed": "#064E3B", "surface-tint": "#0052CC", "on-primary-fixed": "#002B75", "text-primary": "#0F172A", "on-tertiary-fixed": "#0F172A", "surface-variant": "#F8FAFC", "on-error-container": "#C2410C", "on-tertiary-fixed-variant": "#334155", "surface": "#FFFFFF", "primary-fixed-dim": "#BFDBFE", "on-tertiary-container": "#0F172A", "inverse-surface": "#0F172A", "on-background": "#0F172A", "tertiary": "#64748B", "surface-container-lowest": "#FFFFFF", "on-primary": "#FFFFFF", "canvas": "#F4F6F9", "inverse-on-surface": "#F8FAFC", "status-error": "#C2410C", "outline": "#CBD5E1", "inverse-primary": "#B3C5FF", "on-tertiary": "#FFFFFF", "border-subtle": "#E2E8F0", "status-active": "#007A5C", "surface-2": "#F8FAFC" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-lg": "1.5rem", "space-sm": "0.5rem", "space-md": "1rem", "space-xs": "0.25rem", "gutter": "1rem", "space-xl": "2rem", "margin": "1rem" }, fontFamily: { "display": ["Inter"], "headline-lg": ["Inter"], "label-micro": ["Inter"], "headline-sm": ["Inter"], "body-md": ["Inter"], "headline-md": ["Inter"], "body-sm": ["Inter"], "caption": ["Inter"] }, fontSize: { "display": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-lg": ["24px", { lineHeight: "32px", letterSpacing: "-0.015em", fontWeight: "700" }], "label-micro": ["11px", { lineHeight: "14px", letterSpacing: "0.05em", fontWeight: "600" }], "headline-sm": ["16px", { lineHeight: "22px", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "500" }], "headline-md": ["18px", { lineHeight: "24px", fontWeight: "600" }], "body-sm": ["14px", { lineHeight: "20px", fontWeight: "400" }], "caption": ["12px", { lineHeight: "16px", fontWeight: "500" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#F4F6F9;color:#0F172A;-webkit-tap-highlight-color:transparent;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-canvas text-text-primary font-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-white/90 backdrop-blur-xl border-b border-border-subtle shadow-sm"><div class="flex justify-between items-center px-margin pt-space-xs text-text-muted text-[12px] font-semibold tracking-tight"><span class="tabular-nums">9:41</span><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px]">signal_cellular_alt</span><span class="material-symbols-outlined text-[15px]">wifi</span><span class="material-symbols-outlined text-[17px]">battery_full</span></div></div><div class="h-14 px-margin flex items-center justify-between"><div class="flex items-center gap-space-sm"><img alt="INDmoney Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDJ7oWgtnYUhX1zb3166R_5QrjBWb-gGl7H_MvgxutJfR1uDs8RvOKGHOXrQGo_mP51NlfmnGyJDzdpm3Zb9PZdRcYv7Qh1woiTkfJPqKqtfYTH5IAhkG00NCzeQ6cqieV_7xgPgQHHBxUnDlZx-RgNX70FW3vUltDQL68sg0TKxmAJZpP_3QXq3leFuycTKez4XmQGSGkUJlC_MY0SYPqTytOaxMEA760E_d0e5OOUeQ"/><div class="flex flex-col"><span class="font-label-micro text-label-micro text-[#007A5C] uppercase tracking-wider font-semibold">SIP Steady</span><span class="font-headline-sm text-headline-sm text-text-primary leading-tight font-bold">Sip Dashboard</span></div></div><div class="flex items-center gap-space-sm"><button aria-label="Privacy Mode" class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-100 hover:bg-slate-200 text-text-secondary hover:text-text-primary transition-colors border border-border-subtle"><span class="material-symbols-outlined text-[20px]">visibility</span></button><div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center shadow-sm"><span class="material-symbols-outlined text-white text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 pb-24 bg-canvas px-margin"><div class="flex flex-col w-full gap-space-md">
+<!-- Demo Mode Subtle Header Watermark -->
+<div class="flex items-center justify-between px-space-xs text-text-muted">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-[#007A5C]"></span>
+<span class="font-label-micro text-label-micro uppercase tracking-wider text-text-secondary font-medium">Demo data · Based on your actual monthly SIP schedule</span>
+</div>
+<span class="font-label-micro text-label-micro text-text-muted">Synced Just now</span>
+</div>
+<!-- Hero Card: YOUR SIP PORTFOLIO -->
+<div class="relative overflow-hidden rounded-xl bg-white border border-border-subtle shadow-sm p-space-md flex flex-col gap-space-md">
+<!-- Subtle Ambient Glow -->
+<div class="absolute -top-12 -right-12 w-44 h-44 rounded-full bg-blue-500/5 blur-3xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-micro text-label-micro uppercase tracking-wider text-text-muted font-semibold">YOUR SIP PORTFOLIO</span>
+<button aria-label="Toggle Value Visibility" class="text-text-muted hover:text-text-primary transition-colors flex items-center" id="toggle-privacy">
+<span class="material-symbols-outlined text-[16px]">visibility</span>
+</button>
+</div>
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#E6F8F3] border border-emerald-100">
+<span class="material-symbols-outlined text-[#007A5C] text-[14px]">event_repeat</span>
+<span class="font-caption text-caption text-[#007A5C] font-semibold">Month 5 · 5 instalments</span>
+</div>
+</div>
+<!-- Balance & Value Matrix -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs">
+<div class="flex flex-col">
+<span class="font-caption text-caption text-text-muted">Total Invested</span>
+<span class="font-headline-lg text-headline-lg tabular-nums text-text-primary font-bold mt-0.5 currency-masked">₹45,000</span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption text-caption text-text-muted">Current Value</span>
+<span class="font-headline-lg text-headline-lg tabular-nums text-text-primary font-bold mt-0.5 currency-masked">₹44,180</span>
+</div>
+</div>
+<!-- Calm Neutralized Returns Breakdown (No Alarmist Tone) -->
+<div class="flex flex-wrap items-center justify-between gap-space-xs pt-space-sm bg-slate-50 border border-slate-100 rounded-lg p-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-caption text-caption text-text-secondary font-medium">Net Returns</span>
+<div class="flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-slate-200/80">
+<!-- Neutral chevron and tone per brand guidelines for early-tenure fluctuations -->
+<span class="material-symbols-outlined text-slate-600 text-[14px]">remove</span>
+<span class="font-caption text-caption tabular-nums text-text-primary font-semibold currency-masked">-₹820 (-1.82%)</span>
+</div>
+</div>
+<div class="flex items-center gap-1.5">
+<span class="font-caption text-caption text-text-muted font-medium">XIRR</span>
+<span class="font-caption text-caption tabular-nums text-text-secondary font-semibold">-4.12%</span>
+<div class="group relative flex items-center cursor-pointer text-text-muted hover:text-text-primary">
+<span class="material-symbols-outlined text-[15px]">info</span>
+</div>
+</div>
+</div>
+<!-- Sparkline Micro-Visualizer: Rupee Cost Averaging Visual -->
+<div class="flex flex-col gap-1 pt-space-xs">
+<div class="flex justify-between items-center text-[11px] text-text-muted uppercase font-label-micro">
+<span class="font-medium">Units Accumulation Rate</span>
+<span class="text-text-secondary font-semibold">Consistent Accumulation</span>
+</div>
+<div class="h-9 w-full bg-slate-50 border border-slate-100 rounded-lg flex items-center px-space-sm justify-between">
+<div class="flex items-end gap-1.5 h-6">
+<div class="w-2.5 bg-slate-200 rounded-t-sm h-3"></div>
+<div class="w-2.5 bg-slate-300 rounded-t-sm h-3.5"></div>
+<div class="w-2.5 bg-slate-300 rounded-t-sm h-4"></div>
+<div class="w-2.5 bg-blue-500 rounded-t-sm h-5"></div>
+<div class="w-2.5 bg-[#007A5C] rounded-t-sm h-6"></div>
+</div>
+<div class="flex items-center gap-1 text-text-secondary font-caption text-[11px]">
+<span class="material-symbols-outlined text-[#007A5C] text-[14px]">auto_graph</span>
+<span class="tabular-nums font-medium">Avg NAV: ₹34.20 · Current: ₹33.58</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Contextual Return Coach Entry Banner -->
+<a class="block group text-inherit no-underline" data-path="return-coach-entry" href="#">
+<div class="rounded-xl bg-white border border-border-subtle p-space-md shadow-sm transition-all duration-200 hover:border-blue-200 hover:shadow-md flex flex-col gap-space-sm relative overflow-hidden">
+<!-- Accent boundary ribbon -->
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary"></div>
+<div class="flex items-start gap-space-sm pl-1">
+<div class="w-9 h-9 rounded-lg bg-[#EBF3FF] flex items-center justify-center text-primary shrink-0 group-hover:bg-blue-100 transition-colors">
+<span class="material-symbols-outlined text-[20px]">psychology_alt</span>
+</div>
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-headline-sm text-text-primary group-hover:text-primary transition-colors font-semibold">Why is my 5-month SIP in the negative?</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary line-clamp-2">
+            Flat or negative returns in early months are common. See a transparent breakdown of your rupee cost averaging and unit compounding trajectory.
+          </p>
+</div>
+</div>
+<div class="flex items-center justify-between pt-1 pl-1 border-t-0">
+<div class="flex items-center gap-1.5 text-text-muted font-caption text-caption">
+<span class="material-symbols-outlined text-[#007A5C] text-[15px]">verified</span>
+<span>Automated Fund Insights</span>
+</div>
+<div class="flex items-center gap-1 text-primary font-headline-sm text-caption group-hover:translate-x-0.5 transition-transform font-semibold">
+<span>Understand my returns</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+</div>
+</a>
+<!-- Active SIPs Section -->
+<div class="flex flex-col gap-space-sm mt-space-xs">
+<div class="flex items-center justify-between px-space-xs">
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-md text-headline-md text-text-primary font-bold">Active Mandates</h2>
+<span class="px-2 py-0.5 rounded-full bg-slate-100 border border-slate-200 text-text-secondary font-label-micro text-label-micro">2 Funds</span>
+</div>
+<button class="font-caption text-caption text-primary hover:text-blue-700 transition-colors font-semibold">Manage Autopay</button>
+</div>
+<!-- Fund 1: Parag Parikh Flexi Cap Fund -->
+<div class="rounded-xl bg-white border border-border-subtle p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-[#E6F8F3] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[#007A5C] text-[22px]">account_balance</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-text-primary truncate font-semibold">Parag Parikh Flexi Cap Fund</span>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="font-caption text-caption text-text-muted">Due 15th monthly</span>
+<span class="text-text-muted text-[10px]">·</span>
+<span class="font-caption text-caption tabular-nums text-text-secondary font-medium">5 instalments</span>
+</div>
+</div>
+</div>
+<!-- Status Chip: Active -->
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#E6F8F3] border border-emerald-100 shrink-0">
+<span class="w-2 h-2 rounded-full bg-[#007A5C]"></span>
+<span class="font-caption text-caption text-[#007A5C] font-semibold">Active</span>
+</div>
+</div>
+<!-- Values Grid -->
+<div class="grid grid-cols-3 gap-2 bg-slate-50 border border-slate-100 rounded-lg p-space-sm">
+<div class="flex flex-col">
+<span class="font-caption text-[11px] text-text-muted font-medium">SIP Amount</span>
+<span class="font-headline-sm text-[15px] tabular-nums text-text-primary mt-0.5 font-bold">₹5,000<span class="font-caption text-[11px] text-text-muted font-normal">/mo</span></span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption text-[11px] text-text-muted font-medium">Invested</span>
+<span class="font-headline-sm text-[15px] tabular-nums text-text-primary mt-0.5 font-bold currency-masked">₹25,000</span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption text-[11px] text-text-muted font-medium">Cur. Value</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[15px] tabular-nums text-text-primary mt-0.5 font-bold currency-masked">₹24,650</span>
+<span class="font-caption text-[10px] tabular-nums text-text-muted mt-[-2px] font-medium">-₹350 (-1.4%)</span>
+</div>
+</div>
+</div>
+<!-- Quick Action Toolbar -->
+<div class="flex items-center justify-between pt-space-xs text-text-secondary">
+<div class="flex items-center gap-1 font-caption text-caption text-text-muted">
+<span class="material-symbols-outlined text-[15px]">account_balance_wallet</span>
+<span>ICICI Mandate · Autopay ON</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-3 py-1 rounded bg-slate-100 hover:bg-slate-200 border border-slate-200 text-text-primary font-caption text-caption font-medium transition-colors">
+            Modify
+          </button>
+<button class="px-3 py-1 rounded bg-primary text-white hover:bg-blue-700 font-caption text-caption font-semibold transition-colors shadow-sm">
+            Pay Now
+          </button>
+</div>
+</div>
+</div>
+<!-- Fund 2: Mirae Asset Large Cap Fund -->
+<div class="rounded-xl bg-white border border-border-subtle p-space-md shadow-sm flex flex-col gap-space-md">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-[#FEF3C7] flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[#92400E] text-[22px]">candlestick_chart</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-text-primary truncate font-semibold">Mirae Asset Large Cap Fund</span>
+<div class="flex items-center gap-1.5 mt-0.5">
+<span class="font-caption text-caption text-[#92400E] font-semibold">Instalment Due Failed</span>
+<span class="text-text-muted text-[10px]">·</span>
+<span class="font-caption text-caption tabular-nums text-text-secondary font-medium">4 of 5 successful</span>
+</div>
+</div>
+</div>
+<!-- Status Chip: Missed/Attention -->
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#FEF3C7] border border-amber-200 shrink-0">
+<span class="w-2 h-2 rounded-full bg-[#92400E]"></span>
+<span class="font-caption text-caption text-[#92400E] font-semibold">Attention</span>
+</div>
+</div>
+<!-- Action Required Banner for Missed Instalment -->
+<div class="bg-[#FEF3C7]/60 border border-amber-200/80 rounded-lg p-space-sm flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="material-symbols-outlined text-[#92400E] text-[18px] shrink-0">warning</span>
+<span class="font-caption text-caption text-[#92400E] font-medium truncate">Autopay retry pending for ₹4,000</span>
+</div>
+<button class="px-2.5 py-1 bg-white hover:bg-amber-50 border border-amber-300 rounded text-[#92400E] font-caption text-caption font-semibold whitespace-nowrap transition-colors shadow-xs">
+          Retry Debit
+        </button>
+</div>
+<!-- Values Grid -->
+<div class="grid grid-cols-3 gap-2 bg-slate-50 border border-slate-100 rounded-lg p-space-sm">
+<div class="flex flex-col">
+<span class="font-caption text-[11px] text-text-muted font-medium">SIP Amount</span>
+<span class="font-headline-sm text-[15px] tabular-nums text-text-primary mt-0.5 font-bold">₹4,000<span class="font-caption text-[11px] text-text-muted font-normal">/mo</span></span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption text-[11px] text-text-muted font-medium">Invested</span>
+<span class="font-headline-sm text-[15px] tabular-nums text-text-primary mt-0.5 font-bold currency-masked">₹20,000</span>
+</div>
+<div class="flex flex-col">
+<span class="font-caption text-[11px] text-text-muted font-medium">Cur. Value</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-[15px] tabular-nums text-text-primary mt-0.5 font-bold currency-masked">₹19,530</span>
+<span class="font-caption text-[10px] tabular-nums text-text-muted mt-[-2px] font-medium">-₹470 (-2.35%)</span>
+</div>
+</div>
+</div>
+<!-- Quick Action Toolbar -->
+<div class="flex items-center justify-between pt-space-xs text-text-secondary">
+<div class="flex items-center gap-1 font-caption text-caption text-text-muted">
+<span class="material-symbols-outlined text-[15px]">credit_card</span>
+<span>ICICI Mandate · Autopay Retrying</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-3 py-1 rounded bg-slate-100 hover:bg-slate-200 border border-slate-200 text-text-primary font-caption text-caption font-medium transition-colors">
+            Skip Month
+          </button>
+<button class="px-3 py-1 rounded bg-slate-100 hover:bg-slate-200 border border-slate-200 text-text-primary font-caption text-caption font-medium transition-colors">
+            Manage
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Recent Instalments Activity List -->
+<div class="flex flex-col gap-space-sm mt-space-xs">
+<div class="flex items-center justify-between px-space-xs">
+<h2 class="font-headline-md text-headline-md text-text-primary font-bold">Recent Instalments</h2>
+<button class="font-caption text-caption text-primary hover:text-blue-700 transition-colors font-semibold">View Ledger</button>
+</div>
+<div class="rounded-xl bg-white border border-border-subtle overflow-hidden shadow-sm flex flex-col divide-y divide-border-subtle">
+<!-- Item 1 -->
+<div class="flex items-center justify-between p-space-md hover:bg-slate-50 transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-full bg-[#E6F8F3] flex items-center justify-center text-[#007A5C] shrink-0">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-text-primary truncate font-semibold">Parag Parikh Flexi Cap</span>
+<span class="font-caption text-caption text-text-muted tabular-nums">15 May 2024 · ICICI Bank **4012</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-space-xs">
+<span class="font-headline-sm text-headline-sm tabular-nums text-text-primary font-bold">₹5,000</span>
+<span class="font-caption text-[11px] text-[#007A5C] font-semibold">Processed</span>
+</div>
+</div>
+<!-- Item 2 (Attention status) -->
+<div class="flex items-center justify-between p-space-md hover:bg-slate-50 transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-full bg-[#FEF3C7] flex items-center justify-center text-[#92400E] shrink-0">
+<span class="material-symbols-outlined text-[18px]">pending</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-text-primary truncate font-semibold">Mirae Asset Large Cap</span>
+<span class="font-caption text-caption text-text-muted tabular-nums">10 May 2024 · ICICI Bank **4012</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-space-xs">
+<span class="font-headline-sm text-headline-sm tabular-nums text-text-primary font-bold">₹4,000</span>
+<span class="font-caption text-[11px] text-[#92400E] font-semibold">Retry on 18 May</span>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex items-center justify-between p-space-md hover:bg-slate-50 transition-colors">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-8 h-8 rounded-full bg-[#E6F8F3] flex items-center justify-center text-[#007A5C] shrink-0">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-body-md text-body-md text-text-primary truncate font-semibold">Parag Parikh Flexi Cap</span>
+<span class="font-caption text-caption text-text-muted tabular-nums">15 Apr 2024 · ICICI Bank **4012</span>
+</div>
+</div>
+<div class="flex flex-col items-end shrink-0 pl-space-xs">
+<span class="font-headline-sm text-headline-sm tabular-nums text-text-primary font-bold">₹5,000</span>
+<span class="font-caption text-[11px] text-[#007A5C] font-semibold">Processed</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Educational Trust Citation Callout -->
+<div class="rounded-xl bg-[#EBF3FF] border border-blue-100 p-space-md flex gap-space-sm items-start relative overflow-hidden">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary"></div>
+<div class="pl-1 flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-primary">
+<span class="material-symbols-outlined text-[18px]">lightbulb</span>
+<span class="font-headline-sm text-headline-sm font-bold text-[#0052CC]">Rupee Cost Averaging In Progress</span>
+</div>
+<p class="font-caption text-caption text-text-secondary leading-relaxed">
+        When mutual fund units are acquired at lower NAV prices during months 1–5, your overall buy average drops. SIP returns often look subdued or slightly negative early on before compounding effects take over in later tenures.
+      </p>
+</div>
+</div>
+<!-- Mandatory Compliance and Regulatory Bar -->
+<div class="py-space-md flex flex-col items-center justify-center text-center gap-1 text-text-muted pb-space-sm">
+<div class="flex items-center gap-1 font-caption text-caption font-medium">
+<span class="material-symbols-outlined text-[14px]">shield</span>
+<span>SEBI Registered Portfolio Manager &amp; AMFI Registered MFD</span>
+</div>
+<p class="font-caption text-caption text-text-muted">
+      Explains your SIP figures. Not investment advice.
+    </p>
+</div>
+</div>
+<script>
+  (function() {
+    // Privacy Mode micro-interaction: Toggle balance masking
+    const toggleBtn = document.getElementById('toggle-privacy');
+    let isHidden = false;
+    const initialValues = [];
+    const elements = document.querySelectorAll('.currency-masked');
+
+    elements.forEach((el) => {
+      initialValues.push(el.textContent);
+    });
+
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', () => {
+        isHidden = !isHidden;
+        const icon = toggleBtn.querySelector('.material-symbols-outlined');
+        if (icon) {
+          icon.textContent = isHidden ? 'visibility_off' : 'visibility';
+        }
+        elements.forEach((el, index) => {
+          if (isHidden) {
+            el.dataset.original = initialValues[index];
+            el.textContent = '••••••';
+          } else {
+            el.textContent = initialValues[index];
+          }
+        });
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-white/95 backdrop-blur-xl border-t border-border-subtle shadow-md" data-active-classes="text-primary font-semibold"><div class="flex justify-around items-center h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center gap-1 w-16 h-12 transition-colors text-primary font-semibold" data-path="sip-dashboard" href="#"><span class="material-symbols-outlined text-[22px]">stacked_line_chart</span><span class="font-label-micro text-label-micro">SIPs</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-12 text-text-muted hover:text-text-primary transition-colors" data-path="explore" href="#"><span class="material-symbols-outlined text-[22px]">travel_explore</span><span class="font-label-micro text-label-micro">Explore</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-12 text-text-muted hover:text-text-primary transition-colors" data-path="return-coach-entry" href="#"><span class="material-symbols-outlined text-[22px]">psychology_alt</span><span class="font-label-micro text-label-micro">Coach</span></a><a class="flex flex-col items-center justify-center gap-1 w-16 h-12 text-text-muted hover:text-text-primary transition-colors" data-path="account" href="#"><span class="material-symbols-outlined text-[22px]">account_balance_wallet</span><span class="font-label-micro text-label-micro">Account</span></a></div></nav></body></html>

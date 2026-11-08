@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-elevated": "#252D3D", "surface-bright": "#343943", "surface-container-highest": "#30353f", "tertiary-container": "#6d758c", "secondary-container": "#01b386", "surface-dim": "#0e141c", "text-muted": "#64748B", "primary-fixed": "#dae1ff", "on-primary-container": "#fffeff", "background": "#0e141c", "on-primary-fixed-variant": "#003fa4", "tertiary-fixed-dim": "#bec6e0", "on-error": "#690005", "error": "#ffb4ab", "secondary": "#50ddad", "on-secondary-fixed-variant": "#00513b", "primary-container": "#1a6bff", "on-secondary-container": "#003d2c", "on-surface": "#dee2ef", "status-warn": "#F59E0B", "primary": "#b3c5ff", "text-secondary": "#94A3B8", "outline-variant": "#424655", "on-secondary": "#003828", "surface-container": "#1b2029", "surface-container-low": "#171c25", "tertiary-fixed": "#dae2fd", "surface-1": "#151A23", "surface-container-high": "#252a34", "on-surface-variant": "#c2c6d8", "secondary-fixed": "#71fac8", "secondary-fixed-dim": "#50ddad", "error-container": "#93000a", "on-secondary-fixed": "#002116", "surface-tint": "#b3c5ff", "on-primary-fixed": "#001849", "text-primary": "#F8FAFC", "on-tertiary-fixed": "#131b2e", "surface-variant": "#30353f", "on-error-container": "#ffdad6", "on-tertiary-fixed-variant": "#3f465c", "surface": "#0e141c", "primary-fixed-dim": "#b3c5ff", "on-tertiary-container": "#fffeff", "inverse-surface": "#dee2ef", "on-background": "#dee2ef", "tertiary": "#bec6e0", "surface-container-lowest": "#090e17", "on-primary": "#002b75", "canvas": "#0B0E14", "inverse-on-surface": "#2c313a", "status-error": "#EB5B3C", "outline": "#8c90a1", "inverse-primary": "#0055d5", "on-tertiary": "#283044", "border-subtle": "#262F40", "status-active": "#00B386", "surface-2": "#1E2532" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-lg": "1.5rem", "space-sm": "0.5rem", "space-md": "1rem", "space-xs": "0.25rem", "gutter": "1rem", "space-xl": "2rem", "margin": "1rem" }, fontFamily: { "display": ["Inter"], "headline-lg": ["Inter"], "label-micro": ["Inter"], "headline-sm": ["Inter"], "body-md": ["Inter"], "headline-md": ["Inter"], "body-sm": ["Inter"], "caption": ["Inter"] }, fontSize: { "display": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-lg": ["24px", { lineHeight: "32px", letterSpacing: "-0.015em", fontWeight: "700" }], "label-micro": ["11px", { lineHeight: "14px", letterSpacing: "0.05em", fontWeight: "600" }], "headline-sm": ["16px", { lineHeight: "22px", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "500" }], "headline-md": ["18px", { lineHeight: "24px", fontWeight: "600" }], "body-sm": ["14px", { lineHeight: "20px", fontWeight: "400" }], "caption": ["12px", { lineHeight: "16px", fontWeight: "500" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#0B0E14;color:#F8FAFC;-webkit-tap-highlight-color:transparent;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-canvas text-text-primary font-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-canvas/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="flex justify-between items-center px-margin pt-space-xs text-text-muted text-[12px] font-semibold tracking-tight"><span class="tabular-nums">9:41</span><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px]">signal_cellular_alt</span><span class="material-symbols-outlined text-[15px]">wifi</span><span class="material-symbols-outlined text-[17px]">battery_full</span></div></div><div class="h-14 px-margin flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Go Back" class="w-11 h-11 -ml-space-xs flex items-center justify-center rounded-full text-text-secondary hover:text-text-primary transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><img alt="INDmoney Brand Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDJ7oWgtnYUhX1zb3166R_5QrjBWb-gGl7H_MvgxutJfR1uDs8RvOKGHOXrQGo_mP51NlfmnGyJDzdpm3Zb9PZdRcYv7Qh1woiTkfJPqKqtfYTH5IAhkG00NCzeQ6cqieV_7xgPgQHHBxUnDlZx-RgNX70FW3vUltDQL68sg0TKxmAJZpP_3QXq3leFuycTKez4XmQGSGkUJlC_MY0SYPqTytOaxMEA760E_d0e5OOUeQ"/><h1 class="font-headline-md text-headline-md text-text-primary ml-space-xs leading-none">Sip Statuses</h1></div><div class="flex items-center gap-space-sm"><button aria-label="Privacy Mode" class="w-11 h-11 flex items-center justify-center rounded-full bg-surface-1 text-text-secondary hover:text-text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">visibility</span></button><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 pb-safe bg-canvas px-margin"><div class="flex flex-col w-full pb-6 space-y-4">
+<!-- Summary Quick Pulse Bar -->
+<div class="w-full bg-surface-1 rounded-xl p-4 shadow-md flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[20px]">account_balance_wallet</span>
+</div>
+<div>
+<p class="font-caption text-caption text-text-muted">Total Monthly Commit</p>
+<p class="font-headline-sm text-headline-sm text-text-primary tracking-tight">₹16,500<span class="font-body-sm text-body-sm text-text-muted font-normal"> / month</span></p>
+</div>
+</div>
+<div class="text-right">
+<span class="inline-flex items-center gap-1 font-label-micro text-label-micro px-2 py-0.5 rounded-full bg-status-active/10 text-status-active">
+<span class="w-1.5 h-1.5 rounded-full bg-status-active"></span> 2 Active
+      </span>
+<p class="font-caption text-caption text-status-warn mt-0.5">1 Action Needed</p>
+</div>
+</div>
+<!-- Filter & Segmented Chips -->
+<div class="w-full -mx-margin px-margin overflow-x-auto no-scrollbar py-1">
+<div class="flex items-center gap-2 min-w-max" id="filter-container">
+<button class="filter-btn px-3 py-1.5 rounded-full font-caption text-caption font-semibold transition-all duration-200 bg-primary-container text-on-primary-container shadow-sm" onclick="filterCards('all', this)">
+        All (5)
+      </button>
+<button class="filter-btn px-3 py-1.5 rounded-full font-caption text-caption transition-all duration-200 bg-surface-1 text-text-secondary hover:text-text-primary" onclick="filterCards('active', this)">
+        Active (2)
+      </button>
+<button class="filter-btn px-3 py-1.5 rounded-full font-caption text-caption transition-all duration-200 bg-surface-1 text-text-secondary hover:text-text-primary flex items-center gap-1" onclick="filterCards('attention', this)">
+<span class="w-1.5 h-1.5 rounded-full bg-status-error"></span> Needs Attention (1)
+      </button>
+<button class="filter-btn px-3 py-1.5 rounded-full font-caption text-caption transition-all duration-200 bg-surface-1 text-text-secondary hover:text-text-primary" onclick="filterCards('paused', this)">
+        Paused (1)
+      </button>
+<button class="filter-btn px-3 py-1.5 rounded-full font-caption text-caption transition-all duration-200 bg-surface-1 text-text-secondary hover:text-text-primary" onclick="filterCards('cancelled', this)">
+        Cancelled (1)
+      </button>
+</div>
+</div>
+<!-- Lifecycle Cards Container -->
+<div class="flex flex-col space-y-3" id="mandates-list">
+<!-- State 1: Active (Parag Parikh) -->
+<div class="mandate-card w-full bg-surface-1 rounded-xl p-4 shadow-sm transition-all duration-300" data-status="active">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-2 flex items-center justify-center text-secondary font-headline-sm text-headline-sm">
+            PP
+          </div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary leading-tight">Parag Parikh Flexi Cap Fund</h3>
+<p class="font-body-sm text-body-sm text-text-muted mt-0.5">Folio: 120485901 • Direct Growth</p>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-micro text-label-micro bg-status-active/10 text-status-active flex-shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-status-active"></span> ACTIVE
+        </span>
+</div>
+<div class="mt-3.5 pt-3 bg-surface-2/60 rounded-lg p-3 flex items-center justify-between">
+<div>
+<span class="font-caption text-caption text-text-muted">Monthly SIP</span>
+<p class="font-headline-sm text-headline-sm text-text-primary">₹5,000<span class="font-caption text-caption text-text-secondary font-normal">/mo</span></p>
+</div>
+<div class="text-right">
+<span class="font-caption text-caption text-text-muted">Next Auto-Debit</span>
+<p class="font-body-md text-body-md text-text-primary flex items-center justify-end gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">event</span> 15 Nov 2026
+          </p>
+</div>
+</div>
+<div class="mt-3 flex items-center justify-between pt-1">
+<div class="flex items-center gap-1 text-text-muted font-caption text-caption">
+<span class="material-symbols-outlined text-[15px] text-status-active">verified</span>
+          Mandate: HDFC Auto-Pay Active
+        </div>
+<button class="font-body-md text-body-md font-semibold text-primary hover:text-primary-fixed transition-colors">
+          Manage / Pause
+        </button>
+</div>
+</div>
+<!-- State 2: Payment Failed / Needs Attention (Mirae Asset) -->
+<div class="mandate-card w-full bg-surface-1 rounded-xl p-4 shadow-sm relative overflow-hidden transition-all duration-300" data-status="attention">
+<div class="absolute top-0 left-0 bottom-0 w-1 bg-status-error"></div>
+<div class="flex items-start justify-between gap-3 pl-1">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-2 flex items-center justify-center text-status-error font-headline-sm text-headline-sm">
+            MA
+          </div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary leading-tight">Mirae Asset Large Cap Fund</h3>
+<p class="font-body-sm text-body-sm text-text-muted mt-0.5">Folio: 994285112 • Direct Growth</p>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-micro text-label-micro bg-status-error/10 text-status-error flex-shrink-0 animate-pulse">
+<span class="w-1.5 h-1.5 rounded-full bg-status-error"></span> DEBIT FAILED
+        </span>
+</div>
+<!-- Attention Alert Box -->
+<div class="mt-3.5 bg-status-error/10 rounded-lg p-3 pl-3">
+<div class="flex items-center gap-2 text-status-error">
+<span class="material-symbols-outlined text-[18px]">error</span>
+<span class="font-headline-sm text-headline-sm">Insufficient balance in ICICI Bank (...4091)</span>
+</div>
+<p class="font-caption text-caption text-text-secondary mt-1">
+          Auto-retry scheduled on <strong class="text-text-primary">12 Nov 2026</strong>. No penalty charges applied on mutual fund units.
+        </p>
+</div>
+<div class="mt-3 pt-3 flex items-center justify-between">
+<div>
+<span class="font-caption text-caption text-text-muted">Debit Amount</span>
+<p class="font-headline-sm text-headline-sm text-text-primary">₹4,000</p>
+</div>
+<div class="flex items-center gap-3">
+<button class="font-body-md text-body-md font-semibold text-primary hover:underline">
+            View Explainer
+          </button>
+<button class="px-3.5 py-1.5 rounded-lg bg-primary-container text-on-primary-container font-body-md text-body-md font-semibold shadow-sm hover:opacity-95">
+            Pay Now
+          </button>
+</div>
+</div>
+</div>
+<!-- State 3: Paused (Quant Small Cap) -->
+<div class="mandate-card w-full bg-surface-1 rounded-xl p-4 shadow-sm transition-all duration-300" data-status="paused">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-2 flex items-center justify-center text-status-warn font-headline-sm text-headline-sm">
+            QT
+          </div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary leading-tight">Quant Small Cap Fund</h3>
+<p class="font-body-sm text-body-sm text-text-muted mt-0.5">Folio: 440931256 • Direct Growth</p>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-micro text-label-micro bg-status-warn/10 text-status-warn flex-shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-status-warn"></span> PAUSED UNTIL 15 JAN 2027
+        </span>
+</div>
+<div class="mt-3.5 bg-surface-2/60 rounded-lg p-3 flex items-center justify-between">
+<div>
+<span class="font-caption text-caption text-text-muted">Paused SIP Amount</span>
+<p class="font-headline-sm text-headline-sm text-text-primary">₹2,500<span class="font-caption text-caption text-text-secondary font-normal">/mo</span></p>
+</div>
+<div class="text-right">
+<span class="font-caption text-caption text-status-warn">Pause Period</span>
+<p class="font-body-md text-body-md text-text-primary">2 instalments remaining</p>
+</div>
+</div>
+<div class="mt-3 flex items-center justify-between pt-1">
+<div class="flex items-center gap-1 text-text-muted font-caption text-caption">
+<span class="material-symbols-outlined text-[15px]">pause_circle</span>
+          Units continue compounding
+        </div>
+<button class="font-body-md text-body-md font-semibold text-secondary hover:text-secondary-fixed transition-colors">
+          Resume Early / Manage
+        </button>
+</div>
+</div>
+<!-- State 4: Restart Pending (HDFC Top 100) -->
+<div class="mandate-card w-full bg-surface-1 rounded-xl p-4 shadow-sm transition-all duration-300" data-status="active">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-2 flex items-center justify-center text-primary font-headline-sm text-headline-sm">
+            HD
+          </div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-text-primary leading-tight">HDFC Top 100 Fund</h3>
+<p class="font-body-sm text-body-sm text-text-muted mt-0.5">Folio: 801129304 • Direct Growth</p>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-micro text-label-micro bg-primary/10 text-primary flex-shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> RESTART PENDING
+        </span>
+</div>
+<div class="mt-3.5 bg-surface-2/60 rounded-lg p-3 flex items-center justify-between">
+<div>
+<span class="font-caption text-caption text-text-muted">Resuming Amount</span>
+<p class="font-headline-sm text-headline-sm text-text-primary">₹3,000<span class="font-caption text-caption text-text-secondary font-normal">/mo</span></p>
+</div>
+<div class="text-right">
+<span class="font-caption text-caption text-text-muted">Effective Debit Date</span>
+<p class="font-body-md text-body-md text-text-primary">20 Nov 2026</p>
+</div>
+</div>
+<div class="mt-3 flex items-center justify-between pt-1">
+<div class="flex items-center gap-1 text-text-muted font-caption text-caption">
+<span class="material-symbols-outlined text-[15px] text-primary">notifications_active</span>
+          Reminder sent via WhatsApp &amp; SMS
+        </div>
+<button class="font-body-md text-body-md font-semibold text-primary hover:text-primary-fixed transition-colors">
+          Review Schedule
+        </button>
+</div>
+</div>
+<!-- State 5: Cancelled (Axis Bluechip) -->
+<div class="mandate-card w-full bg-surface-1 rounded-xl p-4 shadow-sm opacity-90 transition-all duration-300" data-status="cancelled">
+<div class="flex items-start justify-between gap-3">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-2 flex items-center justify-center text-text-muted font-headline-sm text-headline-sm">
+            AX
+          </div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-text-muted leading-tight">Axis Bluechip Fund</h3>
+<p class="font-body-sm text-body-sm text-text-muted mt-0.5">Folio: 331908472 • Direct Growth</p>
+</div>
+</div>
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full font-label-micro text-label-micro bg-surface-2 text-text-muted flex-shrink-0">
+<span class="w-1.5 h-1.5 rounded-full bg-text-muted"></span> CANCELLED
+        </span>
+</div>
+<div class="mt-3.5 bg-surface-2/40 rounded-lg p-3">
+<div class="flex items-center justify-between">
+<span class="font-caption text-caption text-text-muted">Cancelled On</span>
+<span class="font-body-sm text-body-sm text-text-secondary">10 Aug 2026</span>
+</div>
+<div class="mt-1 flex items-center justify-between">
+<span class="font-caption text-caption text-text-muted">Accumulated Value</span>
+<span class="font-body-md text-body-md font-semibold text-secondary">₹18,200 safely invested</span>
+</div>
+</div>
+<div class="mt-3 flex items-center justify-between pt-1">
+<p class="font-caption text-caption text-text-muted">No debits will occur</p>
+<button class="px-3 py-1 rounded-lg bg-surface-2 text-primary font-body-md text-body-md font-semibold hover:bg-surface-elevated transition-colors">
+          Restart SIP
+        </button>
+</div>
+</div>
+</div>
+<!-- Bottom Visual Delight: Status Guarantees Card -->
+<div class="w-full bg-surface-elevated/70 rounded-xl p-4 shadow-md mt-2">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-secondary/10 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">shield_with_heart</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm text-text-primary">Status Guarantees</h4>
+<p class="font-caption text-caption text-text-muted">What you should know about your mutual fund folios</p>
+</div>
+</div>
+<!-- Editorial Quote Callout -->
+<div class="mt-3 p-3 bg-surface-2 rounded-lg border-l-2 border-primary">
+<p class="font-body-sm text-body-sm text-text-secondary">
+        Your invested money stays 100% safe in AMC depository folios. Pausing, failing, or cancelling an auto-debit never liquidates or locks existing units. You can withdraw or switch your capital anytime.
+      </p>
+</div>
+<div class="grid grid-cols-2 gap-2 mt-3 pt-1">
+<div class="bg-surface-2/60 p-2.5 rounded-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">verified_user</span>
+<span class="font-caption text-caption text-text-primary">AMFI / SEBI Registered</span>
+</div>
+<div class="bg-surface-2/60 p-2.5 rounded-lg flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[18px]">lock_clock</span>
+<span class="font-caption text-caption text-text-primary">Zero Lock Penalty</span>
+</div>
+</div>
+</div>
+<!-- Persistent Compliance Bar -->
+<div class="w-full py-3 px-2 text-center">
+<p class="font-caption text-caption text-text-muted">
+      Explains your SIP figures. Not investment advice.
+    </p>
+</div>
+</div>
+<script>
+  function filterCards(status, element) {
+    // Update chip styling
+    const buttons = document.querySelectorAll('.filter-btn');
+    buttons.forEach(btn => {
+      btn.className = "filter-btn px-3 py-1.5 rounded-full font-caption text-caption transition-all duration-200 bg-surface-1 text-text-secondary hover:text-text-primary";
+    });
+    
+    element.className = "filter-btn px-3 py-1.5 rounded-full font-caption text-caption font-semibold transition-all duration-200 bg-primary-container text-on-primary-container shadow-sm";
+
+    // Filter cards
+    const cards = document.querySelectorAll('.mandate-card');
+    cards.forEach(card => {
+      const cardStatus = card.getAttribute('data-status');
+      if (status === 'all' || cardStatus === status) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+</script></main></body></html>

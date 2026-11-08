@@ -1,0 +1,455 @@
+{
+  "survey_metadata": {
+    "title": "Understanding the First-Year SIP Experience",
+    "sample_size": 35,
+    "eligible_respondents": 35,
+    "provenance": "Constructed mock academic survey dataset (N=35) cross-tabulated with qualitative archetypes and forum anchors",
+    "purpose": "Triangulate behavioral drop-off patterns with AI Discovery Engine findings"
+  },
+  "questions": [
+    {
+      "question_id": "Q1",
+      "section": "Consent & Screening",
+      "question_text": "Do you agree to participate in this voluntary academic research survey?",
+      "question_type": "single_choice",
+      "responses_distribution": {
+        "Yes, I agree": 35,
+        "No": 0
+      },
+      "mapped_segments": [
+        "All Segments"
+      ],
+      "mapped_themes": [],
+      "takeaway": "100% informed consent compliance"
+    },
+    {
+      "question_id": "Q2",
+      "section": "Consent & Screening",
+      "question_text": "Are you 18 years of age or older?",
+      "question_type": "single_choice",
+      "responses_distribution": {
+        "Yes": 35,
+        "No": 0
+      },
+      "mapped_segments": [
+        "All Segments"
+      ],
+      "mapped_themes": [],
+      "takeaway": "100% legal adult investing cohort"
+    },
+    {
+      "question_id": "Q3",
+      "section": "Consent & Screening",
+      "question_text": "Have you personally started a mutual-fund SIP (Systematic Investment Plan) in India?",
+      "question_type": "single_choice",
+      "responses_distribution": {
+        "Yes, I currently have at least one active SIP": 27,
+        "I started one, but it is currently paused": 4,
+        "I started one, but I stopped/cancelled it": 4
+      },
+      "mapped_segments": [
+        "SEG-01: Easy-Start Beginners",
+        "SEG-04: Budget-Set Steadies"
+      ],
+      "mapped_themes": [
+        "T4: Mandate & Payment Friction"
+      ],
+      "takeaway": "77.1% active continuation; 22.9% currently paused or cancelled"
+    },
+    {
+      "question_id": "Q4",
+      "section": "Experience Profile",
+      "question_text": "Was this SIP your very first mutual-fund investment?",
+      "question_type": "single_choice",
+      "responses_distribution": {
+        "Yes, it was my first mutual-fund investment": 30,
+        "No, I had invested in mutual funds before starting this SIP": 5
+      },
+      "mapped_segments": [
+        "SEG-01",
+        "SEG-02",
+        "SEG-03",
+        "SEG-04"
+      ],
+      "mapped_themes": [
+        "T1",
+        "T2",
+        "T3"
+      ],
+      "takeaway": "85.7% first-time mutual fund investors — aligns precisely with project scope"
+    },
+    {
+      "question_id": "Q5",
+      "section": "Lifecycle & Start Period",
+      "question_text": "When did you start your first mutual-fund SIP?",
+      "question_type": "single_choice",
+      "responses_distribution": {
+        "Less than 1 month ago": 1,
+        "1–3 months ago": 5,
+        "3–6 months ago": 16,
+        "6–12 months ago": 8,
+        "More than 12 months ago": 5
+      },
+      "mapped_segments": [
+        "SEG-01",
+        "SEG-02",
+        "SEG-04"
+      ],
+      "mapped_themes": [
+        "Lifecycle Cliff Hypothesis"
+      ],
+      "takeaway": "45.7% started 3–6 months ago; represents core cohort entering the Information Desert"
+    },
+    {
+      "question_id": "Q6",
+      "section": "Platform Usage",
+      "question_text": "Which platform or app do you use primarily for this SIP?",
+      "question_type": "single_choice",
+      "responses_distribution": {
+        "INDmoney": 27,
+        "Groww": 4,
+        "Zerodha Coin": 2,
+        "Direct AMC website": 1,
+        "Bank platform": 1
+      },
+      "mapped_segments": [
+        "All Segments"
+      ],
+      "mapped_themes": [
+        "T8: Cross-Selling Fatigue",
+        "T4: Mandate & Payment Friction"
+      ],
+      "takeaway": "77.1% INDmoney users; provides strong platform-specific validity"
+    },
+    {
+      "question_id": "Q7",
+      "section": "Current SIP Status",
+      "question_text": "What is the status of that first SIP today?",
+      "question_type": "single_choice",
+      "responses_distribution": {
+        "Active and running normally": 24,
+        "Paused": 4,
+        "Stopped / Cancelled": 4,
+        "Reduced amount": 2,
+        "Switched platform": 1
+      },
+      "mapped_segments": [
+        "SEG-01: Easy-Start Beginners"
+      ],
+      "mapped_themes": [
+        "T4: Mandate Friction",
+        "12M Active KPI Tree"
+      ],
+      "takeaway": "Direct empirical input for the 12M Active Rate formula"
+    },
+    {
+      "question_id": "Q8",
+      "section": "Starting Motivation",
+      "question_text": "Why did you start the SIP?",
+      "question_type": "multi_choice",
+      "responses_distribution": {
+        "Build long-term wealth": 26,
+        "Save tax (ELSS)": 14,
+        "Learn about investing": 11,
+        "Save for specific goal": 10,
+        "Better return than FD": 9,
+        "Recommended by friend/family": 8,
+        "Saw video/post on social media": 6
+      },
+      "mapped_segments": [
+        "SEG-01: Easy-Start",
+        "SEG-04: Budget-Set",
+        "SEG-06: FOMO"
+      ],
+      "mapped_themes": [
+        "T2: Expectation Gap",
+        "T7: Peer Dependency"
+      ],
+      "takeaway": "Wealth accumulation and habit formation dominate over immediate speculative gains"
+    },
+    {
+      "question_id": "Q9",
+      "section": "Expectations at Start",
+      "question_text": "What did you expect would happen in the first 6–12 months?",
+      "question_type": "single_choice",
+      "responses_distribution": {
+        "Steady gradual growth": 19,
+        "Positive returns fairly quickly": 11,
+        "Prepared for ups and downs": 5
+      },
+      "mapped_segments": [
+        "SEG-02: Information Desert",
+        "SEG-03: Red Panic",
+        "SEG-06: FOMO"
+      ],
+      "mapped_themes": [
+        "T2: Expectation vs Reality Gap"
+      ],
+      "takeaway": "85.7% expected linear or quick growth; only 14.3% had realistic volatility resilience"
+    },
+    {
+      "question_id": "Q10",
+      "section": "Contribution Sizing",
+      "question_text": "How did you choose the monthly amount?",
+      "question_type": "single_choice",
+      "responses_distribution": {
+        "Calculated based on budget/goal": 13,
+        "Started with easy minimum (₹100/₹500)": 11,
+        "Suggested by app/calculator": 6,
+        "Someone told me the amount": 5
+      },
+      "mapped_segments": [
+        "SEG-01: Easy-Start Beginners",
+        "SEG-04: Budget-Set Steadies"
+      ],
+      "mapped_themes": [
+        "H3/H10: Contribution Cash-Flow Flexibility"
+      ],
+      "takeaway": "Easy minimum / suggested amounts correlate with 3.5x higher course-change rate"
+    },
+    {
+      "question_id": "Q11",
+      "section": "Monitoring Behavior",
+      "question_text": "How often do you check your SIP or portfolio in the app?",
+      "question_type": "single_choice",
+      "responses_distribution": {
+        "A few times a month": 15,
+        "About once a week": 10,
+        "Only around deduction date": 7,
+        "Daily or multiple times a day": 3
+      },
+      "mapped_segments": [
+        "SEG-09: Hyper-Active Daily Monitors",
+        "SEG-04: Budget-Set Steadies"
+      ],
+      "mapped_themes": [
+        "T6: Over-Monitoring Anxiety"
+      ],
+      "takeaway": "Most users check weekly or around debit date; daily monitoring is confined to high-anxiety minority"
+    },
+    {
+      "question_id": "Q12",
+      "section": "Information Checked",
+      "question_text": "When you open the app to look at your SIP, what do you look at most closely?",
+      "question_type": "multi_choice",
+      "responses_distribution": {
+        "Overall return / profit or loss": 27,
+        "Total current portfolio value": 20,
+        "Total invested amount": 17,
+        "XIRR or percentage return": 15,
+        "Whether instalment was debited": 12,
+        "Upcoming deduction date": 8
+      },
+      "mapped_segments": [
+        "SEG-02: Information Desert",
+        "SEG-03: Red Panic"
+      ],
+      "mapped_themes": [
+        "T1: Red Portfolio Panic",
+        "T3: Information Desert"
+      ],
+      "takeaway": "P&L and value dominate; confirms that flashing red numbers has outsized emotional salience"
+    },
+    {
+      "question_id": "Q13",
+      "section": "Reaction to Market Volatility",
+      "question_text": "If your portfolio showed a flat or negative return for 2–3 months, what did you do?",
+      "question_type": "single_choice",
+      "responses_distribution": {
+        "Felt concerned but continued anyway": 18,
+        "Ignored it and continued": 8,
+        "Searched online or asked someone": 5,
+        "Paused or considered pausing": 3,
+        "Stopped or redeemed": 1
+      },
+      "mapped_segments": [
+        "SEG-01",
+        "SEG-02",
+        "SEG-03"
+      ],
+      "mapped_themes": [
+        "T1: Red Portfolio Panic",
+        "T5: External Validation Seeking"
+      ],
+      "takeaway": "Concern is high (18/35) but conversion to immediate stop is low (4/35) when unprovoked by liquidity shocks"
+    },
+    {
+      "question_id": "Q14",
+      "section": "Friction Points Experienced",
+      "question_text": "Have you experienced any of the following with your SIP?",
+      "question_type": "multi_choice",
+      "responses_distribution": {
+        "Unsure whether returns were normal for my timeframe": 12,
+        "Payment or auto-debit failure": 9,
+        "Terms or numbers hard to understand (XIRR, NAV)": 8,
+        "Unsure what action to take when portfolio fell": 8,
+        "Too many loan or credit card offers": 6,
+        "Difficulty changing date or amount": 5,
+        "Bank penalty after a missed debit": 3,
+        "None of these": 7
+      },
+      "mapped_segments": [
+        "SEG-01",
+        "SEG-02",
+        "SEG-05",
+        "SEG-07"
+      ],
+      "mapped_themes": [
+        "T3: Information Desert",
+        "T4: Mandate Friction",
+        "T8: Cross-Selling"
+      ],
+      "takeaway": "Top two frictions are Information Desert (12/35) and Payment/Auto-debit failure (9/35)"
+    },
+    {
+      "question_id": "Q15",
+      "section": "Churn Consideration",
+      "question_text": "Did you ever consider pausing, reducing, or stopping your SIP?",
+      "question_type": "single_choice",
+      "responses_distribution": {
+        "No, never considered it": 12,
+        "Yes, considered it but continued": 12,
+        "Yes, and I paused/reduced/stopped": 11
+      },
+      "mapped_segments": [
+        "SEG-01: Easy-Start Beginners"
+      ],
+      "mapped_themes": [
+        "T4: Mandate Friction",
+        "H3: Cash-Flow Flexibility"
+      ],
+      "takeaway": "65.7% of first-time investors considered altering or stopping their SIP within the first 12 months"
+    },
+    {
+      "question_id": "Q16",
+      "section": "Root Cause of Change",
+      "question_text": "What was the main reason you considered or made that change?",
+      "question_type": "single_choice",
+      "responses_distribution": {
+        "Disappointed or confused by performance": 8,
+        "Bank balance / cash flow constraint": 6,
+        "Amount felt too high": 3,
+        "Bank/mandate payment issue": 2,
+        "Needed money for emergency": 2,
+        "Moved to another platform": 2
+      },
+      "mapped_segments": [
+        "SEG-01: Easy-Start",
+        "SEG-03: Red Panic",
+        "SEG-05: Mandate"
+      ],
+      "mapped_themes": [
+        "T1: Red Panic",
+        "T4: Mandate Friction"
+      ],
+      "takeaway": "Cash flow, amount sizing, and bank issues combined (13/23) exceed pure performance disappointment (8/23)"
+    },
+    {
+      "question_id": "Q17",
+      "section": "Payment Experience",
+      "question_text": "Did you ever have a failed SIP debit?",
+      "question_type": "single_choice",
+      "responses_distribution": {
+        "No": 26,
+        "Yes, once": 7,
+        "Yes, more than once": 2
+      },
+      "mapped_segments": [
+        "SEG-05: Technical Mandate Casualties"
+      ],
+      "mapped_themes": [
+        "T4: Mandate & Payment Friction"
+      ],
+      "takeaway": "25.7% incident rate of payment failure among first-time SIP investors"
+    },
+    {
+      "question_id": "Q18",
+      "section": "Payment Failure Communication",
+      "question_text": "If you experienced a failed debit, how clear was the app's explanation?",
+      "question_type": "single_choice",
+      "responses_distribution": {
+        "1 - Not at all clear": 4,
+        "2 - Slightly clear": 3,
+        "3 - Moderately clear": 1,
+        "4 - Clear": 1,
+        "5 - Very clear": 0
+      },
+      "mapped_segments": [
+        "SEG-05: Technical Mandate Casualties"
+      ],
+      "mapped_themes": [
+        "T4: Mandate & Payment Friction"
+      ],
+      "takeaway": "Mean score 1.89/5.0; confirms critical communication void during failed debits"
+    },
+    {
+      "question_id": "Q19",
+      "section": "External Validation",
+      "question_text": "Where have you looked for help or information about your SIP outside the app?",
+      "question_type": "multi_choice",
+      "responses_distribution": {
+        "Reddit or investing forums": 15,
+        "Friends or colleagues": 11,
+        "Google search": 10,
+        "YouTube videos": 9,
+        "Family member": 6,
+        "Creators/influencers": 3,
+        "Nowhere outside": 4
+      },
+      "mapped_segments": [
+        "SEG-02: Information Desert",
+        "SEG-06: FOMO"
+      ],
+      "mapped_themes": [
+        "T5: External Validation Seeking"
+      ],
+      "takeaway": "88.6% seek external advice; Reddit/forums and peers dominate over official AMC sources"
+    },
+    {
+      "question_id": "Q20",
+      "section": "Confidence Score",
+      "question_text": "How confident do you feel that continuing your SIP for the next 12 months is the right decision?",
+      "question_type": "single_choice",
+      "responses_distribution": {
+        "5 - Very confident": 8,
+        "4 - Confident": 13,
+        "3 - Neutral / Unsure": 9,
+        "2 - Low confidence": 4,
+        "1 - Very low confidence": 1
+      },
+      "mapped_segments": [
+        "SEG-01: Easy-Start",
+        "SEG-04: Budget-Set"
+      ],
+      "mapped_themes": [
+        "12M Active Rate Indicator"
+      ],
+      "takeaway": "40.0% of investors have neutral, low, or fragile confidence in Months 3–6"
+    },
+    {
+      "question_id": "Q21",
+      "section": "Product Feature Requests",
+      "question_text": "What is the single most important thing INDmoney could do to make it easier to continue your SIP?",
+      "question_type": "single_choice",
+      "responses_distribution": {
+        "Clearer explanation of returns and whether fund is performing normally": 11,
+        "Easier to adjust, pause, or restart SIP without penalties": 8,
+        "Advance reminder before debit date with balance check": 7,
+        "Clearer explanation when an instalment fails": 4,
+        "Fewer ads and loan offers": 3,
+        "Better customer support": 2
+      },
+      "mapped_segments": [
+        "SEG-01: Easy-Start",
+        "SEG-02: Information Desert",
+        "SEG-05: Mandate"
+      ],
+      "mapped_themes": [
+        "T3: Information Desert",
+        "T4: Mandate Friction",
+        "T8: Cross-Selling"
+      ],
+      "takeaway": "Flexibility + pre-debit check-in + return clarity account for 74.3% of all user requests"
+    }
+  ]
+}

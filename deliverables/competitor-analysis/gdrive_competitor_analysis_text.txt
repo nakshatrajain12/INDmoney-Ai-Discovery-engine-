@@ -1,0 +1,89 @@
+=== PAGE 1 ===
+Competitor Analysis  
+1. Why these 5 dimensions  
+These dimensions cover the main steps between remembering a photo and actually finding it. A user can fail at any one 
+of them. 
+Dimension Why it matters 
+Memory → Query Users may remember a situation, not exact search words. 
+Clue Understanding The system needs to combine partial and uncertain clues. 
+Candidate Discovery Useful candidates should appear even without an exact match. 
+Search Refinement Users need help when the first search does not work. 
+Result Evaluation The user still has to recognize the correct photo. 
+2. Competitor scorecard 
+Scores are out of 5 and are specific to vague-memory retrieval, not overall product quality. 
+Product Memory → Query Clue Understanding Candidate Discovery Search Refinement Result Evaluation 
+Google Photos 4.0 4.5 4.5 3.5 4.5 
+Apple Photos 3.5 4.0 4.0 3.5 4.5 
+Amazon Photos 3.0 3.5 3.5 3.0 4.0 
+OneDrive Photos 3.5 3.5 3.5 3.0 4.0 
+Dropbox 2.5 3.0 3.0 2.5 3.5 
+Windows Photos 3.5 3.5 3.5 3.0 4.0 
+3. Why the scores 
+Product Dimension Why this score 
+Google Photos Memory → Query 4.0 — Strong natural-language search, but users still need to give a useful starting 
+description. 
+ Clue Understanding 4.5 — Strong understanding of people, places, objects and context; uncertain memories 
+are harder. 
+ Candidate Discovery 4.5 — Rich visual and contextual signals help surface relevant candidates. 
+ Search Refinement 3.5 — Biggest gap: users could get more help deciding what clue to add after a weak 
+search. 
+ Result Evaluation 4.5 — Strong visual results and context make candidate recognition easy. 
+Apple Photos Memory → Query 3.5 — Good natural-language search, but the user still has to frame the memory. 
+ Clue Understanding 4.0 — Strong people, scene and object recognition. 
+ Candidate Discovery 4.0 — Multiple signals help find relevant photos. 
+ Search Refinement 3.5 — Refinement is possible but less guided. 
+ Result Evaluation 4.5 — Strong visual browsing makes recognition easy. 
+Amazon Photos Memory → Query 3.0 — Users often need to convert memory into searchable attributes. 
+ Clue Understanding 3.5 — Good image recognition for common visual attributes. 
+ Candidate Discovery 3.5 — Useful attributes help, but complex memories are harder. 
+ Search Refinement 3.0 — Limited guided recovery after a failed search. 
+ Result Evaluation 4.0 — People and visual organization help recognition. 
+OneDrive Photos Memory → Query 3.5 — Semantic search reduces dependence on exact keywords. 
+ Clue Understanding 3.5 — Uses visual content and metadata. 
+ Candidate Discovery 3.5 — Several retrieval signals are available. 
+ Search Refinement 3.0 — Users still have to choose the next clue themselves. 
+ Result Evaluation 4.0 — Timeline, people and location help evaluation. 
+Dropbox Memory → Query 2.5 — Primarily a file platform, not a memory-retrieval product. 
+ Clue Understanding 3.0 — Some image-content understanding. 
+ Candidate Discovery 3.0 — Similarity can help once a candidate exists. 
+ Search Refinement 2.5 — Limited support for reconstructing a vague memory. 
+ Result Evaluation 3.5 — Visual browsing supports comparison. 
+Windows Photos Memory → Query 3.5 — Natural-language search helps users describe what they want. 
+ Clue Understanding 3.5 — Semantic indexing goes beyond filenames. 
+ Candidate Discovery 3.5 — Can surface relevant local photos. 
+ Search Refinement 3.0 — More guided recovery could be useful. 
+ Result Evaluation 4.0 — Visual browsing helps comparison. 
+
+=== PAGE 2 ===
+4. Google Photos: scope of improvement 
+Google Photos is already strong at semantic photo understanding. The bigger opportunity is helping users when their own 
+memory is incomplete or uncertain. 
+Opportunity Possible improvement 
+Starting query Turn a rough memory into useful clues. 
+Uncertain clues Treat 'I think' or 'maybe' as soft signals. 
+Failed search Suggest the next useful clue to add. 
+Weak clues Combine several partial signals. 
+Close match Use a similar photo as an anchor for the next search. 
+Final check Show context that helps users recognize the photo. 
+5. Connection to the business metric 
+Successful retrieval can therefore be viewed as five linked stages: 
+Stage Outcome 
+Memory → Query User provides enough clues to start. 
+Clue Understanding System interprets the clues. 
+Candidate Discovery Relevant photos appear. 
+Search Refinement User gets closer after a weak result. 
+Result Evaluation User recognizes the intended photo. 
+Sources 
+• Google — Ask Photos with Gemini: https://blog.google/products-and-platforms/products/photos/ask-photos-google-io-
+2024/ 
+• Google Photos Help — Search: https://support.google.com/photos/answer/6128838 
+• Apple Support — Search for photos and videos: https://support.apple.com/guide/photos/search-for-photos-and-videos-
+pht64de33e5a/mac 
+• Amazon Photos Help — Image Recognition: 
+https://www.amazon.com/gp/help/customer/display.html?nodeId=G3BC9SVPPEVSB9T8 
+• Microsoft Support — OneDrive Photos: https://support.microsoft.com/en-us/office/find-photos-and-videos-with-
+onedrive-2d7a1d5e-3d7d-4b0c-9d8d-4f0d6d8a2b9e 
+• Dropbox Help — Image Search: https://help.dropbox.com/view-edit/image-search 
+• Microsoft Support — Windows Photos: https://support.microsoft.com/en-us/windows/view-photos-and-videos-with-the-
+photos-app-in-windows-2c9f4d3f-5a75-4f5e-a8a5-7f6d0a0c6c2f 
+

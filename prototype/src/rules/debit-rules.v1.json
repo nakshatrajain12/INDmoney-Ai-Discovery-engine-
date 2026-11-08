@@ -1,0 +1,230 @@
+{
+  "version": "debit-rules.v1",
+  "reviewStatus": "APPROVED",
+  "description": "Deterministic debit failure diagnostic matrix covering 7 categories per architecture.md Section 4.2",
+  "rules": [
+    {
+      "category": "UPI_DAILY_LIMIT",
+      "ruleId": "DE-RULE-001",
+      "providerCodes": [
+        "UPI_DAILY_LIMIT",
+        "MOCK_UPI_DAILY_LIMIT_EXCEEDED",
+        "UPI_LIMIT_EXCEEDED",
+        "PSP_UPI_LIMIT",
+        "DAILY_LIMIT_REACHED"
+      ],
+      "humanReason": "Your bank's UPI daily transaction limit was reached on the debit date.",
+      "sipStatusImpact": "Active · 1 failed instalment",
+      "sipStatusDetail": "Your SIP remains active. Missing an instalment does not pause or cancel your ongoing SIP schedule.",
+      "statusChip": {
+        "label": "Active · 1 failed instalment",
+        "variant": "amber",
+        "icon": "alert"
+      },
+      "isSipActive": true,
+      "isMandateActive": true,
+      "isMandateRevoked": false,
+      "retryAllowed": true,
+      "autoRetryExpected": false,
+      "nextAction": {
+        "type": "RETRY_MANUAL",
+        "label": "Pay manually now",
+        "buttonText": "Pay {{amount}} manually now"
+      },
+      "secondaryAction": {
+        "type": "WAIT_NEXT",
+        "label": "Wait for next scheduled debit"
+      },
+      "consequenceNotice": null
+    },
+    {
+      "category": "INSUFFICIENT_FUNDS",
+      "ruleId": "DE-RULE-002",
+      "providerCodes": [
+        "INSUFFICIENT_FUNDS",
+        "MOCK_INSUFFICIENT_BALANCE",
+        "INSUFFICIENT_BALANCE",
+        "LOW_BALANCE",
+        "BALANCE_INSUFFICIENT"
+      ],
+      "humanReason": "Account balance was insufficient at the scheduled debit time.",
+      "sipStatusImpact": "Active · 1 failed instalment",
+      "sipStatusDetail": "Your SIP remains active. Missing an instalment does not pause or cancel your ongoing SIP schedule.",
+      "statusChip": {
+        "label": "Active · 1 failed instalment",
+        "variant": "amber",
+        "icon": "alert"
+      },
+      "isSipActive": true,
+      "isMandateActive": true,
+      "isMandateRevoked": false,
+      "retryAllowed": true,
+      "autoRetryExpected": false,
+      "nextAction": {
+        "type": "RETRY_MANUAL",
+        "label": "Add funds to bank account and retry",
+        "buttonText": "Add funds & retry"
+      },
+      "secondaryAction": {
+        "type": "OPTIONS",
+        "label": "See pause or reduce options"
+      },
+      "consequenceNotice": null
+    },
+    {
+      "category": "BANK_UNAVAILABLE",
+      "ruleId": "DE-RULE-003",
+      "providerCodes": [
+        "BANK_UNAVAILABLE",
+        "MOCK_BANK_SERVER_UNAVAILABLE",
+        "BANK_SERVER_DOWN",
+        "BANK_DOWN",
+        "CORE_BANKING_DOWN"
+      ],
+      "humanReason": "Your bank core banking servers did not respond during debit processing.",
+      "sipStatusImpact": "Active · 1 failed instalment",
+      "sipStatusDetail": "Your SIP remains active. This was a technical issue on the bank side; no penalty applies.",
+      "statusChip": {
+        "label": "Active · 1 failed instalment",
+        "variant": "amber",
+        "icon": "alert"
+      },
+      "isSipActive": true,
+      "isMandateActive": true,
+      "isMandateRevoked": false,
+      "retryAllowed": false,
+      "autoRetryExpected": true,
+      "nextAction": {
+        "type": "WAIT_AUTO_RETRY",
+        "label": "Automated retry scheduled in 24 hours",
+        "buttonText": "Automated retry scheduled"
+      },
+      "secondaryAction": null,
+      "consequenceNotice": null
+    },
+    {
+      "category": "MANDATE_EXPIRED",
+      "ruleId": "DE-RULE-004",
+      "providerCodes": [
+        "MANDATE_EXPIRED",
+        "MOCK_MANDATE_EXPIRED",
+        "E_MANDATE_EXPIRED"
+      ],
+      "humanReason": "The e-mandate registration period has concluded.",
+      "sipStatusImpact": "Attention Required",
+      "sipStatusDetail": "Your Autopay mandate has expired. Upcoming instalments are paused until re-authorized.",
+      "statusChip": {
+        "label": "Attention Required",
+        "variant": "amber",
+        "icon": "alert"
+      },
+      "isSipActive": false,
+      "isMandateActive": false,
+      "isMandateRevoked": false,
+      "retryAllowed": false,
+      "autoRetryExpected": false,
+      "nextAction": {
+        "type": "RENEW_MANDATE",
+        "label": "Re-authorize UPI Autopay in 2 minutes",
+        "buttonText": "Re-authorize Autopay"
+      },
+      "secondaryAction": null,
+      "consequenceNotice": null
+    },
+    {
+      "category": "MANDATE_REJECTED",
+      "ruleId": "DE-RULE-005",
+      "providerCodes": [
+        "MANDATE_REJECTED",
+        "MOCK_MANDATE_REJECTED",
+        "MANDATE_REVOKED",
+        "MANDATE_CANCELLED"
+      ],
+      "humanReason": "The mandate was revoked or rejected by the issuing bank.",
+      "sipStatusImpact": "Cancelled by Bank",
+      "sipStatusDetail": "The bank mandate has been revoked. Future automatic debits cannot proceed under this mandate.",
+      "statusChip": {
+        "label": "Mandate Cancelled by Bank",
+        "variant": "coral",
+        "icon": "x"
+      },
+      "isSipActive": false,
+      "isMandateActive": false,
+      "isMandateRevoked": true,
+      "retryAllowed": false,
+      "autoRetryExpected": false,
+      "nextAction": {
+        "type": "NEW_MANDATE",
+        "label": "Set up a new Autopay mandate",
+        "buttonText": "Set up new mandate"
+      },
+      "secondaryAction": null,
+      "consequenceNotice": null
+    },
+    {
+      "category": "NETWORK_TIMEOUT",
+      "ruleId": "DE-RULE-006",
+      "providerCodes": [
+        "NETWORK_TIMEOUT",
+        "MOCK_PAYMENT_TIMEOUT",
+        "PAYMENT_TIMEOUT",
+        "MOCK_TECHNICAL_FAILURE",
+        "TECHNICAL_FAILURE",
+        "GATEWAY_TIMEOUT"
+      ],
+      "humanReason": "NPCI / UPI gateway connection timed out during clearing.",
+      "sipStatusImpact": "Active · 1 failed instalment",
+      "sipStatusDetail": "Your SIP remains active. Missing an instalment does not pause or cancel your ongoing SIP schedule.",
+      "statusChip": {
+        "label": "Active · 1 failed instalment",
+        "variant": "amber",
+        "icon": "alert"
+      },
+      "isSipActive": true,
+      "isMandateActive": true,
+      "isMandateRevoked": false,
+      "retryAllowed": true,
+      "autoRetryExpected": false,
+      "nextAction": {
+        "type": "RETRY_MANUAL",
+        "label": "Retry payment now",
+        "buttonText": "Retry payment now"
+      },
+      "secondaryAction": null,
+      "consequenceNotice": null
+    },
+    {
+      "category": "GENERIC_UNKNOWN",
+      "ruleId": "DE-RULE-007",
+      "providerCodes": [
+        "GENERIC_UNKNOWN",
+        "UNKNOWN",
+        "UNMAPPED"
+      ],
+      "humanReason": "We could not confirm the exact bank failure code.",
+      "sipStatusImpact": "Active · 1 failed instalment",
+      "sipStatusDetail": "Your SIP remains active. Missing an instalment does not cancel your ongoing schedule.",
+      "statusChip": {
+        "label": "Active · 1 failed instalment",
+        "variant": "amber",
+        "icon": "alert"
+      },
+      "isSipActive": true,
+      "isMandateActive": true,
+      "isMandateRevoked": false,
+      "retryAllowed": true,
+      "autoRetryExpected": false,
+      "nextAction": {
+        "type": "RETRY_OR_SUPPORT",
+        "label": "Retry payment or contact support",
+        "buttonText": "Retry payment now"
+      },
+      "secondaryAction": {
+        "type": "SUPPORT",
+        "label": "Contact bank support"
+      },
+      "consequenceNotice": null
+    }
+  ]
+}
+

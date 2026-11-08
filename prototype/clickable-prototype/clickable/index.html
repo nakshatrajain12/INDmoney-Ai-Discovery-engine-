@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SIP Steady: Clickable Prototype</title>
+<meta name="description" content="Clickable prototype of the INDmoney SIP Confidence and Recovery Experience. Mock data only; no real accounts or transactions.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<script>
+  // Theme before paint (same mechanism and key as the AI engine): default dark, saved choice wins.
+  (function () {
+    try {
+      var t = localStorage.getItem('ind_theme');
+      if (t === 'light') document.documentElement.classList.remove('dark');
+      else document.documentElement.classList.add('dark');
+    } catch (e) { document.documentElement.classList.add('dark'); }
+  })();
+</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="stage">
+  <div class="phone" id="phone"></div>
+  <aside class="guide" id="guide" aria-label="Demo guide"></aside>
+</div>
+<div id="portal"></div>
+<div id="announce" class="sr" role="status" aria-live="polite"></div>
+<script src="app.js"></script>
+</body>
+</html>

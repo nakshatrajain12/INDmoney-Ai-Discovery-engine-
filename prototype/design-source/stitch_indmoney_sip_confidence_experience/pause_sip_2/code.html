@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config = { theme: { extend: { colors: { "canvas": "#F4F6F9", "surface-card": "#FFFFFF", "border-subtle": "#E2E8F0", "text-primary": "#0F172A", "text-secondary": "#475569", "text-muted": "#64748B", "primary-container": "#1A6BFF", "secondary": "#059669", "secondary-container": "#D1FAE5" }, fontFamily: { "display": ["Inter"], "headline-lg": ["Inter"], "headline-md": ["Inter"], "headline-sm": ["Inter"], "body-md": ["Inter"], "body-sm": ["Inter"], "caption": ["Inter"], "label-micro": ["Inter"] }, fontSize: { "display": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-lg": ["24px", { lineHeight: "32px", letterSpacing: "-0.015em", fontWeight: "700" }], "headline-md": ["18px", { lineHeight: "24px", fontWeight: "600" }], "headline-sm": ["16px", { lineHeight: "22px", fontWeight: "600" }], "body-md": ["14px", { lineHeight: "20px", fontWeight: "500" }], "body-sm": ["14px", { lineHeight: "20px", fontWeight: "400" }], "caption": ["12px", { lineHeight: "16px", fontWeight: "500" }], "label-micro": ["11px", { lineHeight: "14px", letterSpacing: "0.05em", fontWeight: "600" }] }, spacing: { "margin": "1rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-md": "1rem", "space-lg": "1.5rem", "space-xl": "2rem" } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#F4F6F9;color:#0F172A;-webkit-tap-highlight-color:transparent;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-canvas text-text-primary font-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-white/95 backdrop-blur-xl border-b border-[#E2E8F0] shadow-sm"><div class="flex justify-between items-center px-margin pt-space-xs text-text-muted text-[12px] font-semibold tracking-tight"><span class="tabular-nums">9:41</span><div class="flex items-center gap-1.5"><span class="material-symbols-outlined text-[15px]">signal_cellular_alt</span><span class="material-symbols-outlined text-[15px]">wifi</span><span class="material-symbols-outlined text-[17px]">battery_full</span></div></div><div class="h-14 px-margin flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Go Back" class="w-11 h-11 -ml-space-xs flex items-center justify-center rounded-full text-text-primary hover:bg-slate-100 transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[22px]">arrow_back</span></button><img alt="INDmoney Brand Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrDJ7oWgtnYUhX1zb3166R_5QrjBWb-gGl7H_MvgxutJfR1uDs8RvOKGHOXrQGo_mP51NlfmnGyJDzdpm3Zb9PZdRcYv7Qh1woiTkfJPqKqtfYTH5IAhkG00NCzeQ6cqieV_7xgPgQHHBxUnDlZx-RgNX70FW3vUltDQL68sg0TKxmAJZpP_3QXq3leFuycTKez4XmQGSGkUJlC_MY0SYPqTytOaxMEA760E_d0e5OOUeQ"/><h1 class="font-headline-md text-headline-md text-text-primary ml-space-xs leading-none">Pause Sip</h1></div><div class="flex items-center gap-space-sm"><button aria-label="Privacy Mode" class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-100 text-text-secondary hover:text-text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">visibility</span></button><div class="w-8 h-8 rounded-full bg-[#1A6BFF] flex items-center justify-center"><span class="material-symbols-outlined text-white text-[18px]">person</span></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-20 pb-safe bg-canvas px-margin"><div class="flex flex-col w-full pb-8">
+<div class="bg-white rounded-xl p-space-md mb-space-md border border-[#E2E8F0] shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-lg bg-blue-50 border border-blue-100 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[#1A6BFF] text-[22px]">show_chart</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm text-text-primary truncate">Parag Parikh Flexi Cap Fund</span>
+<span class="font-caption text-caption text-text-secondary">Growth Direct Plan • Folio #91823019</span>
+</div>
+</div>
+<span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-700 font-label-micro text-label-micro shrink-0 border border-emerald-200">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+        Active
+      </span>
+</div>
+<div class="bg-[#F8FAFC] rounded-lg p-space-sm border border-[#E2E8F0] flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-caption text-caption text-text-secondary">Monthly Debit</span>
+<span class="font-headline-sm text-headline-sm text-text-primary tabular-nums">₹5,000</span>
+</div>
+<div class="flex flex-col items-end">
+<span class="font-caption text-caption text-text-secondary">Mandate Debit Date</span>
+<span class="font-body-md text-body-md text-text-primary font-medium">15th of every month</span>
+</div>
+</div>
+</div>
+<div class="mb-space-lg">
+<div class="flex items-center justify-between mb-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-text-primary">Manage Mandate</h2>
+<span class="font-caption text-caption text-text-muted">Select an action</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary mb-space-sm">Review standard ways to adjust or halt your scheduled auto-debits.</p>
+<div class="grid grid-cols-1 gap-space-sm" id="action-cards-group">
+<div class="cursor-pointer bg-white rounded-xl p-space-md border-2 border-[#1A6BFF] shadow-sm transition-all" id="card-pause" onclick="selectAction('pause')">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-blue-50 flex items-center justify-center shrink-0 mt-0.5 text-[#1A6BFF]">
+<span class="material-symbols-outlined text-[18px]">pause_circle</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center justify-between mb-1">
+<span class="font-headline-sm text-headline-sm text-text-primary">Pause SIP</span>
+<span class="w-4 h-4 rounded-full border border-[#1A6BFF] bg-white flex items-center justify-center" id="indicator-pause">
+<span class="w-2 h-2 rounded-full bg-[#1A6BFF]"></span>
+</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary">Temporarily stop monthly debits. Resume automatically on chosen date. Units remain invested.</p>
+</div>
+</div>
+</div>
+<div class="cursor-pointer bg-white rounded-xl p-space-md border border-[#E2E8F0] shadow-sm hover:border-slate-300 transition-all" id="card-reduce" onclick="selectAction('reduce')">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center shrink-0 mt-0.5 text-text-secondary">
+<span class="material-symbols-outlined text-[18px]">trending_down</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center justify-between mb-1">
+<span class="font-headline-sm text-headline-sm text-text-primary">Reduce Amount</span>
+<span class="w-4 h-4 rounded-full border border-slate-300 bg-white flex items-center justify-center" id="indicator-reduce"></span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary">Lower monthly debit to minimum ₹1,000 to maintain rupee-cost averaging.</p>
+</div>
+</div>
+</div>
+<div class="cursor-pointer bg-white rounded-xl p-space-md border border-[#E2E8F0] shadow-sm hover:border-slate-300 transition-all" id="card-cancel" onclick="selectAction('cancel')">
+<div class="flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center shrink-0 mt-0.5 text-text-secondary">
+<span class="material-symbols-outlined text-[18px]">cancel</span>
+</div>
+<div class="flex-1">
+<div class="flex items-center justify-between mb-1">
+<span class="font-headline-sm text-headline-sm text-text-primary">Stop / Cancel SIP</span>
+<span class="w-4 h-4 rounded-full border border-slate-300 bg-white flex items-center justify-center" id="indicator-cancel"></span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary">Cancel mandate permanently. Existing accumulated units remain invested until you redeem.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-md mb-space-lg" id="pause-config-section">
+<div class="bg-white rounded-xl p-space-md border border-[#E2E8F0] shadow-sm">
+<div class="flex items-center justify-between mb-space-sm">
+<span class="font-headline-sm text-headline-sm text-text-primary">Pause Duration</span>
+<span class="font-caption text-caption text-text-muted">Select interval</span>
+</div>
+<div class="grid grid-cols-2 gap-space-xs mb-space-md">
+<button class="duration-chip p-2.5 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0] text-text-secondary hover:border-slate-300 text-left transition-colors" id="chip-1" onclick="setDuration(1, 'Skip Dec', '15 Jan 2027')" type="button">
+<div class="font-body-md text-body-md font-semibold text-text-primary">1 Month</div>
+<div class="font-caption text-caption text-text-muted">Skip Dec</div>
+</button>
+<button class="duration-chip p-2.5 rounded-lg bg-blue-50/50 border-2 border-[#1A6BFF] text-text-primary text-left transition-colors shadow-sm" id="chip-2" onclick="setDuration(2, 'Skip Dec &amp; Jan', '15 Feb 2027')" type="button">
+<div class="font-body-md text-body-md font-semibold text-text-primary flex items-center justify-between">
+            2 Months
+            <span class="material-symbols-outlined text-[#1A6BFF] text-[16px]">check_circle</span>
+</div>
+<div class="font-caption text-caption text-[#1A6BFF] font-medium">Skip Dec &amp; Jan</div>
+</button>
+<button class="duration-chip p-2.5 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0] text-text-secondary hover:border-slate-300 text-left transition-colors" id="chip-3" onclick="setDuration(3, 'Skip Dec, Jan, Feb', '15 Mar 2027')" type="button">
+<div class="font-body-md text-body-md font-semibold text-text-primary">3 Months</div>
+<div class="font-caption text-caption text-text-muted">Skip 3 cycles</div>
+</button>
+<button class="duration-chip p-2.5 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0] text-text-secondary hover:border-slate-300 text-left transition-colors" id="chip-custom" onclick="openCustomPicker()" type="button">
+<div class="font-body-md text-body-md font-semibold text-text-primary flex items-center justify-between">
+            Custom
+            <span class="material-symbols-outlined text-text-muted text-[16px]">calendar_month</span>
+</div>
+<div class="font-caption text-caption text-text-muted">Choose dates</div>
+</button>
+</div>
+<div class="bg-[#F8FAFC] rounded-lg p-space-sm border border-[#E2E8F0] flex flex-col gap-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-text-muted text-[18px]">event_busy</span>
+<span class="font-body-sm text-body-sm text-text-secondary">Pause window:</span>
+</div>
+<span class="font-body-md text-body-md font-semibold text-text-primary" id="display-pause-range">15 Dec 2026 – 14 Feb 2027</span>
+</div>
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-600 text-[18px]">event_available</span>
+<span class="font-body-sm text-body-sm text-text-secondary">Auto-resumes:</span>
+</div>
+<span class="font-body-md text-body-md font-semibold text-emerald-600 tabular-nums" id="display-resume-date">15 Feb 2027</span>
+</div>
+</div>
+</div>
+<div class="bg-white rounded-xl p-space-md border border-[#E2E8F0] shadow-sm">
+<div class="flex items-center gap-2 mb-space-sm">
+<span class="material-symbols-outlined text-[#1A6BFF] text-[20px]">info</span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary">What happens during pause</h3>
+</div>
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-start gap-space-sm">
+<div class="w-6 h-6 rounded-full bg-slate-100 flex items-center justify-center shrink-0 mt-0.5 text-text-secondary">
+<span class="material-symbols-outlined text-[16px]">account_balance</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary">
+            No bank deductions will occur between selected dates. Your bank mandate remains registered.
+          </p>
+</div>
+<div class="flex items-start gap-space-sm">
+<div class="w-6 h-6 rounded-full bg-slate-100 flex items-center justify-center shrink-0 mt-0.5 text-text-secondary">
+<span class="material-symbols-outlined text-[16px]">pie_chart</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary">
+            Your existing <span class="text-text-primary font-semibold">366.1 units</span> remain safely invested in the mutual fund with continuous NAV tracking.
+          </p>
+</div>
+<div class="flex items-start gap-space-sm">
+<div class="w-6 h-6 rounded-full bg-slate-100 flex items-center justify-center shrink-0 mt-0.5 text-text-secondary">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary">
+            No penalty or charges from INDmoney or the AMC. You can resume early at any moment.
+          </p>
+</div>
+</div>
+</div>
+</div>
+<div class="flex flex-col gap-space-md">
+<label class="flex items-start gap-space-sm cursor-pointer select-none">
+<input checked="" class="sr-only" id="pause-consent-check" onchange="toggleConsent(this.checked)" type="checkbox"/>
+<div class="w-5 h-5 rounded bg-[#1A6BFF] flex items-center justify-center shrink-0 mt-0.5 transition-colors border border-[#1A6BFF]" id="checkbox-visual">
+<span class="material-symbols-outlined text-white text-[16px]">check</span>
+</div>
+<span class="font-body-sm text-body-sm text-text-secondary">
+        I understand no debits will be made for the selected cycle(s) and auto-debit will recommence automatically on <span class="text-text-primary font-semibold" id="consent-resume-date">15 Feb 2027</span>.
+      </span>
+</label>
+<div class="flex flex-col gap-space-xs">
+<button class="w-full h-11 rounded-lg bg-[#1A6BFF] hover:bg-blue-600 text-white font-headline-sm text-headline-sm flex items-center justify-center shadow-sm active:opacity-90 transition-all font-semibold" id="submit-pause-btn" onclick="executePauseAction()" type="button">
+        Confirm Pause for 2 Months
+      </button>
+<button class="w-full h-11 rounded-lg bg-white border border-[#E2E8F0] hover:bg-slate-50 text-text-secondary hover:text-text-primary font-headline-sm text-headline-sm flex items-center justify-center transition-colors font-medium" onclick="history.back()" type="button">
+        Keep SIP Active (Cancel)
+      </button>
+</div>
+<div class="flex items-center justify-center gap-1.5 pt-space-xs text-text-muted">
+<span class="material-symbols-outlined text-[15px]">shield</span>
+<span class="font-caption text-caption">Explains your SIP figures. Not investment advice.</span>
+</div>
+</div>
+</div>
+<script>
+  let selectedDuration = 2;
+  let currentAction = 'pause';
+
+  function selectAction(type) {
+    currentAction = type;
+    const cards = ['pause', 'reduce', 'cancel'];
+    cards.forEach(c => {
+      const cardEl = document.getElementById(`card-${c}`);
+      const indEl = document.getElementById(`indicator-${c}`);
+      if (c === type) {
+        cardEl.className = "cursor-pointer bg-white rounded-xl p-space-md border-2 border-[#1A6BFF] shadow-sm transition-all";
+        indEl.className = "w-4 h-4 rounded-full border border-[#1A6BFF] bg-white flex items-center justify-center";
+        indEl.innerHTML = '<span class="w-2 h-2 rounded-full bg-[#1A6BFF]"></span>';
+      } else {
+        cardEl.className = "cursor-pointer bg-white rounded-xl p-space-md border border-[#E2E8F0] shadow-sm hover:border-slate-300 transition-all";
+        indEl.className = "w-4 h-4 rounded-full border border-slate-300 bg-white flex items-center justify-center";
+        indEl.innerHTML = '';
+      }
+    });
+
+    const configSection = document.getElementById('pause-config-section');
+    const submitBtn = document.getElementById('submit-pause-btn');
+
+    if (type === 'pause') {
+      configSection.classList.remove('hidden');
+      submitBtn.textContent = `Confirm Pause for ${selectedDuration} Months`;
+    } else if (type === 'reduce') {
+      configSection.classList.add('hidden');
+      submitBtn.textContent = 'Proceed to Reduce Amount';
+    } else if (type === 'cancel') {
+      configSection.classList.add('hidden');
+      submitBtn.textContent = 'Proceed to Cancel Mandate';
+    }
+  }
+
+  function setDuration(months, skipLabel, resumeDate) {
+    selectedDuration = months;
+    const chips = [1, 2, 3];
+    chips.forEach(m => {
+      const chip = document.getElementById(`chip-${m}`);
+      if (m === months) {
+        chip.className = "duration-chip p-2.5 rounded-lg bg-blue-50/50 border-2 border-[#1A6BFF] text-text-primary text-left transition-colors shadow-sm";
+        chip.innerHTML = `
+          <div class="font-body-md text-body-md font-semibold text-text-primary flex items-center justify-between">
+            ${m} Month${m > 1 ? 's' : ''}
+            <span class="material-symbols-outlined text-[#1A6BFF] text-[16px]">check_circle</span>
+          </div>
+          <div class="font-caption text-caption text-[#1A6BFF] font-medium">${skipLabel}</div>
+        `;
+      } else {
+        chip.className = "duration-chip p-2.5 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0] text-text-secondary hover:border-slate-300 text-left transition-colors";
+        const label = m === 1 ? 'Skip Dec' : (m === 2 ? 'Skip Dec & Jan' : 'Skip 3 cycles');
+        chip.innerHTML = `
+          <div class="font-body-md text-body-md font-semibold text-text-primary">${m} Month${m > 1 ? 's' : ''}</div>
+          <div class="font-caption text-caption text-text-muted">${label}</div>
+        `;
+      }
+    });
+
+    const customChip = document.getElementById('chip-custom');
+    customChip.className = "duration-chip p-2.5 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0] text-text-secondary hover:border-slate-300 text-left transition-colors";
+
+    const startStr = "15 Dec 2026";
+    let endStr = "14 Jan 2027";
+    if (months === 2) endStr = "14 Feb 2027";
+    if (months === 3) endStr = "14 Mar 2027";
+
+    document.getElementById('display-pause-range').textContent = `${startStr} – ${endStr}`;
+    document.getElementById('display-resume-date').textContent = resumeDate;
+    document.getElementById('consent-resume-date').textContent = resumeDate;
+
+    if (currentAction === 'pause') {
+      document.getElementById('submit-pause-btn').textContent = `Confirm Pause for ${months} Month${months > 1 ? 's' : ''}`;
+    }
+  }
+
+  function openCustomPicker() {
+    const customChip = document.getElementById('chip-custom');
+    [1, 2, 3].forEach(m => {
+      const chip = document.getElementById(`chip-${m}`);
+      chip.className = "duration-chip p-2.5 rounded-lg bg-[#F8FAFC] border border-[#E2E8F0] text-text-secondary hover:border-slate-300 text-left transition-colors";
+    });
+    customChip.className = "duration-chip p-2.5 rounded-lg bg-blue-50/50 border-2 border-[#1A6BFF] text-text-primary text-left transition-colors shadow-sm";
+    
+    document.getElementById('display-pause-range').textContent = "15 Dec 2026 – Custom Range";
+    document.getElementById('display-resume-date').textContent = "Selected Date";
+    document.getElementById('consent-resume-date').textContent = "Selected Date";
+    document.getElementById('submit-pause-btn').textContent = "Confirm Custom Pause";
+  }
+
+  function toggleConsent(isChecked) {
+    const visual = document.getElementById('checkbox-visual');
+    const btn = document.getElementById('submit-pause-btn');
+    if (isChecked) {
+      visual.className = "w-5 h-5 rounded bg-[#1A6BFF] flex items-center justify-center shrink-0 mt-0.5 transition-colors border border-[#1A6BFF]";
+      visual.innerHTML = '<span class="material-symbols-outlined text-white text-[16px]">check</span>';
+      btn.removeAttribute('disabled');
+      btn.classList.remove('opacity-50', 'pointer-events-none');
+    } else {
+      visual.className = "w-5 h-5 rounded bg-white border border-slate-300 flex items-center justify-center shrink-0 mt-0.5 transition-colors";
+      visual.innerHTML = '';
+      btn.setAttribute('disabled', 'true');
+      btn.classList.add('opacity-50', 'pointer-events-none');
+    }
+  }
+
+  function executePauseAction() {
+    const submitBtn = document.getElementById('submit-pause-btn');
+    submitBtn.innerHTML = '<span class="inline-block animate-spin mr-2">◌</span> Scheduling Update...';
+    setTimeout(() => {
+      submitBtn.innerHTML = '<span class="material-symbols-outlined text-[18px] mr-1.5">check</span> Request Registered';
+      submitBtn.className = "w-full h-11 rounded-lg bg-emerald-600 text-white font-headline-sm text-headline-sm flex items-center justify-center shadow-sm active:opacity-90 transition-all font-semibold";
+    }, 700);
+  }
+</script></main></body></html>

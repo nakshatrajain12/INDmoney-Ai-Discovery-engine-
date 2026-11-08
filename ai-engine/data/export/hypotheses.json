@@ -1,0 +1,199 @@
+[
+  {
+    "id": "H1",
+    "statement": "First-time investors in Months 3–6 experience an Information Desert where raw financial figures (XIRR/NAV) lack plain-English contextual reassurance, breeding insecurity.",
+    "origin": "AI Discovery Engine (Theme T3)",
+    "mapped_theme": "T3: Information Desert",
+    "mapped_segment": "SEG-02: Information-Desert Novices",
+    "testable_assumptions": [
+      "Displaying an uncontextualized negative XIRR makes users question if their fund is broken",
+      "Translating XIRR into benchmark comparisons ('Beat Inflation by 2%') reduces anxiety",
+      "Users seek qualitative explanations before taking action to pause or cancel"
+    ],
+    "supporting_evidence": {
+      "discovery_engine_signals": "829 verified extractions (26.92% of corpus, Opportunity Score: 0.834, Rank #1)",
+      "survey_counts": "12 of 35 respondents unsure whether returns were normal; 11/35 requested clearer return explanations",
+      "interview_evidence": "SIM-P01 ('I saw XIRR but I didn't know what it meant'), SIM-P05 ('couldn't tell if it was normal'), P00 (Learned terms online independently)"
+    },
+    "contradictions_or_caveats": "Informational insecurity does not directly convert into SIP discontinuation: 84% of affected users continued their SIP despite the confusion.",
+    "verdict": "CONFIRMED",
+    "confidence_score": 0.88,
+    "product_action": "Milestone Reassurance Engine & Plain-English Return Tooltips"
+  },
+  {
+    "id": "H2",
+    "statement": "First-time investors equate routine early paper drawdowns (-2% to -5%) with permanent capital destruction because home screens highlight alarming red figures without historical recovery timelines.",
+    "origin": "AI Discovery Engine (Theme T1)",
+    "mapped_theme": "T1: Red Portfolio Panic",
+    "mapped_segment": "SEG-03: Loss-Averse Drawdown Panickers",
+    "testable_assumptions": [
+      "Seeing negative daily returns triggers acute loss aversion in Months 1–3",
+      "Framing pullbacks around historical recovery probability distributions reduces cancellation intent",
+      "Small SIP ticket sizes (₹500) act as a psychological buffer against panic selling"
+    ],
+    "supporting_evidence": {
+      "discovery_engine_signals": "816 verified extractions (26.50% of corpus, Opportunity Score: 0.822, Rank #2)",
+      "survey_counts": "8 of 23 considering change cited performance disappointment",
+      "interview_evidence": "P00 feels anxious when red but continues; SIM-P01 and SIM-P05 worried but continued"
+    },
+    "contradictions_or_caveats": "Worry and anxiety are highly prevalent, but direct cancellation due to red returns alone was not observed in the interview set; continuation is protected by small rupee stakes.",
+    "verdict": "REFRAMED",
+    "confidence_score": 0.82,
+    "product_action": "Market Downturn Normalizer & Drawdown Recovery Curves"
+  },
+  {
+    "id": "H3",
+    "statement": "A short-term cash-flow shock becomes an irreversible SIP lapse because platforms offer only binary choices (pause or cancel) with no path back and no flexible instalment stepping.",
+    "origin": "Primary Research & User Segmentation Synthesis",
+    "mapped_theme": "T4: Mandate & Payment Friction",
+    "mapped_segment": "SEG-01: Easy-Start Beginners (Selected Target)",
+    "testable_assumptions": [
+      "Investors who pause an SIP rarely restart manually due to friction and forgetting",
+      "Offering a 1-tap option to skip one instalment or temporarily step down amount retains the mandate",
+      "Pre-debit notifications sent 24–48 hours in advance prevent debit collisions"
+    ],
+    "supporting_evidence": {
+      "discovery_engine_signals": "195 signals on mandate/payment friction and pause difficulty",
+      "survey_counts": "6 of 11 Easy-Start beginners changed course; 2 are paused with no reminder to resume",
+      "interview_evidence": "SIM-P02 paused when funds were short, wanted to resume but received zero reminder; SIM-P03 wanted advance reminder"
+    },
+    "contradictions_or_caveats": "Requires coordinating with bank debit rails and NPCI UPI mandate rules.",
+    "verdict": "CONFIRMED",
+    "confidence_score": 0.94,
+    "product_action": "Pre-Debit SIP Check-in MVP: Skip, Lower, Move Date, or Pause with Auto-Resume"
+  },
+  {
+    "id": "H4",
+    "statement": "Unexplained bank debit failures push investors to abandon SIPs because banks levy bounce fees (₹295–₹590) while apps provide no failure reason or actionable recovery step.",
+    "origin": "AI Discovery Engine (Theme T4) & P00 Longitudinal Interview",
+    "mapped_theme": "T4: Mandate & Payment Friction",
+    "mapped_segment": "SEG-05: Technical Mandate & Auto-Debit Casualties",
+    "testable_assumptions": [
+      "Investors blame the investment platform when banks deduct auto-debit bounce fees",
+      "Explaining debit failure reasons with a 1-tap UPI re-link reduces permanent churn",
+      "Automated bank mandate validity health checks prevent unexpected expirations"
+    ],
+    "supporting_evidence": {
+      "discovery_engine_signals": "195 extractions; Play Store 1-star reviews citing bank charges and mandate drops",
+      "survey_counts": "9 of 35 experienced payment failures (mean clarity score 1.89/5.0)",
+      "interview_evidence": "P00 experienced ₹300 bank penalty with no prior reminder; SIM-P03 received failure notice with no next step"
+    },
+    "contradictions_or_caveats": "Neither P00 nor SIM-P03 abandoned their SIP permanently, indicating payment friction damages trust but can be salvaged by proactive recovery.",
+    "verdict": "REFRAMED",
+    "confidence_score": 0.9,
+    "product_action": "Mandate Auto-Healer & Proactive Pre-Debit Alert"
+  },
+  {
+    "id": "H5",
+    "statement": "The gap between compounding promises (15–20% annualized models) and early-tenure reality (flat/negative returns) is the primary mental drop-off driver in Months 3 to 6.",
+    "origin": "AI Discovery Engine (Theme T2)",
+    "mapped_theme": "T2: Expectation vs. Reality Gap",
+    "mapped_segment": "SEG-06: Social/Peer FOMO Starters",
+    "testable_assumptions": [
+      "Users expect visible compounding by Month 3",
+      "Unrealistic expectations set by finfluencer videos accelerate cancellation"
+    ],
+    "supporting_evidence": {
+      "discovery_engine_signals": "86 corpus signals (Opportunity Score: 0.527)",
+      "survey_counts": "11 of 35 expected positive returns fairly quickly",
+      "interview_evidence": "SIM-P01 expected growth by Month 3; SIM-P05 thought a few months would show compounding"
+    },
+    "contradictions_or_caveats": "While the expectation mismatch exists, users do not immediately stop when informed; it ranks #10 in Discovery Engine opportunity score.",
+    "verdict": "CHALLENGED (As Primary Drop-off Driver)",
+    "confidence_score": 0.7,
+    "product_action": "Realistic 3-Year Timeline Simulator at Onboarding"
+  },
+  {
+    "id": "H6",
+    "statement": "First-time investor drop-offs concentrate quantitatively in Months 3–6 (the 'Cliff Window').",
+    "origin": "Deck Hypothesis & Industry Holding Factsheets",
+    "mapped_theme": "Lifecycle Temporal Signal",
+    "mapped_segment": "All First-Timers",
+    "testable_assumptions": [
+      "More than 50% of cumulative drop-offs occur between Months 3 and 6"
+    ],
+    "supporting_evidence": {
+      "discovery_engine_signals": "Qualitative cluster of drop-off discussions around Month 3–5",
+      "survey_counts": "16 of 35 survey respondents started 3–6 months ago (cohort size)",
+      "interview_evidence": "SIM-P01 and SIM-P05 experienced peak doubt in Months 3–5"
+    },
+    "contradictions_or_caveats": "In the extracted corpus, tenure is unknown for 97.8% of rows; only 6 rows carry explicit months_3_6 tags. Macro AMFI data shows 29% direct assets <1 year, but exact Month 3-6 drop-off is a behavioral hypothesis, not a census figure.",
+    "verdict": "REFRAMED (Behavioral Hypothesis Grounded in Industry Data)",
+    "confidence_score": 0.75,
+    "product_action": "Cohort Milestone Reassurance at Month 3, 4, 5, 6"
+  },
+  {
+    "id": "H7",
+    "statement": "When platforms fail to provide emotional reassurance during market dips, investors outsource validation to social media influencers and Reddit forums.",
+    "origin": "AI Discovery Engine (Theme T5)",
+    "mapped_theme": "T5: External Validation Seeking",
+    "mapped_segment": "SEG-02: Information-Desert Novices",
+    "testable_assumptions": [
+      "Users seek outside advice because the in-app experience is sterile"
+    ],
+    "supporting_evidence": {
+      "discovery_engine_signals": "100 corpus signals (Score: 0.544)",
+      "survey_counts": "31 of 35 consulted sources outside the app (Reddit 15/35, friends 11/35)",
+      "interview_evidence": "SIM-P01 and SIM-P05 sought guidance on Reddit and from colleagues"
+    },
+    "contradictions_or_caveats": "Seeking external validation frequently reassures users to STAY invested (e.g. Reddit users telling beginners 'seh lenge thoda, buy the dip').",
+    "verdict": "REFRAMED",
+    "confidence_score": 0.85,
+    "product_action": "In-App SEBI-Compliant Market Sentiment Digest"
+  },
+  {
+    "id": "H8",
+    "statement": "Aggressive cross-selling of personal loans and credit cards erodes fiduciary trust, causing long-term SIP investors to switch platforms.",
+    "origin": "AI Discovery Engine (Theme T8)",
+    "mapped_theme": "T8: Cross-Selling Fatigue",
+    "mapped_segment": "SEG-07: Cross-Selling Distracted Savers",
+    "testable_assumptions": [
+      "Users perceive loan promotions as predatory and misaligned with wealth building"
+    ],
+    "supporting_evidence": {
+      "discovery_engine_signals": "355 corpus signals (Score: 0.664, Rank #3 in Engine)",
+      "survey_counts": "3 of 35 respondents explicitly noted ad annoyance",
+      "interview_evidence": "App Store 1-star reviews cite InstaCash spam"
+    },
+    "contradictions_or_caveats": "P00 reports no issue with cross-selling; switching inertia prevents immediate churn.",
+    "verdict": "CONFIRMED",
+    "confidence_score": 0.8,
+    "product_action": "Wealth Sanctuary Mode (Suppress credit banners for active SIP holders)"
+  },
+  {
+    "id": "H9",
+    "statement": "Checking portfolio daily increases perceived volatility by 10x, accelerating SIP drop-off rates.",
+    "origin": "AI Discovery Engine (Theme T6)",
+    "mapped_theme": "T6: Over-Monitoring Anxiety",
+    "mapped_segment": "SEG-09: Hyper-Active Daily Monitors",
+    "testable_assumptions": [
+      "High checking frequency correlates with higher cancellation probability"
+    ],
+    "supporting_evidence": {
+      "discovery_engine_signals": "96 corpus signals (Score: 0.536)",
+      "survey_counts": "3 of 35 check daily, all 3 reported low confidence"
+    },
+    "contradictions_or_caveats": "In survey, 0 of the 3 daily checkers actually cancelled; they suffer emotional stress but remain invested.",
+    "verdict": "REFRAMED",
+    "confidence_score": 0.76,
+    "product_action": "Notification Throttling & Monthly Digest Option"
+  },
+  {
+    "id": "H10",
+    "statement": "Self-sizing contribution amounts at the start prevents early cash-flow friction compared to accepting default recommended amounts.",
+    "origin": "User Segmentation Slide H3 & Primary Research",
+    "mapped_theme": "T4: Mandate & Payment Friction",
+    "mapped_segment": "SEG-01: Easy-Start Beginners",
+    "testable_assumptions": [
+      "Users whose amounts were suggested by apps or peers are more likely to pause than those who calculated their own budget"
+    ],
+    "supporting_evidence": {
+      "survey_counts": "Easy-Start beginners whose amounts were suggested had 54.5% change rate vs 15.4% for budget setters",
+      "interview_evidence": "SIM-P02 felt ₹3,000 was slightly too high; P00 started at ₹500 so they knew they would not default"
+    },
+    "contradictions_or_caveats": "Beginners need initial guidance; completely unguided sizing can lead to analysis paralysis.",
+    "verdict": "CONFIRMED",
+    "confidence_score": 0.88,
+    "product_action": "Non-Prescriptive Affordability Range Calculator"
+  }
+]

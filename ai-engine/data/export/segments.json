@@ -1,0 +1,378 @@
+[
+  {
+    "id": "SEG-01",
+    "name": "Easy-Start Beginners (Cash-Flow Sensitive)",
+    "status": "SELECTED_TARGET",
+    "selection_rank": 1,
+    "description": "First-time mutual fund investors who started their SIP using an easy minimum amount (₹100/₹500), a platform recommendation, or informal peer advice. When unexpected expenses or cash-flow fluctuations occur, their inflexible fixed instalment collides with bank balances, forcing pauses, cancellations, or debit failures.",
+    "user_characteristics": {
+      "experience_level": "first_timer",
+      "sip_tenure": "Months 1–6 (Early Lifecycle)",
+      "contribution_decision": "Set by minimum default (₹100–₹500) or advice without cash-flow calibration",
+      "monitoring_behavior": "Low-to-moderate; primarily reactive to bank debit notifications",
+      "emotional_profile": "Anxious about default, confused by status, feeling guilty after pausing",
+      "primary_trigger": "Short-term liquidity shock (festivals, medical, job shift) colliding with rigid auto-debit"
+    },
+    "sample_sizes": {
+      "survey_representation": "11 of 24 INDmoney first-time survey respondents (45.8%)",
+      "survey_change_rate": "6 of 11 changed course (2 paused, 3 stopped, 1 moved platform)",
+      "engine_corpus_signals": 195,
+      "engine_corpus_share_pct": 6.33,
+      "interview_case_studies": [
+        "SIM-P02 (Paused ~Month 7)",
+        "SIM-P01 (At-Risk Continuer)"
+      ]
+    },
+    "selection_criteria": {
+      "reach": "High: Represents ~46% of all first-time direct SIP starters",
+      "retention_impact": "Critical: Highest course-correction rate (6 of 11 changed course vs 2 of 13 in other segments)",
+      "recoverability": "High: 2 of the 6 churned/stalled users are merely paused and actively want a route back",
+      "actionability_score": 0.92,
+      "sebi_compliance_feasibility": "100% Non-advisory compliant: Pre-debit check-in, flexible pause/skip, and self-sized amounts require zero fund picks",
+      "decision_rationale": "SELECTED AS PRIMARY MVP TARGET: Easy-Start Beginners have the highest churn velocity in Months 3–6, but their friction is transactional and cash-flow related rather than market disillusionment. Offering pre-debit flexibility directly protects the 12M Active SIP retention metric."
+    },
+    "mapped_theme_id": "T4",
+    "key_verbatim": {
+      "quote": "I wasn't trying to stop. I was trying to put in more, but when salary delayed my bank charged ₹300 bounce fee and I had to pause everything.",
+      "source": "SIM-P02 [simulated] / INDmoney Play Store #14002"
+    }
+  },
+  {
+    "id": "SEG-02",
+    "name": "Information-Desert Novices (Performance Interpretation Seekers)",
+    "status": "UNSELECTED_FOR_MVP_PILOT",
+    "selection_rank": 2,
+    "description": "First-time investors who find themselves stranded between monthly debit cycles without plain-English performance interpretation. Platforms present raw financial figures (XIRR, CAGR, NAV, folio numbers) without indicating whether their fund is behaving normally relative to market benchmarks.",
+    "user_characteristics": {
+      "experience_level": "beginner",
+      "sip_tenure": "Months 3–6 (Cliff Window)",
+      "contribution_decision": "Targeting disciplined wealth creation",
+      "monitoring_behavior": "Checks 1–2 times weekly; seeks qualitative validation",
+      "emotional_profile": "Confused (59.0%), insecure, uncertain",
+      "primary_trigger": "Silence from platform between monthly debits; seeing negative XIRR without context"
+    },
+    "sample_sizes": {
+      "survey_representation": "12 of 35 survey respondents unsure if returns were normal; 11/35 requested clearer return explanations",
+      "survey_change_rate": "Considered change but 84% continued when educated",
+      "engine_corpus_signals": 829,
+      "engine_corpus_share_pct": 26.92,
+      "interview_case_studies": [
+        "SIM-P01 (Month 5 doubt)",
+        "P00 (Learned terms online)"
+      ]
+    },
+    "selection_criteria": {
+      "reach": "Highest in Discovery Engine (829 signals, 26.9% corpus share)",
+      "retention_impact": "High psychological insecurity, but low direct churn causation (users feel confused but 84% continue)",
+      "recoverability": "Moderate: Educational tooltips resolve confusion but don't prevent bank-level lapses",
+      "actionability_score": 0.95,
+      "sebi_compliance_feasibility": "High: Benchmark visualizers and milestone badges comply with non-advisory rules",
+      "decision_rationale": "UNSELECTED AS PRIMARY MVP (Addressed in Phase 2 Roadmap): While T3 is the #1 frequency theme in public reviews, primary research confirmed that informational confusion alone rarely causes direct SIP cancellation. It is an emotional multiplier rather than the direct churn trigger."
+    },
+    "mapped_theme_id": "T3",
+    "key_verbatim": {
+      "quote": "I saw XIRR of -1.8% after 5 months but I didn't know what it meant or whether this fund is failing compared to others.",
+      "source": "SIM-P01 [simulated] / Apple App Store Review"
+    }
+  },
+  {
+    "id": "SEG-03",
+    "name": "Loss-Averse Drawdown Panickers (Red Portfolio Panic)",
+    "status": "UNSELECTED_FOR_MVP_PILOT",
+    "selection_rank": 3,
+    "description": "Novice investors who experience their first routine market pullback (-2% to -6%) in Months 1–4. Because returns displays flash bright red numbers without historical drawdown recovery bands, they misinterpret normal paper dips as permanent capital loss.",
+    "user_characteristics": {
+      "experience_level": "first_timer",
+      "sip_tenure": "Months 1–4 (First Correction)",
+      "contribution_decision": "Motivated by compounding calculators seen online",
+      "monitoring_behavior": "Frequent checks during market red days",
+      "emotional_profile": "Anxious, stressed, regretful",
+      "primary_trigger": "Portfolio flashing red daily on home screen"
+    },
+    "sample_sizes": {
+      "survey_representation": "8 of 23 considering change cited performance disappointment",
+      "survey_change_rate": "6 continued, 2 changed; low actual cancellation conversion",
+      "engine_corpus_signals": 816,
+      "engine_corpus_share_pct": 26.5,
+      "interview_case_studies": [
+        "SIM-P05 (Groww/IND tracking)",
+        "P00 (Feels anxious but ignores red)"
+      ]
+    },
+    "selection_criteria": {
+      "reach": "Very High: 816 corpus signals (26.5% share)",
+      "retention_impact": "Moderate: Interviews revealed that anxiety exists, but users rarely forfeit small-ticket SIPs solely for minor paper dips",
+      "recoverability": "High: Historical recovery probability curves quickly soothe panic",
+      "actionability_score": 0.92,
+      "sebi_compliance_feasibility": "Requires strict guardrails: Must present historical probability distributions without guaranteeing future returns",
+      "decision_rationale": "UNSELECTED AS STANDALONE MVP: Anxiety is prevalent (Rank #2 in Engine), but primary user interviews (P00, P01, P05) demonstrated that investors continue when rupee stakes are small. Red Panic is an educational hygiene requirement rather than a transactional workflow."
+    },
+    "mapped_theme_id": "T1",
+    "key_verbatim": {
+      "quote": "Invested 10k in Nifty 50 SIP last 3 months, now showing -4%. INDmoney is showing red every single day, this app is completely broken and losing money.",
+      "source": "reddit_mf_00412 / Reddit r/mutualfunds"
+    }
+  },
+  {
+    "id": "SEG-04",
+    "name": "Budget-Set Steadies (Disciplined Accumulators)",
+    "status": "NOT_SELECTED",
+    "selection_rank": 4,
+    "description": "Disciplined investors who determined their SIP contribution through a personal budget or long-term financial goal. They check the app infrequently, view market pullbacks as noise or unit accumulation opportunities, and exhibit naturally high 12-month retention.",
+    "user_characteristics": {
+      "experience_level": "intermediate / experienced",
+      "sip_tenure": "Months 6–12+ (Long Horizon)",
+      "contribution_decision": "Deliberately calibrated to personal savings rate",
+      "monitoring_behavior": "Infrequent (monthly or quarterly); avoids micro-monitoring",
+      "emotional_profile": "Calm, confident, disciplined",
+      "primary_trigger": "None; highly resilient to market dips"
+    },
+    "sample_sizes": {
+      "survey_representation": "10 of 24 INDmoney first-timers (41.7%); 8 of 10 fully active",
+      "survey_change_rate": "Very Low: Only 2 of 10 considered any change",
+      "engine_corpus_signals": 365,
+      "engine_corpus_share_pct": 11.85,
+      "interview_case_studies": [
+        "SIM-P04 (Disciplined Continuer)",
+        "P00 (2-year active SIP)"
+      ]
+    },
+    "selection_criteria": {
+      "reach": "Moderate: ~40% of survey sample",
+      "retention_impact": "Low Marginal Gain: They already continue naturally (80%+ natural retention)",
+      "recoverability": "N/A: Already active",
+      "actionability_score": 0.75,
+      "sebi_compliance_feasibility": "High",
+      "decision_rationale": "NOT SELECTED (GUARDRAIL COHORT): This cohort already succeeds. Our retention interventions must not add unnecessary friction, popups, or handholding that alienates this self-sufficient group."
+    },
+    "mapped_theme_id": "T7",
+    "key_verbatim": {
+      "quote": "I have been doing SIP for 3 years through thick and thin. Discipline is key. Don't look at daily NAV dips.",
+      "source": "valuepickr_zerodha_01129 / ValuePickr"
+    }
+  },
+  {
+    "id": "SEG-05",
+    "name": "Technical Mandate & Auto-Debit Casualties",
+    "status": "SELECTED_SECONDARY_TARGET",
+    "selection_rank": 5,
+    "description": "Investors whose SIP continuity was shattered by banking auto-debit glitches: silent e-mandate expirations, payment gateway timeouts, unannounced NACH presentation dates, or delayed unit allocations, resulting in unexpected bank penalties (₹295 to ₹590).",
+    "user_characteristics": {
+      "experience_level": "all levels (first-timers most vulnerable)",
+      "sip_tenure": "Months 1–6",
+      "contribution_decision": "Autopay configured via UPI or net-banking",
+      "monitoring_behavior": "Checks bank statement when alerted to deduction",
+      "emotional_profile": "Angry, frustrated by bank penalties, distrustful of platform plumbing",
+      "primary_trigger": "Debit failure message lacking explanation, or unexpected bank penalty"
+    },
+    "sample_sizes": {
+      "survey_representation": "9 of 35 experienced payment failure (mean clarity score 1.89/5.0); 6 considered change",
+      "survey_change_rate": "High friction; causes immediate loss of trust",
+      "engine_corpus_signals": 195,
+      "engine_corpus_share_pct": 6.33,
+      "interview_case_studies": [
+        "P00 (Experienced ₹300 bank charge with no alert)",
+        "SIM-P03 (Failure message gave no next step)"
+      ]
+    },
+    "selection_criteria": {
+      "reach": "Targeted: 6.33% of discovery engine, 25.7% of survey respondents",
+      "retention_impact": "Very High: Direct mechanical cause of dropped SIPs",
+      "recoverability": "Highest: Proactive pre-debit notifications and 1-tap retry eliminate 90%+ of failures",
+      "actionability_score": 0.9,
+      "sebi_compliance_feasibility": "100% Operational & Technical: Involves transaction alerting and UPI mandate renewal",
+      "decision_rationale": "SELECTED AS SECONDARY CORE TARGET: Solving mandate failure communication is a mandatory hygiene requirement. P00's real debit failure and ₹300 penalty prove that lack of failure context directly damages brand trust."
+    },
+    "mapped_theme_id": "T4",
+    "key_verbatim": {
+      "quote": "My SIP payment failed twice because bank mandate expired. Now I have to set up everything again from scratch and lost last week's dip. Thinking of just stopping.",
+      "source": "play_indmoney_01234 / Google Play Store"
+    }
+  },
+  {
+    "id": "SEG-06",
+    "name": "Social/Peer FOMO Starters (Low Personal Conviction)",
+    "status": "NOT_SELECTED",
+    "selection_rank": 6,
+    "description": "Younger or impressionable retail investors who started a SIP due to viral social media reels, influencer compounding calculators, or office peer pressure, without understanding risk horizons or fund objectives.",
+    "user_characteristics": {
+      "experience_level": "first_timer",
+      "sip_tenure": "Months 1–3",
+      "contribution_decision": "Copy-pasted from YouTube recommendation or peer portfolio",
+      "monitoring_behavior": "Checks social media forums when market fluctuates",
+      "emotional_profile": "Hopeful initially, quickly disillusioned, highly impressionable",
+      "primary_trigger": "Fund not replicating viral 25% returns seen on Instagram"
+    },
+    "sample_sizes": {
+      "survey_representation": "14 of 35 respondents cited social media / friends as initial catalyst",
+      "survey_change_rate": "Moderate drop-off when viral excitement fades",
+      "engine_corpus_signals": 365,
+      "engine_corpus_share_pct": 11.85,
+      "interview_case_studies": [
+        "SIM-P05 (Influenced by video creators, later disillusioned)"
+      ]
+    },
+    "selection_criteria": {
+      "reach": "Moderate: 11.85% corpus share",
+      "retention_impact": "Moderate: Difficult to fix mid-journey if baseline risk conviction is absent",
+      "recoverability": "Low-to-Medium: Requires onboarding restructuring",
+      "actionability_score": 0.8,
+      "sebi_compliance_feasibility": "Moderate: Guardrails prevent recommending alternative funds",
+      "decision_rationale": "NOT SELECTED: Fixing FOMO entry requires onboarding suitability quizzes and goal-mapping at the point of fund selection, which is outside our 12-month post-start retention scope."
+    },
+    "mapped_theme_id": "T7",
+    "key_verbatim": {
+      "quote": "Started my first ₹2000 SIP in small cap after watching video. But after 5 months return is zero. When does compounding start?",
+      "source": "yt_comment_00892 / YouTube Comments"
+    }
+  },
+  {
+    "id": "SEG-07",
+    "name": "Cross-Selling Distracted Savers (Fiduciary Trust Seekers)",
+    "status": "NOT_SELECTED",
+    "selection_rank": 7,
+    "description": "Wealth accumulators who chose INDmoney for net worth tracking and mutual funds, but become frustrated by aggressive promotional banners for personal loans (InstaCash), credit lines, and credit cards across the dashboard.",
+    "user_characteristics": {
+      "experience_level": "intermediate",
+      "sip_tenure": "Months 6–12+",
+      "contribution_decision": "Serious savings intent",
+      "monitoring_behavior": "App opens for portfolio management",
+      "emotional_profile": "Irritated, distrustful, fatigued by cross-selling",
+      "primary_trigger": "Repeated loan popups and WhatsApp push messages"
+    },
+    "sample_sizes": {
+      "survey_representation": "3 of 35 survey respondents explicitly complained of ads; P00 reported no issue",
+      "survey_change_rate": "Low immediate churn, but high platform switching threat to Zerodha Coin",
+      "engine_corpus_signals": 355,
+      "engine_corpus_share_pct": 11.53,
+      "interview_case_studies": [
+        "SIM-P04 (Mild cross-sell annoyance)",
+        "App Store Reviewers"
+      ]
+    },
+    "selection_criteria": {
+      "reach": "Substantial in public app store reviews (11.5% corpus share)",
+      "retention_impact": "Moderate: Destroys brand equity and tempts users to switch to distraction-free brokers",
+      "recoverability": "High: Can be solved by UI suppression",
+      "actionability_score": 0.95,
+      "sebi_compliance_feasibility": "High: Policy and display toggles",
+      "decision_rationale": "NOT SELECTED AS STANDALONE MVP: Cross-selling fatigue is a monetization policy issue rather than a core SIP product failure. We recommend suppressing credit cards for active SIP users as a platform hygiene policy (Wealth Sanctuary Mode)."
+    },
+    "mapped_theme_id": "T8",
+    "key_verbatim": {
+      "quote": "Too many loan and credit card ads inside the app. I came here for mutual fund SIP, not for personal loans. Might switch to Coin.",
+      "source": "appstore_indmoney_14619 / Apple App Store"
+    }
+  },
+  {
+    "id": "SEG-08",
+    "name": "Tax & Hidden Charge Disillusioned (Net Realization Seekers)",
+    "status": "NOT_SELECTED",
+    "selection_rank": 8,
+    "description": "Investors surprised and disheartened by post-investment deductions: TER (Total Expense Ratio), stamp duty, STT, exit loads, and complex LTCG/STCG tax implications that were not explained upfront.",
+    "user_characteristics": {
+      "experience_level": "beginner / intermediate",
+      "sip_tenure": "Months 6–12 (First Partial Redemption or Year-End)",
+      "contribution_decision": "Tax saving (ELSS) or wealth building",
+      "monitoring_behavior": "Checks net returns vs gross",
+      "emotional_profile": "Blindsided, suspicious of platform fees",
+      "primary_trigger": "Seeing stamp duty or unexpected exit load deductions"
+    },
+    "sample_sizes": {
+      "survey_representation": "2 of 23 considering change cited fee confusion; P00 requested restaurant bill tax breakdown",
+      "survey_change_rate": "Low churn risk during active SIP accumulation",
+      "engine_corpus_signals": 168,
+      "engine_corpus_share_pct": 5.46,
+      "interview_case_studies": [
+        "P00 (Wants itemised charges like a restaurant bill)"
+      ]
+    },
+    "selection_criteria": {
+      "reach": "Low-to-moderate: 5.46% corpus share",
+      "retention_impact": "Low during accumulation; primarily manifests upon redemption",
+      "recoverability": "High through itemised fee calculators",
+      "actionability_score": 0.9,
+      "sebi_compliance_feasibility": "High: Regulatory disclosure requirement",
+      "decision_rationale": "NOT SELECTED: Fee confusion primarily hits investors when exiting or switching funds, not during the month 1–12 SIP continuation window."
+    },
+    "mapped_theme_id": "T10",
+    "key_verbatim": {
+      "quote": "Why is there stamp duty and STT deducted from my SIP instalment? No one told me about these charges during setup.",
+      "source": "tradingqa_zerodha_00889 / TradingQ&A"
+    }
+  },
+  {
+    "id": "SEG-09",
+    "name": "Hyper-Active Daily Monitors (Over-Monitoring Stress)",
+    "status": "NOT_SELECTED",
+    "selection_rank": 9,
+    "description": "Investors who open their investing app multiple times a day or every morning at 9:30 AM, converting what should be a passive multi-year compounding plan into a source of daily micro-stress.",
+    "user_characteristics": {
+      "experience_level": "first_timer",
+      "sip_tenure": "Months 1–3",
+      "contribution_decision": "High initial excitement",
+      "monitoring_behavior": "Extreme: Opens app multiple times daily",
+      "emotional_profile": "High anxiety, obsessive, easily agitated",
+      "primary_trigger": "Daily market swing push notifications and morning gap-down alerts"
+    },
+    "sample_sizes": {
+      "survey_representation": "3 of 35 survey respondents check daily or more; all 3 reported low confidence",
+      "survey_change_rate": "High emotional churn intent, but 0 of 3 actually stopped",
+      "engine_corpus_signals": 96,
+      "engine_corpus_share_pct": 3.12,
+      "interview_case_studies": [
+        "P00 (Checks frequently, but ignores red)"
+      ]
+    },
+    "selection_criteria": {
+      "reach": "Niche: 3.12% corpus share, 3 survey respondents",
+      "retention_impact": "Low measurable churn conversion: Anxiety does not translate to stopping",
+      "recoverability": "Moderate: Notification throttling helps calm users",
+      "actionability_score": 0.82,
+      "sebi_compliance_feasibility": "High: Notification frequency settings",
+      "decision_rationale": "NOT SELECTED: Sample size (n=3 in survey, 96 in corpus) is too small to substantiate as a standalone product intervention. Addressed via general notification throttling."
+    },
+    "mapped_theme_id": "T6",
+    "key_verbatim": {
+      "quote": "Every morning at 9:30 AM I get an alert saying market fell. It triggers so much anxiety that I want to sell everything.",
+      "source": "play_groww_04421 / Google Play Store"
+    }
+  },
+  {
+    "id": "SEG-10",
+    "name": "Stranded Customer Support Seekers (Resolution Gap)",
+    "status": "NOT_SELECTED",
+    "selection_rank": 10,
+    "description": "Users who encountered an operational discrepancy (missing unit allocation, duplicate debit, delayed redemption) and became trapped in automated AI bot ticket loops without reaching a human specialist.",
+    "user_characteristics": {
+      "experience_level": "all levels",
+      "sip_tenure": "Any tenure where a transaction goes wrong",
+      "contribution_decision": "Transactional",
+      "monitoring_behavior": "Repeated app opens awaiting ticket resolution",
+      "emotional_profile": "Furious, helpless, abandoned",
+      "primary_trigger": "Automated bot closing ticket without refund or human resolution"
+    },
+    "sample_sizes": {
+      "survey_representation": "2 of 35 survey respondents; 27.6% of INDmoney 1-star app store reviews",
+      "survey_change_rate": "High platform uninstall rate upon prolonged unresolved ticket",
+      "engine_corpus_signals": 69,
+      "engine_corpus_share_pct": 2.24,
+      "interview_case_studies": [
+        "1-star Play Store Reviewers"
+      ]
+    },
+    "selection_criteria": {
+      "reach": "Low in SIP-specific corpus (69 signals), but high in generic 1-star reviews",
+      "retention_impact": "Fatal for affected individuals, but low aggregate volume for SIP churn",
+      "recoverability": "Operational: Requires hiring support staff, not app feature development",
+      "actionability_score": 0.85,
+      "sebi_compliance_feasibility": "High",
+      "decision_rationale": "NOT SELECTED: Customer support bot routing and ticketing SLAs are operational business functions managed by Customer Operations, not product features built by the Growth Product Team."
+    },
+    "mapped_theme_id": "T9",
+    "key_verbatim": {
+      "quote": "Customer support is just an automated bot. Raised ticket for duplicate deduction 5 days ago, still no human replied.",
+      "source": "play_indmoney_07731 / Google Play Store"
+    }
+  }
+]

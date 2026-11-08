@@ -1,0 +1,97 @@
+{
+  "corpus_totals": {
+    "raw_signals_ingested": 8179,
+    "clean_signals_extracted": 3079,
+    "deduplication_and_filtering_retention_rate_pct": 37.65,
+    "verified_external_urls_count": 3079,
+    "verified_url_coverage_pct": 100.0,
+    "extraction_methodology": "7-Dimensional Multi-key Parallel LLM Annotation + Golden Set Evaluated"
+  },
+  "by_source_channel": [
+    {
+      "source_id": "google_play",
+      "name": "Google Play Store",
+      "raw_volume": 6054,
+      "clean_volume": 1966,
+      "share_of_clean_corpus_pct": 63.85,
+      "star_ratings_available": true,
+      "primary_content": "App store reviews covering onboarding, UPI autopay debits, loan ads, and UI performance"
+    },
+    {
+      "source_id": "app_store",
+      "name": "Apple App Store",
+      "raw_volume": 922,
+      "clean_volume": 277,
+      "share_of_clean_corpus_pct": 9.0,
+      "star_ratings_available": true,
+      "primary_content": "iOS verified reviews covering US stocks tracking, folio import, and subscription fees"
+    },
+    {
+      "source_id": "youtube",
+      "name": "YouTube Comments",
+      "raw_volume": 624,
+      "clean_volume": 259,
+      "share_of_clean_corpus_pct": 8.41,
+      "star_ratings_available": false,
+      "primary_content": "First-time investor queries under top SIP explainers (Akshat Shrivastava, Pranjal Kamra, CA Rachana Ranade)"
+    },
+    {
+      "source_id": "tradingqa",
+      "name": "TradingQ&A (Zerodha Community)",
+      "raw_volume": 313,
+      "clean_volume": 312,
+      "share_of_clean_corpus_pct": 10.13,
+      "star_ratings_available": false,
+      "primary_content": "In-depth forum threads discussing XIRR vs CAGR, mandate bounce penalties, and Coin demat folios"
+    },
+    {
+      "source_id": "valuepickr",
+      "name": "ValuePickr Forum",
+      "raw_volume": 266,
+      "clean_volume": 265,
+      "share_of_clean_corpus_pct": 8.61,
+      "star_ratings_available": false,
+      "primary_content": "Long-term retail investor discussions on compounding discipline, market drawdown survival, and direct plans"
+    }
+  ],
+  "by_platform": {
+    "INDmoney": 1114,
+    "Groww": 473,
+    "Zerodha Coin": 789,
+    "Zerodha/General SIP": 191,
+    "Mutual Funds / Equity SIP": 260,
+    "Mutual Funds / General SIP": 252
+  },
+  "by_star_rating": {
+    "1_star": 892,
+    "2_star": 182,
+    "3_star": 182,
+    "4_star": 271,
+    "5_star": 716,
+    "unrated_community_threads": 836
+  },
+  "by_primary_emotion": {
+    "frustrated": 1042,
+    "hopeful": 922,
+    "disappointed": 26,
+    "reassured": 26,
+    "confident": 49,
+    "confused": 959,
+    "angry": 34,
+    "anxious": 9,
+    "indifferent": 10,
+    "regretful": 2
+  },
+  "by_product_area": {
+    "none": 60,
+    "portfolio_view": 2739,
+    "returns_display": 24,
+    "mandate_payment": 115,
+    "fund_selection": 32,
+    "app_performance": 43,
+    "customer_support": 16,
+    "sip_setup": 18,
+    "notifications": 9,
+    "educational_content": 23
+  }
+}

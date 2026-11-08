@@ -1,0 +1,434 @@
+{
+  "tolerancePctPoints": 0.0001,
+  "note": "Expected values: independent scipy+mpmath solver, Excel convention (days/365). MS-DOC-1 is the published Microsoft XIRR documentation example. DEMO/synthetic cash flows only; not market data.",
+  "vectors": [
+    {
+      "id": "MS-DOC-1",
+      "description": "Microsoft XIRR documentation example (documented 0.373362535)",
+      "flows": [
+        {
+          "date": "2008-01-01",
+          "amountPaise": -1000000
+        },
+        {
+          "date": "2008-03-01",
+          "amountPaise": 275000
+        },
+        {
+          "date": "2008-10-30",
+          "amountPaise": 425000
+        },
+        {
+          "date": "2009-02-15",
+          "amountPaise": 325000
+        },
+        {
+          "date": "2009-04-01",
+          "amountPaise": 275000
+        }
+      ],
+      "expectedStatus": "OK",
+      "expectedXirrPct": 37.33625335
+    },
+    {
+      "id": "ONE-YEAR-PLUS-10",
+      "description": "One outflow, +10% after exactly 365 days: exactly 10%",
+      "flows": [
+        {
+          "date": "2025-01-01",
+          "amountPaise": -10000000
+        },
+        {
+          "date": "2026-01-01",
+          "amountPaise": 11000000
+        }
+      ],
+      "expectedStatus": "OK",
+      "expectedXirrPct": 10.0
+    },
+    {
+      "id": "TWO-YEAR-PLUS-21",
+      "description": "One outflow, +21% after 730 days: exactly 10%",
+      "flows": [
+        {
+          "date": "2024-01-01",
+          "amountPaise": -10000000
+        },
+        {
+          "date": "2025-12-31",
+          "amountPaise": 12100000
+        }
+      ],
+      "expectedStatus": "OK",
+      "expectedXirrPct": 10.0
+    },
+    {
+      "id": "ONE-YEAR-MINUS-10",
+      "description": "One outflow, -10% after 365 days: exactly -10%",
+      "flows": [
+        {
+          "date": "2025-01-01",
+          "amountPaise": -10000000
+        },
+        {
+          "date": "2026-01-01",
+          "amountPaise": 9000000
+        }
+      ],
+      "expectedStatus": "OK",
+      "expectedXirrPct": -10.0
+    },
+    {
+      "id": "BREAK-EVEN",
+      "description": "Value equals invested: 0%",
+      "flows": [
+        {
+          "date": "2026-01-01",
+          "amountPaise": -5000000
+        },
+        {
+          "date": "2026-07-01",
+          "amountPaise": 5000000
+        }
+      ],
+      "expectedStatus": "OK",
+      "expectedXirrPct": 0.0
+    },
+    {
+      "id": "MONTHLY-GAIN",
+      "description": "12 monthly SIPs of 5,000, final value 63,500",
+      "flows": [
+        {
+          "date": "2025-11-05",
+          "amountPaise": -500000
+        },
+        {
+          "date": "2025-12-05",
+          "amountPaise": -500000
+        },
+        {
+          "date": "2026-01-05",
+          "amountPaise": -500000
+        },
+        {
+          "date": "2026-02-05",
+          "amountPaise": -500000
+        },
+        {
+          "date": "2026-03-05",
+          "amountPaise": -500000
+        },
+        {
+          "date": "2026-04-05",
+          "amountPaise": -500000
+        },
+        {
+          "date": "2026-05-05",
+          "amountPaise": -500000
+        },
+        {
+          "date": "2026-06-05",
+          "amountPaise": -500000
+        },
+        {
+          "date": "2026-07-05",
+          "amountPaise": -500000
+        },
+        {
+          "date": "2026-08-05",
+          "amountPaise": -500000
+        },
+        {
+          "date": "2026-09-05",
+          "amountPaise": -500000
+        },
+        {
+          "date": "2026-10-05",
+          "amountPaise": -500000
+        },
+        {
+          "date": "2026-11-05",
+          "amountPaise": 6350000
+        }
+      ],
+      "expectedStatus": "OK",
+      "expectedXirrPct": 10.90746977
+    },
+    {
+      "id": "MONTHLY-LOSS",
+      "description": "6 monthly SIPs of 4,000, final value 23,100 (loss)",
+      "flows": [
+        {
+          "date": "2026-04-10",
+          "amountPaise": -400000
+        },
+        {
+          "date": "2026-05-10",
+          "amountPaise": -400000
+        },
+        {
+          "date": "2026-06-10",
+          "amountPaise": -400000
+        },
+        {
+          "date": "2026-07-10",
+          "amountPaise": -400000
+        },
+        {
+          "date": "2026-08-10",
+          "amountPaise": -400000
+        },
+        {
+          "date": "2026-09-10",
+          "amountPaise": -400000
+        },
+        {
+          "date": "2026-10-10",
+          "amountPaise": 2310000
+        }
+      ],
+      "expectedStatus": "OK",
+      "expectedXirrPct": -12.29461492
+    },
+    {
+      "id": "QUARTERLY",
+      "description": "4 quarterly SIPs of 6,000, final value 24,180",
+      "flows": [
+        {
+          "date": "2025-11-08",
+          "amountPaise": -600000
+        },
+        {
+          "date": "2026-02-08",
+          "amountPaise": -600000
+        },
+        {
+          "date": "2026-05-08",
+          "amountPaise": -600000
+        },
+        {
+          "date": "2026-08-08",
+          "amountPaise": -600000
+        },
+        {
+          "date": "2026-11-08",
+          "amountPaise": 2418000
+        }
+      ],
+      "expectedStatus": "OK",
+      "expectedXirrPct": 1.19982226
+    },
+    {
+      "id": "WEEKLY-3",
+      "description": "3 weekly SIPs of 500, final value 1,511.35",
+      "flows": [
+        {
+          "date": "2026-10-18",
+          "amountPaise": -50000
+        },
+        {
+          "date": "2026-10-25",
+          "amountPaise": -50000
+        },
+        {
+          "date": "2026-11-01",
+          "amountPaise": -50000
+        },
+        {
+          "date": "2026-11-08",
+          "amountPaise": 151135
+        }
+      ],
+      "expectedStatus": "OK",
+      "expectedXirrPct": 21.70232258
+    },
+    {
+      "id": "LEAP-YEAR-SPAN",
+      "description": "Span includes 29 Feb 2024; 365-day basis still used",
+      "flows": [
+        {
+          "date": "2023-06-01",
+          "amountPaise": -5000000
+        },
+        {
+          "date": "2024-12-01",
+          "amountPaise": 5300000
+        }
+      ],
+      "expectedStatus": "OK",
+      "expectedXirrPct": 3.9499973
+    },
+    {
+      "id": "LARGE-AMOUNTS",
+      "description": "Lakh-scale amounts, 18 months",
+      "flows": [
+        {
+          "date": "2025-05-01",
+          "amountPaise": -12500000
+        },
+        {
+          "date": "2025-06-01",
+          "amountPaise": -12500000
+        },
+        {
+          "date": "2025-07-01",
+          "amountPaise": -12500000
+        },
+        {
+          "date": "2025-08-01",
+          "amountPaise": -12500000
+        },
+        {
+          "date": "2025-09-01",
+          "amountPaise": -12500000
+        },
+        {
+          "date": "2025-10-01",
+          "amountPaise": -12500000
+        },
+        {
+          "date": "2025-11-01",
+          "amountPaise": -12500000
+        },
+        {
+          "date": "2025-12-01",
+          "amountPaise": -12500000
+        },
+        {
+          "date": "2026-01-01",
+          "amountPaise": -12500000
+        },
+        {
+          "date": "2026-02-01",
+          "amountPaise": -12500000
+        },
+        {
+          "date": "2026-03-01",
+          "amountPaise": -12500000
+        },
+        {
+          "date": "2026-04-01",
+          "amountPaise": -12500000
+        },
+        {
+          "date": "2026-05-01",
+          "amountPaise": -12500000
+        },
+        {
+          "date": "2026-06-01",
+          "amountPaise": -12500000
+        },
+        {
+          "date": "2026-07-01",
+          "amountPaise": -12500000
+        },
+        {
+          "date": "2026-08-01",
+          "amountPaise": -12500000
+        },
+        {
+          "date": "2026-09-01",
+          "amountPaise": -12500000
+        },
+        {
+          "date": "2026-10-01",
+          "amountPaise": -12500000
+        },
+        {
+          "date": "2026-11-01",
+          "amountPaise": 240000000
+        }
+      ],
+      "expectedStatus": "OK",
+      "expectedXirrPct": 8.3892203
+    },
+    {
+      "id": "TWO-INFLOWS",
+      "description": "Outflow then a partial withdrawal then final value (generic solver check)",
+      "flows": [
+        {
+          "date": "2025-01-01",
+          "amountPaise": -10000000
+        },
+        {
+          "date": "2025-07-01",
+          "amountPaise": 3000000
+        },
+        {
+          "date": "2026-01-01",
+          "amountPaise": 8500000
+        }
+      ],
+      "expectedStatus": "OK",
+      "expectedXirrPct": 17.54740121
+    },
+    {
+      "id": "DAILY-3-OUT-OF-BOUND",
+      "description": "Daily SIP of 100 for 3 days, final 307.45: root exists but is above +10,000%, so UNAVAILABLE (matches fixture xirr-fails)",
+      "flows": [
+        {
+          "date": "2026-11-06",
+          "amountPaise": -10000
+        },
+        {
+          "date": "2026-11-07",
+          "amountPaise": -10000
+        },
+        {
+          "date": "2026-11-08",
+          "amountPaise": -10000
+        },
+        {
+          "date": "2026-11-08",
+          "amountPaise": 30745
+        }
+      ],
+      "expectedStatus": "UNAVAILABLE_NOT_CONVERGED",
+      "expectedXirrPct": null
+    },
+    {
+      "id": "ALL-OUTFLOWS",
+      "description": "Same-sign flows: no XIRR",
+      "flows": [
+        {
+          "date": "2026-01-01",
+          "amountPaise": -100000
+        },
+        {
+          "date": "2026-02-01",
+          "amountPaise": -100000
+        }
+      ],
+      "expectedStatus": "UNAVAILABLE_INSUFFICIENT_DATA",
+      "expectedXirrPct": null
+    },
+    {
+      "id": "SINGLE-FLOW",
+      "description": "A single flow: no XIRR",
+      "flows": [
+        {
+          "date": "2026-01-01",
+          "amountPaise": -100000
+        }
+      ],
+      "expectedStatus": "UNAVAILABLE_INSUFFICIENT_DATA",
+      "expectedXirrPct": null
+    },
+    {
+      "id": "SAME-DAY",
+      "description": "All flows on one date: no XIRR",
+      "flows": [
+        {
+          "date": "2026-01-01",
+          "amountPaise": -100000
+        },
+        {
+          "date": "2026-01-01",
+          "amountPaise": 110000
+        }
+      ],
+      "expectedStatus": "UNAVAILABLE_INSUFFICIENT_DATA",
+      "expectedXirrPct": null
+    }
+  ]
+}
