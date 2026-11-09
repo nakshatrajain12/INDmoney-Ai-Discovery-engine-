@@ -52,4 +52,7 @@ export type ProviderCapabilities = z.infer<typeof ProviderCapabilities>;
 // ---- request validation ----
 export const PersonaKeyParam = z.string().regex(/^[a-z0-9-]{1,48}$/, 'Invalid persona key');
 export const SipIdParam = z.string().regex(/^[a-z0-9_-]{1,64}$/, 'Invalid SIP id');
-export const AsOfParam = IsoDate.optional();
+export const AsOfParam = z.preprocess(
+  (val) => (val === '' || val === null ? undefined : val),
+  IsoDate.optional()
+);

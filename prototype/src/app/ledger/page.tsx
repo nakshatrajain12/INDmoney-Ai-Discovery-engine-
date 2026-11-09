@@ -44,7 +44,9 @@ export default function LedgerPage() {
               const dJson = await dRes.json();
               const instalments = dJson.data?.instalments || [];
 
-              instalments.forEach(
+              instalments
+                .filter((i: { status: string }) => i.status !== 'SKIPPED')
+                .forEach(
                 (i: {
                   id: string;
                   dueDate: string;

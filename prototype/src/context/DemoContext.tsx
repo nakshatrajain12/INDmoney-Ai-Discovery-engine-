@@ -1,8 +1,9 @@
 'use client';
 
 import React, { createContext, useContext, useEffect, useState, useCallback, useMemo } from 'react';
-import { addDays } from '@/lib/dates';
-import type { PersonaSummary } from '@/contracts/api';
+import { addDays, diffDays, toMs, fromMs } from '@/lib/dates';
+import { formatDate } from '@/lib/utils';
+import type { PersonaSummary, SipSummary } from '@/contracts/api';
 
 export interface InboxMessage {
   id: string;
@@ -33,6 +34,8 @@ interface DemoContextValue {
   markMessageRead: (id: string) => void;
   resetToDefaults: () => void;
   isLoadingPersonas: boolean;
+  activeToast: string | null;
+  dismissToast: () => void;
 }
 
 const DEFAULT_PERSONA = 'early-flat';
@@ -82,6 +85,12 @@ export function DemoProvider({ children }: { children: React.ReactNode }) {
     }
   ]);
 
+  const [activeToast, setActiveToast] = useState<string | null>(null);
+
+  const dismissToast = useCallback(() => {
+    setActiveToast(null);
+  }, []);
+
   // Fetch personas list from API
   useEffect(() => {
     let cancelled = false;
@@ -119,6 +128,139 @@ export function DemoProvider({ children }: { children: React.ReactNode }) {
       cancelled = true;
     };
   }, []);
+
+  // Dynamic Notifications Sync: Pre-debit alerts, Restart reminders, Debit failure notices
+  useEffect(() => {
+    let cancelled = false;
+
+    async function evaluateNotifications() {
+      try {
+        const cleanKey = personaKey.replace(/_s\d+$/, '') || 'early-flat';
+        const res = await fetch(`/api/v1/sips?persona=${cleanKey}&asOf=${asOf}`);
+        if (!res.ok) return;
+        const json = await res.json();
+        const summaries: SipSummary[] = json.data || [];
+
+        const newMessages: InboxMessage[] = [];
+
+        for (const s of summaries) {
+          try {
+            const detailRes = await fetch(`/api/v1/sips/${s.id}?asOf=${asOf}`);
+            if (!detailRes.ok) continue;
+            const detailJson = await detailRes.json();
+            const bundle = detailJson.data;
+            if (!bundle) continue;
+
+            const sip = bundle.sip;
+            const pause = bundle.pause;
+            const failures = bundle.failures || [];
+            const activeFailure = failures.find((f: { resolved: boolean }) => !f.resolved);
+
+            // 1. Restarting SIP alert: when inside the 14-day window before pauseEnd
+            if (pause && pause.pauseEnd && (pause.state === 'ACTIVE' || pause.state === 'SCHEDULED')) {
+              const daysToRestart = diffDays(asOf, pause.pauseEnd) + 1;
+              if (daysToRestart > 0 && daysToRestart <= 14) {
+                newMessages.push({
+                  id: `restart-${sip.id}-${pause.pauseEnd}`,
+                  kind: 'reminder',
+                  title: `Upcoming SIP restart · ${sip.schemeName.split(' ')[0]}`,
+                  body: `Your SIP for ${sip.schemeName} was scheduled to resume on ${formatDate(pause.pauseEnd)}. Choose to resume, extend the pause, or leave it paused.`,
+                  date: asOf,
+                  sipId: sip.id,
+                  read: false
+                });
+              }
+            }
+
+            // 2. Debit Day alerts for active SIPs
+            if (s.status === 'ACTIVE' && sip.investmentDate) {
+              const anchorDay = Number(sip.investmentDate.split('-')[2]);
+              const asOfDateObj = new Date(toMs(asOf));
+              const asOfYear = asOfDateObj.getUTCFullYear();
+              const asOfMonth = asOfDateObj.getUTCMonth();
+              const asOfDay = asOfDateObj.getUTCDate();
+
+              // Compute next scheduled debit date
+              let debitYear = asOfYear;
+              let debitMonth = asOfMonth;
+              if (asOfDay > anchorDay) {
+                debitMonth += 1;
+                if (debitMonth > 11) {
+                  debitMonth = 0;
+                  debitYear += 1;
+                }
+              }
+              const dim = new Date(Date.UTC(debitYear, debitMonth + 1, 0)).getUTCDate();
+              const targetDay = Math.min(anchorDay, dim);
+              const nextDebitDate = fromMs(Date.UTC(debitYear, debitMonth, targetDay));
+
+              const daysUntil = diffDays(asOf, nextDebitDate);
+              const amountFormatted = `₹${(sip.instalmentAmountPaise / 100).toLocaleString('en-IN')}`;
+
+              if (daysUntil === 1) {
+                newMessages.push({
+                  id: `pre-debit-${sip.id}-${nextDebitDate}`,
+                  kind: 'alert',
+                  title: `Tomorrow is debit day · ${sip.schemeName.split(' ')[0]}`,
+                  body: `${amountFormatted} will be automatically debited tomorrow (${formatDate(nextDebitDate)}) for ${sip.schemeName}. Keep sufficient bank balance to maintain your investment.`,
+                  date: asOf,
+                  sipId: sip.id,
+                  read: false
+                });
+              } else if (daysUntil === 0) {
+                newMessages.push({
+                  id: `debit-today-${sip.id}-${nextDebitDate}`,
+                  kind: 'payment',
+                  title: `Debit day today · ${sip.schemeName.split(' ')[0]}`,
+                  body: `Today is your scheduled SIP instalment date (${formatDate(nextDebitDate)}). Your instalment of ${amountFormatted} is being processed.`,
+                  date: asOf,
+                  sipId: sip.id,
+                  read: false
+                });
+              }
+            }
+
+            // 3. Payment failure alert
+            if (activeFailure) {
+              const amountFormatted = `₹${(activeFailure.amountPaise / 100).toLocaleString('en-IN')}`;
+              newMessages.push({
+                id: `failure-${sip.id}-${activeFailure.id}`,
+                kind: 'payment',
+                title: `Debit missed · ${sip.schemeName.split(' ')[0]}`,
+                body: `Your instalment of ${amountFormatted} could not be debited. Your SIP schedule remains active. Tap to diagnose cause and retry.`,
+                date: asOf,
+                sipId: sip.id,
+                read: false
+              });
+            }
+          } catch {
+            /* ignore individual sip error */
+          }
+        }
+
+        if (!cancelled && newMessages.length > 0) {
+          setInbox(prev => {
+            const existingIds = new Set(prev.map(m => m.id));
+            const fresh = newMessages.filter(m => !existingIds.has(m.id));
+            if (fresh.length > 0 && fresh[0]) {
+              setActiveToast(`${fresh[0].title}`);
+              setTimeout(() => setActiveToast(null), 4500);
+              return [...fresh, ...prev];
+            }
+            return prev;
+          });
+        }
+      } catch {
+        /* ignore */
+      }
+    }
+
+    evaluateNotifications();
+
+    return () => {
+      cancelled = true;
+    };
+  }, [personaKey, asOf]);
 
   const setPersonaKey = useCallback((key: string) => {
     setPersonaKeyState(key);
@@ -235,7 +377,9 @@ export function DemoProvider({ children }: { children: React.ReactNode }) {
       addInboxMessage,
       markMessageRead,
       resetToDefaults,
-      isLoadingPersonas
+      isLoadingPersonas,
+      activeToast,
+      dismissToast
     }),
     [
       personaKey,
@@ -254,7 +398,9 @@ export function DemoProvider({ children }: { children: React.ReactNode }) {
       addInboxMessage,
       markMessageRead,
       resetToDefaults,
-      isLoadingPersonas
+      isLoadingPersonas,
+      activeToast,
+      dismissToast
     ]
   );
 

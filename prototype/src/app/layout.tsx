@@ -3,6 +3,7 @@ import './globals.css';
 import { DemoProvider } from '@/context/DemoContext';
 import { DemoDrawer } from '@/components/demo/DemoDrawer';
 import { BottomNav } from '@/components/layout/BottomNav';
+import { GlobalToast } from '@/components/common/GlobalToast';
 
 export const metadata: Metadata = {
   title: 'SIP Steady (prototype)',
@@ -23,6 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-screen bg-canvas text-t1 antialiased selection:bg-ind-blue/20">
         <DemoProvider>
           <div className="mx-auto flex min-h-screen max-w-[430px] flex-col relative pb-20 border-x border-border/40 shadow-ind-float">
+            <GlobalToast />
             {children}
             <BottomNav />
             <DemoDrawer />

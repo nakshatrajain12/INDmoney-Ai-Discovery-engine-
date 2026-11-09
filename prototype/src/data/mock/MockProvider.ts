@@ -3,7 +3,7 @@ import type { PersonaSummary, SipDetail, SipSummary } from '@/contracts/api';
 import type { RetryResult } from '@/contracts/debit';
 import type { PauseRequest, PauseResponse, ResumeResponse } from '@/contracts/pause';
 import { getDemoOverride } from '@/lib/clock';
-import type { ISODate } from '@/lib/dates';
+import { addMonths, type ISODate } from '@/lib/dates';
 import { conflict, notFound } from '@/lib/errors';
 import { buildRetryResult, checkIdempotency, recordIdempotency, validateRetryEligibility } from '@/domain/debit/retry';
 import { calculatePauseDates, getPauseLifecycleState, getUpcomingDueDates, validateTransition } from '@/domain/pause/machine';
@@ -49,31 +49,108 @@ export class MockProvider implements SipDataProvider {
     return p ? structuredClone(p.user) : null;
   }
 
+  private projectBundleToDate(bundle: PersonaFixture['sips'][number], baseDate: ISODate, targetDate: ISODate): PersonaFixture['sips'][number] {
+    const b = structuredClone(bundle);
+
+    // If valuation exists, align its asOfDate with targetDate so the returns engine
+    // does not treat simulated demo time-travel as a stale valuation date mismatch.
+    if (b.valuation) {
+      b.valuation.asOfDate = targetDate;
+    }
+
+    if (targetDate === baseDate) return b;
+
+    // If targetDate is in the future, simulate any newly elapsed instalment cycles
+    if (targetDate > baseDate) {
+      const sip = b.sip;
+      if (sip.cancelledOn === null || sip.cancelledOn > baseDate) {
+        const anchorDate = sip.investmentDate;
+        const initialCount = b.instalments.length;
+        let checkDate = addMonths(anchorDate, initialCount);
+
+        let totalUnitsE4 = b.instalments.reduce((acc, i) => acc + (i.unitsE4 ?? 0), 0);
+        let totalInvestedPaise = b.instalments
+          .filter((i) => i.status === 'SUCCESS')
+          .reduce((acc, i) => acc + i.amountPaise, 0);
+
+        while (checkDate <= targetDate) {
+          if (checkDate > baseDate) {
+            const isCancelled = sip.cancelledOn !== null && sip.cancelledOn <= checkDate;
+
+            // A month was paused if a pause schedule existed and checkDate falls within the pause window
+            // (from pauseStart up to resumedOn or pauseEnd). Even after restart, those paused months must not be debited.
+            const effectivePauseEnd = b.pause?.resumedOn ?? b.pause?.pauseEnd ?? null;
+            const wasPaused =
+              b.pause !== null &&
+              checkDate >= b.pause.pauseStart &&
+              (effectivePauseEnd === null || checkDate <= effectivePauseEnd);
+
+            if (!isCancelled && !wasPaused) {
+              const currentNavE4 = b.valuation?.currentNavE4 ?? 500000;
+              const unitsBoughtE4 = Math.round(
+                ((sip.instalmentAmountPaise / 100) / (currentNavE4 / 10000)) * 10000
+              );
+
+              b.instalments.push({
+                id: `${sip.id}_sim_${checkDate}`,
+                sipId: sip.id,
+                dueDate: checkDate,
+                amountPaise: sip.instalmentAmountPaise,
+                status: 'SUCCESS',
+                settledOn: checkDate,
+                navE4: currentNavE4,
+                unitsE4: unitsBoughtE4
+              });
+              totalUnitsE4 += unitsBoughtE4;
+              totalInvestedPaise += sip.instalmentAmountPaise;
+              sip.declared.lastSuccessfulInstalmentDate = checkDate;
+            }
+          }
+          checkDate = addMonths(checkDate, 1);
+        }
+
+        sip.declared.totalInvestedPaise = totalInvestedPaise;
+
+        if (b.valuation && b.valuation.currentNavE4) {
+          const currentNav = b.valuation.currentNavE4 / 10000;
+          const totalUnits = totalUnitsE4 / 10000;
+          b.valuation.currentValuePaise = Math.round(totalUnits * currentNav * 100);
+        }
+      }
+    }
+
+    return b;
+  }
+
   async listSips(userId: string, asOf?: ISODate): Promise<SipSummary[]> {
     const p = this.personas.find((x) => x.user.id === userId);
     if (!p) return [];
     const when = this.effectiveAsOf(p.asOf, asOf);
-    return p.sips.map((b) => ({
-      id: b.sip.id,
-      userId: b.sip.userId,
-      schemeName: b.sip.schemeName,
-      category: b.sip.category,
-      frequency: b.sip.frequency,
-      instalmentAmountPaise: b.sip.instalmentAmountPaise,
-      investmentDate: b.sip.investmentDate,
-      lastSuccessfulInstalmentDate: b.sip.declared.lastSuccessfulInstalmentDate,
-      status: deriveSipStatus(b.sip, b.failures, b.pause, when),
-      asOf: when,
-      isMock: true as const,
-      dataLabel: DATA_LABEL
-    }));
+    return p.sips.map((origB) => {
+      const b = this.projectBundleToDate(origB, p.asOf, when);
+      return {
+        id: b.sip.id,
+        userId: b.sip.userId,
+        schemeName: b.sip.schemeName,
+        category: b.sip.category,
+        frequency: b.sip.frequency,
+        instalmentAmountPaise: b.sip.instalmentAmountPaise,
+        investmentDate: b.sip.investmentDate,
+        lastSuccessfulInstalmentDate: b.sip.declared.lastSuccessfulInstalmentDate,
+        status: deriveSipStatus(b.sip, b.failures, b.pause, when),
+        asOf: when,
+        isMock: true as const,
+        dataLabel: DATA_LABEL
+      };
+    });
   }
 
   async getSip(sipId: string, asOf?: ISODate): Promise<SipDetail | null> {
     for (const p of this.personas) {
-      const b = p.sips.find((x) => x.sip.id === sipId);
-      if (!b) continue;
+      const origB = p.sips.find((x) => x.sip.id === sipId);
+      if (!origB) continue;
       const when = this.effectiveAsOf(p.asOf, asOf);
+      const b = this.projectBundleToDate(origB, p.asOf, when);
       return structuredClone({
         ...b,
         status: deriveSipStatus(b.sip, b.failures, b.pause, when),
@@ -146,10 +223,25 @@ export class MockProvider implements SipDataProvider {
           if (!instalment.navE4 && b.valuation?.currentNavE4) {
             instalment.navE4 = b.valuation.currentNavE4;
           }
+          if (instalment.navE4) {
+            instalment.unitsE4 = Math.round(
+              ((instalment.amountPaise / 100) / (instalment.navE4 / 10000)) * 10000
+            );
+          }
         }
 
         b.sip.declared.lastSuccessfulInstalmentDate = effectiveDate;
         b.sip.declared.totalInvestedPaise += failure.amountPaise;
+
+        if (b.valuation && b.valuation.currentNavE4) {
+          b.valuation.asOfDate = effectiveDate;
+          const totalUnitsE4 = b.instalments
+            .filter((i) => i.status === 'SUCCESS')
+            .reduce((acc, i) => acc + (i.unitsE4 ?? 0), 0);
+          const currentNav = b.valuation.currentNavE4 / 10000;
+          const totalUnits = totalUnitsE4 / 10000;
+          b.valuation.currentValuePaise = Math.round(totalUnits * currentNav * 100);
+        }
 
         const updatedDetail = (await this.getSip(b.sip.id, asOf))!;
         const result = buildRetryResult(failure, updatedDetail, effectiveDate);

@@ -42,16 +42,19 @@ export function formatSignedRupees(paise: number, hide = false, showFraction = f
 }
 
 /**
- * Format percentage scaled by 100 (hundredths of a percent, e.g. 430 -> "4.30%").
+ * Format percentage safely with exactly 2 decimal places.
+ * Handles both float percentages (e.g. -21.3464 -> "−21.35%", -63.3927 -> "−63.39%")
+ * and basis points (e.g. -2135 -> "−21.35%").
  */
-export function formatPercent(scaledPct: number | null | undefined, showPlus = true): string {
-  if (scaledPct == null) return '—';
-  const neg = scaledPct < 0;
-  const abs = Math.abs(scaledPct);
-  const whole = Math.floor(abs / 100);
-  const frac = (abs % 100).toString().padStart(2, '0');
-  const sign = neg ? '−' : showPlus && scaledPct > 0 ? '+' : '';
-  return `${sign}${whole}.${frac}%`;
+export function formatPercent(val: number | null | undefined, showPlus = true): string {
+  if (val == null || !Number.isFinite(val)) return '—';
+  let pct = val;
+  if (Math.abs(val) > 100 && Number.isInteger(val)) {
+    pct = val / 100;
+  }
+  const sign = pct > 0 && showPlus ? '+' : pct < 0 ? '−' : '';
+  const abs = Math.abs(pct);
+  return `${sign}${abs.toFixed(2)}%`;
 }
 
 /**

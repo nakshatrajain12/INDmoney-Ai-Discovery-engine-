@@ -234,48 +234,53 @@ export default function SipDetailPage({ params }: PageProps) {
       </div>
 
       {/* Instalment Ledger Table */}
-      <div className="rounded-2xl border border-border bg-s1 p-4 shadow-ind-card space-y-3">
-        <div className="flex items-center justify-between">
-          <h2 className="text-sm font-bold text-t1 tracking-tight">Instalment History</h2>
-          <span className="text-xs text-t2 font-medium">{instalments.length} records</span>
-        </div>
+      {(() => {
+        const visibleInstalments = instalments.filter(i => i.status !== 'SKIPPED');
+        return (
+          <div className="rounded-2xl border border-border bg-s1 p-4 shadow-ind-card space-y-3">
+            <div className="flex items-center justify-between">
+              <h2 className="text-sm font-bold text-t1 tracking-tight">Instalment History</h2>
+              <span className="text-xs text-t2 font-medium">{visibleInstalments.length} records</span>
+            </div>
 
-        <div className="space-y-2 text-xs">
-          {instalments.map(i => {
-            const isSuccess = i.status === 'SUCCESS';
-            const navRupees = i.navE4 ? (i.navE4 / 10000).toFixed(2) : null;
+            <div className="space-y-2 text-xs">
+              {visibleInstalments.map(i => {
+                const isSuccess = i.status === 'SUCCESS';
+                const navRupees = i.navE4 ? (i.navE4 / 10000).toFixed(2) : null;
 
-            return (
-              <div
-                key={i.id}
-                className="flex items-center justify-between py-2.5 border-b border-border/40 last:border-b-0"
-              >
-                <div>
-                  <div className="font-bold text-t1">{formatDate(i.dueDate)}</div>
-                  <div className="text-[11px] text-t3">
-                    {navRupees ? `NAV: ₹${navRupees}` : 'Pending allocation'}
-                  </div>
-                </div>
-
-                <div className="text-right">
-                  <div className="font-bold tabular-nums text-t1">
-                    {formatRupees(i.amountPaise, hideAmounts)}
-                  </div>
+                return (
                   <div
-                    className={
-                      isSuccess
-                        ? 'text-[10px] font-semibold text-ind-emerald-text'
-                        : 'text-[10px] font-semibold text-ind-coral-text'
-                    }
+                    key={i.id}
+                    className="flex items-center justify-between py-2.5 border-b border-border/40 last:border-b-0"
                   >
-                    {isSuccess ? 'SUCCESS' : 'FAILED'}
+                    <div>
+                      <div className="font-bold text-t1">{formatDate(i.dueDate)}</div>
+                      <div className="text-[11px] text-t3">
+                        {navRupees ? `NAV: ₹${navRupees}` : 'Pending allocation'}
+                      </div>
+                    </div>
+
+                    <div className="text-right">
+                      <div className="font-bold tabular-nums text-t1">
+                        {formatRupees(i.amountPaise, hideAmounts)}
+                      </div>
+                      <div
+                        className={
+                          isSuccess
+                            ? 'text-[10px] font-semibold text-ind-emerald-text'
+                            : 'text-[10px] font-semibold text-ind-coral-text'
+                        }
+                      >
+                        {isSuccess ? 'SUCCESS' : 'FAILED'}
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
+                );
+              })}
+            </div>
+          </div>
+        );
+      })()}
     </main>
   );
 }

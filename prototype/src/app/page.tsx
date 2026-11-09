@@ -27,9 +27,11 @@ interface SipWithMetrics {
 }
 
 export default function Home() {
-  const { personaKey, asOf, hideAmounts } = useDemo();
+  const { personaKey, asOf, hideAmounts, inbox } = useDemo();
   const [sipsWithMetrics, setSipsWithMetrics] = useState<SipWithMetrics[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+
+  const activeNotice = inbox.find(m => !m.read && (m.kind === 'reminder' || m.kind === 'alert'));
 
   useEffect(() => {
     let cancelled = false;
@@ -38,8 +40,15 @@ export default function Home() {
       setIsLoading(true);
       try {
         const cleanPersona = personaKey.replace(/_s\d+$/, '') || 'early-flat';
-        const res = await fetch(`/api/v1/sips?persona=${encodeURIComponent(cleanPersona)}&asOf=${encodeURIComponent(asOf)}`);
-        if (!res.ok) throw new Error('Failed to load SIPs');
+        const urlParams = new URLSearchParams();
+        urlParams.set('persona', cleanPersona);
+        if (asOf) urlParams.set('asOf', asOf);
+        const res = await fetch(`/api/v1/sips?${urlParams.toString()}`);
+        if (!res.ok) {
+          console.warn('Could not load portfolio SIPs for persona:', cleanPersona);
+          if (!cancelled) setSipsWithMetrics([]);
+          return;
+        }
         const json = await res.json();
         const summaries: SipSummary[] = json.data || [];
 
@@ -59,12 +68,16 @@ export default function Home() {
               const failures = detailJson?.data?.failures || [];
               const activeFailure = failures.find((f: { resolved: boolean }) => !f.resolved);
 
+              const invested = m?.investedPaise ?? s.instalmentAmountPaise;
+              const currVal = m?.currentValuePaise ?? invested;
+              const absPaise = m?.absoluteReturnPaise ?? (currVal - invested);
+
               return {
                 summary: s,
-                investedPaise: m?.investedPaise ?? s.instalmentAmountPaise,
-                currentValuePaise: m?.currentValuePaise ?? s.instalmentAmountPaise,
-                absReturnPaise: m?.absoluteReturnPaise ?? 0,
-                absReturnBps: m?.absoluteReturnPct ?? null,
+                investedPaise: invested,
+                currentValuePaise: currVal,
+                absReturnPaise: absPaise,
+                absReturnBps: m?.absoluteReturnPct ?? (invested > 0 ? ((currVal - invested) / invested) * 100 : 0),
                 xirrBps: m?.xirrPct ?? null,
                 instalmentCount: m?.instalmentsPaid ?? 1,
                 tenureMonths: m?.tenureMonths ?? 0,
@@ -78,7 +91,7 @@ export default function Home() {
                 investedPaise: s.instalmentAmountPaise,
                 currentValuePaise: s.instalmentAmountPaise,
                 absReturnPaise: 0,
-                absReturnBps: null,
+                absReturnBps: 0,
                 xirrBps: null,
                 instalmentCount: 1,
                 tenureMonths: 0,
@@ -110,12 +123,12 @@ export default function Home() {
   const totalCurrentValue = sipsWithMetrics.reduce((acc, s) => acc + s.currentValuePaise, 0);
   const totalAbsReturn = totalCurrentValue - totalInvested;
   const portfolioAbsReturnBps =
-    totalInvested > 0 ? Math.round((totalAbsReturn / totalInvested) * 10000) : 0;
+    totalInvested > 0 ? (totalAbsReturn / totalInvested) * 100 : 0;
 
   // Average XIRR among valid SIPs
   const validXirrs = sipsWithMetrics.filter(s => s.xirrBps != null).map(s => s.xirrBps!);
   const portfolioXirrBps =
-    validXirrs.length > 0 ? Math.round(validXirrs.reduce((a, b) => a + b, 0) / validXirrs.length) : null;
+    validXirrs.length > 0 ? validXirrs.reduce((a, b) => a + b, 0) / validXirrs.length : null;
 
   // Active, Paused, and Attention SIPs
   const activeSips = sipsWithMetrics.filter(s => s.summary.status !== 'CANCELLED');
@@ -138,6 +151,27 @@ export default function Home() {
         xirrBps={portfolioXirrBps}
         sipCount={activeSips.length}
       />
+
+      {/* Active In-App Reminder / Pre-Debit Banner */}
+      {activeNotice && (
+        <div className="rounded-2xl border border-ind-blue/30 bg-s1 p-4 shadow-ind-card space-y-2 border-l-4 border-l-ind-blue animate-in fade-in">
+          <div className="flex items-start justify-between gap-2">
+            <div className="flex items-center gap-2 min-w-0">
+              <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg bg-ind-blue-soft text-ind-blue text-xs">
+                🔔
+              </span>
+              <h3 className="text-xs font-bold text-t1 truncate">{activeNotice.title}</h3>
+            </div>
+            <Link
+              href="/inbox"
+              className="text-[11px] font-semibold text-ind-blue hover:underline shrink-0"
+            >
+              Inbox →
+            </Link>
+          </div>
+          <p className="text-xs text-t2 leading-relaxed">{activeNotice.body}</p>
+        </div>
+      )}
 
       {/* Top Debit Alert Banner (if any failure exists) */}
       {failedDebitSip && (
